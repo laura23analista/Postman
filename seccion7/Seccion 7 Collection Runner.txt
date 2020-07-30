@@ -1,0 +1,901 @@
+Seccion 7 Collection Runner
+
+44. Trabajando con la herramienta Runner
+15 min
+
+
+
+Bueno pues llega el momento de ver otro de los puntos importantes del curso que es el apartado de la
+
+RAM en este botón que tengo aquí hasta ahora hemos ido viendo como generar 3 test individuales para
+
+cada uno de los recursos que hemos ido generando.
+
+Por ejemplo si recordamos a quienes por medidas mediante JSON teníamos aquí 5 3 1 2 3 4 y 5 por alguno
+
+más hemos ido haciendo ejemplos de test pero realmente esto cobra totalmente su sentido cuando ejecutamos
+
+no sólo los tests de un servicio web sino de muchos servicios web todos al mismo tiempo de hecho son
+
+normalmente los que se hacen llamar las colas de integración que tú vas haciendo servicios web vas poniendo
+
+uno de los test y lo vas añadiendo a los test que ya tenías a una colección que tú ya tienes y entonces
+
+cada vez que ejecutas al principio ejecuta 5 textos cuando luego creas unos servicios web por ejemplo
+
+o pruebas Ochocinco test pues cuando ejecutas ahora ejecutan 10 si luego haces otra Rikers y le añades
+
+3T Luego ejecutas 13 se van integrando en lo que ya hay.
+
+Eso es así o lo vamos a poder ejecutar con el Rahner que el grande me va a ejecutar no sólo un servicio
+
+web sino un montón de servicios web como yo le vaya diciendo y para cada uno de servicio de cada uno
+
+de esos servicios web va a ejecutar todos ustedes y eso es lo verdaderamente maravilloso de.
+
+Vamos a verlo voy a recalarán en un momento se llama Coletti un gran herbales la herramienta lo ejecuto
+
+y me aparece esta ventana fijaros aparece una parte de la izquierda donde me dice que elija la colección
+
+o carpeta coleccionas folder que quiero ejecutar los puedo ejecutar la colección entera.
+
+Fijaros que esta colección tiene un montón de carpetas y dentro de cada una de estas carpetas un montón
+
+de texto.
+
+Yo por ejemplo voy a ejecutar ahora la carpeta servicios post ese servicio voy a minimizarlo voy a verla.
+
+Es un servicio por tener todos estos servicios.
+
+1 2 3 4 5 6 realmente hay muchos servicios que no tienen asociada.
+
+Por ejemplo este post mediante formulario este no tenía ningún texto estaba vacío pero yo no voy a decir
+
+que se ejecute todos.
+
+El que tiene tiene y el que no tiene o también el que menos ejecute.
+
+Como no tiene ningún test pues que me lo ejecute pero al menos me lo prueba.
+
+Vale me vuelvo al colectivo en Rahner cuando veía al colectivo en Rauner le digo pues ejecutase todos
+
+los que estén dentro de la carpeta servicio aquién clarito me indica aquellos servicios que va a ejecutar.
+
+Siguiente valor me dicen no bailo.
+
+En qué entorno lo quiero ejecutar.
+
+Como he declarado bastante el sitio es una variable de tipo de entorno del curso por lo que me lo solucionen
+
+en el curso número de iteraciones en este primer ejemplo voy a poner L1 Dilthey entre entre iteraciones
+
+cero.
+
+No tengo iteraciones no me conviene poner mi ley que me genere todos los post y no necesito pasarle
+
+ningún fichero de datos ni nada vale con lo cual le doy a Arrom Servicios POS y veremos lo que pasa
+
+vemos cómo me está ejecutando y me ha ejecutado todos los servicios uno detrás de otro y todos los test
+
+dentro de cada uno de los servicios ahora me da un resultado de todos los resultados lo que ha tardado
+
+cada uno me pone un listado fijaros este post mediante JSON que si que tenía 5 test.
+
+Aquí están los cinco tres uno dos tres cuatro cinco todos en verde todos pasado me dice que los test
+
+han sido los 6 pasado 0 fallados.
+
+De hecho tiene cinco test en este servicio lo que se llama mediante JSON.
+
+Este no tiene ninguno.
+
+Este no tiene ninguno ningún test.
+
+Tampoco tiene inmute y esto que se llamaba primer curso scrip tiene uno que se llama your test Neisseria.
+
+Un ejemplo que hice.
+
+De hecho aquí lo podéis ver y podemos incluso ver el resultado de cada uno de los test.
+
+Todo sea todos los resultados los podemos ver tenemos una navegación completa y nos ha ejecutado todos
+
+los test que queremos además podemos volver a hacerlo.
+
+Aquí tenemos un reintentar vale Ungaretti amasaba metri y lo vuelvo a ejecutar otra vez.
+
+Si quiero ir pasando los test cada vez que quiero pasándolos aquí los tengo.
+
+De hecho si vuelvo hacia atrás.
+
+Pincha aquí otra vez en colectivo Rahner.
+
+Verdad que tengo aquí un historial de cuandolos ejecuté.
+
+Este ha sido el que ejecuta las 7 52 y uno que ejecuta un minuto después puedo descargar los resultados
+
+exportar los resultados exportar un un post de los resultados JSON puedo borrarlo puedo borrarlo de
+
+un test en concreto pero no UTEs la ejecución entera de una carpeta de todos los archivos puedo borrarlo.
+
+Voy a borrar estas dos puedo importar un test un Terram.
+
+Si por ejemplo hubiese guardado una es o hubiese exportado una.
+
+Unos resultados podrían importar los resultados y ponerlos en este listado.
+
+Más cosas.
+
+Voy a ejecutar ahora pero en lugar de ejecutar una carpeta o ejecutar toda la colección entera la colección
+
+que tiene voy a verlo.
+
+Pero tiene 44 peticiones joder 44 peticiones.
+
+Ya voy a ejecutar los 44 servicios y todos los test asociándolo a todos los servicios.
+
+Quiero decir todo lo que haya hecho si he puesto 3 aquí los de tipo que también se me van a ejecutar.
+
+Todo absolutamente todo se va a ejecutar.
+
+Entonces vuelvo al Rahner abierto ya de hecho voy a cerrar esto ya lo tengo abierto.
+
+Vuelvo al Rauner y voy a ejecutar ahora toda la colección entera con el home en curso y además le voy
+
+a decir que me ejecuta 3 veces y además le voy a decir que entre cada iteración se espera 5 mil milisegundos.
+
+Le voy a decir espérate 2000 milisegundos que son dos segundos entonces ejecutamos todos esperando dos
+
+segundos.
+
+Bueno ejecutarlos todos esperando dos segundos vuelve ejecutarlos todos.
+
+Eso es lo que va a hacer.
+
+Le doy y fijaron maravillosamente.
+
+Empieza a ejecutar todos esto puede tardar un rato.
+
+De hecho uno lo que puede hacer es esto pues por ejemplo lo pone por la noche y empieza a lanzar iteraciones
+
+para ver si con datos diferentes porque acordaros incluso que yo ya programado antes que se ejecutan
+
+con valores aleatorios y lo voy a dejar una noche entera pasando los tests de todos los servicios metiendo
+
+datos borrando datos haciendo lo que queráis y luego al final pues obtendré los resultados como esto
+
+se va a hacer muy largo porque he lanzado todos los 3 3 veces y va por el 12 por ciento y de hecho aquí
+
+en estas pestañita.
+
+Si veis este 1 son los resultados de la iteración 1 ahora cuando llegue a la iteración 2 aquí me va
+
+a parecer un 2 lo que voy a hacer es en lugar de hacerlo de toda la colección entero entera que esto
+
+va a tardar aquí un buen rato.
+
+Fijaros lo está haciendo todo ya no para fijaros este por ejemplo que que fallaba me estaba diciendo
+
+los los que fallan y los que no. Este era uno que buscamos la cadena de NY y al final dejamos que buscamos
+
+la cadena de NY que no existía y falla de hecho o no lo voy a hacer es dejarlo ejecutando y G25 26.
+
+Esto va a tardar como minimo 5 6 7 minutos.
+
+Voy a ejecutar solamente una carpeta varias veces.
+
+De hecho este que falla y que está dentro de la carpeta Goeth voy a ejecutar la carpeta Bieto dos o
+
+tres veces voy a parar.
+
+Podeis pasar o podéis parar una ejecución si la usáis.
+
+Bueno pues lo haceis una noche cuando volvéis a la mañana siguiente no ha acabado por pasar y seguir
+
+trabajando y la siguiente noche la volvéis a lanzar para que continúe haciendo todos los TES pero yo
+
+en mi caso por lo dicho voy a voy a pasarla.
+
+Fijaros que ya aparece aquí el número 2.
+
+Ya va por la segunda iteración el 1 2 en teoría que viene es que podéis cambiar entre las 3 iteraciones
+
+esas que hemos puesto aparado stop y paro y hasta este momento ha pasado 3 de los 24 test que ha ejecutado
+
+21 han salido correctos y 3 no.
+
+De hecho yo puedo ver cuáles han salido correctos aquí ahora mismo está marcado la opción verde rojo
+
+no significa que no me filtre ya que tanto los que han pasado como los que no pero si vais al rojo y
+
+Vilchis veo a aquellos que no han pasado nada.
+
+Pues mira está fallando esto que no aparece el campo ni en ningún sitio ha fallado el 1 que buscaba
+
+la palabra método.
+
+Nota La odiabas de otra palabra y aparece esta palabra y otro que aquel que dejé que buscaba que fueran
+
+203 dentro de la lista haciendo 201 202 203 que evidentemente no está pues esos son los que han fallado
+
+y en cualquier momento puedo verlo puedo exportar los resultados y de hecho tengo el ruso amarillo sumaré
+
+me va diciendo para cada uno de los de las instalaciones.
+
+Fijaros si en cada iteración ha pasado o no puedo ir viendo a nivel de integración la tercera no llegó
+
+a ejecutarse nunca pero puedo ir viendo a nivel de integración.
+
+Los que pasaron y los que no. Esto es una herramienta brutal brutal porque porque me permite ejecutar
+
+todo lo que hemos ido haciendo en el curso hasta ahora con un único clic.
+
+De hecho voy a volver a ir un back voy en el colectivo granes de nuevo.
+
+Esta colección que la pared ahora voy a ejecutar solamente servicios web servicio perdón y esta vez
+
+sí que la voy a ejecutar tres veces con un deleite bueno no vamos a dejar en dos segundos vamos a ejecutar
+
+sólo los servicios web de los servicios G.T.
+
+Este va a ser más rápido que empiece está ejecutando todos los servicios
+
+recitaciones tiene también porque al final genera bastante mal.
+
+Este test falló claro había un test que esperaba 4 segundos o una cosa así o que dejamos 5 segundos
+
+que es el test de los tiempos es que estos enlentece un poquito más por eso de golpe pero ahí 37 por
+
+ciento y Pasai está ejecutando y ya va por la segunda iteración.
+
+Estamos ahora tengo las dos iteraciones vamos a esperar que estará a punto de acabar aunque parece que
+
+es mucho cuando pasa ese de los cuatro segundos de espera avanza muy rápido correcto ya acabado tengo
+
+aquí las tres iteraciones puedo ir al Summary porque podría ver si hay algún test que en una de las
+
+iteraciones falló con unos valores y en otra no. No los tengo así no tengo los tres que fallan están
+
+fallando en todas las iteraciones y los tres que están yendo correctamente están yendo correctamente
+
+en todas las situaciones con lo cual aquí lo dicho puedo filtrar exportar puedo crear incluso un nuevo
+
+test me vengo ya directamente a la vez a la pestaña aquí.
+
+Y bueno como habéis visto y puede infiltrar vale puede filtrar aquellos que son la colección Goeth la
+
+carpeta Daguet o la colección Simes el nombre de la colección.
+
+Aquí tengo mi filtro y nada eso es lo que tiene el colectivo engrana generalmente es una herramienta
+
+como digo espectacular y que para un cura o una persona de testing si no hay alguno no conoce el concepto
+
+es Quality ayunan realmente es un test.
+
+Lo que siempre se ha llamado el especialista en test tienen el testeados de aplicaciones para la persona
+
+adecuada.
+
+Esta es una herramienta es la mejor herramienta que hay para probar los servicios web.
+
+Veis aquí arriba que hay docx donde se habla de la documentación del colectivo Rauner y esto que pone
+
+rōnin como on line también.
+
+No me voy a meter en este curso o al menos en principio no lo tengo pensado.
+
+Quizá lo amplíe y lo meta con la herramienta Newman.
+
+Si vais a rōnin como online pinchamos se me abre una ventana de navegador voy a traerme la que me habla
+
+de Newman os voy a comentar un poco que es Newman pero vamos no voy a meter en ella por el momento Newman
+
+es una herramienta para ejecutar lo mismo que hace el Postman pero en línea de comandos vale tendremos
+
+que tener instalado node tenemos que tener instalado MPM y una vez que tengamos instalado no MPM instalamos
+
+Newman con este comando MPM Newman y luego simplemente con un comando le ponemos Mania Run de ejecutar
+
+y ponemos el nombre de la colección que lo podemos obtener del link de Line aquello que cuando compartíamos
+
+el link voy a volver a Postman.
+
+Si recordáis que cuando hacíamos un compartir user compartíamos por Lin ponéis este link y Uman espacio
+
+runa espacio de esta colección y te ejecuta toda la colección en línea de comandos y con un resultado
+
+parecido al colección real en amigo evidentemente me gusta más el entorno gráfico pero si alguien lo
+
+quiere integrar en un entorno de integración continua como Jenkins o algo pues evidentemente con ese
+
+comando automáticamente lo metes en una integración continua yankies.
+
+Por el momento no voy a ver nada de este curso de Newman y bueno espero que os haya gustado Koalition
+
+Rader porque después de todos los trabajos que estamos haciendo de todas las cosas que estamos viendo
+
+el final de todo es ejecutar una herramienta de este estilo que lo que haces todos los todos los servicios
+
+que hemos ido creando ejecutarlos todos con todos los tests que al final es para lo que para lo que
+
+hace Postman perfectamente que es toda la parte de testear todos los servicios web.
+
+Bueno pues espero que os gusta este vídeo y ahora pues seguiremos viendo investigando un poco el orden
+
+de los flujos de trabajo de estos tres ejecutados en el colectivo Rahner.
+
+
+
+
+
+
+45. Configurar orden de los flujos de trabajo
+13 min
+
+
+Bueno nuestro siguiente ejemplo lo que os voy a enseñar es cómo trabajar o cómo configurar los flujos
+
+de trabajo workflow de colección Ganem.
+
+Para ello el ejemplo más claro lo que voy a hacer es primero mirar y así lo hacemos de cero voy a crearme
+
+una nueva carpeta para este ejemplo le voy a llamar y así lo tienen que llamar Workflow work manager
+
+flujo de trabajo creó la tendré por aquí Workflow vale dentro de ella fijaros ya.
+
+Aprovecho esta carpeta hasta vacía de peticiones y aprenderíamos una petición.
+
+Vale pues la primera petición le voy a decir petición 1 además la voy a poner sin espacios ni acentos
+
+y nada porque ni mejor para lo que os voy a explicar.
+
+Petición 1 creamos una petición 1 y de hecho esta petición.
+
+1 Voy a borrar esta letanía aquí en pantalla la cierro esta petición no la voy a abrir y va a ser muy
+
+sencilla o sea voy a hacer de hecho todas iguales.
+
+Ahora el objetivo no es que las peticiones sean diferentes y no es más que nada el flujo de trabajo.
+
+Esta es una petición que voy a lanzar de tipo Leko vamos a ver l'école y de tipo que ahí vamos a ver
+
+que me coja acogido el vale y de tipo bien vale.
+
+Es una petición que le he llamado a petición uno vale la guardo la guardo en esa carpeta lo que voy
+
+a hacer es duplicarla para tenerla la voy a cerrar todas para ser iguales.
+
+El objetivo no es el contenido la petición sino el flujo.
+
+Entonces la voy a cerrar y aquí en petición lo que voy a hacer es ir duplicando la duplique.
+
+Tengo petición voy a duplicar hasta tener 4 4 peticiones por ejemplo
+
+voy a cambiar ahora el nombre se puede duplicar esta
+
+volvemos a ella
+
+duplica vale al final es tener 4 a la primera le voy a llamar peticion 1 a la siguiente le voy a llamar
+
+peticion 2 horas desde aquí petición 2 a la tercera la voy a llamar peticion 3
+
+ya la última petición 4
+
+no son iguales pero me va a servir para algo para explicaros lo que quiero contaros.
+
+Vale ahora lo que voy a hacer es me voy a ir al Ranes lo tengo no tengo arrancado ahora mismo no voy
+
+a arrancar la Brauner me viene a la grande y voy a ejecutar esas cuatro peticiones.
+
+Ya hemos visto del video anterior que puedo que puedo ejecutar carpetas podía ejecutar esa carpeta para
+
+que me genere una me arranque las cuatro peticiones una detrás de la otra no tienen ningún test tampoco
+
+me hace falta.
+
+Lo que quiero es el orden el orden de ejecución entre ellas está a punto de arrancar el Rahner.
+
+Vale pues le digo dentro de la colección 1 vete a workflow y quiero que me ejecutes el workflow de hecho
+
+me va a ejecutar las 4 peticiones una única iteración 0 milisegundos entre ellas porque sólo hay una
+
+iteración para el perfecto y ejecutar y veremos el orden de las ejecuciones primero la ejecuta me ha
+
+dicho el error y hacia atrás momento al colectivo ucranias se da porque no le he puesto la variable
+
+entorno entonces no conoce la variable del eco el eco y hasta la voy a ejecutar lo lanzó de nuevo
+
+ejecuta la petición uno luego ejecuta la petición 2 lo ejecuta la petición 3 y luego ejecuta la petición
+
+4 vale perfecto pero si quiero cambiar el orden como lo hago.
+
+Cómo hago para cambiar ese orden.
+
+Bueno una opción una opción sería irme al al Postman y las peticiones moverlas de sitio para poner una
+
+arriba de otra o una debajo de otra.
+
+Esa sería una opción ir cambiando el orden de las peticiones pero a lo mejor no me interesa cambiar
+
+el orden de las peticiones por esa sería la primera opción pero en cada cada vez voy a tener un orden
+
+diferente cuando quiera ejecutarlas.
+
+Normalmente no se suele hacer así normalmente lo que se suele hacer es poner una variable que me indique
+
+qué petición va a ser la que se ejecute después de cada petición.
+
+Vale vamos a ver cómo verlo.
+
+Por ejemplo la petición 1 por defecto después se va a ejecutar la petición 2.
+
+En este caso no quiero cambiar nada pero después de la petición 2 yo puedo decir que directamente se
+
+ejecuta la petición 4 saltandose la 3.
+
+Vamos a ver cómo hacen eso me voy a la petición 2 y en el 3 apartado de 3 voy a añadir lo siguiente
+
+fijaros es la función que se llama Postman por mantiene una librería de funciones punto.
+
+Empiezo a escribir se Nez el juez y le paso como parámetro entre comillas exactamente el nombre.
+
+Por eso antes no le he puesto espacio exactamente el nombre.
+
+Aunque bueno si hubiese sido petición espacio cuadramos habría peticiones 4 Espacio 4 de la petición
+
+que quiero que se ejecute en el siguiente lugar y le doy el punto y coma la guardo.
+
+Y ahora cuando me vaya al colectivo en Rahner después de la petición 2 debería ejecutarse la 4.
+
+Vamos a comprobarlo.
+
+Y sobre todo qué pasa con la 3.
+
+Vamos a la cranear Ferrer sin querer nos habla de nuevo
+
+voy a ganar y le voy a decir que dentro de la colección 1 ejecute flujo de trabajo en el entorno curso
+
+para que me coja las variables ejecuto y si os fijais ejecuta primero la 1 luego la 2 y luego la 4 por
+
+qué.
+
+Porque en el orden una vez que ejecute la 2 me salta la 4 y continúa hacia abajo es decir no vuelve
+
+a la 3 y yo digo bueno pues cuando ejecute la 4 en la siguiente petición que ejecuten la 3 vale si las
+
+ejecuta todos puede pensar eso entonces me voy al de nuevo al Postman me voy a ir a la petición voy
+
+a copiar esta línea.
+
+Si me resulta más sencillo voy a la petición 3 ahora me voy antes y le digo oye cuando acabe cuando
+
+acabe la IV no perdona maestro en 3 6 la 4 y le digo en el 3 cuando acabe la 4 J3 a un 6 es decir ahora
+
+primero ejecutará la petición 1 luego de jugar a la petición 2 saltará ejecutar a la 4 y cuando acabe
+
+saltará y ejecutará la 3 pero acabará ahí.
+
+Vamos a verlo.
+
+Y le digo que lo reintentar otra vez.
+
+Fijaros lo que pasa ahora.
+
+Ejecuta la 1 luego ejecutados.
+
+Luego la 4 luego la 3 pero luego la 4 por qué.
+
+Porque después de hacer la 4 y después de la 4 otra vez la 3 y después de la 3 otra vez la 4 porque
+
+como el 4 le dice que salta el 3 pues igual.
+
+3.
+
+Y me acabo de meter en un bucle infinito y esto estará aquí ejecutándose toda la vida hasta que quiera
+
+pararlo hasta que el ordenador se aburra.
+
+Esto estará ejecutando aquí petición tras petición.
+
+Esto puede ir bajando a ejecutar ya cientos de peticiones me acabo de meter en un bucle infinito.
+
+Por qué me puedo parar en cualquier momento a la ejecución.
+
+De hecho ahora no sé no quiero ni pensar cuántos llamadas al servicio web ya gastado inmensas llamadas
+
+y mensajes de radio web.
+
+Por qué.
+
+Porque como hemos hecho en el Postman ejecutó la 1 luego la 2 saltó la 4 luego la 3 al acabar la 3 vuelve
+
+a ejecutar la 4 porque él va hacia abajo vuelve a ejecutar otra en la 4 cuando acaba la 4 y se ejecuta
+
+otra la 3 luego otra en la 4 luego otra la 3 luego otra la 4 y como la 4 siempre que vaya a la 3 pues
+
+se mete en un bucle infinito.
+
+Eso hay que tenerlo en cuenta a la hora de poner el juez.
+
+Otra de las formas de hacer un bucle infinito muchas veces y además porque me conviene hacer lo que
+
+yo digo no lo voy a poner a lanzar y en vez de poner el número de iteraciones como no sé si me voy a
+
+quedar corto pues a lo mejor me voy por la noche ejecuto la 1 la 2 3 la 4 y en la 4 le digo que vuelva
+
+ejecutar la 1 y entonces vuelvo a la 1 la dobla la 4 cuando llega a la 4 vuelve a ejecutar la 1 y así
+
+se pasa toda la noche cuando llega por la mañana pues tranquilamente a lo mejor se ha ejecutado.
+
+Pues no me he quedado corto con el número de relaciones seguro porque se ha metido en un bucle infinito
+
+y a lo mejor ha ejecutado mil veces o 20000 veces el número de veces que sea.
+
+Y así tenemos más datos para nuestros test.
+
+Esta es la forma que tiene que tiene el Collection Rahner de con esta función concerned es la forma
+
+que nosotros tenemos para saltarnos esos flujos estandar que tiene Postman que es desde la primera hacia
+
+la última por orden de posición.
+
+Vale de esta forma nosotros conseguimos darle nosotros los saltos que queramos y nosotros por ejemplo
+
+lo quisiéramos primero uno luego la cuatro luego la 2 luego la 3 y luego que acabe cómo le puedo decir
+
+que acabe.
+
+Por ejemplo vamos a hacer eso primero se ejecuta la 1 la 1.
+
+Si no recuerdo mal no tiene nada no tiene nada.
+
+Con lo cual después se ejecutará la 2 la 2 dice que después se la 4 la 4 dice que después se ejecute
+
+la 3 pero la 3 no tiene nada con lo cual al acabar vuelve a ejecutar la 4 Si tu quieres que al acabar
+
+la 3 acabe el proceso entonces le vuelves a poner el set recuas pero aquí le pones Null en lugar de
+
+que se ejecute.
+
+Le dices que cuando acabe ya no ejecute nada más.
+
+Vamos a probarlo.
+
+Vaya conexión Rahner.
+
+Voy a hacer un retrete fijar que ahora no me está funcionando voy a comprobar por qué el porqué creo
+
+que va a ser sencillo porque no he guardado me parece a mí.
+
+Le voy a dar aquí voy a minimizar no no guarda no guardar aceite para guardar para que me guarde este
+
+cambio evidentemente me vuelvo otra vez al colectivo un Brauner lo limpio.
+
+Bueno de hecho que ha cometido un gran error y volver a ejecutarlo.
+
+Lo dicho debería ejecutarse primero la 1 luego la 2 luego la 4 luego la 3 y luego acabar lanzamos correcto.
+
+Lo primero la 1 luego la 2 luego la 4 luego la 3 y el 3 el Sennet el set nicks recuesto lo tiene anulé.
+
+Pues ya acaba.
+
+Vale y cada uno se ejecutaría en el orden que nosotros queramos y al último le ponemos que el siguiente
+
+se anule.
+
+Pues con esto hemos visto cómo poner nuestro propio orden de ejecución de los recursos de las peticiones
+
+para que siga pues si nosotros queremos por ejemplo la de las ejecuciones de las recuas de inserción
+
+de datos luego las de consulta luego las de actualización de datos y luego las de borrado para que en
+
+cada en cada vuelta digamos en cada iteración me haga todo el proceso completo que eso suele ser lo
+
+habitual.
+
+Primero le metes unos datos y luego consulta para ver que realmente las consultas funcionan bien luego
+
+los actualizas luego puedes volver a consultar si quieres y luego los borra para dejarlo como estaba
+
+al principio pues con el set NEX recuas podemos conseguir todo eso.
+
+Bueno pues hasta aquí yo creo que el tema de los flujos de trabajo.
+
+
+
+postman.setNextRequest("Peticion4");
+
+finaliza 
+postman.setNextRequest(null);
+
+46. Monitores
+14 min
+
+
+En el siguiente video vamos a ver cómo trabajar con los monitores con el monitor.
+
+La opción monitor aquí si veis una colección veis que aquí aparece monitor dice que no tengo colecciones.
+
+Yo me hice crear un monitor para ejecutar Lubos y ejecutar las 48 peticiones va a ser un poco pesado
+
+entonces me voy a crear una nueva colección de esta colección no me voy a crear una nueva colección
+
+que le va a llamar colección monitor por ejemplo colección monitor donde le voy a meter una serie de
+
+peticiones para no tener que tirarme tampoco las peticiones de cero.
+
+Lo que voy a hacer es a crear esta que hice antes de workflow la voy a duplicar y la voy a duplicar
+
+y ésta la voy a meter dentro de monitor de manera que de hecho le voy a mandar Workflow en vez de workflow
+
+kopi la voy a dejar como Workflow también pero está dentro del monitor es decir que tengo una una colección
+
+que se llama monitor con una carpeta que se llama Workflow.
+
+Con esas cuatro peticiones que vimos antes en el orden que se ejecutan.
+
+Bueno lo siguiente me voy a crear un monitor para esta colección me vengo aquí le doy a Monitor monitor
+
+me dice que esto no está monitorizada.
+
+Aquí tenéis un un enlace para aprender os pondré el recurso para aprender más sobre monitores monitores.
+
+Realmente es una opción que venía con venía y viene con la opción pro del Postman pero gratuitamente
+
+nos da 1000 peticiones mensuales con lo cual pone mil peticiones para la gran mayoría la gente nos puede
+
+más que valer vale para aquel que utilice más.
+
+Bueno pues siempre puede pasarse la opción de Postman y tener mayor número de peticiones de monitor.
+
+Puede ser que en el futuro lo pongan gratis ilimitado o puede ser que aumenten el número.
+
+Ahora mismo estaba en 1000 al menos la última vez que lo consulté.
+
+Vamos a crear un monitor vamos a crear un monitor.
+
+Fijaros un monitor tiene los siguientes pasos de configuración.
+
+El primero ha sido porque el nombre vale la petición el nombre de monitor.
+
+Lo segundo es si quieres que use un entorno por qué.
+
+Y esto es importante y esto es importante.
+
+Las variables de entorno se podrán usar en los monitores pero las variables globales no se podrán usar
+
+los monitores.
+
+Yo voy a usar la variable de entorno esa que se llamaba Leko pero si fuera una variable global no se
+
+va a poder usar porque hay una cosa que es muy importante entender esto los monitores lo que hacen es
+
+configurar los servidores de Postman pero los suyos los los de la empresa Postman alli va a configurar
+
+nuestros nuestras peticiones y las baje Kutaragi con lo cual nuestras variables globales nuestra variables
+
+globales son variables globales de nuestro sistema no del sistema de sus servidores se ejecuta en otra
+
+red no se ejecuta en nuestra red se ejecuta en una red remota y desde aquella red va a hacer las pruebas
+
+de esto y nosotros podremos consultarlo por eso me dice que el uso de un entorno es opcional.
+
+Yo si que lo voy a coger porque además el nombre de las de las webs reales he usado una variable de
+
+entorno con lo cual los necesito pero que sepamos que no debemos poner variable ni usar variables globales
+
+las variables que usemos como mucho que sean de entorno.
+
+Bueno luego le ponemos la frecuencia Monitor que arranque con K.
+
+Con qué frecuencia le podemos poner Wertheimer a Wertheimer o Minute timer.
+
+Vale pues nosotros le vamos a poner.
+
+Minuto Time por ejemplo para ahora poder probarlo y le vamos a decir que arranque cada 5 minutos que
+
+se ejecute cada 5 minutos.
+
+Ahora es lo mínimo que le podemos poner al monitor por cada media hora cada 5 minutos.
+
+Le vamos a poner y vamos a crear nuestro monitor que dice el monitor ha sido creado dice la planificación
+
+de que hagamos una planificación del rendimiento del monitor.
+
+Vale que podamos añadir más peticiones a una colección como hacer y aquí nos dice chequea los resultados
+
+de tu monitor y mira el monitor.
+
+Las pruebas de tu monitor los resultados en la web Dashboard por qué.
+
+Porque nosotros no lo podemos ver aquí lo tenemos que ver en nuestra cuenta de Postman porque como digo
+
+este monitor se ha configurado dentro de Postman dentro de sus servidores.
+
+Nosotros aquí no vamos a ver los resultados tendremos que siempre ver todo vía web.
+
+Voy a abrir la web Dashboard para que me abra y poder consultarla la voy a arrastrar aquí me está oyendo
+
+los monitores vale dice que este monitor solo tengo monitor que se llama monitor Ezzor monitor arrancarã
+
+30M 30 C en 30 minutos pasado la hora cada día hora tal es decir arrancarã hoy media.
+
+Bueno de hecho podría arrancarlo ahora mismo puedo arrancar el monitor para que se ejecute una vez y
+
+así no tengo que esperarme ahora se va a ejecutar cada 5 minutos de hecho hice el monitor hubiese arrancado
+
+hoy media hora y media desde los monitores por defecto arrancan a esa hora.
+
+Pero bueno yo la arrancada ahora y dentro de 5 minutos me va a ejecutar las peticiones.
+
+De hecho aquí puedo poner la región en la que estoy.
+
+Voy a poner.
+
+De hecho no me deja seleccionar solamente me da meses y pues lo dejo aquí tengo los resultados.
+
+Lo voy a poder a agrupar en media suma mínimo y máximo voy a ver voy a tener que dejar pasar un tiempo
+
+para que el monitor esté aquí ejecutándose cada cierto tiempo.
+
+Vale aquí tengo el mod Summary monitor Summary los resultados los puedo.
+
+Por el momento no tengo nada que partir porque el monitor no se ha ejecutado todavía ninguna vez estoy
+
+esperando.
+
+Puedo ir refrescando la pantalla y aquí filet el tiempo que se ejecutó vamos a ver si se ha ejecutado
+
+ya una vez se ha ejecutado una vez no tenía ningún test porque las peticiones no tenían ningún test
+
+pero se ha ejecutado ya una vez a las 8 y 46.
+
+Habrá que esperar cinco minutos hasta que se ejecute la siguiente.
+
+De hecho aquí me dan los datos de los fallos y ha habido aquí tengo la consola lo que ejecutó en su
+
+servidor.
+
+Fijaros el tiempo cuando se ha las peticiones en servidores de ellos a las 8 y 46 mi hora actual son
+
+las ocho y 46 y 47 ya en mi reló vale pero tengo aquí los datos se han ejecutado una vez.
+
+Ahora dentro de cinco minutos volverá a ejecutarse.
+
+Bueno aquí puedo pasar el monitor editarlo borrarlo vale lo mismo que puedo hacer desde mi y desde mi
+
+Postman que puedo pasarlo editarlo y borrarlo lo puedo hacer también desde esta ventana mientras el
+
+monitor se ejecuta a través.
+
+Pues voy a volver al Postman voy a ver qué cosas puedo ejecutar en el monitor Clowes veo que el monitor
+
+está aquí ya configurado es un monitor mío puedo añadir más de un monitor puedo decir que se ejecuta
+
+cada 20 minutos también.
+
+Aparte de cada 5 lo dicho la única salvedad es que tengo mil usos al mes gratuitamente.
+
+Además aquí podría citar el monitor lo único que hago es editarlo es venir más a ventana y editar el
+
+monitor.
+
+Realmente tengo una edición del Monitor en un entorno web exactamente igual a como lo he editado a la
+
+hora de crearlo vale.
+
+De hecho aquí me permite tested Central Europa.
+
+Bueno no puedo poner para que use una región central Europa Sudamérica y en Kingdom Bueno yo creo que
+
+Centroeuropa es lo mejor para nuestras fechas no voy a dejar para que así se ejecute dentro de 5 minutos
+
+también en el horario de uso del este de Estados Unidos.
+
+Pero bueno podría ponernos en centro de Europa y quitar el Weise.
+
+Aquí tengo preferencias también si quiero recibir por email notificaciones de los fallos de aquellos
+
+errores que se puedan producir en el monitor y de hecho me lo envía a mi correo y bueno pues tengo la
+
+edicion del monitor aqui tengo la ventana a los monitores y tengo las medias.
+
+La vez que se ha ejecutado la media de la respuesta han sido 109 milisegundos.
+
+De hecho puedo volver a ejecutarlo fijaros que ya se ha ejecutado tres veces las medias me van dando
+
+los porcentajes de fallo las horas donde se está ejecutando.
+
+Puedo ver cada una de las ejecuciones selecciono a estas ejecutó a la.
+
+Esta fue la que se ejecutó a las 20:46 estas a ejecutar las 20:50 y ésta es la siguiente que se ejecutará.
+
+Además los tiempos que me ha tardado 0,3 segundos 0,2 segundos yo puedo ir viendo una estadística de
+
+aquellas de aquellas ejecuciones para ver por horas cuando se vio está más cargado y tarda más tiempo
+
+en ejecutarse.
+
+Todo esto cuando si lo dejáramos pasar 24 horas o quizá varios días varias semanas pues podríamos ver
+
+ya un poco las estadísticas con mejores resultados.
+
+Podría podemos ver en cada una de las peticiones por ejemplo si tenemos peticiones que le hemos dicho
+
+que tardarse menos de un tiempo en ejecutarse.
+
+Aquellas que veíamos que las damos como buenas si tardaban menos de la cantidad de tiempo que nosotros
+
+le decíamos pues podríamos ver a diferentes partes del día cuando tardan cuando supera nuestro nivel
+
+de calidad de testing y cuando nuestro nivel de calidad damos por hecho que es que la petición responda
+
+en menos de los milisegundos que nosotros le pasemos y podríamos ver las horas que no responden nuestro
+
+nivel de calidad.
+
+Bueno de hecho si esto fueramos refrescando y se fuera ejecutando ya se ha ejecutado tres veces.
+
+Aquí tengo los datos esta tercera se ha ejecutado ya tarda 4 milisegundos aquí estamos viendo los milisegundos
+
+que han tardado.
+
+Cada vez hay más resultados.
+
+Estos resultados también puedo verlos.
+
+Fijaros como los valores van cambiando de las tres ejecuciones en un momento dado si ya no quiero que
+
+el monitor ejecute más más veces vale pues puedo eliminar el monitor.
+
+Vale tengo la opción voy a volver hacia atrás hacia atrás creo que tenían esta ventana y si no ya lo
+
+borra borra el monitor.
+
+Estás seguro de que quieres borrar este monitor.
+
+Esto es irreversible y para y a todas las integraciones asociadas con el monitor pero si quiero borrar
+
+el monitor era únicamente para para mostraros a vosotros su funcionamiento lo doy a confirmar que me
+
+borré monitor ya no tengo ningún monitor de nuevo monitor borrado.
+
+Si me voy a mi aplicación de nuevo Venencia actualizo F5 Relima a monitor si tengo ya monitores y de
+
+nuevo no tengo monitores porque ya me lo ha actualizado y ya no tengo ningún monitor que se ejecute
+
+cada cierto tiempo.
+
+Bueno pues como hemos visto es una herramienta muy buena si lo que quiero es programar aquellos que
+
+vengáis del mundo Linux es una especie de clon el clon Taub de Linux o las tareas programadas de Windows
+
+sólo que en lugar de hacerlo nosotros lo hacen en unos servidores de Postman que como nuestros todos
+
+nuestros llamadas están con este botón sincronizadas automáticamente se está sincronizando Postman conoce
+
+los servicios y los ejecuta por nosotros en el momento que les digamos vale de hecho podemos programar
+
+tareas yo cuando el monitor cuando el monitor le dije que me hiciera cada 5 minutos pero le podemos
+
+decir que lo haga de manera diaria pues todos los días o una vez o cada día puede poner de lunes a viernes
+
+sólo entre semana o cada mes o cada uno cada lunes o cada martes o cada miércoles el día que nosotros
+
+queramos.
+
+Vale podemos programar aquí para que no lo ejecuté a una hora determinada y entonces sí queramos ciertos
+
+procesos pues esos procesos se ejecutarán a esas horas luego ya está con los monitores.
+
+Si se puede hacer lo que se puede hacer pero es una herramienta que nos ahorra ese trabajo de tener
+
+que entrar todos los días a ejecutar determinadas tareas que sólo nos pueda hacer si lo programamos
+
+y además que nos es gratuito hasta mil usos por mes.
+
+Espero que os haya gustado y nos vemos el siguiente vídeo.
+
+
+Tarea 4: Configura tu propio flujo de trabajo
+
+47. Colección usada en los vídeos.

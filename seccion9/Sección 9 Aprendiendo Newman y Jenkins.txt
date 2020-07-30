@@ -1,0 +1,2329 @@
+Sección 9:Aprendiendo Newman y Jenkins
+
+
+
+
+0 / 8|1 h 43 min
+
+49. Instalación Newman
+11 min
+https://nodejs.org/es/download/
+
+Hola de nuevo.
+
+Bueno en este tema lo que vamos a ver es cómo manejar la herramienta Newman.
+
+Vale Newman como dice la propia plataforma de Postman es una herramienta muy poderosa que permite ejecutar
+
+o correr mediante línea de comandos.
+
+Cualquier colección en forma.
+
+Además nos va a permitir ejecutar y probar las colecciones directamente desde la línea de comandos.
+
+Además nos indica que Postman y Newman ahora mismo están manteniendo la paridad es decir cualquier cosa
+
+que están sacando en Postman la están implementando también para la línea de comandos con lo cual lo
+
+podremos implementar también mediante la herramienta de Newman.
+
+Vale y nos va a poder permitir pues integrarlo fácilmente con nuestros servidores de integración continua
+
+como va a ser y como también veremos en éste en este tema entonces finalmente alguien puede pensar y
+
+para qué queremos miomas si tenemos Portmán.
+
+Pues precisamente por esto ultimo que he comentado porque Postman cuando uno quiere hacer las pruebas
+
+necesita entrar en Botsman y ejecutar lo que quiera probar pues accede accede a que quiera a la petición
+
+que quiera la prueba.
+
+También puede acceder a la parte de colecciones y probarla.
+
+Vale perfecto ya lo puedes hacer manualmente pero qué pasa cuando quieres automatizar y ponerlo programarlo
+
+que se ejecute a ciertas horas y meterlo en una integración continua con otra serie de pruebas ya no
+
+solo de Happy Happy de testing de Happy sino cualquier tipo de pruebas que sean por ejemplo pruebas
+
+de caja blanca o de caja negra sobre una aplicación y queremos meterlo todo en un sistema integración
+
+continua como yanky en ese caso nos interesa que se ejecute por línea de comandos no que tengamos que
+
+nosotros manualmente que ejecutarlo y para eso existen y.
+
+Bueno lo primero de todo es instalarlo tenemos que instalar Newman para instalar Newman tenemos que
+
+tener instalado previamente no DJs no DJs lo podéis encontrar en esta página vale de todas formas y
+
+buscáis instalar DJs.
+
+Bueno pues acceder a esta página en la página e instalación de DJs en este momento la versión actual
+
+12 14.
+
+Pero bueno en el momento que vosotros veáis el vídeo puede haber aumentado.
+
+No pasa nada.
+
+Lo que sí que recomiendo siempre es que instales la que pone LTS no la actual del todo sino la de LTS
+
+Long Term Support Baler soporte de largo plazo y va a ser mantenida durante mucho tiempo entonces siempre
+
+se aconseja instalar la última versión de PC.
+
+Además veis que no DJs incluye ya directamente la versión de LPM 6 13 4.
+
+Como digo en su momento puede incluir una versión posterior pero bueno esta nos vale por supuesto y
+
+MPM va a ser un gestor de paquetes que nos permite es el que nos va a permitir bajarnos o descargarnos
+
+Nieman.
+
+Por otra parte saber que no DJs es la parte que permite ejecutar programas de JavaScript en la parte
+
+de servidor hasta ahora bueno hasta que salió no DJs.
+
+Tú siempre tenías que hacer los programas o programas JavaScript corrían en la parte del cliente en
+
+la parte del cliente de estos programas en JavaScript pero luego en la parte del servidor tenías que
+
+programar en otro tipo de lenguaje normalmente se hacía en PHP o Java o no se suele hacer también mucha
+
+gente en PHP o Java.
+
+La parte del servidor viene de la parte del cliente bramaba en JavaScript.
+
+Ahora hay un lenguaje servidor también que los DJs que te permite programar en la parte de servidor
+
+también en lenguaje JavaScript de manera que una persona que tenga bastantes conocimientos JavaScript
+
+puede hacer tanto ya tanto la parte de cliente como la parte del servidor.
+
+Bueno pues si más vamos a descargarnos el instalador de Windows le vamos a guardar el archivo pues vale
+
+ya tenemos esto completado vamos a instalarlo
+
+si o sí y bueno vamos a instalarlo nuestro no DJs en nuestro servidor perfecto aceptamos licencia continuamos
+
+instalamos todo por defecto esto de añadir al Paz no DJs y p.m. Vamos a comprobar lo que realmente le
+
+añadió al pack porque si no puede dar alguna serie de problemas si no añadimos que puede ejecutar todos
+
+los comandos no DJs en cualquier sitio bueno vamos a decirle que sí a todo NEX automáticamente instalar
+
+las herramientas necesarias
+
+vale NEX e están
+
+bueno esto me va a instalar no DJs mi servidor voy a vamos a esperar si citarlas poco tiempo y si no
+
+pues para el video y y lo reanudo en el momento que esté digamos toda la instalación hecha
+
+bien cuando acaba la instalación pues dirá que la instalación el Huizar que se ha completado correctamente
+
+vamos a finish perfecto vale dice el script de instalación de pichon.
+
+Bueno no dice que le demos a continuar pues le damos a continuar al intro
+
+pulsamos una tecla para continuar.
+
+Pero bueno eso son herramientas adicionales.
+
+Vale que bueno para instalarã Payton y el visual estudio Vultus necesario para compilar a DJs módulos
+
+nativos
+
+si le dais al intro pues nada descargará y ejecutará estos módulos adicionales para ciertos programas
+
+no son necesarios para lo que vamos a hacer ahora.
+
+Vale para ni Uman ni nada por el estilo pero bueno ya que instalamos no DJs pues lo dejamos completamente
+
+instalado y ya está.
+
+Vale este proceso como digo también no era necesario y si alguno pues no lo ha hecho pues que no lo
+
+haga no para lo nuestro no no no es necesario.
+
+Como comento pero bueno lo voy a apoyar en el video hasta que esté todo instalado y ahora la seguimos.
+
+Bueno después de un rato largo acabo de instalar los complementos para no de J.S me pide un reinicio
+
+pero bueno yo por el momento no lo voy a reiniciar me dice que qué bueno que me ha instalado correctamente
+
+los 15 paquetes.
+
+Bueno perfecto pero yo voy a continuar con con la parte de Node y con la parte de instalar Numan.
+
+Bueno para eso ahora lo que voy a ver es primero que se me ha instalado que se me está la node y abrir
+
+una ventana de MS-DOS Balet con CMD de símbolo de sistema la podéis abrir si queréis en modo administrador
+
+y así no tenemos problemas y para saber si se instala o no DJs ponéis nove espacio menos sube y debería
+
+daros esto.
+
+La versión de Nobby Malé es decir.
+
+Pues sí si se ha instalado porque me acaba esta la versión 12 12 punto 14 punto cero.
+
+Vamos a ver si esta también el MPM que es el gestor de paquetes RPM sube le damos y también también
+
+la lista la versión 6 13.4 decir coincide con esto que habíamos instalado la 12 14 0 y la 6 13 4 vale
+
+perfecto vamos a volver a abrirlo.
+
+Lo tenemos instalado.
+
+Bueno otra cosa que me interesa comprobar antes de continuar pues vamos a ver también si me ha generado
+
+las variables de entorno Bare las variables de entorno las podemos ver en el panel de control.
+
+Vale si no venimos aquí al panel de control
+
+bueno más fácil pero aquí escribimos la parte de escribir aquí para buscar ponemos las variables de
+
+entorno.
+
+Empecemos a escribir variables en el momento que pongáis empiecen esas variables.
+
+Tendréis aquí la de evitar las variables de entorno.
+
+Esto vendremos a las propiedades del sistema.
+
+La fiabilidad del sistema podemos acceder a las variables de entorno y vamos a ver.
+
+Estas son algunas de las que me he instalado.
+
+Tenemos las últimas cosas.
+
+Vamos a bajar a ver si tuviéramos en paz.
+
+Vamos a ver paz que cosas tiene.
+
+Vamos al PAV le damos un doble clic y vemos que está la de DJs.
+
+Perfecto es decir no DJs no lo va a reconocer en cualquier momento y vamos a ver si también tenemos
+
+la de MPM MPM LPM
+
+no no tenemos o no se ha puesto esta nos convendría también añadir una variable de entorno que nos permita
+
+ejecutar los comandos MPM en cualquier momento.
+
+Vamos a ver si la ha puesto en la parte de arriba a quien el Paz éste en vez de paz del sistema en el
+
+pad de mi usuario.
+
+Vamos a verlo si aquí aquí la ha puesto con lo cual perfecto añadido las dos variables de entorno un
+
+añadido aquí en la variable de usuario y otra el añadido de las variables del sistema de manera que
+
+vamos a poder ejecutar comandos drogue y comandos MPM en cualquier ruta de nuestro sistema.
+
+Vale perfecto una vez que hemos comprobado que eso está vale.
+
+El siguiente paso es instalar ya ni Uman propiamente dicho.
+
+Para ello vamos a ejecutar el comando de instalación de My Human Malé y es el siguiente MPM como ya
+
+sabemos que podemos ejecutar MPM desde cualquier sitio MPM install me enojé para que sea global.
+
+Newman y Oman y esto me debe instalar.
+
+Vamos a ver me está descargando y me devista Newman.
+
+Vamos a darle un poquito de tiempo.
+
+Porque tampoco es una instalación muy pesada con lo cual en breve lo tendremos instalado.
+
+Vale perfecto y ya nos dice que tenemos instalado el Newman versión la última versión la versión 4 5
+
+7 el paquete de Newman pues ya está ya tenemos instalado Newman y en el siguiente vídeo vamos a aprender
+
+a manejarlo.
+
+
+
+
+50. Probando Newman
+15 min
+https://www.npmjs.com/package/newman
+
+Bueno en este video vamos a ver como probar una coleccione Newman ahora que ya lo tenemos instalado
+
+como hemos visto tenemos la ultima version de Newman.
+
+De hecho si ponemos lo de Newman menos sube nos saldrá la version que tenemos la 4 5 7 vale pues vamos
+
+a ver cómo ejecutar una colección en Naima para ello lo que voy a hacer es crear una nueva colección.
+
+Le va a llamar Newman por ejemplo que va a ser la que voy a usar para pruebas y Human
+
+asimismo y voy a añadirle dos o tres peticiones iguales pero para ir comprobando diferentes cosas que
+
+me interesa que aprendamos.
+
+Por ejemplo voy a añadirle una nueva petición de tipo Ricketts pero en ésta por ejemplo petición 1 petición
+
+1 vamos a poner así 6 ni humana.
+
+La colección vale y no la tenemos aquí vamos a crear la petición 1 pero vamos a basarnos esta primera
+
+petición.
+
+Lo que voy a hacer es crear la web L.
+
+Le voy a poner la cadena completa de la petición es decir si os acordáis aquí en las variables de entorno
+
+tengo las variables de entorno que estoy usando en el curso las variables de entorno tengo la variable
+
+were Leko que tiene esta cadena pues voy a coger esta cadena voy a ponerla aquí vale ya había una quedaba
+
+Racket vamos a poner esta que simple que vemos que es correcta que nos devuelve un 200 Okay vale no
+
+respondía esto la petición sí es lo de menos.
+
+Vosotros ya practicaría con vuestras propias peticiones la voy a salvar pero voy a dejar una cola wereables
+
+completa es decir yo pongo sin variables de entorno no estoy usando ningún tipo de variable de entorno.
+
+Voy a poner una segundo voy a crear a partir de esta una segunda petición voy de hecho a duplicarla
+
+la petición la voy a llamar petición ahora la voy a renombrar le voy a llamar petición 2 pero en esta
+
+petición 2 vamos a poner petición 2 en esta petición 2 en lugar de ponerle el HT la web R.L nuestra
+
+pues vamos a ponerle la web reírle que tenemos de la variable de entorno que da un l'école si no recuerdo
+
+mal vamos a comprobar lanzamos funciona exactamente igual un 200 ok.
+
+Es decir porque ha cogido la variable de entorno realmente está cogiendo Esta variable está cogiendo
+
+el valor de Leko y está sustituyéndolo por esta cadena.
+
+Bueno pues tenemos una colección sencilla simplemente no por dos peticiones una donde hemos puesto directamente
+
+toda la cadena y otra donde hemos puesto y vamos a salvar donde hemos puesto una variable entorno bueno
+
+vamos a ir al colectivo en Rahner a probarla.
+
+Si nos vamos al colectivo Rahner veremos que yo puedo seleccionar la colección que yo quiera.
+
+Por ejemplo esta Neiman que acabo de seleccionar y fijaros como aquí si yo pongo en el banco no Environment
+
+no le pongo variables de entorno sí y selecciono que las ejecute todas tal y como está.
+
+Cuando yo la lanzara me daría que la primera correctamente pero la segunda ha ocurrido un tipo de error
+
+vale.
+
+De hecho me dice que hay un error que ha ocurrido y que tengo que ver más información y más información.
+
+Es que realmente ejecutado la iteración pero la variable entorno no la reconoce no reconoce este Leko
+
+y por eso me está provocando un error me está diciendo que lo subsane.
+
+Vale si me fui ya me voy al colectivo Granero le pongo las variables de entorno y vuelvo a lanzarlo
+
+lo Newmark veo que ya todo acaba correctamente las dos peticiones acaban correctamente.
+
+Lo pasa todo perfecto y bueno pues todo funciona bien en la cuestión real vamos a simular esto mismo
+
+ahora con yumas mediante línea de comandos.
+
+Por otro lado aprovecho para enseñarnos que en el colectivo en Rahner aquí me aparece un running como
+
+on line donde si pinchas os abrirá toda la información relacionada con Newman.
+
+Vale aquí tenéis un manual muy muy muy muy muy extenso de Newman donde se explica por Bueno pues como
+
+hemos instalado Neiman y ahora el uso que vamos a hacer vamos a ir viendo algunos de los ejemplos y
+
+cómo se usan Newman si queréis más información sobre cualquier cosa de Newman que veáis que en estos
+
+vídeos pues se os ha quedado algo en el tintero comprobar porque probablemente en esta documentación
+
+estará lo que estoy buscando.
+
+Pero bueno lo más normal lo más simple y las cosas más comunes son las que voy a explicar ahora mismo.
+
+Bueno pues vuelvo otra vez al colectivo en Rauner ya veo que el colectivo engrana ya no me da errores
+
+en el momento que pongo la variable de entorno y me voy a ir ahora a ejecutarlo por Newman bueno vamos
+
+a ir a mi ventanita de Newman donde estaba ejecutando aquí mismo en cualquier ventana de MS-DOS generalmente
+
+de línea de comandos lo podéis hacer también en eso ya sea como administrador o no sea como administrador
+
+o con PowerShell.
+
+Vale.
+
+Pero bueno yo lo he visto con la ventana del administrador de comandos.
+
+Bueno pues voy a ejecutar mi primera colección hemos visto que ésta se llama Newman.
+
+Cómo ejecuta una colección.
+
+Bueno pues con el comando Newman RAM y el nombre de la colección pero cuál es el nombre de la colección
+
+porque uno puede decir bueno pues la llama enigma pone aquí Newman y ya está.
+
+No nos interesa ejecutar os va a decir que Newman no lo conoce vale realmente está buscando la colección
+
+una colección que nosotros hayamos sacado y Newman no esta una de dos o cogemos y exportamos la colección
+
+a un fichero JSON que lo podemos probar ahora o otra de las formas una de la forma más sencilla pues
+
+pueden ser las siguientes si yo me vengo a Postman aquí le doy sobre mi colección a este botoncito tengo
+
+la opción de ser la opción de ser tengo la opción de Get Public Link aquí vimos que era para tener un
+
+link público.
+
+Si le doy me aparece el link esto es un link para ejecutar cualquier colección.
+
+Es público para todo el mundo y se puede ejecutar desde cualquier sitio.
+
+Es la colección hecha por mí.
+
+Bueno esta colección vamos a copiarlo vamos a darle un copy y borrar la ventana en lugar de poner ni
+
+Uman Room y Newman ni Human Room.
+
+Y si le dais un botón derecho automáticamente os copia la colección y vamos a ejecutarla.
+
+Vamos a ver qué pasa lo ejecutamos.
+
+Y fijaros me dice que ha ejecutado dos pero ha fallado uno vale.
+
+De hecho ha fallado uno y el error me dice invalide Uri por qué.
+
+Porque lo del baile hehco el primero ha funcionado pero el segundo ha fallado de los dos ha fallado
+
+uno.
+
+Vale es porque no ha reconocido esa variable de entorno de hecho no la tienen que reconocer las variables
+
+de entorno son están dentro del programa Postman pero no están fuera no están para poder ejecutarla
+
+mediante línea de comandos.
+
+Entonces cómo hacemos y hemos creado nuestras peticiones para poder ejecutarla mediante línea de comandos.
+
+Pues tenemos que exportar esas variables de entorno a un fichero y trabajar a través de ese fichero.
+
+Bueno para eso lo que vamos a hacer es venimos aquí vamos a cerrar esto vamos a ver las variables de
+
+entorno vemos las variables entorno aquí lo que queremos es poder exportar todo esto todas las de curso.
+
+Eso aquí en este Mañach Environment la red de Fita pinchamos y veremos cómo tenemos este botoncito aquí
+
+de download environment.
+
+Bueno vamos a descargar es una de las formas de varias pero esta es una yo la voy a descargar en esta
+
+carpeta.
+
+Por ejemplo dentro de Documet en Postman que es una carpeta que tengo en mi disco duro y con este nombre
+
+curso punto que me ofrece por defecto lo voy a guardar aquí vale bueno una vez que la tengo descargada
+
+lo más sencillo es que cuando ejecutas lo ejecutas desde la carpeta donde tenéis descargado.
+
+Estas variables de entorno porque así no la ruta que pongáis puede ser local no tiene que ser en toda
+
+la ruta de disco duro entonces es lo más sencillo.
+
+Si queréis os enseño también algo por si no lo conocéis.
+
+Esto es lo que me he descargado este archivo json es el que me he descargado ahora mismo.
+
+Si queréis desde la carpeta abrir la ventana de MS-DOS simplemente teniendo seleccionada la carpeta
+
+poner CMD aquí os abrirá esta ventanita directamente a esta carpeta ya enlazada.
+
+Entonces va a ser aquí donde voy a poner ni Uman ahora RAM voy a poner directamente la colección que
+
+quiero ejecutar y ahora entre comillas tengo que poner el nombre de las variables de entorno pues como
+
+ha afectado a este nombre largo curso punto Postman guion bajo Bairon men punto JSON cierro comillas.
+
+Esto es lo que me está diciendo es que me ejecuté toda esta colección y me la ejecuté con esta variable
+
+tontorrona cuando le dé al intro.
+
+Vamos a ver y muy
+
+hay claro que se me ha olvidado poner el parámetro al parámetro menos environment.
+
+Vamos a ver vamos a volver a hacerlo ponemos a vamos a poner el Newman pero se me había olvidado hoy
+
+que aquí delante tengo que poner menor en Boiron menos espacio y el nombre vamos a probar ahora con
+
+el parámetro Environment no me encuentra.
+
+Vamos a ver eso es porque falta en el nombre en archivo el JSON tengo que poner mi nombre que tenía
+
+vamos a ver.
+
+Ahora ya seguro en Meuron Vairo Men y el nombre del archivo acabado en punto JSON vale correcto ni Human
+
+RAAM nombre la colección.
+
+Menos menos Environment es el parámetro y entrecomillas correcto el nombre que lo tengo aquí arriba
+
+apuntó Jota Sonatina es perfecto perfectamente vamos a ejecutar
+
+y perfecto hasta dos ejecutados cero fallados ahora reconocido el total de la duración por los datos
+
+recibidos.
+
+La información que da un poco de que la petición uno que lo ha hecho como ha salido la petición 2 como
+
+ha salido es decir hace lo mismo que hace el colectivo en realidad pero por línea de comandos hemos
+
+conseguido dos cosas.
+
+Hemos conseguido una poder ejecutar y repetir colecciones enteras.
+
+Ya dependerá la colección lo amplia que quieras hacerla.
+
+Yo si os acordáis tengo colecciones por aquí.
+
+Yo que sé que tengo colecciones de 15 peticiones pero bueno tengo colecciones aquí de 49 peticiones
+
+tú podrías hacer aquí una colección de 49 peticiones todas sobre tu programa pagar toda la API y tenerlas
+
+todas aquí y luego lanzarla y lanzarla con las variables de entorno que tú quisieras.
+
+Vale poco ninguna o un por ejemplo te puedes crear unas variables de entorno para un entorno de producción
+
+para un entorno de pruebas ir cambiando las rutas y luego lanzar todas para el entorno de pruebas por
+
+ejemplo y probarlas una vez que funcione pues ya las puedes pasar a producción y luego a poder incluso
+
+hacer las pruebas con un entorno de pruebas de producción es decir tú simplemente cambiando aquí el
+
+archivo de las variables de Environment Malé del entorno que quieres pues puedes lanzarlo para un entorno.
+
+Pues eso con datos reales de prueba o reales lo que quiera yo normalmente suelo tener eso varia varios
+
+entornos de variables lo que es eso pruebas a lo mejor equipo de trabajo producción real en torno a
+
+Unreal y ahí es donde pues ya voy lanzando mis pruebas pues con Yeoman porque ahora veremos como integrarlo
+
+con Jenkins para programarlo para que esta en un entorno de integración continua donde conforme el programa
+
+vaya avanzando automaticamente nosotros proveemos las pruebas y las vayamos ejecutando.
+
+Esto es lo que más se suele utilizar Newman aleve el comando Rán y la colección que quieras o lo que
+
+quieras y las variables de entorno que quieras.
+
+Vale como he dicho tenemos la opción de poder.
+
+Vamos a ver aquí tenemos la opción de poder ver más ejemplos.
+
+Vale he hecho más o menos lo básico de la línea de comandos con colecciones.
+
+Vale tenéis muchas opciones donde podéis poner puedes costante podéis tenéis todas las variables de
+
+RAM que podemos poner vale yo echo de menos menos se Baley el show pero podéis poner vosotros variables
+
+globales sobre la marcha.
+
+Por ejemplo si queréis una variable de entorno globales puedes poner el menosque y entonces usaríamos
+
+las variables globales que teníamos aquí.
+
+Vale si os acordáis yo tengo variables de entorno y las variables globales que también puedes usarla.
+
+Vale podríamos haber usado el menos G y haberle dicho que usáramos las variables globales.
+
+Bueno tenéis un montón de opciones que podéis usar.
+
+Vale.
+
+Bueno pues se ve equivalente a todas las opciones que hemos visto durante el curso de Postman no tiene
+
+mucho sentido ahora volver a verlo todo para mi Uman cuando está aquí exactamente explicado y lo que
+
+más se usa es realmente lo que nosotros hemos usado.
+
+Vamos a ver ahora para integrarse con Jenkin en un siguiente vídeo y ver como mejoraríamos este sistema
+
+en un sistema de integración continua.
+
+por comando
+
+
+newman run https://www.getpostman.com/collections/ad2bef3032eb0b609f2d  --environment "CURSO.postman_environment.json"
+
+
+
+
+51. Integración de Postman con Newman
+17 min
+
+
+Bueno en este video vamos a ver como probar una coleccione Newman ahora que ya lo tenemos instalado
+
+como hemos visto tenemos la ultima version de Newman.
+
+De hecho si ponemos lo de Newman menos sube nos saldrá la version que tenemos la 4 5 7 vale pues vamos
+
+a ver cómo ejecutar una colección en Naima para ello lo que voy a hacer es crear una nueva colección.
+
+Le va a llamar Newman por ejemplo que va a ser la que voy a usar para pruebas y Human
+
+asimismo y voy a añadirle dos o tres peticiones iguales pero para ir comprobando diferentes cosas que
+
+me interesa que aprendamos.
+
+Por ejemplo voy a añadirle una nueva petición de tipo Ricketts pero en ésta por ejemplo petición 1 petición
+
+1 vamos a poner así 6 ni humana.
+
+La colección vale y no la tenemos aquí vamos a crear la petición 1 pero vamos a basarnos esta primera
+
+petición.
+
+Lo que voy a hacer es crear la web L.
+
+Le voy a poner la cadena completa de la petición es decir si os acordáis aquí en las variables de entorno
+
+tengo las variables de entorno que estoy usando en el curso las variables de entorno tengo la variable
+
+were Leko que tiene esta cadena pues voy a coger esta cadena voy a ponerla aquí vale ya había una quedaba
+
+Racket vamos a poner esta que simple que vemos que es correcta que nos devuelve un 200 Okay vale no
+
+respondía esto la petición sí es lo de menos.
+
+Vosotros ya practicaría con vuestras propias peticiones la voy a salvar pero voy a dejar una cola wereables
+
+completa es decir yo pongo sin variables de entorno no estoy usando ningún tipo de variable de entorno.
+
+Voy a poner una segundo voy a crear a partir de esta una segunda petición voy de hecho a duplicarla
+
+la petición la voy a llamar petición ahora la voy a renombrar le voy a llamar petición 2 pero en esta
+
+petición 2 vamos a poner petición 2 en esta petición 2 en lugar de ponerle el HT la web R.L nuestra
+
+pues vamos a ponerle la web reírle que tenemos de la variable de entorno que da un l'école si no recuerdo
+
+mal vamos a comprobar lanzamos funciona exactamente igual un 200 ok.
+
+Es decir porque ha cogido la variable de entorno realmente está cogiendo Esta variable está cogiendo
+
+el valor de Leko y está sustituyéndolo por esta cadena.
+
+Bueno pues tenemos una colección sencilla simplemente no por dos peticiones una donde hemos puesto directamente
+
+toda la cadena y otra donde hemos puesto y vamos a salvar donde hemos puesto una variable entorno bueno
+
+vamos a ir al colectivo en Rahner a probarla.
+
+Si nos vamos al colectivo Rahner veremos que yo puedo seleccionar la colección que yo quiera.
+
+Por ejemplo esta Neiman que acabo de seleccionar y fijaros como aquí si yo pongo en el banco no Environment
+
+no le pongo variables de entorno sí y selecciono que las ejecute todas tal y como está.
+
+Cuando yo la lanzara me daría que la primera correctamente pero la segunda ha ocurrido un tipo de error
+
+vale.
+
+De hecho me dice que hay un error que ha ocurrido y que tengo que ver más información y más información.
+
+Es que realmente ejecutado la iteración pero la variable entorno no la reconoce no reconoce este Leko
+
+y por eso me está provocando un error me está diciendo que lo subsane.
+
+Vale si me fui ya me voy al colectivo Granero le pongo las variables de entorno y vuelvo a lanzarlo
+
+lo Newmark veo que ya todo acaba correctamente las dos peticiones acaban correctamente.
+
+Lo pasa todo perfecto y bueno pues todo funciona bien en la cuestión real vamos a simular esto mismo
+
+ahora con yumas mediante línea de comandos.
+
+Por otro lado aprovecho para enseñarnos que en el colectivo en Rahner aquí me aparece un running como
+
+on line donde si pinchas os abrirá toda la información relacionada con Newman.
+
+Vale aquí tenéis un manual muy muy muy muy muy extenso de Newman donde se explica por Bueno pues como
+
+hemos instalado Neiman y ahora el uso que vamos a hacer vamos a ir viendo algunos de los ejemplos y
+
+cómo se usan Newman si queréis más información sobre cualquier cosa de Newman que veáis que en estos
+
+vídeos pues se os ha quedado algo en el tintero comprobar porque probablemente en esta documentación
+
+estará lo que estoy buscando.
+
+Pero bueno lo más normal lo más simple y las cosas más comunes son las que voy a explicar ahora mismo.
+
+Bueno pues vuelvo otra vez al colectivo en Rauner ya veo que el colectivo engrana ya no me da errores
+
+en el momento que pongo la variable de entorno y me voy a ir ahora a ejecutarlo por Newman bueno vamos
+
+a ir a mi ventanita de Newman donde estaba ejecutando aquí mismo en cualquier ventana de MS-DOS generalmente
+
+de línea de comandos lo podéis hacer también en eso ya sea como administrador o no sea como administrador
+
+o con PowerShell.
+
+Vale.
+
+Pero bueno yo lo he visto con la ventana del administrador de comandos.
+
+Bueno pues voy a ejecutar mi primera colección hemos visto que ésta se llama Newman.
+
+Cómo ejecuta una colección.
+
+Bueno pues con el comando Newman RAM y el nombre de la colección pero cuál es el nombre de la colección
+
+porque uno puede decir bueno pues la llama enigma pone aquí Newman y ya está.
+
+No nos interesa ejecutar os va a decir que Newman no lo conoce vale realmente está buscando la colección
+
+una colección que nosotros hayamos sacado y Newman no esta una de dos o cogemos y exportamos la colección
+
+a un fichero JSON que lo podemos probar ahora o otra de las formas una de la forma más sencilla pues
+
+pueden ser las siguientes si yo me vengo a Postman aquí le doy sobre mi colección a este botoncito tengo
+
+la opción de ser la opción de ser tengo la opción de Get Public Link aquí vimos que era para tener un
+
+link público.
+
+Si le doy me aparece el link esto es un link para ejecutar cualquier colección.
+
+Es público para todo el mundo y se puede ejecutar desde cualquier sitio.
+
+Es la colección hecha por mí.
+
+Bueno esta colección vamos a copiarlo vamos a darle un copy y borrar la ventana en lugar de poner ni
+
+Uman Room y Newman ni Human Room.
+
+Y si le dais un botón derecho automáticamente os copia la colección y vamos a ejecutarla.
+
+Vamos a ver qué pasa lo ejecutamos.
+
+Y fijaros me dice que ha ejecutado dos pero ha fallado uno vale.
+
+De hecho ha fallado uno y el error me dice invalide Uri por qué.
+
+Porque lo del baile hehco el primero ha funcionado pero el segundo ha fallado de los dos ha fallado
+
+uno.
+
+Vale es porque no ha reconocido esa variable de entorno de hecho no la tienen que reconocer las variables
+
+de entorno son están dentro del programa Postman pero no están fuera no están para poder ejecutarla
+
+mediante línea de comandos.
+
+Entonces cómo hacemos y hemos creado nuestras peticiones para poder ejecutarla mediante línea de comandos.
+
+Pues tenemos que exportar esas variables de entorno a un fichero y trabajar a través de ese fichero.
+
+Bueno para eso lo que vamos a hacer es venimos aquí vamos a cerrar esto vamos a ver las variables de
+
+entorno vemos las variables entorno aquí lo que queremos es poder exportar todo esto todas las de curso.
+
+Eso aquí en este Mañach Environment la red de Fita pinchamos y veremos cómo tenemos este botoncito aquí
+
+de download environment.
+
+Bueno vamos a descargar es una de las formas de varias pero esta es una yo la voy a descargar en esta
+
+carpeta.
+
+Por ejemplo dentro de Documet en Postman que es una carpeta que tengo en mi disco duro y con este nombre
+
+curso punto que me ofrece por defecto lo voy a guardar aquí vale bueno una vez que la tengo descargada
+
+lo más sencillo es que cuando ejecutas lo ejecutas desde la carpeta donde tenéis descargado.
+
+Estas variables de entorno porque así no la ruta que pongáis puede ser local no tiene que ser en toda
+
+la ruta de disco duro entonces es lo más sencillo.
+
+Si queréis os enseño también algo por si no lo conocéis.
+
+Esto es lo que me he descargado este archivo json es el que me he descargado ahora mismo.
+
+Si queréis desde la carpeta abrir la ventana de MS-DOS simplemente teniendo seleccionada la carpeta
+
+poner CMD aquí os abrirá esta ventanita directamente a esta carpeta ya enlazada.
+
+Entonces va a ser aquí donde voy a poner ni Uman ahora RAM voy a poner directamente la colección que
+
+quiero ejecutar y ahora entre comillas tengo que poner el nombre de las variables de entorno pues como
+
+ha afectado a este nombre largo curso punto Postman guion bajo Bairon men punto JSON cierro comillas.
+
+Esto es lo que me está diciendo es que me ejecuté toda esta colección y me la ejecuté con esta variable
+
+tontorrona cuando le dé al intro.
+
+Vamos a ver y muy
+
+hay claro que se me ha olvidado poner el parámetro al parámetro menos environment.
+
+Vamos a ver vamos a volver a hacerlo ponemos a vamos a poner el Newman pero se me había olvidado hoy
+
+que aquí delante tengo que poner menor en Boiron menos espacio y el nombre vamos a probar ahora con
+
+el parámetro Environment no me encuentra.
+
+Vamos a ver eso es porque falta en el nombre en archivo el JSON tengo que poner mi nombre que tenía
+
+vamos a ver.
+
+Ahora ya seguro en Meuron Vairo Men y el nombre del archivo acabado en punto JSON vale correcto ni Human
+
+RAAM nombre la colección.
+
+Menos menos Environment es el parámetro y entrecomillas correcto el nombre que lo tengo aquí arriba
+
+apuntó Jota Sonatina es perfecto perfectamente vamos a ejecutar
+
+y perfecto hasta dos ejecutados cero fallados ahora reconocido el total de la duración por los datos
+
+recibidos.
+
+La información que da un poco de que la petición uno que lo ha hecho como ha salido la petición 2 como
+
+ha salido es decir hace lo mismo que hace el colectivo en realidad pero por línea de comandos hemos
+
+conseguido dos cosas.
+
+Hemos conseguido una poder ejecutar y repetir colecciones enteras.
+
+Ya dependerá la colección lo amplia que quieras hacerla.
+
+Yo si os acordáis tengo colecciones por aquí.
+
+Yo que sé que tengo colecciones de 15 peticiones pero bueno tengo colecciones aquí de 49 peticiones
+
+tú podrías hacer aquí una colección de 49 peticiones todas sobre tu programa pagar toda la API y tenerlas
+
+todas aquí y luego lanzarla y lanzarla con las variables de entorno que tú quisieras.
+
+Vale poco ninguna o un por ejemplo te puedes crear unas variables de entorno para un entorno de producción
+
+para un entorno de pruebas ir cambiando las rutas y luego lanzar todas para el entorno de pruebas por
+
+ejemplo y probarlas una vez que funcione pues ya las puedes pasar a producción y luego a poder incluso
+
+hacer las pruebas con un entorno de pruebas de producción es decir tú simplemente cambiando aquí el
+
+archivo de las variables de Environment Malé del entorno que quieres pues puedes lanzarlo para un entorno.
+
+Pues eso con datos reales de prueba o reales lo que quiera yo normalmente suelo tener eso varia varios
+
+entornos de variables lo que es eso pruebas a lo mejor equipo de trabajo producción real en torno a
+
+Unreal y ahí es donde pues ya voy lanzando mis pruebas pues con Yeoman porque ahora veremos como integrarlo
+
+con Jenkins para programarlo para que esta en un entorno de integración continua donde conforme el programa
+
+vaya avanzando automaticamente nosotros proveemos las pruebas y las vayamos ejecutando.
+
+Esto es lo que más se suele utilizar Newman aleve el comando Rán y la colección que quieras o lo que
+
+quieras y las variables de entorno que quieras.
+
+Vale como he dicho tenemos la opción de poder.
+
+Vamos a ver aquí tenemos la opción de poder ver más ejemplos.
+
+Vale he hecho más o menos lo básico de la línea de comandos con colecciones.
+
+Vale tenéis muchas opciones donde podéis poner puedes costante podéis tenéis todas las variables de
+
+RAM que podemos poner vale yo echo de menos menos se Baley el show pero podéis poner vosotros variables
+
+globales sobre la marcha.
+
+Por ejemplo si queréis una variable de entorno globales puedes poner el menosque y entonces usaríamos
+
+las variables globales que teníamos aquí.
+
+Vale si os acordáis yo tengo variables de entorno y las variables globales que también puedes usarla.
+
+Vale podríamos haber usado el menos G y haberle dicho que usáramos las variables globales.
+
+Bueno tenéis un montón de opciones que podéis usar.
+
+Vale.
+
+Bueno pues se ve equivalente a todas las opciones que hemos visto durante el curso de Postman no tiene
+
+mucho sentido ahora volver a verlo todo para mi Uman cuando está aquí exactamente explicado y lo que
+
+más se usa es realmente lo que nosotros hemos usado.
+
+Vamos a ver ahora para integrarse con Jenkin en un siguiente vídeo y ver como mejoraríamos este sistema
+
+en un sistema de integración continua.
+
+
+collecion exportada 
+
+por comando
+
+
+newman run "Newman.postman_collection.json" --environment  "CURSO.postman_environment.json"
+
+
+
+integrar postman con newman 
+
+punto 8 Using Newman the Postman API
+1 Genere una clave API
+
+2 Obtenga una lista de sus colecciones de: https://api.getpostman.com/collections?apikey=$apiKey
+
+3 Obtenga el enlace de la colección a través de ella uid: https://api.getpostman.com/collections/$uid?apikey=$apiKey
+
+4 Obtenga el URI del entorno de: https://api.getpostman.com/environments?apikey=$apiKey
+
+
+5 Utilizando la colección y los URI del entorno adquiridos en los pasos 3 y 4, ejecute la colección de la siguiente manera:
+
+
+$ newman ejecute " https://api.getpostman.com/collections/ $ uid? apikey = $ apiKey" \
+    --environment " https://api.getpostman.com/environments/ $ uid? apikey = $ apiKey"
+
+
+laurita23analista@gmail.com
+
+11gaslau
+
+
+clave guardar API
+
+PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda
+
+
+POSTMAN 
+
+https://api.getpostman.com/collections?apikey=PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda
+
+
+
+ {
+            "id": "7417edf4-0357-47f5-a403-c0bc797e8b04",
+            "name": "Newman",
+            "owner": "11851211",
+            "uid": "11851211-7417edf4-0357-47f5-a403-c0bc797e8b04"
+        }
+
+3-
+
+COLECCION NEWMAN
+
+
+https://api.getpostman.com/collections/    7417edf4-0357-47f5-a403-c0bc797e8b04?apikey=PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda
+
+
+5
+
+newman run "https://api.getpostman.com/collections/7417edf4-0357-47f5-a403-c0bc797e8b04?apikey=PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda" --environment  "CURSO.postman_environment.json"
+
+
+
+52. Instalación Jenkins
+9 min
+
+https://www.jenkins.io/download/
+
+Bueno ahora que ya sabemos cómo probar nuestras colecciones con Postman y previo paso a integrar con
+
+Jenkins voy a explicar alguna cosa que se me quedado en el tintero y creo que también es muy interesante
+
+que sepamos por qué hemos visto por ejemplo cómo compartir las colecciones vía Link como hemos hecho
+
+antes aquí.
+
+Pero qué pasa al compartir una colección Bialik.
+
+Pues que cuando tú compartes una colección Vidalín se comparten la colección.
+
+Justo como está en ese momento es decir si nosotros después modificamos la colección modificamos algunas
+
+de las peticiones.
+
+El link no refleja ese cambio dentro de la petición.
+
+Es decir si yo por ejemplo aquí añado una tercera petición añadiese una tercera petición y ejecutase
+
+el link vamos vamos a hacerlo por ejemplo añadimos una tercera petición vamos a duplicar esta petición
+
+por ejemplo duplique la llamada a petición 3 vamos a editar la petición.
+
+3.
+
+Vale la tenemos es igual que la petición 2 pero yo ahora me vengo al Botsman a la colección tal y como
+
+la hemos probado hace un momento la volvemos a ejecutar con el mismo Link cuando la ejecutemos y con
+
+el entorno veremos que solo se ejecuta la petición 1 y la petición 2.
+
+Por qué.
+
+Porque la petición 3 ha sido hecha después de obtener el link no la ejecutamos.
+
+Entonces qué pasa.
+
+Pues si es cierto podríamos volver a obtener otro link y ese otro link ejecutarlo cambiar el link por
+
+este link y entonces ya sí que tendríamos la petición 3 pero siempre tenemos que estar obteniendo un
+
+link cada vez que hagamos cualquier cambio en un entorno de integración continua.
+
+Es un poco una historia porque siempre tenemos que estar regenerando el link también bueno ya de paso
+
+voy a explicar que aparte de Link podíamos haber exportado la colección como un fichero JSON.
+
+Vamos a hacer eso previamente también y así aprendemos otra forma de exportar que es por ejemplo cuando
+
+no tengo esta colección por ejemplo hago aquí le doy y tengo la opción de Sport aquí de la colección
+
+La exporto como una colección versión 2.1 por ejemplo.
+
+Bueno vamos a exportar aquí pues por ejemplo con este nombre el que me da Neiman Postman colectivo vale
+
+guardar lo vamos a guardar ahora tengo por un lado exportar a la colección.
+
+Por otro lado temías portada ya de antes las variables de entorno.
+
+Vamos a ver cómo ejecutar una colección exportada mediante un nombre de fichero.
+
+Realmente es lo mismo que tendríamos aquí solo que en la parte esta os voy a borrar el link porque ahora
+
+es un nombre de fichero a ver qué nombre de fichero le hemos dado.
+
+Me ha dicho ni Uman punto Postman colectivo de este nombre es el que vamos a tener que poner aquí entre
+
+comillas Numan punto Postman Collection
+
+Collection punto JSON.
+
+Vale tenemos Human Run nombre de la colección el fichero exportado menos el Enbeita Omen y el archivo
+
+del environment.
+
+Vamos a ejecutar.
+
+Vamos a ver si todo ha ido bien.
+
+Ahora perfecto ejecutado las tres peticiones.
+
+Por qué.
+
+Porque lo acabo de exportar pero estamos en las mismas.
+
+Quiero decir si ahora yo ahora por ejemplo añado una cuarta petición el fichero exportado no lo tiene.
+
+Vamos a comprobarlo vamos a ver como si yo aquí esta petición 3 la duplico añade una petición de la
+
+vamos a renombrar a esta petición 3.
+
+Vamos a poner petición 4
+
+pero esta petición 4 en ese fichero exportado como acabo lo exportado antes de duplicar la petición
+
+cuando ahora vuelva a ejecutar el fichero.
+
+Volvemos a darle vamos a darle con el nombre del fichero.
+
+Lo mismo el nombre de fichero que Link vemos que ejecuta.
+
+Pues hasta la petición 3 y el limes ejecuta hasta la petición 2.
+
+O sea realmente todos los cambios que estamos haciendo no se están viendo reflejados en tiempo real
+
+en Newman.
+
+Entonces cómo podemos hacer esa integración entre Postman y Newman.
+
+Bueno para ello si os acordáis en el colegio un gran error cuando accedimos al colectivo en Rahner vimos
+
+y accedimos a una página web donde nos explicaba el tema de Newman que ponía aquí ROM Income online.
+
+Vale eso accedíamos a esta web.
+
+Os acordáis.
+
+Vamos a ver la tengo por aquí.
+
+Aquí a esta web vale hacemos esta web y en uno de los puntos este punto para mí es bastante importante
+
+que es dice Husain Newman de Postman Happy vale vamos a ir a este punto.
+
+.8 de esta web nos enlaza con ella y si no bajamos directamente estamos abajo no está funcionando el
+
+link pero me voy a ello por aquí abajo casi al final este punto y sin Newman de post Manabí..
+
+Vale vale.
+
+Realmente lo que vamos a hacer es integrar que nuestro Newman se conecte con nuestra colecciones a través
+
+de una API.
+
+Vale de una key que nos va a dar.
+
+Vale nos dice que nos da una serie de pasos.
+
+Bueno pues voy a ir haciéndolo yo aquí en tiempo real y así a ver cómo funciona.
+
+El primer paso me dicen que genera una pica y para eso previamente tenéis que tener una cuenta en Postman
+
+si no tenéis una cuenta en Postman debéis crearla.
+
+Vale vamos a pinchar aquí botón derecho que me abre a mi cuenta de Postman.
+
+Yo si que la tengo vale creada en temblarle pero si no tenéis una cuenta en Postman pues abrirla abrirla
+
+y ahí simplemente pues os dirá que os validad y su usuario y contraseña y os vayáis.
+
+Vale yo voy a entrar en mi tengo aquí.
+
+Si os fijais yo tengo el tema personal tema tengo temas de Pin vale de equipos vale pero por ejemplo
+
+esto que voy a compartir es para mi cuenta personal vale.
+
+De hecho el curso este de Postman Baler el curso de Postman aquí os saldrá una vez esta ventanita valen
+
+las integraciones están aunque éstas acaban de sacar este apis beta que es para tener todo el tema de
+
+las APIs aquí controlado en una única pestaña.
+
+Pero bueno como veis está en beta voy a irme a la parte clásica donde está la parte clásica que es aquí
+
+en las integraciones para integrar Botsman con con Yeoman.
+
+Entonces vamos a ir aquí a donde ponen blows integraciones y ahí tengo mi Postman API.
+
+Vale tengo la integración hay muchas integraciones que en esta cuenta deberíamos ser tener la versión
+
+Pro de Postman pero no las vamos a necesitar.
+
+Por ejemplo todas estas que ponen upgrade son para integrar Postman con otras herramientas pero en nuestro
+
+caso esta que es la que necesitamos y que entra en la versión gratuita vale aquí vamos a darle a new
+
+details y vemos como tengo la opción de generar una API que vamos a darle a generar Pincay.
+
+Voy a poner el nombre por ejemplo es un nombre identificativo vale para que nos genere el API.
+
+No lo voy a poner al curso generar la API y esta vale es la API mía y asegúrate de copiar la clave ahora.
+
+Este es el único momento donde no estará encriptada.
+
+Vale pues sí si vamos a copiar la obra tienes dos opciones copiarla aquí vale o copiarla aquí.
+
+De hecho por el momento voy a dejar la ventana activa.
+
+Vale pero esta clave es la que debéis guardar además como oro en paño porque dice que va a ser el único
+
+momento.
+
+Bueno pues me dice me fui al primer paso me decía que generase la clave de la API.
+
+Eso ya lo tengo dice.
+
+Luego el segundo paso me dice haz una lista de tus colecciones puedes sacar una lista de tus colecciones
+
+en Postman ejecutando esto vale si haces esto vamos a lanzarlo.
+
+De hecho voy a copiar esto voy a ponerlo aquí tengo ya bastantes ventanas abiertas pero bueno pegar
+
+y aquí voy a cambiar este API key por ese API que me ha dado.
+
+Vamos a ver lo tenía aquí a copiarlo de nuevo y voy a sustituirlo por este numerito por esto aquí otro
+
+Lube vale y lo ejecuto lo lanzo.
+
+Si os fijáis estas son todas mis colecciones son todas mis colecciones que tengo ahora mismo ejecutando.
+
+Si os fijáis estas colecciones aquí se ven en un formato no muy vistoso.
+
+Por eso lo mejor quizá es vamos a copiar lo vamos a ejecutar en el propio Postman.
+
+Vamos a ir al Postman que aquí lo veremos mejor vamos a hacer una nueva petición aquí que no pertenezca
+
+a ninguna colección.
+
+Lo lanzamos y aquí lo vamos a más bonito ya veréis aquí se ve bastante más bonito y además lo que aparece
+
+es cómo veis aquí aparecen diferentes identificativos.
+
+Fijaros lo que pone clause este que pone Newman este que pone cute esprín fijaros que se corresponden
+
+con estos nombres de aquí y de todas mis colecciones ya sean en diferentes entornos yo tengo aquí el
+
+entorno curso forma de mi Welker Espais en todos mis entornos realmente yo la colección que quiero a
+
+esta colección que se llama Newman que es este nen ni Uman de aquí vale.
+
+Es una de mis colecciones.
+
+Todas estas son mis colecciones mis diferentes colecciones que yo utilizo para diferentes cosas pero
+
+realmente la que necesito en este momento es la de Newman es ésta la que quiero exportar.
+
+Vale entonces de ahí de esa colección Yo tengo ya un Heydi que es este Heydi de aquí voy a poner un
+
+poquito más grande.
+
+Ya no tengo este Heydi este Heydi va a ser importante porque voy a irme otra vez a la página para ver
+
+los pasos vale en vez de verlo está ya podemos cerrar.
+
+Vamos a ver aquí teníamos a los pasos dos pasos aquí decía el tercer paso decía coge la colección vía
+
+el Heydi y pruébalo y es decir es la misma R.L que teníamos aquí en el paso 2.
+
+Solo que ahora tiene este parámetro que es el Ubide es ese.
+
+Y entonces lo que vamos a hacer es copiar ese enlace y poner este o Hideaki en medio.
+
+Vamos a verlo.
+
+Vamos a irnos a Postman vamos a hacer una nueva Control C Control Lube y esto lo pego pero en lugar
+
+de ejecutarlo con éste uy desde aquí lo copio.
+
+Y lo voy a poner justo como me dice
+
+la página la voy a poner entre Collections y Happy Key.
+
+Un Slash una barra y antes de la interrogación antes de la interrogación de la palabra Happy Key vale
+
+Collection.
+
+Esto bueno pues vamos
+
+y Conception barra y aquí dentro ese numerito vale vamos a probarlo
+
+y si todo quedó bien esta es exactamente la colección fijaros la colección con la petición 1 la petición
+
+2 la petición 3 y la petición 4 pero es la colección en tiempo real porque está accediendo directamente
+
+a mi API.
+
+Vale entonces esta web R.L Sí que se corresponde con lo que tenga en cada momento en tiempo real porque
+
+está enlazado lo que yo estoy haciendo en Postman con mi cuenta de usuario.
+
+Vale ya tengo digamos el tercer paso y se coge la colección via wide dife o TEM la URI.
+
+Vale que es el environment si queremos los Environment ya los tenemos también.
+
+También podemos tener el environment en tiempo real pero bueno este tercer y cuarto paso realmente el
+
+cuarto paso ya lo tenemos o los Environment en tiempo real también podríamos sacarlo.
+
+Vamos a probarlo ahora vale porque el embargo si que no lo hemos cambiado.
+
+Fijaros que podríamos poner la misma API key o sea fijar los Environment estaba celadora la estructura
+
+que nosotros vamos a ir poniendo a la hora de ejecutar las colecciones entonces por ejemplo nos vamos
+
+a ir aquí donde antes ejecutamos y en lugar de ahora poner el nombre este lo mismo podríamos hacer con
+
+el no me vale pero no me lo embaló menor hemos cambiado nada vamos a poner aquí dentro el nombre de
+
+la web reírle
+
+todo esto vamos a copiar
+
+vamos a poner eso aquí.
+
+Suprimimos esto vamos a eliminar esto.
+
+Y aquí dentro.
+
+Pensamos que con el botón derecho en el momento que le dais automáticamente un Lopera y esto es lo que
+
+estamos haciendo ahora ejecutase ni ejecutase lo que hay en esta app y en esta colección con este baile
+
+o mejor dicho el envainar men también podríamos usar el código de la colección y el código del API pero
+
+vamos a probarlo cómo será al final vamos a ir
+
+ejecutamos.
+
+A ver si funciona.
+
+La primera y vemos que perfecto las cuatro peticiones pero ahora a diferencia de antes sí nosotros en
+
+tiempo real cambiásemos algo.
+
+Por ejemplo vamos a duplicar esta petición 4 vamos a duplicarla vamos a renombrar ponemos le ponemos
+
+petición 5.
+
+Vale que hace lo mismo.
+
+Vamos a ver si ahora esta guardada está guardada.
+
+Vale vamos a ver si ahora en el momento de volver a ejecutarlo
+
+y correcto si os fijáis aparece esa petición 5 que de otra forma no aparecería porque como he comentado
+
+ñas ya lo hagamos mediante el enlace o lo hagamos mediante el fichero mediante el link o mediante el
+
+fichero descargado no es en tiempo real lo que había en el momento donde exportábamos el link o donde
+
+exportamos el fichero de esta forma a través de la API si que es en tiempo real.
+
+Y bueno pues es interesante saberlo porque con esta API sí que lo podemos poner en un entorno de integración
+
+con Jenkins y si que siempre estará actualizado exactamente con todo lo que nosotros tengamos a la última
+
+versión.
+
+Lo dicho con el hermano menor lo dejo.
+
+Veréis como ejercicios y que me dicen lo mismo es realmente poner el mismo código tal y como ponía en
+
+el paso 4.
+
+Vale que simplemente obtengas el environment Uri.
+
+De esta forma.
+
+Si os fijáis es lo mismo solo que en vez de poner Coletti Environment vale y la API key con el código
+
+de nuestra API y hasta vale pues nada es una cosa muy interesante saber antes de antes de que nos pongamos
+
+con con Jenkins en el siguiente vídeo nos vemos en el siguiente video.
+
+
+
+
+53. Arreglando posibles problemas Jenkins en Windows
+13 min
+
+Bueno pues antes de empezar a hacer alguna tarea automatizada Jenkin.
+
+Ni Human vamos a acostumbrarnos un poco al entorno a ver alguna tarea sencilla arreglar alguna cosa
+
+en Windows que suele dar problemas como son cosas relacionadas con los paquetes de MPM que ahora veremos
+
+donde vamos a hacer una tarea y sobre la marcha vamos a ir corrigiendo los errores que seguramente os
+
+va a dar respuesta a máquinas Windows en Linux si habéis instalado ya en quienes Linux no tendréis alguno
+
+de estos problemas.
+
+Pero bueno Windows tiene sus cositas y si o si hay algún problemilla que tendremos que solucionar.
+
+Pero bueno nada del otro mundo y todo va a ser bastante sencillo que vamos a hacer una tarea nueva vamos
+
+a cabo una tarea nueva.
+
+Vamos a ver por ejemplo daré a prueba esta tercera prueba la vamos a hacer como un proyecto libre que
+
+es los proyectos básicos de yanky los que permiten ejecutar software de diferentes fuentes al mismo
+
+tiempo.
+
+Vale pues por ejemplo algo de Neymar.
+
+Otra cosa que me venga que tenga pruebas relacionadas con algo de cajas en Java para que haya podido
+
+hacer con cualquier aplicación cualquier test con cualquier otro tipo de aplicación.
+
+Vale ya sea Yira se me ocurren montones de aplicaciones.
+
+Bueno pues es el proyecto libre el que permite meter un poco de todo y el que usaremos cuando trabajemos
+
+en el 99 por ciento de los casos y Hakkinen si es una aplicación para montar un curso solamente de esto
+
+pues lo vamos a ir a lo más básico a lo de probar lo nuestro con Neiman y si queréis algo yanky pues
+
+ya habría que profundizar más en un curso de Hakkinen si vale vamos a dar la okay.
+
+Bueno ya tenemos para para configurar nuestras pruebas entonces nos vamos a ir a ejecutar y es donde
+
+en el apartado de ejecución donde vamos a ir ejecutando los diferentes pasos que queremos que haga nuestra
+
+prueba de integración continua aquí con yankies.
+
+En este primer ejemplo lo que voy a hacer.
+
+Fijaros si vosotros estuvierais el Linux por ejemplo ejecutar un Azel a ejecutar una unidad de comandos
+
+él a que Linux lanzaría una serie y ejecutando los comandos por ejemplo que fuerais poniendo uno detrás
+
+de otro valés y reponerla de él.
+
+Veis.
+
+Aquí podéis ir poniendo los comandos de hacer.
+
+Como no estoy en Linux no voy a hacer un Azel voy a irme aquí a ejecutar un comando de Windows de hecho
+
+por ejemplo el primer comando que voy a ejecutar va a ser el de Node.
+
+Por ejemplo ver la versión de menor menos versión para ver la versión de Node vaya a abrir un nuevo
+
+paso que sea otro comando de Windows voy a ejecutar MPM para ver la versión de MPM empaquetado versión
+
+estos dos para funcionar sin problemas.
+
+El problema es que voy a añadir uno que sé que me va a fallar este siguiente paso pero es para que veamos
+
+cómo arreglar el problema de ejecutar un comando de Windows.
+
+Aquí vamos a poner que ejecute ni Uman menos menos versión.
+
+El problema es que no de MPM si que los tenemos en el pack pero Newman no están en paz.
+
+Entonces bueno vamos a darle a Guardar vamos a ver como se ejecuta lo que pasa y cómo lo vamos a arreglar.
+
+Vamos a guardar aquí tenemos ya el proyecto aprueba y ahora vamos a ejecutarlo para ejecutarlas dándole
+
+aquí a construir ahora vamos a construir.
+
+Esto lo está ejecutando y aquí veis que pone fallidos al día por consola pincho a ver lo que pone.
+
+Fijaros me dice que me ha lanzado me ha ejecutado de menos menos versión sacó la versión me ha ejecutado
+
+también PMM menos versión me ha sacado la versión pero sin embargo aquí de mi Uman menor menos versión
+
+me dice que no se reconoce como un comando interno o externo.
+
+Eso es así porque ni UMAN en sí mismo no es más que un paquete que hemos instalado dentro de MPM.
+
+Entonces vamos a ver un poco como Dónde están los paquetes y añadir para la ruta para que ni Uman lo
+
+reconozca también como una broma que podamos ejecutar directamente en cualquier ruta de nuestro directorio.
+
+Lo estamos ejecutando desde esta ruta y aquí.
+
+No sé lo que es vale y es porque no lo reconoce no lo reconoce como una aplicación fuera y igual que
+
+no de MPM sí porque lo metimos en el entorno pues no vamos a ver en qué ruta tenemos instalado los paquetes
+
+de Newman vale los paquetes de MPM entre ellos Newman.
+
+Vamos a abrir una ventana de estas de MS-DOS una consola para eso podemos poner un Lish menos que vale.
+
+Perdona MPM la lista r.p.m List me enojé.
+
+Vamos a ver dónde se ha instalado y eso me saca de la lista de todos los paquetes MPM que tengo instalados.
+
+Una cosa sí larga voy a subir un poquito para arriba para ver un la ruta.
+
+Vale.
+
+Esto es lo importante.
+
+Esta ruta de ahí ya ruta es la que yo quiero copiar CE user Frana BPE data Ramin vale esta ruta ya la
+
+tengo de todas formas copiada al marcarla al marcarla aquí arriba hacer esto directamente la copia vale
+
+darle al botón derecho directamente la copia.
+
+Vale ahora lo que me voy a ir es a las variables de entorno.
+
+Igual que fui a ver las variables de entorno y voy a abrir esa ruta de paz si me meto aquí las variables
+
+de entorno voy a venirme aquí al paz y voy a añadir esa ruta nueva porque veo que no está evidentemente
+
+no está nada mal vamos a la nueva aquí vamos a pegar y vamos a añadir esta ruta vamos a aceptar hasta
+
+la variable entorno le doy a aceptar
+
+saber
+
+o minimizando estas ventanas.
+
+Creo que ya no van a hacer falta ya la puedo cerrar si lanzáis ahora los los proyectos pues seguiré
+
+viendo que sigue habiendo una serie de pruebas.
+
+Vamos a añadir también el plugin de Jenkin de DJs.
+
+Vale entonces para ello vamos a instalar lo siguiente Vamos a abrir una ventana vamos a poner http:
+
+ese 2.La Nabarra plugins porque no es de los que vienen por defecto instalados Jenkins Torío y vamos
+
+a instalar el plugin de Node JS DJs
+
+Malé hasta el plugin descarga instalación de data vamos a
+
+vamos a ver está todo
+
+una vez que vemos que no DJs mirar el plug in está en la versión ahora mismo 1.2 3.4.
+
+Bueno pues si lo más fácil realmente me pide yanky la versión 2 63 que tengo una nueva con lo cual evidentemente
+
+la supera.
+
+Vale.
+
+La forma más fácil de instalar este plugin comprobando que sólo 1 3 4 me voy al propio Jenkin y aquí
+
+en la administración de Jenkin veré que tengo un sitio donde poner a administrar plugins voy a administrar
+
+el plugin me voy a todos los plugins vengo aquí voy a buscar de DJs DJs que me haga el filtro
+
+adentro aquí hasta no DJs en plug in en 1 3 4 correcto es el que quiere instalar van a instalar sin
+
+reiniciar
+
+hasta aquí actualizado
+
+Vale parece que ya lo he instalado Sub-Zero.
+
+Todo correcto.
+
+Cargando los plugin.
+
+Configuración y no de volver al inicio la página
+
+vale en teoría ya tengo instalado el plugin de Gnome que era el siguiente paso que quería hacer decir
+
+he hecho lo de la variable entorno ahora he instalado el plugin de Node vale tengo voy quitando cosas
+
+que me pueden estar dando ese posible error de que no me reconocía el problema de Newman
+
+me vuelvo a venir aquí a la administración de Jenkins me voy a venir a Global Tour configuration a las
+
+herramientas la configuración de las herramientas globales vamos a buscar porque aquí aparecerán DJs
+
+ahora que ya lo tengo instalado voy a añadir 1 DJs vale un nombre requerido.
+
+Pues no sé qué versión de No estamos.
+
+No recuerdo haber dicho que lo ponga de nuevo su versión en la 12 14 12 14 pero bueno vamos a poner
+
+aquí por ejemplo no DJ ese 12 punto 14 punto cero esto como nombre por ejemplo de la versión que lo
+
+instala automáticamente la versión de no de
+
+no de la última LTS en la 12:14 cero aquí paquetes globalmente instalados vamos a poner de Newman lo
+
+tenemos el paquete que hemos instalado globalmente.
+
+Bueno 72 horas lo podemos dejar vale
+
+no añadir más DJs vale esto lo tenemos.
+
+Vamos a darle a play a ver que todo es correcto guardado.
+
+Vamos a ver la Ceibe
+
+por último una vez que ya tenemos la configuración global lo que vamos a hacer ya hemos node ya configurado
+
+la instalación de Node.
+
+Vamos a ver como estaba una vez que tenemos eso lo que vamos a hacer es en nuestra tarea en la tarea
+
+que teníamos previamente aquí la tarea prueba vamos a irnos a ella y sobre la tarea nosotros podemos
+
+hacer configurar esa tarea lo que vamos a hacer lo siguiente No vamos a venir al entorno de ejecución
+
+y vamos a hacer esto vamos a marcar este entorno de ejecución vamos a marcar esto nosotros lo tendréis
+
+así vamos a poner el probarte no DJs vamos a ponerle la versión de DJs que queremos.
+
+Entonces tendremos esta versión la versión 12 la que acabamos de configurar y eso es lo que le estamos
+
+diciendo es que provea un entorno o al paz para que admita todos los comandos de las librerías de DJs.
+
+Vale dejamos esto tal cual y ahora dejando los códigos a partir de ese momento ya conocerá aquellas
+
+librerías de DJs.
+
+Cómo puede ser Neuman.
+
+Vamos a probarlo ahora vamos a guardar a play o guardar vale y si le damos a ejecutar el proyecto a
+
+construir ahora puede ser que a vosotros os tarde un poquito más de lo que me va a tardar a mí esta
+
+ejecución porque ahora está cargando realmente todo el entorno de ejecución con fijaros estos parpadea
+
+tarda más que antes porque está cargando la librerias para poder ejecutar Newman vale de hecho si pinchamos
+
+aquí ya veremos la salida y mosqueada y así que ejecuta el comando de Newman con su versión.
+
+Las primeras ejecuciones de las primeras pruebas que habíamos hecho habían salido erróneas pero estas
+
+últimas como ya tenemos el no DJs cargado ya salen correctamente y con esto pues hagamos un poco la
+
+configuración de los problemas iniciales que pueden dar en una máquina con un entorno Windows.
+
+Bueno pues ya sabemos solucionarlo y ya podemos ejecutar comandos Newman en Jenkins y ahora en el siguiente
+
+vídeo puedes ejecutaremos una colección a la que ya hemos usado el comando básico de ver la versión
+
+de prueba.
+
+
+C:\Users\LAURA\AppData\Roaming\npm
+
+
+54. Ejecutando en Jenkins colección de Postman
+25 min
+
+Bueno pues ahora que ya sabemos crear una tarea de prueba con el comando Newman ha llegado el momento
+
+de configurar una nueva tarea con la colección que estábamos usando en Postman que es finalmente lo
+
+que andábamos buscando.
+
+Bueno lo primero que voy a hacer antes de hacer esta colección es tenía.
+
+Si recordáis había hecho para que la colección se base Lapique y así se auto auto actualice con los
+
+cambios que yo vaya haciendo en las peticiones.
+
+Es decir que si voy actualizando automáticamente el comando a la hora de lanzarlo pues será correcto.
+
+Si os acordáis sacamos la colección Lapique y a partir de la colección obtuvimos el ideé entonces pues
+
+simplemente creamos la misma o R.L que nos ponía para la colección pero añadiéndole esa Ubide aquí delante.
+
+Bueno pues vamos a hacer lo mismo para el environment lo que nos dice que hicierais como ejercicio.
+
+Bueno si lo habéis hecho bien y si no pues os voy a enseñar como se hace.
+
+Lo único que tenemos que hacer es pues igual que tenemos esta web relees donde teníamos Lapique que
+
+obtuvimos en nuestra cuenta de Postman.
+
+Voy a copiar voy a darle aquí uno nuevo para probarlo.
+
+Lo pego y lo único que voy a cambiar es que en lugar de que ponga Collections aquí la web le tienen
+
+que poner Environment Bayron Méndez.
+
+Vamos a probar ejecutamos y me salen los diferentes entornos para las variables la que yo quiero es
+
+esta de curso que es donde tengo la variable huele el.
+
+Con lo cual este IDE lo voy a necesitar y lo que voy a hacer es igual que cogí aquí y creé una petición
+
+con un IDE y una API key.
+
+Pues lo mismo con embarró voy a copiarlo porque lo unico que me va a tocar cambiar uno nuevo lo pego
+
+y lo unico que me va a tocar cambiar es que este trozo de aquí lo que va antes de Lapique tengo que
+
+pegar esto de aqui de curso contra c
+
+Control over que es la parte que va delante de Lapique aqui contra Lube y vamos a probar
+
+no es correcto
+
+y no es correcto porque evidentemente AQUI NO ES Collection sino Environment
+
+environment.
+
+Vamos ahora perfecto.
+
+Aquí está la web Leko o sea que ahora tenemos ya el entorno de environments asociado al entorno de lo
+
+que es la colección.
+
+Sea estas dos su R.L son ésta y ésta la que tiene por un lado el Ubide y por otro lado la clave Lapique
+
+de la parte de colección y lo mismo para el embaló la que tiene el Wide.
+
+Este trozo y el que tiene la API key.
+
+Vale es alto su R.L con ésta es como yo podría probar aquí en un entorno.
+
+Vamos a ver sería esta Neiman Run
+
+pondría la primera la de colectivo menos menos Environment y la que tiene
+
+la parte de Meirama.
+
+Si esto lo ejecuto
+
+como alzarlo
+
+veremos como tienen que ejecutar todas las colecciones las ha ejecutado y además con las variables de
+
+entorno.
+
+Bueno pues esta huele esto de aquí es exactamente lo que yo quiero ahora copiar y lanzar en el entorno
+
+de yankies para que aunque yo vaya cambiando las colecciones pues Rayet quien vaya refrescando siempre
+
+los cambios de mis colecciones.
+
+Bueno vamos a crear la tarea ahora me voy a ir allá en 15 vamos a venir aquí vamos a crear una nueva
+
+tarea.
+
+La tarea es aquella de prueba la dejamos pero ahora pues colección Postman por ejemplo colección Postman
+
+estilo libre.
+
+Como ya vimos Okkhoy me crea la nueva tarea.
+
+El entorno de ejecución ya lo vamos a poner que no ve porque ya lo tenemos configurado 12 12 4.
+
+Realmente es el único 12:14 pero el único que tenemos ahora vamos a ejecutar el nuevo paso ejecutando
+
+un comando de Windows y aquí vamos a poner ese comando que hemos puesto anteriormente si queréis muchas
+
+veces como el comando se hace muy largo podemos poner una separación o sea para que nos haga las barritas
+
+o sea para poder tenerlo más organizado podemos poner después de por ejemplo esto antes de Lombao.
+
+Aquí podemos poner un barra o esta barra de aquí las
+
+podemos poner otro.
+
+Podemos dividir las líneas si queréis de esta manera Malé con esta barrita.
+
+Es como para que no poder ver líneas distintas.
+
+Vamos a ejecutarlo o si queréis tener todo en una línea donde poner la barra y hasta vamos a aplicar
+
+vamos a guardar
+
+y vamos a construir a ver si todo funciona correctamente.
+
+A ver si de algún fallo veremos las peticiones han fallado.
+
+La web Lecco
+
+vamos a quitar vamos a quitar la barra.
+
+A ver si no la ha reconocido.
+
+Vamos a dejar la colección configuramos
+
+es posible que no reconozca el entorno Windows no reconozca esta barra vamos a dejarlo estaba aplicamos
+
+guardamos.
+
+Vamos a volver a lanzar el comando
+
+y así contó vemos las peticiones pero vemos que no vemos las peticiones ha acabado todo correctamente
+
+200 o qué pero vemos que el dibujo que nos sale no es un dibujo que usted sea.
+
+Esto es como él ha transformado o ha intentado pintar el cuadrado sea ha acabado correctamente las peticiones
+
+pero fijaros como ha intentado pintar este cuadrado esta caja ha intentado pintar con estas letras que
+
+quedan un poco mal entonces vamos a arreglar también eso vamos a arreglar un poco la salida el formateo
+
+de la salida porque no queda como nosotros queremos ya si que lo está ejecutando está ejecutando el
+
+comando es decir está haciendo la colección que lo más importante pero bueno vamos a formatear un poco
+
+para que la salida sea un poco más bonita y para ello lo que vamos a hacer es en la colección en la
+
+configuración vamos a añadir un parámetro más en la ejecución al final que sea menos menos disabled
+
+y menos Unicode.
+
+Todo junto.
+
+Este parámetro vamos a añadirlo a Play guardar era cuando ejecutemos constuir ahora vamos a ver cómo
+
+lo construye
+
+vale.
+
+Vamos a ver como ahora ya sale.
+
+Pues exactamente igual a como salía en la consola que bueno ya hemos ganado algo ya está ya tenemos
+
+lo mismo en Jenkins que teníamos en la consola.
+
+Además con el entorno que se vaya a auto actualizando igual que la colección que se vaya actualizando
+
+y tenemos el resultado pero aún así podemos mejorar todavía más vamos a mejorar más cosas relativas
+
+a la salida esta salida.
+
+Como puedes ver un poco los resultados pues porque poner por el momento pues no estamos guardando los
+
+resultados no estamos haciendo estadísticas.
+
+Vamos a ver que no hay ficheros espacio de trabajo o sea vamos a ir mejorando también esto un poquito
+
+más y para ello lo que vamos a ver es algo de información sobre los reportes o reportes si nos vamos
+
+a la documentación de Newman estaba apartado.
+
+Si os fijáis en la documentación de Iván no Postman perdón hay un sitio que pone Reporters vamos a ir
+
+a Reporters
+
+bajamos pero no funcionará aquí y nos dice cómo configurar los diferentes reportes.
+
+Además fijaros que aparece formas correctas de configurarlo.
+
+El parámetro es menos CR podemos poner menos o menos menos reportes en lo mismo y luego dice que tienes
+
+que dejar un espacio en blanco y luego poner los tipos de reportes que quieres separados por comas sin
+
+espacios todo junto.
+
+Vale el reporte de cliente reporte JSON el reporte de DJ y unit.
+
+Los diferentes tipos de reportes que hay entonces por ejemplo vamos a probar el reporte de El cliente
+
+que es lo que estamos viendo y además que no se haga el reporte estándar de DJ lluny que hace un reporte
+
+en XML.
+
+Sólo hay reportes que normalmente saca si habéis trabajado alguna vez con J-1 de Java y si no vamos
+
+a ver el tipo de reporte que saca entonces para que veamos que podemos sacar más de un reporte al mismo
+
+tiempo
+
+entonces nos vamos a ir al comando de Jenkins a la colección ahora vamos a añadir la parte de Reporter
+
+donde queremos guardar nuestros reportes pues vamos a configurar.
+
+Vamos a añadir algún parámetro más.
+
+Entonces menos menos el deseable Unicode menos menos los reportes que hemos dicho que vemos el PLI lo
+
+que es el reporte de pantalla y el J'ai unit.
+
+Esto separado como he visto aquí dejamos un espacio y luego pues por comas juntos y luego la carpeta
+
+donde queremos que aparezca un reporte menos menor reporter de lluny reporte J lluny.
+
+Se pone así Jota lluny es por donde queremos que aparezca y la carpeta vamos a la carpeta por ejemplo
+
+Newman
+
+Report punto XML por persona XML los que sacan los reportes de J-1.
+
+Vamos a guardar Play guardar vamos a volver a construir si todos nos ha ido bien
+
+vale.
+
+Vemos la salida.
+
+La salida está seguimos viendo pero ahora vamos a ver si encontramos donde tenemos a parte nuestra nuestro
+
+proyecto.
+
+Vemos aquí el espacio de trabajo que ahora hay una nueva carpeta que se llama Newman y dentro de esta
+
+carpeta que se llama Newman está Terré por XML.
+
+Qué es exactamente que hemos construido.
+
+Aparte de verlo por él igual que lo veríamos en una pantalla de consola.
+
+Estamos viendo estamos exportando también este archivo.
+
+Podemos ver la vista de este archivo.
+
+Esto ha sido lo que ha sacado mal resultado que exporta el Jota Jota Jota Yudith.
+
+Los resultados que ha hecho de las peticiones malecon los test los errores los fallos.
+
+Vale entonces nos dice que todo está saliendo correcto vamos para atrás podríamos ver también el XML
+
+directamente en formato XML vale también podemos descargarlo.
+
+Bueno ahora estamos sacando vamos a volver a ejecutar otra construcción un par más.
+
+Voy a ejecutar un par más para ver cómo los deportes se vayan acumulando construir
+
+construir.
+
+Vamos a ir viendo a la vista los reportes
+
+ahora vamos a decirle vamos a configurar y lo que vamos a decirle es que queremos ejecutar una serie
+
+de acciones después de ejecutar el comando.
+
+Vamos a ir a este añadir una acción y vamos a ver este que pone publicar los resultados de Tex de Jota
+
+Yunis DJ Yuly vale que realmente es lo que estamos haciendo.
+
+Vamos a darle a publicar y nos dirá que digamos aquellos ficheros XML con los informes que queremos
+
+que va a ser esos ficheros que estamos ejecutando que crean estamos creando nosotros aquí
+
+vamos a poner my human
+
+Report punto XML para que los publique esto está así
+
+bueno vamos a pley
+
+vamos a guardar.
+
+Vamos a volver a construir
+
+vamos a hacer un par de construcciones más está fallado.
+
+Vamos a ver grabando ninguna forma contiene resultados
+
+y es obvio porque claro ninguno de nuestras peticiones vemos que tengan ningún tipo de tés sino peticiones
+
+básicas.
+
+Vamos a añadirle algún alguna de nuestras peticiones algún tes para que sí podamos ver los resultados
+
+publicarlos y com completarlo y al mismo tiempo vamos a ver cómo modificando todos los TES ahora en
+
+tiempo real automáticamente las nuevas peticiones las nuevas salidas ejecuciones de Jenkin van a tener
+
+los cambios que hemos hecho sobre las peticiones en nuestra consola.
+
+Bueno vamos a venirnos aquí a Postman y a cualquiera de estas peticiones vamos a lanzarle la petición
+
+a ésta.
+
+Por ejemplo vamos a poner apuntes apuntes apuntes simple o si podemos ponerle por ejemplo un estado
+
+código 200 estrellas un TES.
+
+Vamos a guardarlo.
+
+Vamos a ver que la petición es
+
+Rasul sale uno de uno se hace un test correcto pues por ejemplo en la petición 2 vamos a ponerle también
+
+otros 3.
+
+Vamos a ponerle también un TES bueno en este que el tiempo de respuesta sea menor a 200 milisegundos
+
+por ejemplo a ver si sale el correcto vamos a guardarlo y lo ejecutamos vale también porque han sido
+
+129 milisegundos pues ha salido un test correcto vale los dos eso salen correctos.
+
+La petición 3 la petición 4 la petición 5 podríamos poner el 2.
+
+Por ejemplo vamos a poner uno que falle vamos a poner un 3 y le decimos vamos a ponerle.
+
+Vamos a usar este código 200 pero que en vez de poner 200 vamos como sabemos que sale 200 vamos a poner
+
+por ejemplo 201 casi seguro que falla vamos a guardarlo lo ejecutamos el test nos falla porque dice
+
+el Estado han sido 200 cuando esperábamos un 201 vale en el 4 vamos a poner también un ejemplo de esto
+
+del código 200
+
+a ver que el código osea 200 guardamos no hace falta probarlo sabemos que eso sale bien y el 3 del 5
+
+es también un 3.
+
+En este le vamos a decir por ejemplo 1 del tiempo menor 150 milisegundos por ejemplo 150
+
+150 milisegundos
+
+vamos a guardarlo y probarlo
+
+vale pues tenemos el 2 5 3 uno para cada petición hemos puesto podríamos podría haber montones de veces.
+
+Pero bueno apártate ya lo hemos visto simplemente para ver que todo va a ser correcto.
+
+Además hemos guárdala 5 peticiones.
+
+Vamos a ver si realmente se está actualizando a la hora de ejecutarlo Jenkins.
+
+Voy a volver a otra ejecución.
+
+Construír ahora
+
+vamos a ver
+
+ahora han lanzado los 5 temas con cinco acepciones y ha fallado 1 el rojo lo único que me indica es
+
+que ha habido fallos en.
+
+Ahora ya sí que me han lanzado los 5 3.
+
+Además vemos que los cambios se están haciendo en tiempo real.
+
+Además aquí me dicen los tipos de tés y me ponen rojo porque me está indicando que uno de los tres ha
+
+fallado.
+
+De hecho el 3 que ha fallado ha sido el que estábamos esperando un código 200 y me ha llegado un 201
+
+me ha fallado éste.
+
+El tercer es el que pusimos aposta para que nos fallara.
+
+De hecho aquí me lo dice esperábamos un código de 200 y ha llegado un 201 vale dentro de la petición
+
+3 y el me indica fijaros gráficamente aquí que ha fallado.
+
+Ya sabemos que ha fallado uno de los test.
+
+Así a simple vista podemos verlo además de este último test.
+
+Por ejemplo esta última ejecución hace 55 segundos en cualquier momento podemos acceder a ella ver los
+
+resultados de este test aquí veremos.
+
+Vale pues 1 fallado de 5 3.
+
+Aquí veo una descripción un poco más gráfica.
+
+Vale 1 fallado y ha sido este 3 en cualquier momento puedo acceder y ver exactamente quién falló.
+
+Vale pasaron cuatro tests fallados uno la diferencia con los anteriores bueno ahí ciertos datos que
+
+puedo ir sacando puedo ver por ejemplo la historia de los diferentes tés si ha habido de las diferentes
+
+colecciones puedo ver por ejemplo el resultado.
+
+Bueno esto es lo que lo hemos visto ya
+
+vamos a hacer más ejecuciones.
+
+Por ejemplo me voy a ir aquí a Postman vamos a ejecutar otra vez este que volverá a fallar uno de los
+
+cinco tes a ejecutar otro
+
+también vuelve a fallar
+
+vale ahora lo que voy a hacer es volver a cambiar ese es que sé que falla que es el de la petición.
+
+3 Le voy a volver a dejarme 200 200.
+
+Guardo Vale y ahora sé que este no fallará.
+
+Con lo cual si lo vuelvo a lanzar a Newman
+
+a quien Jenkin perdón vamos a volver a hacerlo.
+
+Ahora todos son correctos.
+
+Fijaros que voy viendo aquellos que ha habido fallos en alguno de los tres junto con aquellos que están
+
+saliendo correctos con lo cual si esto fuera en un entorno de producción pues iríamos viendo cuándo
+
+y por qué.
+
+Cada una de las ejecuciones que hemos hecho de nuestros tres cuáles han sido correctos y cuáles no.
+
+Vamos a actualizar también es relativo el autor es fresco porque si activamos el auto refresco vemos
+
+aquí cómo los últimos 10 en el test 9 que hubo un fallo enfoque de 5 1 falló en el de 10 falló uno en
+
+el test 11 falló uno el test 12 no ha fallado ninguno si ejecutamos otro construir ahora vale antes
+
+13 veremos que tampoco falla ninguno.
+
+Y ahora cuando se auto refresque vereis que no ha fallado ninguno.
+
+Podemos tener una gráfica que donde voy viendo la evolución de los diferentes errores en los diferentes
+
+es que he tenido a lo largo de las diferentes ejecuciones.
+
+Si vuelvo a poner ahora a Postman por ejemplo aquí que espero un 201.
+
+Sé que me va a fallar
+
+vale y lo vuelvo a ejecutar en Jenkins.
+
+Construimos ahora 3:14 este fallara uno y veremos luego la gráfica como me dice otra vez que hay un
+
+fallo dentro de 5 3 y gráficamente de una forma muy simple puedo ir viendo la evolución a lo largo de
+
+los cambios en mi proyecto cómo me han ido provocando errores y bueno esta es una forma de ejecutar
+
+los TES integración continua.
+
+Vamos a ver alguna cosa un poquito más avanzada que es crear reportes en HTML pero bueno ya con esto
+
+ya sabéis ejecutar una colección en un entorno de integración continua como éste X.
+
+
+
+
+
+prueba 2 correcta 
+
+newman run https://api.getpostman.com/collections/7417edf4-0357-47f5-a403-c0bc797e8b04?apikey=PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda --environment  https://api.getpostman.com/environments/e284b8ef-ea61-49d5-a075-40f0c9f2a2e0?apikey=PMAK-5efa6cb4c5d253004d2f46f6-4750b3783d0a699e6d505606aa1bb98cda --disable-unicode --reporters cli.junit --reporter-junit-export "newman/report.xml"
+
+horaa
+12:51
+
+PAGINA DE NEWMAN CON POSMAN 
+ 
+REPORTE 
+
+-reporter cli,json,junit
+
+
+55. Informe Html Extra
+4 min
+Bueno vamos a ver un nuevo tipo de reporte que podemos sacar pero en este caso no lo vamos a ver en
+
+Jenkin sino vamos a verlo en Newman porque todavía no está integrado con Jenkins para eso vamos a instalar
+
+la librería MPM vista e instalo y menosque Newman reporte HTML extra a ver si ejecutamos el comando.
+
+Yo la tengo ya instalada.
+
+Consultado sobre la instalarã si en un tiempo relativamente rápido vamos a instalarla
+
+esto es lo que me va a permitir es sacar
+
+digamos documentos de una manera gráfica muy vistosa HTML con los que podemos sacar información.
+
+Vale ya está de nuestros de nuestras colecciones de nuestros Udes.
+
+Vamos a lanzarlo pero vamos a lanzarlo pues como lo habíamos lanzado anteriormente es decir todo el
+
+comando.
+
+Lo único que le vamos a poner no saber igual que le poníamos el reporte pues aquí lo vamos a poner.
+
+Por ejemplo que saque un reporte
+
+vamos a ver muy poquito no tengo alguna ejecución por lo menos
+
+yo lo enseño
+
+éste sí es decir vamos a poner la ejecución.
+
+Vale lo que habíamos puesto pero ahora vamos a poner el reporte aparte del J lluny y el CD leí que habíamos
+
+visto antes.
+
+Vamos a poner también el HTML estra que es la librería que acabamos de añadir y le vamos a añadir un
+
+menos menos reporter HTML está Esport Balay que genera la carpeta Newman repor HTML.
+
+Vamos a ejecutar
+
+vamos a esperar lo ejecuta ha fallado uno de los de los cinco tes normal está fallado ha fallado el
+
+del tiempo a 200 milisegundos que realmente al final era 150 milisegundos y ha tardado 165.
+
+Bueno esto me ha generado dentro de la carpeta donde lo estoy ejecutando en Postman Newman.
+
+Fijaros que ahora tenemos un repor HTML vamos a ejecutar este repor HTML y vamos a verlo aquí este repor
+
+HTML
+
+y me muestra esto.
+
+Fijaros es han hecho esta librería que saca los reportes de una variedad bastante gráfica bastante interesante
+
+además aquí puedes ver el total de peticiones los que han fallado que ha fallado por qué
+
+todas las peticiones un resumen está bastante chulo lo han hecho bastante gráfico y bueno pues es un
+
+añadido que quería que vierais por otro tipo de reportes que podéis sacar sobre sobre la colección que
+
+tengáis en un momento dado.
+
+Queréis hacer un informe gráfico.
+
+Pues está bastante bien.
+
+Y nada.
+
+Pues vamos a pararlo aquí este vídeo y continuamos.
+
+-g mewman-reporter-htmlextra
+
+
+
+
+56. Ejecutando una colección de Github en Jenkins
+8 min
+
+
+
+
+Bueno en este último vídeo de la integración con Jenkins lo que quiero mostrar es cómo integrar Jenkins
+
+con un repositorio de hip hop donde tenemos colecciones Polman.
+
+Si no tenéis un repositorio de Guija pues este vídeo lo podéis saltar si sabes lo que es un repositorio
+
+de Happy trabajais con un grupo de trabajo en el cual guardar los datos directamente en mi app como
+
+puedo hacer yo.
+
+Pues este vídeo os puede resultar interesante.
+
+Yo por ejemplo lo que he hecho ha sido en mi repositorio de Java en esta ruta Malé fue un repositorio
+
+de hijab donde se almacenan digamos ficheros para ser compartidos paramejorar en un grupo de trabajo
+
+donde tú cuelgas documentos para poder acceder remotamente desde cualquier sitio vale para tu directorio
+
+y APP no.
+
+Esto no es un curso de ICAB y tampoco voy a meterme con eso en profundidad pero vamos a suponer que
+
+es como si fuera una especie de nube donde uno o varias personas van subiendo una serie de ficheros
+
+y pueden ir compartiendo el trabajo que van haciendo entre todos.
+
+Entonces yo tengo aquí mi repositorio de Jaap donde he subido tanto la colección del curso como lo que
+
+Neiman Postman Collection como las variables de entorno vale los dos fichitas esos JSON los he subido
+
+aquí hace un momento y entonces me voy a ir allá en 15 y lo que voy a hacer es bueno voy a quedarme
+
+una nueva colección para un nuevo una nueva tarea darle no voy a cerrar esta porque la quiero tener
+
+abierta para copiar ahora datos.
+
+Bueno voy a crear una nueva tarea de ésta le voy a decir por ejemplo proyecto hija de aprobar un proyecto
+
+de proyecto
+
+Guija un proyecto libre creamos una nueva tarea y lo que vamos a hacer es practicar lo que ya habíamos
+
+visto y además puedes ver cómo mezclar esto con guija.
+
+Bueno vemos aquí cómo configurar el origen del código fuente.
+
+Hasta ahora estamos poniendo ninguno.
+
+Vamos a poner Guilt y aquí vamos a poner el repositorio de Guija del cual nos vamos a conectar.
+
+Vamos a ver mi repositorio.
+
+Vamos a acopiada esta web.
+
+Vamos aquí ponemos el repositorio bueno aqui de donde cogeremos los datos PC indicaremos el resto de
+
+datos lo dejamos por defecto la rama maestra etcétera vamos el entorno de ejecución nos acordamos de
+
+marcar esto el Node para que lo pueda ejecutar el comando de Neiman y luego se os acordáis lo del paso
+
+ejecutar el comando de Windows y aquí pues vamos a copiar por ejemplo de éste que teníamos de la colección
+
+anterior.
+
+Vamos a copiar el comando este que teníamos y vamos a ver cambiar
+
+vamos a ver qué cambiar.
+
+Pues qué vamos a cambiar vamos a cambiar esto que ahora ya no lo cogemos directamente del de la colección
+
+con la que estamos trabajando sino que lo vamos a coger de guija.
+
+Entonces aquí lo que vamos a poner es el nombre de la colección el nombre de la colección es este nombre
+
+vamos a copiarlo
+
+copiamos el nombre y lo pegamos aquí y el nombre del entorno de trabajo ya tampoco va a ser éste suprimimos
+
+y sería este nombre
+
+copiamos lo pegamos.
+
+Bueno podemos también ya que estamos haciendo los reportes pues hacemos también los reportes aquí el
+
+reporte del XML el paso que hicimos para después era publicar los resultados de talludito y lo podemos
+
+copiar del otro proyecto también
+
+vale.
+
+Y bueno ahora tendríamos la ejecución pero en lugar de hacerlo directamente desde nuestra colección
+
+como la estamos haciendo en Postman lo haríamos de una ruta de guija.
+
+Vamos a guardar vamos a construir
+
+lanze.
+
+Vamos a ver si todo va bien a la primera
+
+conecta con el Guija podemos ver cómo va el proceso a quién consola está clonando y si nos fijamos pues
+
+ha ejecutado las tres peticiones en aproximadamente a ver y publicar los resultados ninguno nos informa
+
+de los tres contiene el resultado bueno eso es simplemente que no tenemos estos archivos que yo he usado
+
+que los que he subido era cuando tenía solamente tres peticiones y ninguna tenía ningún Tex valen los
+
+que he usado en mi hija.
+
+Si os fijáis la colección que ha usado era la que únicamente tenía tres peticiones una dos tres peticiones
+
+y no tenía ninguno de los de los tres es una que tenía guardada.
+
+Si queréis podéis subir una una vez.
+
+Por ejemplo esta que estábamos usando de las cinco peticiones de Apple las cuales ya tenía antes.
+
+Vale esta pues podríais exportarla o guardar el hacer el espor coger el JSON y subirlo y cambiarlo por
+
+el que he utilizado para que tuviéramos cinco peticiones.
+
+Pero bueno el concepto que es lo importante es que esta es la forma vale.
+
+El proyecto guija.
+
+Esta es la forma de configurar un lanzamiento basado en guija.
+
+Puedes poner simplemente el repositorio donde están los ficheros y los nombres de los ficheros que como
+
+habéis visto al final tenemos más o menos el mismo problema que teníamos y lo hacíamos con ficheros
+
+locales que es que no se actualizan automáticamente.
+
+De hecho yo cogio dos ficheros que no eran los últimos y por eso me ha ejecutado esos ficheros JSON
+
+son los ficheros que en ese momento guardamos en el Guija no los ficheros locales.
+
+Pero bueno en un entorno de trabajo donde sean varias personas las que estén trabajando y actualizando
+
+automáticamente el Guija pues podría servirnos este entorno para trabajar y con esto acabo la serie
+
+de vídeos de quería explicar por la integración de Newman con Jenkins para que podamos ver las diferentes
+
+alternativas aunque como digo Jenkins como veis es un programa enorme y podríamos estar un curso entero
+
+dedicándole Jenkin.
+
+Solamente espero que os haya gustado y nos vemos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

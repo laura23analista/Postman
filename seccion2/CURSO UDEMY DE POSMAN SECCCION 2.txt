@@ -1,0 +1,1075 @@
+
+team URL
+
+laurita23analista.postman.co
+CURSO UDEMY DE POSMAN
+
+
+ Sección 2:Peticiones a la API
+
+
+6  - ¿Qué es una API Rest?
+
+https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional
+
+
+7 - Ejemplo peticiones de tipo GET
+
+Bueno comenzamos ahora una serie de vídeos donde explicamos los diferentes tipos de peticiones que hay
+
+para probar los servicios web.
+
+El más sencillo es el que ya hemos visto no sólo las peticiones del tipo get.
+
+Vamos a hacer una nueva nuestra colección.
+
+Tenemos la colección vamos a pulsar a los tres botoncitos ponemos a una nueva petición ponemos esta ADD Resquest
+
+vamos a hacer un ejemplo de ideas y de Soy tu colección lo abre y ya tenemos aquí mi ejemplo diré que
+
+voy a abrir tengo varias pestañas puedo tener varias abiertas e ir cambiando entre ellas.
+
+Voy a cerrar esta de antes no tengo este ejemplo y de lo dicho voy a probar igual que hemos hecho las otras con con la del post Maneco copiar lo que es la cabecera y con esto hemos visto que estas son las
+
+típicas peticiones que se hacen pues para obtener datos de tipo get es para obtener datos.
+
+Aquí nos vamos a insertar ni actualizar ni borrar sino simplemente obtener información.
+
+Muchas veces encontraremos que va acompañado de parámetros por ejemplo por el Ideele identificador que
+
+queremos obtener.
+
+Imaginaros que estamos en una base de datos de coches y queremos obtener el coche número 200 pues ponemos
+
+donde de igual a 200 cambiaríamos obtendríamos los datos del coche aquí simplemente vamos a tener su
+
+Neco simplemente nos devuelve lo mismo que enviamos nos la información que enviamos y nos devolvería
+
+el coche con identificador 200.
+
+Nosotros en otra base de datos aquí nos devolverían los datos asociados a ese coche.
+
+Son como digo las peticiones donde simplemente queremos obtener información y lo más importante aquí
+
+es ver que los parámetros los podemos poner tanto en lo que es la construcción de la web R.L como en
+
+la pestaña que Postman nos da para poner los parámetros son los más sencillos.
+
+Tampoco tiene mucho más y es la que podéis utilizar en el 90 por ciento de los casos cuando estáis navegando
+
+por internet que es simplemente lo que hacéis es obtener información.
+
+
+8- Ejemplos peticiones de tipo POST
+
+El siguiente tipo de petición que vamos a hacer va a ser aprender son las de tipo.
+
+Creamos un nuevo tipo de petición ponemos de tipo pues vamos a hacer unas cuantas de diferentes estilos
+
+vamos a hacer esta primera va a ser mediante real esto es que vamos a pasar por las peticiones que vamos
+
+a usar cuando lo que queremos es enviar información al servidor solemos usarlas para insertar datos
+
+en una base de datos para crear un registro nuevo.
+
+De esta forma vamos a salvar a la colección.
+
+Nosotros debemos enviar datos no consultar datos y no es la cabecera el sitio ideal donde se envían
+
+datos los datos se deben enviar digamos de otra manera porque si lo viéramos en la cabecera podría ser
+
+capturado la Relay y la información viajaría no segura de manera que no debemos enviarlo en la cabecera.
+
+Cómo lo vamos a hacer de la siguiente forma.
+
+Primero vamos a decirle que es de tipo post y ahora vamos a poner la web del post Maneco que nos devuelve.
+
+En este le vamos a decir que es de tipo post que es el que devuelve peticiones para realizar pruebas
+
+y ahora debemos pasarle la información pero lo dicho aquí no debemos poner de igual a 10.
+
+Aunque el sistema no lo deje los datos de post no se pasan en la web.
+
+Esto lo vamos a eliminar.
+
+Esto es lo que debemos hacer los pasos los datos los tenemos que pasar en un body.
+
+Nosotros vamos a enviar información para insertarlo para que nuestro servicio web lo inserte cómo lo
+
+podemos enviar de diferentes formas lo podemos enviar como un formulario este es éste se llama x3 W
+
+for Encode y es aquí podríamos poner por ejemplo podríamos ponerle nombre
+
+apellido
+
+García le daríamos osen y sería el servicio web el que se encargaría de insertar en la base de datos.
+
+Aquí lo único que va a hacer es devolvernos diciendo que ha recibido un Franny un García en un servicio
+
+web de tipo post de inserción insertar este registro en la base de datos vamos a probar y vamos a comprobar
+
+la respuesta que ha sido un 200 ok el tiempo el tamaño y bueno nos devuelve que ha recibido los datos.
+
+El formulario fue Alan García lo ha recibido y el Jayson que nos devuelve el JSON con los datos es lo
+
+mismo que le hemos enviado por eso es una página que hace único vale pero bueno ya sabemos como enviar
+
+datos en un servicio de tipo post en el campo Bodhi con un formulario.
+
+Esa es una de las formas.
+
+Vale esto lo vamos a guardar guardado mediante Raw no querían ponerme ante el formulario.
+
+Bueno lo voy a hacer un Cefas y le voy a decir que lo guarde como os mediante formulario formulario
+
+vale y esto lo guarda la colección y ya lo tenemos aquí guardado un post mediante formulario.
+
+De hecho esto que tengo post mediante Rául lo tengo aquí vacío y bueno este lo voy a borrar lo borro
+
+de aquí al final no lo utilicé y bueno vamos a crear uno nuevo voy a cerrar este post mediante formulario
+
+voy a crear uno nuevo nuevo.
+
+Nueva petición a esta la voy a llamar pods mediante ragú como he dicho antes.
+
+Tu colección la pongo que sea de tipo pos le añado que sea de tipo post para que me responda.
+
+La pagina del post Maneco pero en este caso el body en lugar de lo de tipo formulario lo voy a poner
+
+el tipo RAW cuando lo ponen del tipo RAW tu puedes poner a escribir un texto por ejemplo si quisiéramos
+
+tuvieramos un servicio web que sea de tipo post al cual le enviamos una cadena de texto y él me lo inserta
+
+como un registro mas.
+
+La cadena que insertamos el texto escribimos aquí en pinchamos esto es una cadena de pruebas por ejemplo
+
+y él se inserta vía esto en un registro eso lo haría el servicio evidentemente el servicio que estaría
+
+en esta web R.L recibiría una cadena de texto y lo inserta en la base de datos como tipo tractora comprobamos
+
+que funciona según y el resultado también ok y nada pues ahora recibido los datos como en el campo data
+
+y json me dicen Nul por qué.
+
+Porque no lo han recibido como un JSON lo ha recibido como un texto puro vale pues éste lo vamos a guardar.
+
+Saif y lo vamos a guardar
+
+damos iFans y lo guardamos pues por ejemplo pos como cadena
+
+como cadena Routh y ahí lo tenemos.
+
+Vale.
+
+Y éste que tenía de antes que me lo había generado pues que se llama após mediante Rak este lo voy a
+
+aprovechar para cambiarle primero al tipo pos y lo que voy a hacer es volver a conectarme a la cadena
+
+el tipo por si voy a aprender un tercer método un tercer tipo de post que es cuando enviamos los datos
+
+también como de tipo rapero lo que le enviamos es directamente un JSON muchas veces las aplicaciones
+
+o los servicios web no esperan una cadena de texto ni un formulario sino que Esperón directamente un
+
+archivo en formato JSON el cual se encriptan digamos que extraen los campos del JSON para insertarlo
+
+en la base de datos.
+
+Cuando queremos hacer un servicio de tipo post de tipo JSON tenemos que enviarle aquí donde pone texto
+
+tenemos que seleccionar JSON y construir un JSON cómo se construye un JSON entre llaves le ponemos llaves
+
+y tenemos que por un lado poner el nombre del campo por ejemplo aquí pondríamos nombre dos puntos y
+
+el valor si son campos de tipo texto deben ir entre comillas por ejemplo si ponemos otro campo por ejemplo
+
+apellido como es de tipo texto pues pondríamos García.
+
+Pero si queremos poner un campo de tipo de datos separados por coma si queremos poder poner un campo
+
+de tipo dava por ejemplo era también el campo entre comillas.
+
+Pero al ser numérico aquí pondríamos el valor sin comillas.
+
+Cuando los campos no sean numéricos ponemos el valor sin comillas.
+
+Bueno pues eso es pasar llamar a un servicio web de tipo post pasandolo un JSON que puede ser que sea
+
+lo que esté esperando ese servicio web le damos Arsen y comprobamos cómo ahora el JSON sí que le hemos
+
+enviado información en formato JSON valen los datos que les hemos enviado pero en formato JSON y eso
+
+serían los tres formas más comunes de hecho esta última en la que últimamente se lleva más de moda que
+
+es que a los servicios de tipo se les envíe un JSON.
+
+También que cuando estamos rellenando el body y automáticamente Jader ha puesto este contenta y él ha
+
+reconocido que es un JSON y ha puesto esta aplicación JSON no hemos tenido que poner nosotros simplemente
+
+al seleccionar este JSON ella me ha puesto una cabecera por nosotros es una de las ventajas de tener
+
+Postman que él hace.
+
+Muchas de esas cosas por nosotros nos ha puesto en esta cabecera.
+
+Bueno pues con esto queda visto cómo llamar a servicios web de tipo post voy a guardar éste y lo vamos
+
+a llamar.
+
+Por ejemplo Joos
+
+mediante JSON septum Collection y este post mediante que se quedó por aquí lo vamos a eliminar porque
+
+al final lo hicimos de otra forma y nos quedamos por el momento con nuestros servicios web de tipo ket
+
+y nuestro servicio que los servicios web de tipo post ya probados.
+
+Post mediante Formulario 
+
+https://postman-echo.com/post
+
+ En body - seleccional x-www-from-urlencode y colocar nombre y apellido en key
+
+POST como cadena RAW
+
+https://postman-echo.com/post
+
+ En body seleccionar RAW 
+
+Esto es una cadena de prueba 
+
+POST mediante JSON
+
+{
+  "pedido":20,
+   "producto":[
+    
+{ 
+     "id":40,
+     "canidad":1
+},
+
+{
+   "id":53,
+   "cantidad":20
+
+
+}
+
+]
+
+}
+
+
+9 -  Ejemplo de envío de un Array mediante POST  
+
+Bueno en este video vamos a ver ya hemos visto los cómo probar los servicios de tipo que hemos visto
+
+probar los servicios de dipolos y ahora antes de probarlos en el resto de los servicios básicos me vais
+
+a permitir que vaya empezando a organizar un poco esto.
+
+Como veis la colección me está empezando a quedar un poco grande y muchas veces pues en lugar de tenerlo
+
+a nivel de colección uno puede de lo que son sus carpetas para organizar esto mejor entonces.
+
+Por ejemplo si dejamos que los tres puntos veréis que tenemos la opción de crear una carpeta folder.
+
+Entonces vamos a crear una carpeta que le voy a llamar pues por ejemplo servicios que creo o la carpeta
+
+y lo que voy a hacer es arrastrar dentro de esa carpeta todos los servicios G.T de manera que están
+
+ahora a nivel de carpeta.
+
+De igual forma me voy a crear una carpeta que le voy a llamar servicios por servicios post y voy a arrastrar
+
+dentro pues todos los servicios que tengo ahí no tengo bastante mejor organizado.
+
+Bueno pues voy a crearme una nueva carpeta.
+
+También le voy a llamar DELETE
+
+UPDATE Y input
+
+creo y aquí dentro.
+
+Pues ahora empezaré a crear peticiones y la primera petición o el primer ejemplo que vamos a hacer es
+
+un servicio de tipo put put básico le voy a llamar put básico que es básico que es exactamente soy tu
+
+DELETE UPDATE Y put es decir en su carpeta ya está guardado pero en vez de ser del tipo que lo voy a
+
+modificar la voy a abrir y lo voy a modificar por qué lo voy a poner de tipo put.
+
+Cuando creamos los servicios de tipo put pues normalmente los de tipo cursor cuando lo que queremos
+
+es actualizar un registro de la base de datos es decir que ahora en vez de poner un en vez de poner
+
+post Root es exactamente igual que realmente DELETE UPDATE Y put son exactamente igual que todos los
+
+datos que suelen pasar no en la web Reveles sino que se suele pasar dentro de un body vale para que
+
+no puedan ser interceptados y en el body por ejemplo en formato RAW de tipo JSON.
+
+Yo le puedo decir al servicio web que debe estar construido de esa forma está esperando unos datos.
+
+Por ejemplo imaginemos que quiere modificar el artículo número 40 y donde pone el código un artículo
+
+que ponía la televisión ahora pasa a poner televisión de 55 pulgadas por ejemplo nosotros le decimos
+
+donde Hide sea 50
+
+y el nombre pasa a ser ahora televisión 55 pulgadas.
+
+Vale ya habrá un servicio de por detrás que cuando se le llame de esta forma esperará un campo ideé
+
+y esperar a un campo nombre y él a por detrás.
+
+Digamos que hará el update de la base de datos.
+
+Bueno pues vamos a salvar lo voy a hacer.
+
+Y ese put básico que hemos puesto
+
+vale estarse put@ bãsico Elgueta este lo voy a cobrar Miley.
+
+Este es el punto básico vale y aquí lo tenemos.
+
+Si hacemos el bien pues veremos que ha funcionado correctamente ha recibido los datos y ha recibido
+
+el JSON correctamente.
+
+Y bueno pues ya el servicio web por detrás evidentemente tendrá que hacer esa actualización de la base
+
+de datos igual que tenemos ese tipo put@ serían los delete si datos de hecho el update es algo similar
+
+al put@ más vale hay gente que los hace de tipo put@ y hay gente que los hace de tipo yo normalmente
+
+los hago de tipo put Malé.
+
+De hecho el Postman estoy buscando no lo pone como uno de los tipos predefinidos vale porque normalmente
+
+se llaman de tipo Root.
+
+Si vosotros por lo que quiere por lo que sea os sentís más cómodos haciendo dibujos de poner eso os
+
+hacéis uno personalizado y de hecho podéis incluso copiarlo hagáis y haceis el body exactamente lo mismo
+
+vale.
+
+Voy a hacer otro ejemplo pues por ejemplo aquí podríamos actualizar una base de datos de alumnos imaginaros
+
+que estuviéramos llamando a una base de datos de alumnos donde estáis actualizando el alumno con código.
+
+El campus se llama en este caso código con código 5 y le estáis poniendo nombre.
+
+Pues por ejemplo FRAP vale.
+
+Pues eso sería
+
+me falta la coma.
+
+Esto sería un ejemplo de tipo Death Valley y enviamos así hemos hecho uno personalizado.
+
+Vamos a Alsan.
+
+Bueno pues como no lo reconoce como no reconoce el tipo este que pone put@ pues por eso no nos devuelve
+
+ningún resultado.
+
+Por eso de hecho pone 400 recuas debería existir si existiese aquí un Udai que la base de datos osea
+
+perdón el post Maneco al cual estamos llamando no lo tiene no tiene uno de tipo que no existe por eso
+
+nos está volviendo un €400 si existiese pues nos devolvería un 200.
+
+Un Estado €200 no existe ese servicio web.
+
+Me lo acabo inventar sobre la marcha y por eso evidentemente no nos devuelve una respuesta.
+
+No voy a guardar
+
+lo tengo aquí como lo voy a guardar como un dato de lo que es lo que os he comentado pues normalmente
+
+los de tipo dois son de tipo put@.
+
+Vale hay gente que prefiere llamarles pero yo siempre que los creeros los que hemos visto los ket que
+
+son para obtener información.
+
+Hemos visto los post que es para insertar registros en la base de datos hemos visto los put@ que es
+
+para actualizar los registros de la base de datos y evidentemente nos falta voy a borrar voy a cerrarlos
+
+y no vamos a trabajar con ellos por el momento y evidentemente nos falta el último que son los diploide
+
+vale los de borrado de la base datos lo mismo en este caso pues en vez de llamar a put@ vamos a llamar
+
+a delete.
+
+Vale hay 1 en post Maneco creado de tipo delete y es lo mismo.
+
+De hecho es lo mismo poner Bodhi rabu JSON y en este caso imaginamos que lo que queremos borrar es aquel
+
+registro con código 27
+
+Balearia un servicio web en la base de datos que recibiría el código 27. y haría un delete una operación
+
+delete del código 27. y lo borraría la base datos y nos devolvería un mensaje como que el registro sea
+
+borrado satisfactoriamente.
+
+En este caso lo único que nos devuelve en su mensaje diciendo que ha recibido un data código 27. de
+
+tipo borrado vale para que nosotros sepamos que aprobar el servicio lo estamos haciendo correctamente
+
+estamos formando el JSON correctamente etc..
+
+Vale pues con esto acabamos digamos los voy a guardarlo primero iFans y lo voy a guardar como delete
+
+delete.
+
+Lo dicho aquí decir donde lo guardáis y lo tengo ahí guardado todo bien organizado y como os comentaba
+
+pues acabamos lo que son los servicios básicos que son los dos post los put@ y los Leith vale.
+
+
+Tipo post
+
+https://postman-echo.com/post
+
+POST como Array
+
+ {
+   "pedidos":20,
+   "pruductos":[
+
+   {
+     "id":40,
+     "cantida":1
+   
+},
+
+  {
+      " id":53
+     "cantida":20
+}
+
+]
+}
+
+
+10 -Ejemplo de PUT y DELETE y organizacion en carpetas.
+
+
+Bueno en este video vamos a ver ya hemos visto los cómo probar los servicios de tipo que hemos visto
+
+probar los servicios de dipolos y ahora antes de probarlos en el resto de los servicios básicos me vais
+
+a permitir que vaya empezando a organizar un poco esto.
+
+Como veis la colección me está empezando a quedar un poco grande y muchas veces pues en lugar de tenerlo
+
+a nivel de colección uno puede de lo que son sus carpetas para organizar esto mejor entonces.
+
+Por ejemplo si dejamos que los tres puntos veréis que tenemos la opción de crear una carpeta folder.
+
+Entonces vamos a crear una carpeta que le voy a llamar pues por ejemplo servicios que creo o la carpeta
+
+y lo que voy a hacer es arrastrar dentro de esa carpeta todos los servicios G.T de manera que están
+
+ahora a nivel de carpeta.
+
+De igual forma me voy a crear una carpeta que le voy a llamar servicios por servicios post y voy a arrastrar
+
+dentro pues todos los servicios que tengo ahí no tengo bastante mejor organizado.
+
+Bueno pues voy a crearme una nueva carpeta.
+
+También le voy a llamar DELETE
+
+UPDATE Y input
+
+creo y aquí dentro.
+
+Pues ahora empezaré a crear peticiones y la primera petición o el primer ejemplo que vamos a hacer es
+
+un servicio de tipo put put básico le voy a llamar put básico que es básico que es exactamente soy tu
+
+DELETE UPDATE Y put es decir en su carpeta ya está guardado pero en vez de ser del tipo que lo voy a
+
+modificar la voy a abrir y lo voy a modificar por qué lo voy a poner de tipo put.
+
+Cuando creamos los servicios de tipo put pues normalmente los de tipo cursor cuando lo que queremos
+
+es actualizar un registro de la base de datos es decir que ahora en vez de poner un en vez de poner
+
+post Root es exactamente igual que realmente DELETE UPDATE Y put son exactamente igual que todos los
+
+datos que suelen pasar no en la web Reveles sino que se suele pasar dentro de un body vale para que
+
+no puedan ser interceptados y en el body por ejemplo en formato RAW de tipo JSON.
+
+Yo le puedo decir al servicio web que debe estar construido de esa forma está esperando unos datos.
+
+Por ejemplo imaginemos que quiere modificar el artículo número 40 y donde pone el código un artículo
+
+que ponía la televisión ahora pasa a poner televisión de 55 pulgadas por ejemplo nosotros le decimos
+
+donde Hide sea 50
+
+y el nombre pasa a ser ahora televisión 55 pulgadas.
+
+Vale ya habrá un servicio de por detrás que cuando se le llame de esta forma esperará un campo ideé
+
+y esperar a un campo nombre y él a por detrás.
+
+Digamos que hará el update de la base de datos.
+
+Bueno pues vamos a salvar lo voy a hacer.
+
+Y ese put básico que hemos puesto
+
+vale estarse put@ bãsico Elgueta este lo voy a cobrar Miley.
+
+Este es el punto básico vale y aquí lo tenemos.
+
+Si hacemos el bien pues veremos que ha funcionado correctamente ha recibido los datos y ha recibido
+
+el JSON correctamente.
+
+Y bueno pues ya el servicio web por detrás evidentemente tendrá que hacer esa actualización de la base
+
+de datos igual que tenemos ese tipo put@ serían los delete si datos de hecho el update es algo similar
+
+al put@ más vale hay gente que los hace de tipo put@ y hay gente que los hace de tipo yo normalmente
+
+los hago de tipo put Malé.
+
+De hecho el Postman estoy buscando no lo pone como uno de los tipos predefinidos vale porque normalmente
+
+se llaman de tipo Root.
+
+Si vosotros por lo que quiere por lo que sea os sentís más cómodos haciendo dibujos de poner eso os
+
+hacéis uno personalizado y de hecho podéis incluso copiarlo hagáis y haceis el body exactamente lo mismo
+
+vale.
+
+Voy a hacer otro ejemplo pues por ejemplo aquí podríamos actualizar una base de datos de alumnos imaginaros
+
+que estuviéramos llamando a una base de datos de alumnos donde estáis actualizando el alumno con código.
+
+El campus se llama en este caso código con código 5 y le estáis poniendo nombre.
+
+Pues por ejemplo FRAP vale.
+
+Pues eso sería
+
+me falta la coma.
+
+Esto sería un ejemplo de tipo Death Valley y enviamos así hemos hecho uno personalizado.
+
+Vamos a Alsan.
+
+Bueno pues como no lo reconoce como no reconoce el tipo este que pone put@ pues por eso no nos devuelve
+
+ningún resultado.
+
+Por eso de hecho pone 400 recuas debería existir si existiese aquí un Udai que la base de datos osea
+
+perdón el post Maneco al cual estamos llamando no lo tiene no tiene uno de tipo que no existe por eso
+
+nos está volviendo un €400 si existiese pues nos devolvería un 200.
+
+Un Estado €200 no existe ese servicio web.
+
+Me lo acabo inventar sobre la marcha y por eso evidentemente no nos devuelve una respuesta.
+
+No voy a guardar
+
+lo tengo aquí como lo voy a guardar como un dato de lo que es lo que os he comentado pues normalmente
+
+los de tipo dois son de tipo put@.
+
+Vale hay gente que prefiere llamarles pero yo siempre que los creeros los que hemos visto los ket que
+
+son para obtener información.
+
+Hemos visto los post que es para insertar registros en la base de datos hemos visto los put@ que es
+
+para actualizar los registros de la base de datos y evidentemente nos falta voy a borrar voy a cerrarlos
+
+y no vamos a trabajar con ellos por el momento y evidentemente nos falta el último que son los diploide
+
+vale los de borrado de la base datos lo mismo en este caso pues en vez de llamar a put@ vamos a llamar
+
+a delete.
+
+Vale hay 1 en post Maneco creado de tipo delete y es lo mismo.
+
+De hecho es lo mismo poner Bodhi rabu JSON y en este caso imaginamos que lo que queremos borrar es aquel
+
+registro con código 27
+
+Balearia un servicio web en la base de datos que recibiría el código 27. y haría un delete una operación
+
+delete del código 27. y lo borraría la base datos y nos devolvería un mensaje como que el registro sea
+
+borrado satisfactoriamente.
+
+En este caso lo único que nos devuelve en su mensaje diciendo que ha recibido un data código 27. de
+
+tipo borrado vale para que nosotros sepamos que aprobar el servicio lo estamos haciendo correctamente
+
+estamos formando el JSON correctamente etc..
+
+Vale pues con esto acabamos digamos los voy a guardarlo primero iFans y lo voy a guardar como delete
+
+delete.
+
+Lo dicho aquí decir donde lo guardáis y lo tengo ahí guardado todo bien organizado y como os comentaba
+
+pues acabamos lo que son los servicios básicos que son los dos post los put@ y los Leith vale.
+
+
+PUT es para actualizar un registro de la BD 
+
+EJEMPLO PUT 
+
+modificar articulos 
+
+{
+  "id":50,
+  "nombre":"Televisión 55 pulgadas"
+}
+
+
+EJEMPLO UPDATE
+
+{
+  "codigo":50,
+  "nombre":"Fran"
+}
+
+
+
+EJEMPLO DELETE
+
+{
+  "codigo":27
+}
+
+
+
+
+11- Envio de Cabeceras (Headers)
+
+
+
+Bueno hemos estado viendo los tipos de servicios de tipo Quepos update y Delete.
+
+Hemos visto también como enviar el información para que los reciba el servicio web y vamos a ver ahora
+
+cómo enviar una cabecera a una cabecera lo que de hecho por ejemplo voy a coger uno de los servicios
+
+que ya tengo por ejemplo este ejemplo de Ibeth que teníamos si os fijáis cuando les doy a enviar.
+
+En la respuesta él me dice que ha recibido todas estas cabeceras.
+
+Estas cabeceras son típicas de un envío.
+
+Por ejemplo el tipo de formato que se envía es de HTTPS.
+
+Detecta la cabecera que estoy llamando a una página HTTPS.
+
+Por ejemplo detecta que es el Postman el que está llamando o sea HTTPS que usa el puerto 4 4 3 pero
+
+hay veces que nosotros queremos enviar alguna cabecera adicional porque luego la vamos a leer en nuestro
+
+servicio y nos interesa por cualquier cosa si queremos enviar una cabecera con un dato en concreto que
+
+nosotros creemos eso lo podemos crear aquí en Gelder nosotros pondríamos nuestro dato de cabecera nuestra
+
+clave de la cabecera.
+
+Por ejemplo aquí pondríamos por ejemplo la clave Fram de cabecera que va a tener el valor miradlo mi
+
+dato por ejemplo lo envío y ahora parte de enviar Bodhi que aparte de enviar en este caso el identificador
+
+que viene como un parámetro aquí en la propia cadena enviado también un dato en la cabecera sólo podemos
+
+ver fijaros aquí ahora en cómo aparece un dato que no estaba antes que éste no lo estamos enviando como
+
+cuerpo del mensaje o no estamos enviando como valor dentro de la web R.L sino que lo estamos enviando
+
+en el apartado de cabeceras como un dato de cabecera más.
+
+Esto es importante también porque luego podremos enviar datos de cabecera específicos de ciertas cosas.
+
+De hecho ahora fijaros que estamos enviando al tipo de servidor está bueno o en este caso lo que recibimos
+
+que estamos recibíamos del tipo de servidor.
+
+Nosotros también podemos enviar cabeceras personalizadas.
+
+Bueno como digo no es una cosa que normalmente se suele hacer pero sí que es cierto que puede haber
+
+algún servicio web que esté esperando algo en la cabecera.
+
+Digamos pues si el que enviar la cabecera es Fran hacer cierta cosa y si el que lo envía es otra persona
+
+pues hacer cierta otra cosa.
+
+Bueno pues que sepamos que eso también lo podemos hacer.
+
+
+
+
+12. Crear Variables de entorno
+
+
+Bueno en este video vamos a ver cómo crear las variables de entorno.
+
+Vimos que cree este entorno llamado Curso antes teníamos vosotros debéis tener environment.
+
+Yo creé un entorno llamado cursos sabéis que los entornos los podéis crear aquí en Environment también
+
+los podéis crear en este botoncito.
+
+El mantenimiento de entornos voy a entrar en este botón de mantenimiento de entornos.
+
+Aquí veo que tengo el entorno llamado cursos y quisiera crear otro entorno diferente.
+
+Pulsa el botón Abebe y ya está.
+
+Lo dicho se puede crear aquí en el motonave se puede crear en el botón New Environment donde queráis
+
+crear el entorno el entorno no es más que una especie de caja donde nosotros vamos a poder meter unas
+
+variables para utilizar en este entorno de trabajo que es donde estamos ahora nosotros podremos ir cambiando
+
+el entorno y usar las variables que son como unas variables globales para el entorno de trabajo en el
+
+que nos encontremos.
+
+Si seleccionamos el entorno por ejemplo nosotros nos hemos dado cuenta que en todas las redes que estamos
+
+poniendo en todos en todas las peticiones la web inicial es la misma lo único que cambia es lo que va
+
+después del HTTPS barra barra post Maneco puntocom entonces vamos a crear por ejemplo una variable entorno
+
+que le vamos a llamar R.L Leko por ejemplo qué le vamos a dar como valor inicial S Postman el HTTP 2.La
+
+agravara Maneco puntocom y como valor actual pues automáticamente al pinchar copia al mismo y si no
+
+lo debemos copiar nosotros actualizamos le damos al update vemos como ya dentro de curso esa variable
+
+está creada.
+
+Vale y ahora cómo la utilizamos.
+
+Pues ahora todos los servicios web podemos utilizarlo de esta forma entre barras en el momento que escribo
+
+la primera llave él ya me da la opción de poner el lector.
+
+Esto es el equivalente a si hubiésemos puesto la web Relay.
+
+Para qué es bueno esto.
+
+Por ejemplo imaginemos que estamos en un sistema de pruebas y estamos con un servidor y luego trasladamos
+
+todos nuestros servicios web a otro sitio.
+
+Lo único que tenemos que hacer es cambiar la variable de entorno no tenemos que cambiar cada una de
+
+las peticiones entrar y cambiarle toda la cadena de conexión simplemente creamos la variable entorno
+
+y ya está.
+
+Además podemos tener diferentes variables de entorno para probar en sistemas de pruebas existe real
+
+en producción en entornos de trabajo diferentes.
+
+Podemos hacer uso de las variables.
+
+Esto es como si hubiésemos puesto la cadena de conexión.
+
+Ahora nos falta el bar Racket y es el equivalente.
+
+De hecho vamos a ejecutarlo y veremos que se ejecuta perfectamente y es el equivalente a si hubiésemos
+
+hecho esto.
+
+De hecho nos dice que hemos llamado a ésta a esta o R.L la acopiado acopiado en este trozo primero y
+
+ha puesto el valor segundo de esta forma pues nos va a ser mucho más útil a partir de ahora poner siempre
+
+el hueco.
+
+Y bueno pues si mañana cambiamos de servidor pues ya tenemos todo perfectamente configurado.
+
+Voy a guardar este como lo guardaré dentro de la colección colectivo en uno y en los servicios web por
+
+ejemplo y lo voy a guardar como guest con variable de entorno y ya tenemos el ejemplo.
+
+Ya está.
+
+
+
+
+urlecho
+
+
+
+13. Crear Variables globales
+
+Bueno ahora ya sabemos crear variables de entorno.
+
+Lo hemos visto antes con esta variable o Lecco pero esa variable lo bueno y lo malo que tiene es que
+
+solamente funciona en este entorno es decir si estamos en el entorno curso le damos asen se ejecuta
+
+sin problema en el resultado pero si nos fuéramos a otro de nuestros entornos no en vano por ejemplo
+
+y ejecutaremos en fallaría fallaría porque evidentemente esa variable en este entorno no tiene valor
+
+no la reconoce y por eso falla podemos crear variables que valgan para todos nuestros entornos de trabajo
+
+que se llaman como variables globales si eso aquí en Environment Whitlock veis que tenemos aquí variables
+
+globales podemos editar y crear variables globales que valgan para todos los entornos por ejemplo me
+
+voy a poner una variable que se llame pues parecida a la otra.
+
+Vamos a llamar VCL el eco global por ejemplo y cuyo valor inicial tendrá el HTTP s los puntos más gabarras
+
+pues es Postman eco puntocom.
+
+Vale la guardamos o RL global vale.
+
+Bueno pues ya tenemos variables globales.
+
+Vale esa pues esa variable ahora la podemos usar en cualquier entorno si yo ahora pongo l'école global
+
+y la ejecuto me va me funcionaran en el entorno curso y si la prueba en el entorno Environment y la
+
+ejecuto pues también funcionará porque es una variable que funciona en todos los entornos y así tenemos
+
+el uso de las variables globales este lo voy a salvar como que con variables globales
+
+y lo guardaré dentro de servicios que.
+
+
+
+14. Uso de las variables dinámicas
+
+
+Bueno en este video voy a explicar cómo se hace uso de lo que Postman llama las variables dinámicas
+
+que trae por defecto incluidas en el sistema.
+
+Por ejemplo para eso voy a usar el servicio de tipo Goeth por ejemplo creó una variable creada por mí
+
+esta es una variable creada el eco ahora voy a usar un tipo Goeth pero en este caso el valor bueno lo
+
+voy a poner aquí abajo que me resulta más sencillo el valor del parámetro del parámetro 1 en lugar de
+
+ser un dato que yo podría poner un 2 3 4 por ejemplo voy a poner que coja una variable que se está geoide
+
+dice que genera en tiempo de ejecución una variable dinámica de tipo destiló V4 lo veremos qué tipo
+
+es esto lo que va a hacer es que cada vez que yo llame a la función me va a generar un número diferente
+
+este es el formato estuve 4 que va a ser una clave primaria esto es súper útil por si quiero hacer algún
+
+tipo de testing donde tenga que insertar datos en una base de datos y quiero asegurarme que la clave
+
+que envíe cada vez sea diferente porque esto con lo que me genera es como una clave primaria siempre
+
+diferente fijaros que si la voy ejecutando cada vez el código va cambiando nunca va a ser igual de manera
+
+que puedo generar siempre un Jaider diferente.
+
+Este es uno de los de las opciones vale voy a guardarlo lo voy a llamar geoide o geoide y los voy a
+
+guardar en una nueva carpeta vaya a cancelar crea una nueva carpeta que le voy a llamar variables dinámicas
+
+y dinámicas
+
+creo y este lo voy a guardar dentro.
+
+Jaider Aidé y lo guardo en la carpeta de variables dinámicas.
+
+Vale ya tengo el primero voy a probar con esto lo borro voy a probar con uno nuevo vale.
+
+En este segundo ejemplo lo que veía es lo mismo pero hacer uso de otra variable que es el Rando Ninth
+
+voy a usar primero mi variable de la cadena.
+
+Fijaros que al final conforme uno va programando más cada vez va haciendo variables y las cadenas van
+
+quedando más en variables que en escribir toda la cadena de golpe porque es mucho más cómodo y luego
+
+mucho más cómodo de mantener y de cambiar.
+
+Voy a poner por ejemplo este ejemplo donde creo para uno con un gran Bonin pensé que este Rando ni lo
+
+que te genera es un número aleatorio entre 0 y 1000 cada vez fijaros establecãa general 949 el 9 517
+
+el 158 siempre genera un número aleatorio lo dicho entre 0 y 1000.
+
+Voy a darle a salvar ahora luego lo usaremos en otro sitio y vereis como tienen mucha funcionalidad
+
+vale esto ponemos grandón y número aleatorio y lo guardamos en variables dinámicas.
+
+Vamos a ver el tercer uso de variables dinámicas que me trae al sistema por defecto que es cuando quiero
+
+que me dé el tiempo desde que se empieza a contar el tiempo que es el 1 de enero de 1970 el número de
+
+segundos que han pasado vale vamos a ver el número de segundos y esto es para calcular tiempos entre
+
+una vez que ejecuto un servicio y y la siguiente vez vale se suele usar como un contador vale por ejemplo
+
+pues nada le voy a poner este ejemplo que me devuelva el tiempo que han pasado este número de segundos
+
+desde ese día.
+
+Si ya no le doy pues el contador está aumentando ahora en 45 y 48 y 51.
+
+Bueno pues esto me devuelve como hemos dicho el tiempo desde la fecha inicial la fecha inicial no es
+
+el inicio de los tiempos sino la fecha que se considera para los ordenadores que es el 1 de enero de
+
+1970 pero al final a mi me lo que me sirve es para calcular tiempos el momento de inicio que ejecuto
+
+y el momento final se lanzo antes y después de un proceso pues sé cuánto tiempo ha tardado el proceso
+
+en ejecutarse.
+
+Vale un tiempo desde la fecha inicial esa variable por sí solas no tienen sentido pero tampoco tienen
+
+muchísimo sentido pero sí que las vamos a usar mucho por ejemplo cuando nosotros estemos construyendo
+
+peticiones.
+
+Por ejemplo voy a construir una nueva.
+
+Esta vez la voy a construir de tipo 2 y fijaros a qué me refiero.
+
+Por ejemplo si recordáis los de tipo 2 yo lo que hacía era enviar información a un servidor de aposto
+
+pero como enviaba yo la información la información la enviaba.
+
+Realmente tenía que construir un body que había visto en el formato que más uso es el JSON Jason Vale
+
+y MJ son pues transformaba y o para hacer para probar mi servicios.
+
+Imaginaros que tenemos un servicio de inserción en base de datos pues tenemos una inserción donde insertamos
+
+un IDE un identificador que le dábamos un valor por ejemplo 2 3 4 y luego insertamos un producto
+
+producto que le poníamos el nombre del producto televisión y luego una cantidad entre comillas dos campos
+
+cantidad y la cantidad le poníamos 1 vale.
+
+Si ejecutamos veremos que si todo ha ido bien pues aquí están los datos que han sido enviados al JSON
+
+JSON está bien formado es decir todo ha ido bien.
+
+Pero qué pasa que cuando yo ajetes no me interesa siempre poner el mismo ideé y poner la misma cantidad
+
+yo quiere hacer pruebas con identificadores diferentes para que vaya haciendo inserciones diferentes
+
+y no me da error en la base de datos y poner ciertas cantidades para probar que dependiendo los números
+
+pues si funcionan o funcionan mejor siempre con uno si que va pero con 900 no va.
+
+Entonces muchas veces las variables no las podía poner aquí la cadena sino que las voy a poner aquí
+
+en el cuerpo.
+
+Qué pasaría si yo pusiera ese Rando Nin.
+
+De hecho cómo se ponía Andoni.
+
+Pues si recordáis la variable era dólar grandón y con la I mayúscula y veremos como si yo ahora enviara
+
+un sen random me ha puesto un 712 en el envío de la petición para insertar la base de datos quizá ni
+
+es más interesante ponerlo por ejemplo en este ejemplo pero voy a copiar de aquí lo voy a poner como
+
+cantidad y aquí en lugar voy a poner el geoide.
+
+Vamos a ver entonces en cada ejecución me hará un número de hecho ahora el me dice que el Postman está
+
+mal formado y está mal formado porque el geoide es una cadena.
+
+Vamos a ver
+
+y aquí lo tenemos el ideé cada vez es un número diferente y la cantidad cada vez es un número diferente
+
+si lo ejecutamos otra vez pues obtendremos otro Aidé y obtendremos otro número y así podremos luego
+
+generar nuestros tests con valores aleatorios cada vez con valores de tipo formato V4.
+
+Estos únicos y con cantidades entre 0 y 1000.
+
+Luego veremos como podemos estas cantidades ir multiplicando las etcétera y así hemos aprendido a crear
+
+variables dinámicas que las puedo meter tanto en la web de llamada como en el cuerpo del JSON que puedo
+
+montar.
+
+
+
+{
+   "id": 1234,
+   "producto": "tv",
+   "cantidad": 1
+
+}
+
+
+Cambia el id aleatorio
+
+{
+   "id": {{$randomInt}}
+   "producto": "tv",
+   "cantidad": 1
+
+}
+
+
+CAMBIA EL ID ALEATORIO Y LA CANTIDAD 
+{
+   "id": "{{$guid}}",
+   "producto": "tv",
+   "cantidad": {{$randomInt}}
+
+}
+
+
+
+Tarea 1: Practica lo aprendido hasta ahora
+
+
+
+https://postman-echo.com/get?nombre =laura 
+
+
+https://postman-echo.com/post
+
+{
+  "id":  1123,
+   "Usuario": 1,
+   "Carrera": "Informatica"
+
+}
+15. Colección usada en los vídeos.
+
+
+
+

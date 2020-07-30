@@ -1,0 +1,3291 @@
+
+Sección 6 Tests y Scripts
+
+
+
+31. Mi primer test. Code 200.
+8 min
+
+https://www.chaijs.com/
+
+Bueno en este nuevo video vamos a ver lo que es el núcleo de lo que es el curso.
+
+Hasta ahora hemos ido enseñando un poco la plataforma enseñando cómo se crean servicios las llamadas
+
+a servicios pero al final esto no pasa de ser o queríamos montarlo como un curso de testing y no hemos
+
+hecho ningún test.
+
+Por el momento si os fijáis nosotros hemos ido probando cómo manejar pues meter una R.L para probar
+
+hemos visto parámetros las autorizaciones las cabeceras el cuerpo de los mensajes por ejemplo los de
+
+las peticiones post hemos visto el tema de cuquis hemos visto el código generado los comentarios pero
+
+no me he saltado evidentemente aposta para llegar a este punto.
+
+El tema de scrip y los tests la creación de script Hites en estas secciones donde veremos estos dos
+
+estas dos opciones que son uno de los núcleos de Postman vamos a empezar con nuestro primer test.
+
+Entonces primero deberíamos saber un poco qué es esto de hacer test.
+
+Yo cuando quiero hacer un test lo que quiero es comprobar sobre una petición web unos resultados vale
+
+lo más sencillo el test más sencillo de todos es comprobar por ejemplo si una petición de un servicio
+
+ha resultado satisfactorio o no lo que estamos viendo.
+
+Por ejemplo si abrimos cualquiera de ellos unir uno de los primeros ejemplos de la prueba Aguete establecimos
+
+en su momento esta prueba.
+
+Si recordáis una prueba que simplemente obtenía un resultado vale una cabecera la R.L de la llamada.
+
+Pero nada más.
+
+Pero veíamos que aquí el estatus es 200 cuando nosotros llamamos a un servicio que devuelve correctamente
+
+un resultado.
+
+Por ejemplo si pusiéramos y eso por ejemplo llamamos ese servicio no existe nos nos devuelve un 404
+
+nos.
+
+Es decir un 200 es un resultado correcto y algo que no sea de la serie 200 es un resultado no correcto.
+
+Cómo podemos hacer nosotros un test para saber si un servicio web existe y devuelve resultados o no.
+
+Bueno pues vamos a ir a nuestro primer test y vemos que aquí tengo una consola donde puedo escribir.
+
+De todas formas voy a abrir también ya la consola que hablamos mucho de ellas a principio del curso
+
+pero no vamos hemos utilizado por el momento pero a partir de ahora vamos a empezar a utilizarla para
+
+nuestros test.
+
+Bueno la voy a minimizar y la iremos utilizando durante los siguientes vídeos.
+
+El primer y más sencillo fijaros que aquí en la parte de la derecha por una cosa hay que poner snippets.
+
+Esos son ya unos test que vienen reconstruidos.
+
+Hay uno que se llama estátus coat code is €200.
+
+Voy a pulsar sobre él a ver qué pasa cuando pulso veo que aquí en la parte de la izquierda me ha escrito
+
+automáticamente un test.
+
+Esto me sirve para ver como se me ha activado el botón de test porque ya es como que he modificado algo
+
+en él y algo hay.
+
+Entonces siii veo voy a explicar un poquito el formato de cómo se crea un test para que sepamos luego
+
+nosotros crearlo nuestros propios está escrito en lenguaje JavaScript.
+
+Esto permite Postman permite escribir el lenguaje JavaScript y de hecho luego haremos cosas en JavaScript.
+
+Aquellos que no sepáis de programación o conozcáis otro lenguaje pero no JavaScript no preocuparos porque
+
+la sintaxis que hay que poner y lo que hay que escribir en JavaScript tampoco es que tengáis que saber
+
+un javascript super avanzado es bastante bastante sencillo.
+
+Bueno vemos el formato de los tres formatos los test todos los test empiezan por PM punto test eso donde
+
+indicamos a Postman que vamos a ejecutar un test.
+
+Luego viene el nombre de este test aquí por defecto le pone estatus code is 200 pero este nombre no
+
+tiene porqué ser estátus con 200.
+
+Es como el nombre de la función y nosotros por ejemplo lo vamos a poner Tex correcto.
+
+Es que comprueba comprueba la llamada correcta por ejemplo para que veáis que este nombre lo podemos
+
+cambiar no es un nombre que tenga que ser el que nos ha dado la Snipe por defecto.
+
+Luego abre la función Malet donde realiza las comprobaciones del test los que se llaman los aserciones
+
+vale comprobar realmente es el test en si es lo que viene aquí dentro vale.
+
+La primera comprobación que hacemos en el test más básico es aquel donde el resultado del test vale
+
+el respon tú JAF estátus.
+
+Es una función integrada.
+
+Esta función si se debe llamar así es que devuelve 200 ahora vamos a ejecutar el test.
+
+Si este servicio existe y devuelve el resultado con código 200 entonces habremos pasado el test y si
+
+no el TS habrá fallado no vamos a probarlo vamos a enviar un Senn ejecutamos el test y vemos que el
+
+Estado es 200.
+
+Vale y ahora queremos ver el resultado del test pues el resultado del test.
+
+Si bajamos un poquito para abajo vemos que se ha activado una casilla que antes no estaba.
+
+O sea que estaba pero no nunca hacíamos es que se llama The Result y pinchamos en ella vemos los resultados
+
+y es el test que comprueba la llamada correcta.
+
+Ha sido pasado.
+
+Es decir que este test ha funcionado y ha devuelto Okkhoy.
+
+Esta aserción Esta comprobación ha resultado correcta.
+
+Es la única comprobación que hay dentro de esta función y al ser la única comprobación y ser correcta
+
+el test ha sido pasado.
+
+Había un test y es correcto.
+
+Qué pasaría si hubiésemos puesto que el Estado fuera 200 y hubiésemos llamado imaginaros a este servicio
+
+que no existe.
+
+Esto va a devolver un estado 404 él lo va a comprobar con 200.
+
+A ver si es un 200.
+
+Evidentemente no va a ser un 200 porque va a correr 404 que es que no encuentra el servicio como 400.
+
+No es igual a 204 al darle Arsen.
+
+Si nos vamos a los resultados nos dice que los tests han pasado cero de 1 es decir este test que comprueba
+
+dice el aserto un error esperaba una respuesta de código 200 pero fue 404 entonces el test ha fallado
+
+entonces.
+
+Bueno esto me sirve para ver una primera estructura de cómo es un test básico en el cual yo ya sé que
+
+tengo que empezar con PMT es que yo pondré un nombre para este test el que yo quiera y el más básico
+
+que es el de Estado y cuando va o cuando responde paz y cuando responde Feil.
+
+Evidentemente aquí podemos filtrar yo puedo filtrar en todos puedo filtrar solamente los fallado los
+
+pasados que no hay ninguno o los saltados que en este caso tampoco hay ninguno vale bueno pues es nuestro
+
+primer test nos vale para conocer un poco la estructura y este primer botón y una de las cosas para
+
+acabar este primer vídeo relacionado con los tests es a ver qué ha pasado en la consola si abro la consola
+
+fijaros éstas son las dos ejecuciones que he hecho el test en el primero fue éste vale que fue ejecutado
+
+con 200 en la consola veo las cabeceras de todas las peticiones pero si veo aquí la consola no estoy
+
+viendo nada relacionado con los test.
+
+Luego veremos cómo poner cosas en consola.
+
+El segundo test que hemos ejecutado lo tenemos aquí que ha sido el que ha fallado.
+
+Bueno pues nada con eso acabamos este primer test básico y ahora pasaremos a empezar a profundizar mucho
+
+en este mundo de los test.
+
+
+
+32. Test de Json y realización de múltiples test para una misma petición.
+17 min
+
+Bueno ahora que ya sabemos hacer peticiones o sea nuestro primer test vamos a continuar viendo otros
+
+tipos de tés e iremos avanzando así en el mundo de maravilloso mundo del testing.
+
+Bueno para este para este segundo test voy a hacer uso de uno de los que ya tengo creado de tipo post.
+
+Si os acordáis hicimos este post mediante JSON vamos a recordarlo si lo abro era un creé un servicio
+
+en el cual llamaba a esta o R.L y simplemente pasaba como cuerpo un JSON Valent que construía y el post
+
+Maneco lo que hacía era devolver un resultado que me llegaba como parte del resultado lo mismo que yo
+
+había enviado Malen recordamos un poco alternarse en él me devuelve como resultado un JSON también con
+
+una serie de valores por ejemplo los argumentos y algún argumento que no hay ninguno los datos que yo
+
+he enviado y una variable a Rafael Okafor los Gelder y una variable llamada JSON.
+
+Bueno esto es un resultado y una llamada también VfL.
+
+Esto es un resultado típico de un JSON que podría ser de cualquier servicio web hoy en día de los que
+
+se trabajan de cualquier API de cualquier API.
+
+Vamos a nos va a devolver un JSON formado estructurado con la misma estructura que aquí y en nosotros
+
+muchas veces tendremos que comprobar si los resultados devueltos son los que nosotros esperamos.
+
+Vale si los valores devueltos son los esperados es decir si los datos de dentro del JSON el contenido
+
+del JSON es el dato que yo busco y esos test además no podemos meter luego cuando hagamos test de algún
+
+test de integridad y pongamos un montón de test uno detrás de otro comprobando realmente valores o si
+
+hemos hecho pruebas de caja blanca o de caja negra y queremos saber exactamente los resultados en una
+
+caja negra si son los esperados pues para eso nos va a valer mucho Lords tes que tienen que ver con
+
+el resultado del JSON.
+
+Vamos a verlo vamos al apartado de TES en la parte de arriba y vamos a construir otro tipo de test diferente
+
+al de antes.
+
+Vamos a los snippets y vere que más abajo tengo uno que pone respon Body JSON value CHEC este me Avalo
+
+me va a valorar el resultado de un JSON vamos a pinchar en el país me pone esto por defecto ya me hice
+
+PMT.
+
+No me utes y me pone una serie de cosas.
+
+Bueno lo primero voy a cambiarle el nombre.
+
+Esto es resultados del JSON vale y yo lo que quiero aquí es importante esta primera línea lo que coge
+
+es meter una variable llamada JSON data me mete todo el contenido de todas la respuesta del JSON es
+
+decir lo que hace es meter todo esto que va a volver el JSON en una variable.
+
+Vale esa variable se va a llamar JSON data y luego para comprobar valores en concreto se ejecuta esta
+
+función pm. Speck a la cual le pasamos la variable que nosotros queremos y el valor con el cual queremos
+
+comprobar por ejemplo aquí el pone te da por defecto JSON data dentro de JSON data búscame el valor
+
+value value no existe.
+
+Nosotros no tenemos el valor value Maleno nosotros tenemos uno que se llama Hartz uno que se llama data
+
+uno que se llama Feil uno que se llama for 1 que se llama Gelder y uno que se llama JSON y uno que se
+
+llama Web Rayne.
+
+Nosotros podríamos comprobar por ejemplo ese valor u RL voy a copiar o aprovechar y voy a copiar la
+
+RL y me di aquí sin querer HTTPS.
+
+2 Bueno reescribo y hasta vale.
+
+Si por ejemplo yo compro dentro de JSON data el campo que se llama R.L y el valor que yo espero como
+
+respuesta.
+
+Esto sería constuir digo el valor RL es cuando es entre comillas es entre comillas o sea cuando perdón
+
+cuando es una variable de tipo cadenas entre comillas yo espero que este test me devuelva HTTPS dos
+
+puntos barra barra Postman barra hehco puntocom Magnavox si me devuelve eso es que me devuelve lo que
+
+yo esperaba.
+
+Con lo cual el texto lo pasa pero si no me devuelve eso es porque el TS ha obtenido un error vale imaginaros
+
+que están llamando a una base de datos y creen que le paseis el código.
+
+Esto hubiese sido una petición del código 1 y tiene que devolverte la palabra televisión tú pones que
+
+exponga televisión sigue en vez de poner televisión pone Blu ray pues evidentemente el código o sea
+
+el TS ha fallado no te ha devuelto el resultado que tú esperabas.
+
+Yo espero que me devuelva este resultado cuando le doy sen
+
+compruebo que en el resultado lo ha pasado.
+
+Por qué.
+
+Porque el resultado devuelto en la variable JSON data dentro del valor llamado R.L.
+
+Es éste y compruebo que sí que es ese en los resultados el body.
+
+El resultado es ese si yo hubiese esperado que en vez de devolverme eso me acabado en en post fuera
+
+han acabado en Jeet.
+
+Yo espero que esta sea la respuesta correcta y en Voltes como la respuesta no ha sido eso.
+
+El test fallará vale no resultó.
+
+Esperaba esta cadena y sin embargo la cadena de respuesta no ha sido igual a la cadena que esperaba.
+
+Yo esperaba ésta y ha recibido otra.
+
+Bueno puedo poner aquí el post puedo comprobar otro campo y eso me ayuda a comentaros que dentro de
+
+una función no solamente tienes que hacer una aserción es decir puedes comprobar más de un valor.
+
+Yo por ejemplo puedo copiar esta línea pegarla y comprobar no sólo dentro del campo JSON data la web
+
+reales sino otro valor por ejemplo como yo sé que ésta me tiene que devolver al body me tienen que devolver
+
+como nombre Fram porque sé que es el resultado esperado.
+
+Voy a ver si realmente en el test lo voy a programar para que me devuelvan el resultado Fran.
+
+Pero si os fijáis Fran pertenece al valor nombre que está dentro de data.
+
+No pasa como R.L o R.L era directamente un valor aquí es un campo que está dentro de otro campo.
+
+Cómo hago esa animación para llegar a este valor nombre pues con los puntos es decir yo tendré que poner
+
+JSON data.
+
+Punto data punto nombre y eso es lo que querré comparar JSON data punto data puto nombre y ese nombre
+
+es Fram
+
+voy a cobrar
+
+ese nombre es Fran aquí estoy haciendo dos aserciones dos comprobaciones estoy comprobando por un lado
+
+esto y por otro lado esto cuando ejecuta el Altés según el test ha sido pasado por qué porque las dos
+
+comprobaciones son correctas.
+
+Qué pasaría si yo espero que reciba Francisco.
+
+Y sin embargo recibe Fran.
+
+Es correcta pero esta no va a salir correcta.
+
+Una de las dos sí y la otra no. Cuando en Altés el me va a fallar me va a decir que esperaba Fran y
+
+ha recibido Francisco es decir para que el TSE resulte correcto todas las aserciones de dentro todas
+
+las comprobaciones tienen que ser correctas de manera que yo puedo comprobar todos los datos del JSON
+
+todo lo que yo quiera aquí y con que uno de ellos no sea correcto.
+
+El test ya no es correcto.
+
+Vale por ejemplo voy a hacer una prueba más y ahora en lugar de comprobar el campo nombre voy a comprobar
+
+el campo apellido para mostraros otra cosa.
+
+Fijaros en el campo apellido apellido es García por qué quiero mostrar porque es ahí García va con acento
+
+vale.
+
+Qué pasaría si yo dijera que espero jugar FIFA lo voy a poner sin acento y digo que el campo espero
+
+que el campo apellido sea García.
+
+La primera comprobación la va a pasar.
+
+Vale realmente el R.L.
+
+El esperado y recibido va a ser el mismo.
+
+El nombre también pero el apellido Qué pasa si cambia es ahí con acento y sin acento.
+
+Pues lo comprobamos y vemos que el test falla el test falla porque esperaba García y ha recibido García.
+
+Vale entonces no ha sido el mismo y el test ha fallado.
+
+Vale.
+
+Evidentemente esto es lo que se llama que es que sensitive.
+
+Y además también con acentos de hecho y si yo hubiese puesto ese García con acento pero mayúscula voy
+
+a cambiar ahora es García.
+
+Es la misma palabra.
+
+Lo único que cambia es que es ahí es mayúscula en vez de minúscula si vamos hacen pero tienen el acento
+
+seamos hacen lo mismo el test falla.
+
+Vale tiene que ser exactamente igual.
+
+Vale mayúsculas minúsculas acentos.
+
+Todo exactamente igual si pongo García en minúscula y con acento a darle Herzen el TS ha pasado las
+
+tres acepciones son correctas y el TS ha pasado.
+
+Bueno aprovecho para deciros hay que hacer un único tes para cualquier petición.
+
+Solamente puedo hacer un test.
+
+No por supuesto que no puedo hacer muchos más de un test.
+
+De hecho es lo normal que cuando tú quieras probar en profundidad un recuerdo una petición le hagas
+
+todos los test que tú quieras.
+
+Valen todos los que se te ocurran.
+
+Todos los que tu política de empresa de testing diga que hay que invertir en ellos.
+
+Pero cuantos más te Salla hagas más seguro es que este servicio está funcionando correctamente.
+
+Vale entonces Cómo añado un segundo test simple simplemente pulso al intro y voy a hacer el mismo que
+
+hice antes por ejemplo este de respondãa y no perdón este el de código 200 lo voy a añadir.
+
+Vale no lo voy a cambiar.
+
+Bueno voy a poner el código 200 por ejemplo un código 200 y ahora tengo dos tres para el mismo servicio
+
+tengo dos 3 voy a ejecutar el primero es correcto y el segundo.
+
+Veremos a ver si devuelven 200.
+
+También es correcto porque como vemos también de 200 con lo cual los dos han sido pasados y que cada
+
+vez puedo ir metiéndole +3 a mis peticiones.
+
+Qué pasa qué pasaría si el primer test falla se ejecuta el siguiente test por ejemplo este Fram voy
+
+a poner el Francisco va a fallar una de las tres aserciones con lo cual este test va a fallar se ejecuta
+
+este segundo test vamos a probar Sen y vemos que si ahora me dice que de los dos 3 que se han lanzado
+
+uno de los dos ha sido correcto.
+
+Vale porque el otro ha fallado más el que falla te dice por qué falla aquí puedes poner los que han
+
+pasado los que han fallado los que han sido saltados en este caso ninguno pero evidentemente.
+
+Pues tú aquí al final vas a tener un resultado de todos ustedes los que han ido funcionando y los que
+
+han ido fallando entonces puedes escribir tantos como quieras uno detrás de otro y al final los ejecutarã
+
+todos.
+
+Oye y si quiero ejecutar estos test de resultados del JSON puedo ejecutar varios de este estilo unos
+
+que comprueben unos campos y otros que componen otros campos.
+
+Por supuesto simplemente copiamos pegamos por llamarle.
+
+Resultado le voy a llamar resultados 2 del JSON por distinguirlo.
+
+Vale y en este en lugar de comprobar los campos estos pues voy a comprobar otro campo.
+
+Vamos a ver voy a comprobar la edad.
+
+A ver si la edad es 40 42 y si vemos uno que en vez de comparar cadenas compare números.
+
+Copio este mismo y ahora lo voy a modificar.
+
+Qué campo debo coger dentro del JSON data data y dentrodel data el era XLII o mejor en vez de coger
+
+estos data voy a coger estos de JSON que son los mismos JSON data punto JSON punto edad para que veáis
+
+que puedo probar con cualquiera otra son data.
+
+Punto JSON punto edad como es un valor numérico.
+
+Si yo aquí pusiera el 42 dentro de las comillas vamos a ver qué pasa
+
+ejecutamos Uy.
+
+No he cambiado que no quería pero bueno me vale igual ahora este Cedat este hace el de García.
+
+Vamos a ver si este funciona si este funciona y si este funciona de hecho el apellido García este evidentemente
+
+va a funcionar pero vamos a ver este primero si ahora va o no va X.M y no no va no salio 2 de.
+
+El segundo evidentemente funciona el tercero que habíamos comprado que funciona pero el primero bueno
+
+primero ya que falló Fran y Francisco que era esperado.
+
+Vamos a cambiar vamos a poner otra vez Fran le damos
+
+y lo mismo me vuelve a fallar por qué.
+
+Porque no es lo mismo el valor 42 que la cadena 42 es lo mismo un valor numérico que un valor de tipo
+
+cadena con lo cual los números hay que compararlos sin las comillas.
+
+Cuando tú quieres comparar un valor numérico se compara sin las comillas y damos ahora al cien
+
+veremos que los tristes han pasado.
+
+Vale esto no los valores esperados.
+
+Esto era un valor esperado y esto era exactamente el valor que también la espera y ha pasado los tristes
+
+como mejora como mejora a este.
+
+A esta prueba lo que podríamos hacer.
+
+Fijaros que aquí hay una variable que se llama var JSON data que coge la respuesta la estamos haciendo
+
+dos veces.
+
+Si queremos optimizar si queremos optimizar podríamos sacar esa variable fuera de la función de las
+
+fundirlo ponerla al principio estén var JSON data control C no voy a poner aquí control Lube así de
+
+claro una única vez y la voy a utilizar dos veces ahora ya no tengo que declararla dentro dos veces
+
+tengo una única variable que voy a utilizar dos veces vale eso es una optimización de las de los tres
+
+no declamó más variables de la necesaria.
+
+Voy a darle otra ejecutar y voy a ver como el resultado es el mismo vale obtenido lo mismo que antes.
+
+Lo que pasa es que me vez de usar dos variables he usado una porque me vale.
+
+Esto es como un pequeño programita de JavaScript y la misma variable me vale dentro de las dos funciones
+
+el alcance de esta variable hace que funcione dentro de este TES y dentro de este test de hecho también
+
+podría haberlo usado dentro de este test pero no la ha usado porque no la necesito para nada y con esto
+
+vemos que hemos aprendido otro tipo de test el de comprobar variables de JSON ver que hay algunas variables
+
+que están a nivel al primer raíz como era la y otras que son dentro de un segundo raid dentro de data
+
+nombre o Soledat.
+
+Hemos hecho comprobaciones de tipo cadena hemos hecho comprobaciones del tipo númerica hemos visto que
+
+las cadenas difieren son sensitive y en mayúsculas minúsculas y acentos.
+
+Hemos visto que podemos sacar variables que afecten a varios tests y que podemos hacer varios tests
+
+en el mismo para la misma petición y que aquí nos saldrán los resultados de todos los test.
+
+Y lo siguiente vídeo pues continuaremos con este maravilloso mundo de los tests.
+
+
+
+   pm.expect(jsonData.url).to.eql(
+"https://postman-echo.com/post");
+
+
+
+33. Probando la consola
+4 min
+
+Bueno hasta ahora hemos estado haciendo nuestros primeros Escribà ahora continuaremos con ello pero
+
+vamos a empezar también a jugar un poco con la consola en una consola precisamente de juegos.
+
+Pero bueno vamos a empezar a jugar un poco con la consola.
+
+Nosotros hasta ahora estamos ejecutando los tres los 3DS y en algún momento dado puede ser que nos interese
+
+sacar pues por ejemplo aquí.
+
+Aparte de que cojan los datos pues devolverlo para la consola para luego examinarlo nosotros a ver si
+
+los valores devueltos son los esperados.
+
+Que nosotros tengamos un poco de visión de qué es cómo se está ejecutando el script para ver si es que
+
+realmente no estamos recepcionado en lo que nosotros pensamos y por eso nos está fallando muchas veces
+
+a uno le falla un antes y es que resulta que la escrit pues el JSON que está recibiendo eso no tiene
+
+el formato que uno espera o cualquier cosa y conviene muchas veces examinando cómo podemos imprimir
+
+por la consola pues bueno es una función de JavaScript que se llama console punto log Vale y le pasáis
+
+como le pasé como parámetro de lo que queréis que imprima por la consola.
+
+Pues por ejemplo el JSON minusculas JSON data acabó en punto y coma con esa función imprimir por consola
+
+el resultado que haya llegado en este test.
+
+Si lo mismo copiamos aquí por ejemplo justo después de recibirlo.
+
+Ojo es importante que el JSON data console puntero lo ponga detrás del Jonasson data porque si lo hubiese
+
+puesto delante me hubiese cogido los datos del test anterior que es lo que tienen almacenado entonces
+
+siempre después de recibir los datos los ingresos por consola vamos a ejecutar ahora Altés la ejecución
+
+va a ser lo mismo los resultados en 3 de 3 pero la diferencia es que si ahora vemos la consola aparte
+
+de las peticiones quizá debería haber limpiado de hecho voy a limpiarla la voy a limpiar todas las peticiones
+
+y una vez tener la consola muy muy llena que todas las cosas que habéis ido haciendo y queréis limpiarlo
+
+le voy a dar a clear lo deja limpio y voy a volver a ejecutarlo y vereis lo que hace en consola ahora
+
+vale lo ejecuta a través de los 3T evidentemente de nuevo son correctos.
+
+Voy a la consola y qué es lo que tengo.
+
+Pues fijaros tengo por un lado puedo minimizar y alargar tengo de cada uno de los 3 o los 2 3 que he
+
+puesto fijaros que me he impreso por consola.
+
+Tengo 1 este post voy a minimizarlo aquí tengo todos los argumentos.
+
+Todo lo que me ha impreso por la consola es el JSON data ese por la consola.
+
+De hecho me la he impreso 2 veces una vez la primera.
+
+De hecho este data aquí con todos los datos uno por cada uno de los servicios que he puesto el JSON
+
+data aquí la primera vez vale.
+
+En la primera llamada post y luego que el ha a los 18 minutos 50 segundos cero nueve y luego acto seguido
+
+ha ejecutado el otro.
+
+De hecho tengo dos veces los dos JSON data que me expreso por el consolé los dos consolé punto lo que
+
+ejecutado tanto uno como otro además por la consola me permite ver los tiempos en que han empezado cada
+
+uno de los servicios y cuánto tiempo ha tardado en ir.
+
+Pues bueno puedo ir he tenido la información a quien consola que tiene cada uno de los valores por ejemplo
+
+los Getter en cada una de las peticiones en las dos peticiones.
+
+Como estoy hablando al mismo servicio pues estoy teniendo el mismo JSON data pero bueno me sirve para
+
+comprobar que normalmente no suele poner el console punto Loge en todos los TES sino en uno para saber
+
+cuando se llama realmente que está recibiendo lo que quiere es lo que esperaba recibir.
+
+Y bueno que se pague por nada el uso de consola punto que en cualquier momento podéis imprimir cualquier
+
+cosa de aquí dentro por la consola simplemente con el console punto lo mas adelante veremos otra variable
+
+pero ahora.
+
+Pues como tengo el JSON data pues lo he visto oportuno que supierais cómo imprimir algún dato por la consola.
+
+
+
+consola.log(jsonData);
+
+
+34. Continuando con el testing
+24 min
+
+Bueno vamos a seguir haciendo nuevos test.
+
+Ahora por ejemplo el siguiente que quiero enseñaros es si recordáis teníamos un servicio web que nos
+
+simulaba o con el que podíamos jugar con los tiempos de respuesta y lo guardamos en utilidades.
+
+Se llamaba Dilthey.
+
+Si recordáis era un servicio web que te devuelve la respuesta cuatro segundos.
+
+Vale me va a servir para enseñaros un test bastante típico muchas veces nosotros probamos servicios
+
+web y consideramos que un test es correcto o no dependiendo si devuelven el resultado en un tiempo de
+
+respuesta que consideramos óptimo por ejemplo imaginar a los que estamos con una aplicación y que cada
+
+vez que hacemos y que una vez que hacemos una petición de datos a un servidor tarda cuatro segundos
+
+en responder eso para un usuario no es correcto y probablemente exista en nuestra aplicación.
+
+Entonces vamos a considerar que nuestra aplicación es óptima si devuelve los datos en menos de un segundo.
+
+Entonces para probar o al menos de dos segundos para hacer la prueba para probar vamos a utilizar este
+
+servicio web que me permite lo tengo le puedo configurar el número de segundos que quiero que me devuelva
+
+la respuesta y así podré probar cuando un test supera el superado o cuando no es superado.
+
+Podemos jugar con el tema de los tiempos.
+
+Bueno si nos vamos a tres en este test veremos que dentro de los Snipes vamos a seguir jugando con los
+
+Snipes que son tres digamos reconstruidos.
+
+Hay un snippets que utiliza mucho que este responde Time le dan 200 milisegundos vale directamente lo
+
+que te lo que te genera es que la respuesta la compara con el número de milisegundos que tú quieras.
+
+Por defecto está a 200.
+
+Entonces evidentemente si ejecutaremos ahora este servicio web decimos que el test lo pasa si dura menos
+
+de 200 milisegundos aunque pongamos dos segundos dos segundos son 2000 milisegundos con lo cual 200
+
+o 2000 no lo va a superar.
+
+Cuando leemos hacen ahora los resultados vamos a ver si responde
+
+No no responde seguro porque esta variable teleco me ha salido del curso.
+
+Voy a ponerme en curso que es una variable del Environment curso.
+
+Voy a volver a darle a ejecutar.
+
+Vamos a ver uno 2 segundos ahora devolverá pero el 3 no lo supera.
+
+Por qué.
+
+Porque esperaba una respuesta menor que 200 milisegundos y ha tardado dos mil 566 milisegundos.
+
+A lo mejor nosotros consideramos que el tees se supera.
+
+Si la respuesta es menor a 3000 milisegundos por ejemplo entonces si lo volviésemos al lanzar Bueno
+
+pues lo ha superado porque la respuesta ha sido menor que el nombre lo hemos dejado en menor que 200000.
+
+Segundo porque aquí pondríamos que la respuesta menor a 3000 milisegundos.
+
+Por ejemplo podríamos llamarla extender respuesta respuesta menor a 3000 milisegundos.
+
+Y lo podríamos lanzar y sería como un test de rendimiento.
+
+Si la respuesta la da en menos de 3 milisegundos pasa antes que lavar más no superarles.
+
+Con esto podemos comprobar eso los llamados test de rendimiento para ver si superan un número de milisegundo
+
+lo normal suele ser eso en torno a 200 400 milisegundos para comprobar que 3 segundos es exageradísimo
+
+para la devolución de un servicio web y este es un test más que podemos incluir en nuestra batería de
+
+test de prueba.
+
+Pues nada voy a guardarlo y vamos a continuar 4T es el siguiente 3 que vamos al siguiente tipo de test
+
+que vamos a probar.
+
+Lo vamos a cerrar de los tiempos de respuesta.
+
+Bueno aquí me ha quedado bien vamos a por ejemplo 1 básico a 1 al de prueba.
+
+Este que además ya tenemos bastan un test que teníamos un test hecho este era uno que únicamente llevamos
+
+Daguet y enviamos un CEN y me devolvía pues todo esto simplemente la Web relegue a la que habíamos llamado
+
+era el más básico con el que empezamos.
+
+Bueno vamos a hacer uno que lo que queremos comprobar si dentro de toda la respuesta existe una una
+
+cadena que nosotros le pasemos como parámetro.
+
+Si recordáis a la hora de ver los resultados cuando los resultados aparecen aquí abajo los podemos ver
+
+en formato JSON que es un formato digamos más organizado el organizã pero realmente no pasa de ser una
+
+cadena de textos y yo lo veo como una cadena de texto.
+
+él me lo pone todo seguido como una cadena de texto me quita el formateo es otra forma de ver el resultado.
+
+Imaginemos que nosotros queremos que dentro de todo el resultado aparezca por ejemplo esta palabra de
+
+flaquee que nosotros vemos que sí que aparece y así aparece la palabra de flauta.
+
+Es que el texto es correcto y si no no es correcto podríamos hacerlo con cualquier palabra que apareciera
+
+en cualquiera de los campos con que aparezca una palabra.
+
+Para nosotros el texto es correcto.
+
+Vale podemos verlo en formato JSON o como queramos pero esta palabra tiene que aparecer.
+
+Vale.
+
+Bueno pues entonces hay un 10 voy a añadirlo como un test más dentro de este €200 hay un TES que está
+
+ya reconstruido que es el test que se llama respon Body contiene string.
+
+Vale aquí nosotros le decimos que coja el texto hoja la respuesta lo coja como texto y queremos ver
+
+la respuesta lo que esperamos es que dentro de ese texto incluya la palabra que nosotros queramos poner
+
+aquí hemos dicho de flats.
+
+Este test tiene que ser correcto.
+
+Tiene que darme la respuesta 200 el primer verso algo incorrecto y un segundo debería ser también correcto
+
+vamos a comprobar sending resultados dos de dos.
+
+Los dos lo han pasado por qué.
+
+Porque la palabra de flaquee aparece en el resultado.
+
+Aquí está.
+
+Imaginemos que le ponemos la palabra que queremos que aparezca de Platte.
+
+Esta palabra no aparece evidentemente en este resultado en ningún sitio.
+
+Y ahora el primer tees devolverá una respuesta a un estado €200 correcto pero éste debe fallar.
+
+Vamos a comprobar y aquí hasta tres uno de dos el primero ha sido correcto.
+
+Pero el segundo ha recibido unas cosas y no incluye de flaquee.
+
+Así vemos otro que es comprobar palabras o cadenas de texto en concreto dentro de toda una respuesta.
+
+Vamos a seguir con otros tres para eso voy primero a guardar éste voy a darle un Saif vale lo guardo
+
+pero viene otra vez un momento de ley porque me va a resultar más sencillo para el ejemplo que quiero
+
+ahora de utilidades de ley.
+
+Si os fijáis el Dilthey cuando le hemos dado al CEN como respuesta obtenemos pasados dos segundos.
+
+Ya tenemos esa respuesta si lo ponemos en modo texto en modo texto realmente el texto es esto vamos
+
+a copiarlo.
+
+Por qué.
+
+Por lo siguiente porque vamos a quedar Orontes que el que vamos a elegir va a ser el que se llama después
+
+The Body y si igual a trim aquí no le pedimos que lo contenga aquí pedimos que el cuerpo entero la respuesta
+
+sea la respuesta.
+
+El cuerpo de la respuesta el cuerpo el body la respuesta sea es la que esperamos.
+
+Qué esperamos esa cadena.
+
+Esperamos exactamente esa cadena.
+
+Vamos a ver sin embargo lo que observamos es una cosa bastante curiosa como en la cadena aparecen las
+
+dobles comillas.
+
+Fijaros que aquí me aparece un error por qué.
+
+Porque empiezo a cerrar comillas con las que no deberían.
+
+Y ve que hemos puesto comillas de más cuando nos pase esto es lo que debemos hacer en la comilla inicial
+
+en la comilla final cambiarla vez de una comida doble por una comilla simple.
+
+Voy a poner una comilla simple una doble fijaros como el error ha desaparecido ahora lo que le estamos
+
+diciendo es que el contenido es esto vale lo hemos puesto entre comillas simple ahora damos hacen esperamos
+
+esos dos segundos y vemos como el cuerpo la respuesta es lo ha pasado porque realmente el resultado
+
+es exactamente el texto que nosotros le hemos puesto.
+
+De hecho si aquí cambiásemos un dos por tres llegamos al 100 pero vamos esos dos segundos y el resultado
+
+ya no es vale.
+
+El resultado ha tenido un resultado cuando esperábamos otro es en este caso ya no estamos jugando con
+
+que parte del resultado sea una cadena sino que el resultado global sea la cadena que le pasamos.
+
+Es otro de los tipos de test que podemos comprobar si queremos un resultado concreto comparar todo todo
+
+todo el resultado el que nosotros esperamos.
+
+Vamos a ver más tipos de tés lo que voy a hacer es guardar éste para no perderlo.
+
+Bueno ya tengo así los cambios y voy a ver si puedo aprovechar a ver los resultados Gelder fijaros si
+
+voy a aprovechar que tiene lo que ahora vamos a comprobar en el siguiente E3 es que el contenido de
+
+la respuesta tenga como cabecera uno de los valores que nosotros le pasemos por ejemplo decimos oye
+
+que contenta contentarme que aparezca en la respuesta vale en la respuesta en la cabecera fijaros no
+
+en el body en la cabecera una de las variables de respuesta tiene que ser contentarme para luego juzgaremos
+
+por por ejemplo en el servidor que sean Jinx o lo que sea.
+
+Pero vamos a ver cómo utilizamos este tipo de TES sería un test que se llama respon Getter contenta
+
+Engelbert CHEC aquí es la cabecera contentarme Expressen de hecho me lo ha puesto ya el ejemplo que
+
+me pones ese contenten Expressen es decir que aparezca contentarme en la cabecera vamos a ejecutarlo
+
+y a pasar los tres tipos de TES.
+
+Por qué.
+
+Porque contenten está presente como uno de los datos de la cabecera aquí está contenta y podríamos haber
+
+puesto en vez de contentarme server por ejemplo en vez de contenten Expressen Server expresa esto se
+
+utiliza mucho por ejemplo por si quieres poner que sea saber que la cabecera a lo mejor viene del campo
+
+cómprese para saber que es un algo comprimido y viene con un gzip con un eso con un Ziv o cualquier
+
+cosa hay muchos muchas cabeceras que muchas veces necesitamos que la cabecera esté presente sino un
+
+token y si no tienes token directamente pues el TS es inválido porque necesitamos que devuelva nos devuelva
+
+un token aquí por ejemplo vamos a lo dicho por el server realcen espera a los 2 segundos.
+
+Y pues nada como Server también está presente vamos a poner una cabecera que no estuviera presente o
+
+simplemente cambiándoles server.
+
+Pues esto ya no está no está presente y nos debe fallar ahora ya ese no está presente.
+
+Vamos a ver qué pasa si en vez de ponerle la cabecera Server le pusiéramos en Jinx lo que es el valor
+
+de la cabecera vamos a poner en Jinx mayúsculas y minúsculas damos ejecutar
+
+y vemos que realmente el resultado no es correcto porque la cabecera es server no es en Jinx vale el
+
+la cabecera que esperamos los valores que esperamos es el Kuki ETA de contentarme pero no en.
+
+Voy a subir para arriba te voy a poner Server otra vez para volver a tener mis 3 3 correctos como ver
+
+siguen estando los textos correctos vamos a ver otro tipo de test que podemos hacer.
+
+Fijaros que cuando el test me devuelve un estado al lado del Estado aparece un código 200 y una palabra
+
+200 ok.
+
+Puedo comprobar en lugar de comprobar el código que en toda esta respuesta aparezca una palabra que
+
+nosotros queramos.
+
+Por ejemplo si quiero comprobar que dentro del Estado me aparece la palabra okey después del código
+
+también lo puedo hacer.
+
+Eso es el test que se llama estatus Scott können tiene una cadena aquí por ejemplo le vamos a decir
+
+tiene cadena o qué tiene
+
+cadena ok.
+
+Vamos a comprobar si aparece la cadena OK en el resultado del Código pues pasar antes.
+
+Vamos a ver pasar los dos segundos los 4 3 han pasado porque tienen la cadena ok ese ok aparece aquí.
+
+Es este OK de aquí incluso si lo pusiéramos en minúscula fallaría acordaros que es que sensitive.
+
+Y ahora la cadena Okkhoy.
+
+Por mucho que estamos buscando Camillus o qué minúscula y lo que me ha venido es un okay mayuscula entonces
+
+compara y no es igual.
+
+Y uno dice bueno para qué quiere saber esta cadena.
+
+Bueno lo quiero saber porque muchas veces lo que me viene no es un €200 no es un código 200.
+
+Imaginaros por ejemplo estos de Deloitte son todos con código 200 voy a guardar voy a guardar este me
+
+voy a ir al.
+
+Y además me voy a ir al voy a enviar y a ver que realmente siguen estando los cuatro bien para luego
+
+cuando los tengáis los tengáis bien escrito Soib me voy a ir otra vez al estatus que con esto me permite
+
+jugar con los códigos de Estados devueltos para ver fijaros me voy a la estátus otra vez voy a cerrar
+
+el otro en este estatus recordar 405 por ejemplo si me viniese cualquier servicio con un 405 o los 405
+
+que son todos de error por ejemplo meto no Alou el 404 el texto que aparece no Phong o por ejemplo podemos
+
+ver si hay un Nott en cualquiera fijaros que 404 405 aparece ese Nott los códigos de error casi todos
+
+aparecen Unott con lo cual yo me puedo quedar en los 3 puedo decirle por ejemplo que el 3 está superado
+
+o no está superado.
+
+Bueno en este caso le decimos vamos a buscar si el TES tiene una palabra si el cogno tiene una palabra
+
+y le vamos a decir si tiene la palabra not vamos a ver el test por bueno en este caso si aparece la
+
+palabra not en un 405 ese test lo habremos pasado porque aparece la palabra not the result.
+
+A ver siempre he trabajado fuerte en el respon
+
+a ver que me he confundido no es éste es el que se llamaba estátus Coop Coop tiene una cadena.
+
+Este era estátus Scott COV Namm tiene una cadena hinchamos dos veces Internet que borró a Ben aparece
+
+la palabra not a ver comprobamos que no lanzamos utes y me hice esperar respuesta para tener no pero
+
+aparece porque es notã no es Nott con estas sin perdón
+
+Vamos a lanzar Kaizen City.
+
+No me meto al agua.
+
+Vamos pues no era.
+
+Me he confundido.
+
+Tengo que reconocer que en este me he confundido.
+
+Recordaba que es la palabra exacta para que sea correcto tiene que ser Methol.
+
+Nota La web es para comprobar en vez de por código.
+
+Yo lo utilizo mucho porque realmente yo comparo por códigos no por cadenas Vannelli deber ser no Talcott.
+
+Vamos a cambiarlo y ahora deberìa correcto.
+
+Si es lo mismo que comparar por código pero por cadenas por la cadena equivalente al código de estado.
+
+Vale.
+
+Yo normalmente comparo por el 405 en vez de por la cadena y además por las comparaciones por números
+
+normalmente son más rápidas.
+
+Pero bueno es interesante pues que también podais saberlo que también podéis comparar por la cadena.
+
+Vamos a ir a Master's y de hecho voy a aprovechar este mismo para enseñaros uno.
+
+No sé si viene en los snippets a ver no tienen estrellen pues no veo que vengan los Nipe pero no pasa
+
+nada porque lo vamos a hacer nosotros y asi aprendemos a hacer un test de la nada vale PM .3 son todos
+
+los TES a este TES le voy a llamar.
+
+Fijaros que yo les CIBIR PM Puntoticket pues ahora me toca escribirlo todo vale.
+
+De hecho fijaros que a veces es más cómodo coger uno y ha hecho copiarlo pegarlo y ahora modificar lo
+
+que quiera.
+
+De hecho este test le voy a decir el código el código
+
+aparece en la lista muchas veces por ejemplo queremos que pase un test si el código imaginársela 200
+
+o 201 o 202 porque todos los 200 son resultados correctos no solamente el 200 el 201 si lo lanzamos
+
+a esto todavía no lo tengo acabado hecho voy a borrar este trocito porque ahora escribiré el 3 este
+
+te lo va a pasar al no tener ninguna aserción ninguna cosa que comprobar.
+
+Este segundo lo va a pasar y da primero no va a pasar porque voy a poner el 201 que me devuelve otro
+
+tipo de código.
+
+Vamos a ver el primer test no lo ha pasado el segundo si porque como no he comprobado nada lo ha pasado
+
+evidentemente.
+
+201 fijaros aparece la palabra Create.
+
+Es un test correcto este los 201 aparece cuando llamamos a servicios que crean cosas en el destino.
+
+Muchas veces en base de datos devolvemos un 201 en vez de Bollain 200 devolvemos que lo que queremos
+
+crear ha sido creado.
+
+Vale entonces imaginemos que el 200 y el 200 1 nos vale cualquier resultado de la serie 200 200 2 por
+
+ejemplo es el código que aparece cuando una petición ha sido afectado imaginaros que yo diese por bueno
+
+el 3 si es si los códigos de vuelta fueran 200 el 201 o el 202.
+
+Hasta ahora habíamos visto un sistema para comprobar que un código era de un número exacto de hecho
+
+lo vimos era este estatus Coupet y nosotros le poníamos el código del código 200 pero si quisiéramos
+
+que nos diera por bueno el tees sí devuelve un 201 201 202.
+
+Bueno pues para eso en lugar de usar esta función Botsman tiene una una función que es el PM punto Speck
+
+o como siempre valen para comparar los tres cogemos la respuesta.
+
+La respuesta ya debemos saber que es PM punto Response expongas dentro de la respuesta hay un campo
+
+que es el campo Code el campo código es el código devuelto vale y ahora una función es puede ser Tumi
+
+cuando uno dé y le pasamos entre corchetes la lista de códigos que damos por bueno.
+
+Por ejemplo el 201 202 y el 200 por ejemplo no tienen que estar ordenados con lo cual si devuelve uno
+
+de esos tres códigos el test lo pasará si devuelve otro pues el test no lo pasará.
+
+Vale este test primero no sé si borrar lo bueno lo dejo para que lo tengáis pero bueno va a fallar porque
+
+evidentemente no va.
+
+Coge la palabra método nota Law.
+
+De hecho no la va a coger no podría borrar pero bueno lo dejo para que lo tengáis.
+
+Para que sepáis como se usa pero este segundo hotel vamos a ver si lo pasa sending y ha fallado.
+
+Por qué ganó.
+
+Por qué.
+
+Por qué.
+
+Porque esa o primera s minúscula vale.
+
+De hecho fijaros que me he equivocado y me lo dice dice inválida.
+
+Property Property son las propiedades o sea los tipos de aserciones que pueda hacer dice.
+
+No querías decir guano con minúscula en lugar de decir uan off con la mayúscula.
+
+Muchas veces es muy bueno la depuración porque realmente me propone y me ha parecido incluso que me
+
+ha dado un error porque mira sido muchas veces sus ayuda a encontrar el error como lo encontraba yo.
+
+Vale me había equivocado escuadron one off con la minúscula y ahora pues si ejecutamos el 3 el primero
+
+ha fallado evidentemente por lo del no taló que no aparece pero los segundos sí que ha fallado por qué.
+
+Porque me ha devuelvo me ha devuelto uno de los tres códigos que yo aceptaba como buenos 201 202 o 200
+
+si hubiese puesto el 203 por ejemplo que también existe pues un 203 es nota atoles desactivan information.
+
+Evidentemente eso no está en la lista o lo cual falla con lo cual he aprendido otro tipo de test más
+
+que es que el resultado del código sea uno de los que aparece en la lista vamos a continuar con Master's
+
+pero antes de continuar os voy a comentar que he estado buscando y me extrañaba que este no estuviera
+
+definido si si que está definido de hecho es este que aparece aquí el que llama estatu lo han puesto
+
+en la lista de snippets Satoko Cox pues este es el que te crea el que el que hemos visto te pone que
+
+201 202.
+
+Vosotros podéis hacer la lista tan grande como queráis.
+
+Ese es el que acabamos de hacer.
+
+Vale pues nada no tenemos que escribirlo no tengo que equivocarme con la o mayúscula o minúscula porque
+
+es de aquí.
+
+Bueno viendo que el video se me está haciendo un poquito largo lo que vamos a hacer es parar este aquí
+
+
+Test Status- Response code
+
+pm.test("El codigo aparece en la lista", function () {
+    pm.expect(pm.response.code).to.be.oneOf([201,202,200])
+});
+
+
+El codigo aparece en la lista/200 al 299
+
+
+35. Chai Assertion. Primeras pruebas
+19 min
+
+Bueno en este video os voy a enseñar cómo digamos llevar vuestra imaginación en el mundo de los TES
+
+hasta donde queráis porque vamos a ver lo que es la librería de acepciones.
+
+Vale nosotros hasta ahora hemos estado creando los tes que son los estándar digamos los que te provee
+
+Postman pero tú puedes crear tantos como quieras siempre que te bases en el aserción Chay que es lo
+
+que las aserciones que se basa Postman internamente para eso las aserciones que está basado en el lenguaje
+
+de JavaScript.
+
+La página es ésta es W.
+
+Punto ya hay JS punto com si hay J.S. puntocom.
+
+Vale una vez que estamos dentro podemos acudir a su Appiah su documentación y si acudimos a su documentación
+
+aquí está toda la referencia de todas las funciones que podemos usar en los test.
+
+Lo que más nos puede interesar son los Speck que son con los que hemos estado practicando para lo que
+
+esperan los resultados esperados.
+
+Vale están dámelo SUT que son los debería o las aserciones los tienen que hacer pero bueno nosotros
+
+hemos estado trabajando con los speck y con lo que se trabaja normalmente y entonces aquí podremos ver
+
+dentro de los especulã los diferentes tipos de funciones que podemos poner dentro de una de una librería
+
+de nuestros tres individuales.
+
+Vale aquí vemos que tenemos un montón de test pero vamos a probar alguno de ellos por ejemplo imaginaros
+
+que vosotros queréis que un campo en concreto sea un string.
+
+Bueno pues lo podemos probar vamos a ver por ejemplo mirar.
+
+Yo lo uso mucho para comprobar si un tipo de datos por ejemplo de tipo cadena hay muchas veces que yo
+
+a lo mejor imaginaros que ha metido algo malo en la base de datos y algo que yo esperaba como una cadena.
+
+Lo recibo como un número no lo recibo entre comillas y no me lo valora como una cadena.
+
+Voy a enseñar los.
+
+Voy a enseñar también a trabajar con números con balero o valores nulos.
+
+A veces que uno recibe un nulo y no está esperando uno lo está esperando cualquier otra cosa.
+
+Entonces por ejemplo imaginaros me lo vamos a ver más claro en el Postman me voy a morir el 3 que se
+
+llama Post mediante Jayson éste era uno que hicimos en el cual pasábamos estos datos.
+
+Fijaros yo aquí pasaba nombre apellido y edad y cuando lo enviaba recibía ya los resultados cargando
+
+y lo que recibía era esto este JSON con estos campos imaginaros que yo quiero que nombre reciba una
+
+cadena.
+
+Vale me da igual que cadena pero una cadena vale.
+
+Si yo quiero que reciba una cadena y aprovechando que hemos visto el aserción Chay vamos a ver el aserción
+
+Chai voy a crear un Hooters voy a copiar este último que tengo de ejemplos anteriores y voy a usarlo.
+
+Le voy a llamar al nuevo recibo
+
+cadena
+
+en el campo nombre.
+
+Esto es muy muy utilizado para ver los tipos de datos vale que los tipos de datos son los correctos.
+
+Voy de nuevo a la pagina de la aserción Chay para ver fijaros cojo la sintaxis cuando de hecho la copio
+
+y vamos a cambiarlo a las cosas que tenemos que cambiar así haríamos todos los despale buscaríamos dentro
+
+de la serie un chip exactamente que lo que buscamos y generaremos un juntes a medida para lo que estamos
+
+buscando me voy a Postman estoy en Postman y fijaros PM de punto post PM punto de Postman eso lo debemos
+
+dejar tal cual lo que tenemos que cambiar.
+
+Justo justo lo que va despues.
+
+Vale decir vale ya tenemos esto ahora que es el dato que esperamos el dato que esperamos es que queremos
+
+comparar con que es de tipo string de tipo cadena.
+
+Evidentemente aqui.
+
+Este fue uno de ninguna pinta de nada vale lo que esperamos que sea de tipo es trim es por ejemplo este
+
+campo nombre que está dentro de JSON vale y que si que es de tipo cadena.
+
+Pues eso es lo que tenemos que comprobar si recordáis de tres anteriores eso ya lo hemos hecho cómo
+
+accedíamos a ese campo en concreto.
+
+Pues primero cogíamos todo el resultado con esta función la ponemos
+
+contra Lube y una vez que la tenemos accedemos al campo que queremos comprobar que es de tipo cadena.
+
+Qué campo es JSON data punto que a ver que no lo recuerdo JSON data punto JSON punto nombre vale JSON
+
+data punto JSON punto nombre le damos al gen ante los 3T me salían correcto los 3 que tenía voy a ver
+
+si este cuarto también es correcto si es de tipo cadena que sí que lo es.
+
+Debería salir un 4 de 4 correctos y aquí están es 4 de 4 por qué.
+
+Porque si que es de tipo cadena.
+
+Imaginaros que el campo que comprobase a ver si es de tipo cadena es la edad la edad fijaros que no
+
+es de tipo cadena.
+
+La edad me devuelve un número.
+
+Aquí tengo el 42 y de hecho sé que es un número porque no va entre comillas voy a ver qué pasa si el
+
+campo que quiero comprobar si es de tipo cadena en vez de ser el nombre es la edad para ver si la edad
+
+me la han pasado como un valor numérico o como una cadena de texto digo oye me lo han pasado como una
+
+cadena de texto si me lo han pasado como una cadena de texto es correcto.
+
+Vamos a ver shen
+
+no no lo ha pasado porque evidentemente no es una cadena y me dice en el cuarto me dice recibo la cadena
+
+de un error esperaba que el 42 fuera una cadena y no lo es.
+
+Vale me ha marcado el error y no lo ha pasado con esto puedo comprobar perfectamente los tipos de datos
+
+qué tipos de datos puedo comprobar todos todos y me voy a hacer con Choi Meré exactamente que puedo
+
+comprobar si algo que me ha pasado es un nulo si algo que me ha pasado es un defined es un error.
+
+Vale puedo comprobar un montón de valores.
+
+De hecho en el ejemplo que nosotros hemos puesto vamos a volver a él oye que es que ahora no quiero
+
+comprobar comparar con cadenas quiero comparar con números y me he ido a la página de la serie en Chay
+
+y aquí no va a aparecer nada de los números.
+
+Como se trata.
+
+Bueno no os preocupeis que para eso estoy yo o lo explico los números lo que comparas es con Number
+
+Number si pones number ahora el resultado ya es correcto.
+
+Vale porque es un Amber de hecho ahora si pusiéramos nombre nombre no es un Amber este debería fiarnos
+
+y decirnos 3 de 4 porque Naum ver en el campo nombre no es un Amber y así podemos ir comprobando todos
+
+los tipos de datos voy a dejarlo.
+
+Voy a dejarlo como lo tenía un string de hecho no lo voy a hacer es poner los dos y así os dejo los
+
+dos ejemplos que en este test compruebe esos dos campos.
+
+Compruebe por un lado el nombre que es de tipo string y la edad que es de tipo Number One hace las dos
+
+comprobaciones porque acordaros que en un test se pueden hacer más de una comprobación y para que sea
+
+correcto tiene que pasar todos los Speck con que uno falle el test devuelve fallo pero en este caso
+
+los dos son correctos con lo cual debería devolver pero no devuelve.
+
+Qué ha pasado todos los test los tres que tenía ya de arriba de ejemplos anteriores más este que acabo
+
+de generar los 4 test los ha pasado.
+
+Bueno pues vamos a seguir con otros que no tengan que ver con los tipos de datos o vemos si hay algún
+
+tipo de dato interesante pues también lo podemos ver pero me gustaría antes de pasar comentaros también
+
+que si os fijáis en la página de Challe aserción como hay también la opción está tu Nobby es decir justo
+
+lo contrario.
+
+Vale será dependiendo de si está diciendo de array o si le estamos diciendo un campo en concreto por
+
+ejemplo es trim es con a o con An vale dependiendo lo que le estemos pidiendo si estamos pidiendo en
+
+una cadena o estamos pidiendo un campo en concreto.
+
+En nuestro caso será ah vale vamos a hacer una cosa ahora queremos que la edad sea un número y además
+
+que no sea una cadena.
+
+Cómo podríamos decir que no sea una cadena.
+
+Evidentemente si es un número no va a ser una cadena pero a efectos didácticos me va a servir de ejemplo
+
+mirar copio para que pase el test tiene que ser un número y no tiene que ser una cadena para decir que
+
+en lugar de que sea algo que no sea algo es tu Nobby vi tu not punto vi a estrechen.
+
+Es decir tiene que ser un Amber que lo es y no y no ser un string que no lo es con lo cual cumple que
+
+el campo nombre es una estrella inculqué que la edad es un hambre que la edad no es un Steyn con lo
+
+cual pues el resultado debería ser y lo es correcto han pasado los 4 3 4 de.
+
+Con eso comprobamos también que una un elemento en concreto no sea de un tipo fijaros que vamos a añadir
+
+va a ser que me parece bastante interesante de los que estoy viendo los de por ejemplo en éste que me
+
+he parado en el punto A o sea de contenidos que algo contenga algo.
+
+Muchas veces esperamos que uno de los valores devueltos uno de los campos devueltos exista vale porque
+
+estamos viendo resultados de una tabla y esperamos que exista un campo en concreto en la respuesta.
+
+Eso lo haríamos con esta espera que tú JAF que tenga una una propiedad un Property que el JSON que por
+
+ejemplo que nos ha devuelto tenga una propiedad en concreto cómo construimos esto voy a copiarme el
+
+ejemplo.
+
+Y ahora veo como lo transformo me vengo a Postman y fijaros lo que vamos a pedir es que el pm. punto
+
+Speck vamos a ir transformando lo que me pm. apuntó Speck que el JSON global el JSON data todos los
+
+JSON almes tenga una propiedad que se llame Arcs que Shear exista.
+
+Bueno a haber a quien me sirve será Arash si existe AUR dentro del JSON que si existe devolver a tu
+
+Malé como las anteriores todas devolvían tu resultado correcto si hiciste al devolverla saldrá bien
+
+concreto.
+
+Si por ejemplo aquí pongo que tenga la propiedad Harz que no existe pues me fallara el 3 Vale pues supongo
+
+que también me es bastante interesante que sea el que busca propiedades.
+
+Voy a llamarla recibo cadena de nombre pues le voy a poner
+
+ejemplos propiedad.
+
+Ah vale que es tiene un tiene uno tiene una propiedad o tiene una cadena o tal.
+
+Vamos a seguir pues el siguiente por ejemplo que podemos probar si me voy de nuevo a aquí en vez de
+
+los de tipo a hacer los de tipo include imaginaros que quereis que en un campo en concreto busque un
+
+trozo de cadena dentro del resultado.
+
+Cómo sería con el include entonces cómo lo hacemos por ejemplo.
+
+Bueno voy a venirme de nuevo perdón aquí voy a copiar para que fijes lo sencillo que es vengo como y
+
+les digo que PM punto A-Spec
+
+que el campo que recibamos por ejemplo en el campo nombre copiarlo pero aquí que el campo nombre que
+
+yo he visto en el campo nombre dentro de JSON se llama Fran.
+
+Pues por ejemplo que incluya en e incluya la cadena a n eso me va me va a resultar correcto cuando quiero
+
+comparar partes de cadena de un campo que están Ayni.
+
+Vale eso debe ser correcto el resultado debe ser correcto.
+
+Vamos a ver.
+
+Correcto el test ha resultado correcto como Fran.
+
+Lo que no tiene es la combinación o n eso le da fallar fallo 3 de 4.
+
+Ha fallado con lo cual podría dejar Elan porque Fran tiene aun Chen y correcto.
+
+Vale vamos a ver otros ejemplos.
+
+Y me voy a volver al aquí voy a enseñarles por ejemplo estos cuando queremos comparar con condiciones
+
+de Bule Anás con valores booleanos la forma de comparar con un Nul con un fold con un Tru es exactamente
+
+esta que pone aquí de hecho y de una forma recomendada y una no recomendada.
+
+Nosotros vamos a usar evidentemente la recomendada por ejemplo si quieres comparar que un campo sea
+
+tu pues será de esta forma vale que sea tu así como no tenemos ningún campo que tú podemos forzarlo
+
+podemos decir que compare PM punto Speck comparar tú con tu.
+
+Esto seguro que va a dar cierto.
+
+Si aquí tuviésemos un campo de alguno de los que nos devuelve la parte de abajo que devolviera un valor
+
+julianos por ejemplo fails fuera dos puntos y al lado tú hubiésemos devuelto untó pues cogeremos JSON.
+
+Pero como no lo tenemos pues os voy a poner directamente.
+
+Compare tú con tú y evidentemente pues va a ser cierto.
+
+Si comparamos un Fool's con tu pensad que siempre lo que ponéis dentro del campo es Peet en lo que comparar
+
+ya sea un campo del JSON o valores que vosotros pongáis.
+
+Vale.
+
+Ahora jugaré también por ejemplo con valores porque vosotros podéis por valores los que vosotros queráis
+
+ahora he dicho un foll con por un tubo pues evidentemente va a fallar el resultado vale porque hay uno
+
+de los esperaba o se ha obtenido un foll cuando esperaba un tú vale entonces no ha fallado entonces
+
+pues mira podéis comparar también aquí tú con tú podemos comparar como hemos visto podemos comparar
+
+con Foro podemos comparar con Nul podemos comparar con un desfile podéis comparar con no solamente valores
+
+numéricos sino valores de tabla de verdad vale los valores vulcanos eso me lleva a pensar que vamos
+
+a ver algún ejemplo más lo que he comentado antes que no únicamente tenemos que comparar cadenas que
+
+me vengan en un JSON los pueden comparar cualquier cosa fijarlos este ejemplo que tiene un rey con tres
+
+valores 1 2 y 3 y que incluye como miembros al 1 y 2 vale fijaros este yo puedo coger cualquiera de
+
+estos ejemplos y probarlos
+
+me apunto a falta y digo que el Postman punto espero.
+
+Espero que dentro de la de los de los valores 1 2 y 3 incluya como los miembros incluya como miembros
+
+a 1 y pues evidentemente va a ser tú porque los incluye.
+
+Si fuera oye que dentro de 1 2 y 3 que incluya como miembro incluye como miembro al 1 y al 4.
+
+Pues evidentemente no y falla.
+
+Vale entonces que no solamente que podemos comparar podemos hacer estamos programando realmente esto
+
+es programación y podemos usar estas funciones de JavaScript y podemos hacer cosas aparte de coger datos
+
+con los valores devueltos.
+
+Vale todo cualquiera de los ejemplos que veáis aquí en la página de y aserción podéis probar podemos
+
+ir probando ya.
+
+Vamos a ver alguna otra que sea bastante interesante
+
+vamos al Postman y se me ocurre por ejemplo de los resultados por ejemplo por ejemplo este art.
+
+Fijaros que lo que me devuelve ha sido una cadena vacía o sea un conjunto de elementos vacíos.
+
+Cómo pudo comprobar si algo es vacío si no es vacío y darlo por bueno o no darlo por bueno.
+
+Para eso tenemos el PM punto Speck.
+
+Como siempre me apunto a Speck cogemos el valor que queremos comprobar en este caso es el JSON data
+
+punto antes y tenemos el tupí punto embutir si no recuerdo mal estamos diciendo que pasará antes si
+
+JSON AR está vacío.
+
+Vamos a ver pues a comprobar vamos a comprobar que evidentemente falla este anterior.
+
+Vamos al anterior dejarlo bien este ya lo pasa también vamos a comprobar a ver si este lo pasa correcto
+
+es decir JSON AR es vacío para que pase el TSJ sonar hubiese tenido algún tipo de valor por ejemplo
+
+un campo que no es vacío JSON data JSON data punto data.
+
+Este campo no es vacío y tiene que ser vacío pues evidentemente no es vacío o lo cual no lo pasa o JSON
+
+data no tiene que ser vacío no tiene que ser vacío tiene que venirme con valores vale ya lo pasa vale.
+
+Así de forma que si yo espero que algún campo tenga que tener valor sí o sí no puede venirme vacío.
+
+Este es otro tipo de comprobación muy muy muy útil y que se utiliza mucho vale porque muchas veces esperamos
+
+que ciertos campos no me vengan a nulos o no me vengan vacíos.
+
+Entonces este tipo de campo de comprobación se utiliza mucho en los test en las pruebas de test voy
+
+guardando para que lo pierda todo es un test que ya se me está haciendo bastante largo.
+
+Creo que llevo ya casi 20 minutos.
+
+Vamos a parar y continuamos en otro vídeo y así poder seguir practicando todo lo que hemos visto en
+
+este vídeo.
+
+
+
+.a (tipo [, mensaje])
+@ Param {String} Tipo
+@param {String} msg _optional_
+
+Afirma que el tipo del objetivo es igual a la cadena dada type. Los tipos no distinguen entre mayúsculas y minúsculas. Consulte la página del proyecto para obtener información sobre el algoritmo de detección de tipos: https://github.com/chaijs/type-detect.type-detect
+
+
+///expect('foo').to.be.a('string');
+expect({a: 1}).to.be.an('object');
+expect(null).to.be.a('null');
+expect(undefined).to.be.an('undefined');
+expect(new Error).to.be.an('error');
+expect(Promise.resolve()).to.be.a('promise');
+expect(new Float32Array).to.be.a('float32array');
+expect(Symbol()).to.be.a('symbol');
+
+///
+
+
+expect('foo').to.be.a('string');
+ 
+pm.test("RECIBO CADENA EN EL CAMPO NOMBRE ", function () {
+        var jsonData = pm.response.json();
+    pm.expect('jsonData.json.nombre').to.be.a('string');
+
+
+EDAD DA ERROR = NUMBER 
+
+pm.test("Ejemplos propiedad a ", function () {
+         jsonData = pm.response.json();
+    pm.expect(jsonData.json.nombre).to.be.a('string');
+    pm.expect(jsonData.json.edad).to.be.a('number');
+   pm.expect(jsonData.json.edad).to.not.be.a('string');
+   pm.expect(jsonData).to.have.a.property('args');
+})
+
+
+.a También se puede utilizar como una cadena de lenguaje para mejorar la legibilidad de sus afirmaciones.
+
+
+expect({b: 2}).to.have.a.property('b');
+
+
+pm.expect(jsonData).to.have.a.property('args');
+})
+
+
+.include (val [, msg])
+@param {Mixed} val
+@param {String} msg _optional_
+Cuando el objetivo es una cadena, afirma que la cadena dada es una subcadena del objetivo..includeval
+
+expect('foobar').to.include('foo');
+
+pm.expect('foobar').to.include('foo');
+
+
+pm.expect(jsonData.json.nombre).to.include('an');
+
+
+pm.expect(true).to.be.true;
+
+
+pm.expect([1,2,3]).to.include.members([1,2]);
+
+
+campo vacio 
+
+
+pm.expect(jsonData.args).to.include.empty;
+
+
+
+36. Chai Assertion. Haciéndonos expertos.
+
+Bueno pues vamos a continuar ahora que ya habéis practicado un poco colocha y aserción vamos a continuar
+
+con algunos temas que son interesantes.
+
+Yo os hago un pito de los que solo saben utilizar más a menudo y así pues no tenéis que probarlos todos
+
+vamos a utilizar ahora vamos a probar ahora aquellos donde hacemos comprobaciones de cantidades pensad
+
+que muchas veces con este tipo de test lo que estamos haciendo es Caja Negra sobre sobre los servicios
+
+web Malé la forma de hacer caja negra sobre un servicio algo que sabemos que está tramado pero no sabemos
+
+internamente cómo está programado pero sabemos el resultado que tiene que darnos.
+
+Vale voy a crear un nuevo tees voy a crear un bot es bueno copiar este por ejemplo que es pequeñito
+
+y así lo puedo modificar fácilmente.
+
+A ver aquí vale este test le voy a llamar Master's más test a ver si le quito este y voy a ir ahora
+
+con los de tipo A Bob con lo de tipo mayores etc..
+
+Fijaros si me voy a la página de sertón chachi.
+
+Veremos por ejemplo que tenemos algunos a ver algunos que pueden ser interesantes son de aborto por
+
+ejemplo con comparacion de cadenas vale de longitudes de cadenas.
+
+Puedes mirar este por ejemplo este es muy interesante.
+
+Entonces lo que vamos a comparar ahora es longitudes.
+
+Vale entonces tu Apple o voy a copiarlo.
+
+Esta es la opción recomendada y hay una opción que es tu jalen of about 2 pero la recomendada es ésta.
+
+Vamos a usarlo.
+
+Vale voy a ponerlo hoy copiado.
+
+No lo he copiado Control Z es algo bueno interesante saber que con Control Z como en todos los sitios
+
+deshago voy a copiar esta cadena.
+
+Control C vuelvo a ponerlo.
+
+Control vale.
+
+Ponemos el pm. punto adelante para indicar que es un test y qué quiero comparar que tenga una longitud
+
+de tres caracteres.
+
+Por ejemplo en el campo pues el campo Nombre que sé que es Franny tiene 4.
+
+Voy a comparar el campo nombre
+
+como aquí los otros 4 3 los otros 4 Ustedes están puesto para que se pasen con lo cual este sería el
+
+quinto de los 4 primeros sé que los pasos y así porque los he dejado tal cual estaban con Kojo que el
+
+campo nombre tenga una longitud 3.
+
+Vamos a ver lo ejecuto
+
+y me da un error.
+
+Vamos a ver por qué hice esperar que Fran tuviera una longitud de 3 pero tiene 4 por qué.
+
+Porque tú JAF Len o lo que me está diciendo es que la longitud sea exactamente 3.
+
+Fran tiene 4 caracteres.
+
+Si pongo un 4
+
+el 3 lo pasa mal.
+
+Ya sabemos que tu lee o es longitud exacta pero si queremos que sea mayor a una longitud vamos a seguir
+
+probando pues para probar que un campo tiene una longitud mayor a un número de caracteres.
+
+Si me voy al aserción me dice que aunque no recomendada vale pero sin embargo Postman la reconoce tiene
+
+el campo tu jab o Bob.
+
+Vale que sea mayor a un número de caracteres.
+
+Pues voy a volver otra vez voy a copiar el que ya tengo lo voy a pegar abajo y le voy a decir que tenga
+
+más de tres va a ser pasado si tiene cuatro caracteres y más de cuatro caracteres vale.
+
+Punto.
+
+ADOP más de cuatro caracteres.
+
+Entonces pasa con cuatro y pasa con más de cuatro como Fran tiene cuatro.
+
+Esta primera parte la pasará el 10 pero esta segunda no la pasará al tercero debe fallar vamos a comprobarlo.
+
+El quinto test falla más vale porque no tiene más de cuatro.
+
+Encontró cuatro y no tiene más de cuatro.
+
+Si lo hubiese puesto que Fran tenga cuatro y más de tres es algo que si que va a pasar.
+
+Y esta vez correcto el 3 vale cuando queráis comparar un contenido con una cantidad exacta de caracteres
+
+en off cuando queráis comparar que sea mayor a una cantidad de caracteres o junto a Bob igual que hemos
+
+usado la voz.
+
+Pues el contrario es el below.
+
+Vale si nosotros ponemos Fram tiene cuatro caracteres pero tiene menos below the 5 vale.
+
+Vamos a comprobar que es correcto para usar cuatro caracteres es más de tres y menos de cinco.
+
+Si hubiese puesto menos de 4 pues evidentemente no es correcto porque no tiene menos de cuatro pero
+
+es erróneo.
+
+Vale con lo cual vemos la Bogg vemos el below.
+
+Vale hay muchos más comparativos de hecho si fijáis aparte del Below está el Alés comparativos y es
+
+el mayor.
+
+Vale es más mayor que o sea hay muchísimos comparativos aquí los podéis comprobar.
+
+Vale o lo dejo.
+
+Dejo la página 3 ya la página del vídeo anterior.
+
+Los recursos para que podáis comprobarlo y vamos a seguir con otro tipo de comparaciones a veces nos
+
+interesa por ejemplo que el número de caracteres por ejemplo esté entre varias cantidades imaginaros
+
+que por ejemplo vamos a recibir una cadena de texto y el nombre tiene que ser mayor de tres letras pero
+
+menor de 20 porque porque si no no cabe en el hueco donde vamos a poner en nuestro programa el nombre.
+
+Entonces eso lo vamos a hacer con o teniendo el nombre o la longitud pero en este caso en vez de decirle
+
+4 le vamos a decir que esté en un rango.
+
+Eso se hace con Wiz Kim y le pasamos los dos valores del rango le pasamos que esté por ejemplo entre
+
+3 caracteres y 20 caracteres le decimos que la longitud del campo Fram esté entre 3 y 20 si está entre
+
+13 y 20 lo pasará.
+
+Vamos a ver 3 correcto lo pasa si le decimos que esté entre 5 y 20 pues evidentemente como Fran tiene
+
+una longitud de 4 pues el 3 no lo pasa vale.
+
+Bueno pues vamos a continuar voy a volver a dejarlo que estén todos los i20 para que lo pase y con lo
+
+siguiente podamos volver a probar y seguimos.
+
+Me voy a ir a ver ahora algún ejemplo de que tenga que ver también con contenidos de cadenas de texto
+
+ya hemos visto alguna que arriba que incluya la palabra.
+
+Pero vamos a ver más cosas relacionadas con cadenas de texto por ejemplo con los nombres que incluya
+
+ciertas cadenas.
+
+Voy a enseñaros si vamos a la página del Ché aserción fijaros que existe la función Mazz la función
+
+Maths me va a servir para hacer filtros.
+
+O sea que para que sea correcto dentro de la cadena tenga que haber un lo que se llama informática
+
+expresiones regulares con las expresiones regulares vamos a trabajar entonces si queremos trabajar con
+
+esas expresiones regulares pues por ejemplo aquí tenemos un ejemplo vale.
+
+Por ejemplo nosotros queremos ver que parte del contenido sea un hombre balero.
+
+Por ejemplo en este caso voy a trabajar con Fran vamos a poner una expresión regular y una forma de
+
+poner una expresión regular es decirle pues como ponen el ejemplo bueno vamos a poner primero el PM
+
+puntos P Vamos a copiar primero este trozo antes.
+
+Que nombre.
+
+Y ahora como bien dice Tú Maths cualquiera haga una coincidencia.
+
+Aquí tú match con la cadena que queramos hacer el match.
+
+Vale este circunflejo que pone aquí sea como o como casco este que pone aquí ese símbolo me dice que
+
+lo que va detrás en la cadena regular que estoy buscando.
+
+Vale por ejemplo como estoy buscando Fran.
+
+Pues si busco.
+
+R.
+
+A. M. veremos
+
+me sale cuatro de cinco.
+
+Voy a ver el error que me hice esperaba Fran y encontró esta cadena regular.
+
+Vamos a ver ahí el error que he tenido es porque esta cadena regular lo que me está indicando es el
+
+comienzo de la cadena regular es decir por ejemplo yo digo aquí comience por F.
+
+R Vale entonces Fran me dará correctamente supongo.
+
+Vamos a ver.
+
+Correcto pero de hecho también comienza es cuando queremos que el comienzo de una cadena sea por las
+
+siglas que nosotros pongamos.
+
+Vale eso me está dando un resultado correcto.
+
+Eso es porque con el circunflejo le decimos que empiece por este circunflejo indica que empiece por
+
+si nos lo ponemos por ejemplo le decimos que contenga Quito el circunflejo es decir que contenga la
+
+combinación R.A Fran la contiene.
+
+Eso dará correcto.
+
+Evidentemente si digo Guerreo pues era correcto.
+
+Vale Fran es decir circunflejo que empieza.
+
+Si le quito el circunflejo que esté en cualquier parte de la cadena también podemos poner el tunos más
+
+vale que es el equivalente pero que no contenga algo por ejemplo le decimos que noto que la cadena que
+
+buscamos no contenga la letra y Fran no tiene la letra ahí.
+
+Pero le decimos tú no Almax
+
+correcto.
+
+No contiene la letra ahí perfecto.
+
+Si decimos que no contenga la letra os va a dar un fallo el 3 porque si que contienen la letra vamos
+
+a ver falla antes.
+
+Vale podemos hacer con que haya contenidos o que haya no contenidos y que además comience una cadena
+
+voy a derecho a guardar el ejemplo que tenía para que lo tengáis el que comience por es el siguiente
+
+es el que contenga que comience por éste que contenga y que no contenga males o comparaciones de cadena
+
+que son muy interesantes.
+
+Otra función que me parece súper super chula y súper importante es cuando queremos que por ejemplo un
+
+valor esté en un rango determinado imaginaros que vosotros queréis coger dáis por bueno un TES.
+
+Si una persona tiene gana 1000 euros con un intervalo de diferencia de 100 euros vale vale desde 900
+
+hasta 1100 o por ejemplo yo que tengo elcampo edad me voy a quedar con aquellos años buenos ya voy a
+
+ver como antes si la persona tiene 40 años con 5 años arriba o abajo entre 35 y 45 para eso existe una
+
+función que se llama tubing Class tu vale que lo que le dices es el campo esperado le das el valor que
+
+quieres de origen y el intervalo que quieres coger vale lo que llama el valor esperado y el delta.
+
+El Delta es el más o menos vale como dice aquí el más o menos Delta para dar un valor por bueno vale.
+
+Porque muchas veces estás esperando que devuelvan un valor a lo mejor por 1 y te devuelve la función
+
+uno coma cero cero tres mostráis y te da un fallo el 3.
+
+Oye pues déjalo un margen déjale un margen de una décima o cualquier cosa por si la función no devuelve
+
+exactamente el número y le quieres dejar algún tipo de margen.
+
+Bueno para eso voy a escribirla tú.
+
+Valer.
+
+Entonces le vamos a poner.
+
+Vamos a ver vamos a poner por ejemplo en la edad vamos a coger el campo o hasta aquí me va a valer
+
+voy a coger la edad me vale.
+
+Si la persona Tumi no recuerdo si era mayuscula
+
+Claws tú me vale una persona en 40 que tenga 40 años con 5 años arriba o abajo como yo tengo 42 o el
+
+resultado pone 42.
+
+Vale tú la T mayúscula y junta se me ha pasado mayúscula y Junta.
+
+Vale me valen las personas de 40 años con 5 arriba 5 abajo vale pues esto debe devolver el 3 correcto
+
+vale porque coge está cogiendo el campo edad dentro de JSON está cogiendo este 42 y como es 40 más o
+
+menos 5 si le pusiera por ejemplo 40 más o menos 1 me valdría desde el 39 hasta el 41 esto ya me fallara
+
+antes.
+
+Correcto.
+
+Faites porque el quinto.
+
+Pues esperaba 40 más menos 1 y a 8 y ha obtenido un 42 en otra función que está también bastante chula
+
+y creo que es una función como cualquier otra para acabar con los ejemplos del challa y aserción de
+
+todas formas lo dicho tenéis la página podéis ver todas las funciones podéis ir probando la y veréis
+
+que podéis hacer infinidad de test personalizados como los que hemos hecho nosotros ahora.
+
+Pero bueno pues hemos hecho unos cuantos creo que bastantes espero que os haya gustado también esta
+
+parte derecha y aserción porque es super potente con esto vais a poder hacer todos los test que queráis
+
+comparar los campos con los valores que seis longitudes valores numéricos nulos un defined cadenas vacías
+
+todo absolutamente todo lo que es el tipo de dato lo vais a poder comparar.
+
+Y bueno pues voy a lanzar el último X.M para dejar ver que lo he dejado bien bueno 40 más o menos 5
+
+y quiero dejar todo que los 5 Tes me den un resultado positivo.
+
+Y bueno creo que con esto ya os hacéis una gran idea de Postman lo potente que es para realizar este
+
+tipo de test basados en datos test conducidos por datos o los BB que se llama de media en este caso
+
+no es conducido por datos o las siglas de inglés data test drive detesté y bueno espero que os haya
+
+gustado esta sección porque la más importante es que vamos a ver en el curso y vamos a continuar también
+
+con.
+
+También viendo que por el momento estamos viendo sólo 3 no hemos visto por el momento ningún recurso.
+
+Vamos a ver también esta sección ahora más adelante vamos a empezar a ver cómo lanzar también test masivos
+
+uno detrás de otro como hacer Rahner de aquí arriba como las colecciones.
+
+Todavía nos queda una parte ya estamos en la parte realmente más chula del curso que es la de testing
+
+pura y dura.
+
+Y bueno nos vemos en el siguiente vídeo.
+
+--------------------------
+
+Agregue .lengthOf anteriormente en la cadena para afirmar que la longitud o el tamaño del objetivo es mayor que el número dado n.
+
+Comparar con carracteres
+pm.expect(jsonData.json.nombre).to.have.lengthOf(3);
+
+
+Comparar con mas de un carracteres
+
+pm.expect(jsonData.json.nombre).to.have.lengthOf.above(4);
+
+
+pm.expect(jsonData.json.nombre).to.have.lengthOf.below(5);
+
+pm.expect(jsonData.json.nombre).to.have.lengthOf.within(3,20);
+
+Contenidos de cadenas de textos
+.match (re [, mensaje])
+@param {RegExp} re
+@param {String} msg _optional_
+Afirma que el objetivo coincide con la expresión regular dada re.
+
+
+^comienza con 
+
+pm.expect(jsonData.json.nombre).to.match(/^ju/);
+
+que contenga 
+
+pm.expect(jsonData.json.nombre).to.match(/ua/);
+
+que no contenga 
+
+pm.expect(jsonData.json.nombre).to.not.match(/i/);
+
+
+closeTo (esperado, delta [, mensaje])
+@param {Number} esperado
+@param {Number} delta
+@param {String} msg _optional_
+Afirma que el objetivo es un número que está dentro de un deltarango +/- dado del número dado expected. Sin embargo, a menudo es mejor afirmar que el objetivo es igual a su valor esperado.
+
+///expect(1.5).to.equal(1.5);
+
+// Not recommended
+expect(1.5).to.be.closeTo(1, 0.5);
+expect(1.5).to.be.closeTo(2, 0.5);
+expect(1.5).to.be.closeTo(1, 1);//
+
+
+
+pm.expect(jsonData.json.edad).to.closeTo(40,5);
+
+
+
+37. Testeando un XML
+6 min
+
+
+En este nuevo video vamos a ver cómo trabajar con ficheros XML.
+
+Hasta ahora todas las respuestas que hemos comprobado han sido de tipo JSON.
+
+Hoy en día ya es lo más normal que los servicios web devuelvan JSON pero podemos encontrarnos servicios
+
+web que todavía devuelvan XML.
+
+Entonces debemos saber cómo trabajar con ellos.
+
+Para eso voy a probar con una de las páginas de que está utilizando este curso la de HTTP HTTP Bevin
+
+punto Berge porque en los ejemplos que tiene de peticiones ya hechas vemos que hay formatos de respuesta
+
+y hay que nos devuelva con diferentes tipos de formato nosotros lo dicho hemos trabajado siempre JSON
+
+pero por ejemplo ahora vamos a ver unos con XML y me dice que un ejemplo es la página acabada en HTML
+
+es decir HTTP unpunto Berge HTML me va a devolver un XML.
+
+Voy a probarla primero para ver que me devuelve vamos a ver el HTC Bing XML y lo que devuelve va a ser
+
+esto vale.
+
+Veis que el formato es diferente o JSON tienen otro tipo de estructura.
+
+Vale celeb de una forma diferente.
+
+Vale lo que pasa es que Postman tiene y me voy a ir a Postman otra vez y vamos a llamar a este a este
+
+a esta petición.
+
+Si recordamos teníamos esa variable que era HTTP o sea HTTP bin que conecta con esa página como vemos
+
+aquí a la derecha.
+
+Vale pues vamos a conectar con esa página y lo dicho con XML.
+
+Seamos Aschen pues veremos la respuesta aquí abajo como vemos es un JSON.
+
+Perdón no es un JSON ya es un XML.
+
+De hecho lo menos marca aquí claramente que es un XML y claro nosotros hasta ahora hemos hecho todos
+
+los test basado en formatos de JSON.
+
+Bueno pues si queremos seguir haciéndolo podemos perfectamente porque si vamos aquí a los snippets veremos
+
+que hay uno que se llama.
+
+Vamos a ver para abajo este 15 Convair respon Body come XML Body a un objeto JSON es decir que CIME
+
+si tengo una respuesta en XML que me la convierta JSON le voy a dar y eso lo que hace es exactamente
+
+convertir XML a JSON el XML recibido.
+
+Ahora ya lo tengo en un objeto que es un JSON Objet.
+
+Vale ahora ya puedo trabajar con este objeto como si fuera un JSON pero voy a ver cómo se ve el JSON.
+
+Vamos a ver cómo lo ha convertido para eso voy a hacer uso del Consuelo.
+
+Voy a ver qué tiene el JSON Objet
+
+punto coma.
+
+Voy a borrar la consola borrarla.
+
+A ver exactamente qué tiene ella en la consola y esto es el JSON en el cual me ha transformado un objeto
+
+padre que se llama es sólo un objeto hijo que se llama dólar con objetos dentro y un objeto slight con
+
+un número 0 y un número 1 son los dos objetos que tenía el XML y este es su contenido.
+
+Y con esto ahora trabajo como si fuera un JSON.
+
+Fijaros la diferencia entre el XML y a Postman donde se ve el XML como se ve esta es la ISO el XML se
+
+veía así pero la transformación dentro del Aitzol para hacerla por ejemplo a este campo autor si quería
+
+com o a este campo títulos si quiero comparar el título con samples Sow pues la forma de acceder.
+
+Ya he visto en la consola que es la Isol dólar Teitelbaum vale pues voy a hacer un TES ahora como los
+
+tres que hemos estado haciendo hasta ahora.
+
+Vamos a ver un test de tipo.
+
+Comparar variables JSON de los que hacíamos al principio.
+
+Por ejemplo este JSON value Check para comprobar un valor de JSON me añade el código de este código
+
+de cosas que me sobra del código que añadido por ejemplo esto porque ahora ya no necesito coger el dato
+
+porque el dato ya lo tengo.
+
+De hecho tengo en esta variable JSON not yet controlde y esto es lo que va aquí dentro sobre lo que
+
+voy a comparar.
+
+Vale y dentro de JSON not yet hemos visto que quiero coger el campo slide show dólar autor pues ese
+
+es el campo que voy a coger el JSON not yet es Life show punto dólar punto Taitelbaum y ese campo es
+
+el que quiero comparar con el resultado que se llama por ejemplo en Boitel con este título si me llegase
+
+el título antes era pasado y si no me llega al título sería incorrecto.
+
+Vale eso es un ejemplo.
+
+Vamos a probarlo
+
+y el 3 resulta correcto si me llegara a cualquier otra otro título
+
+pues el test sería incorrecto.
+
+Como vemos me esperaba un nombre y ha recibido otro al final estamos trabajando con un XML como si fuera
+
+un JSON de todos los ejemplos que hemos estado viendo hasta ahora y podríamos comparar exactamente los
+
+valores de los campos esperados con el balón de los campos de vuelta y esta es la forma más sencilla
+
+de trabajar con el que Semele realmente pasar a JSON y trabajar con un JSON porque con JSON ya conocemos
+
+las funciones y es muy sencillo.
+
+Espero que os haya gustado este video.
+
+
+Devuelve un documento XML simple.
+httpbin.org
+
+
+console.log(jsonObject);
+  pm.expect(jsonObject.slideshow.$.title).to.eql("Sample Slide Show");
+
+
+
+
+
+38. Testeando un TXT
+3 min
+
+
+
+Vamos ahora a obtener o a comprobar hacer un test con una respuesta de un campo de tipo texto.
+
+Hemos trabajo los JSON hemos probado los XML que pasamos a JSON y vamos a ver cómo trabajaríamos en
+
+un campo de tipo texto.
+
+Bueno para eso os enseño este voy a cómo acceder a él desde HTTP http: Evin punto Berge.
+
+Otro de los métodos de respuesta los formatos por ejemplo de usar este robot punto txt que me devuelva
+
+un texto plano vale.
+
+Se accede con esta llamada Robotix eso es un ejemplo varios robots es un ejemplo podría devolver.
+
+Este es un ejemplo que simplemente me devuelve este texto plano malezas esa combinación esas palabras
+
+de un HTML me devuelve este texto voy a probarlo en Postman Malé crear uno nuevo.
+
+Voy a borrar el anterior del XML que lo guarda ya y está en Google.
+
+Aquí barra robots punto txt.
+
+Vamos a ver que devuelven le damos al x.m y vemos que lo devuelve.
+
+Aquí pone un auto de hecho es un Tekis si pulsamos un txt es un txt.
+
+No no es un JSON no es un JSON.
+
+De hecho no tiene mejor mensaje de que esto no es un JSON nuestro es un txt plano me devuelve un texto.
+
+Este servicio web de volumen testó cómo hago una comprobación un test sobre un texto.
+
+Bueno me vean ustedes y si recordáis había uno que se llama Vamos por aquí en los Nipe.
+
+Voy a bajar un poquito que los veamos vale y dice respon Body contiene Extrem hincho éste me genera
+
+el test automáticamente la respuesta en formato texto se obtiene de esta forma PM puntos respon puntos
+
+DEX y ahí es donde quiero comprobar por ejemplo que incluya la palabra una palabra que sé que si que
+
+está Deny pues Deny esto debe pasar antes damos correcto hapasado la palabra ésta evidentemente no está
+
+aquí en el texto de abajo en el body de la respuesta no está pues vamos a ver que no lo pasa sin 3 0
+
+o de 1 no lo ha encontrado y nada pues está es la forma cada vez que queramos que recibamos un tipo
+
+texto y queramos acceder a él simplemente pm. puntos respon puntos DEX y podemos hacer con ello lo que
+
+queramos incluirlo lo que hemos visto que empiece por esa cadena.
+
+Lo que nosotros queramos todas las funciones que hemos visto para los Jayson pues ahora lo podemos aplicar
+
+para un texto simplemente que el texto se coge con PM puntos respon punto Tex y hasta pasamos al siguiente
+
+vídeo.
+
+test de texto
+RESTONSE BODY CONTAIENS STRING 
+
+pm.test("Body matches string", function () {
+    pm.expect(pm.response.text()).to.include("deni");
+});
+
+
+39. Crear variables en tiempo de ejecución de Tests
+9 min
+
+Bueno en este video vamos a aprender cómo crear variables globales y de entorno Environment en tiempo
+
+de ejecución de los tests.
+
+Para ello vamos a arrancar cualquiera cualquiera de los de los test de los de las peticiones que hemos
+
+ejecutado hasta ahora o de hecho me puedo crear una nueva puedo volver a repetir esa quetenía de tipo
+
+post que la enlazo con RL eco parrafos aquella si repetimos y recordamos como se generaba uno de tipo
+
+Post que había a esta petición que enviarle en el body un JSON vamos a codificar en rabu JSON le ponemos
+
+los campos que queramos pues voy a volver a ponerle.
+
+Voy a dejarlo como lo dejé la otra vez más o menos.
+
+Nombre Fran Omar apellido García
+
+García y edad
+
+42.
+
+Vale ya lo tenemos.
+
+Limpitos ningún test ni nada.
+
+Lo ejecutamos vemos lo que nos devuelve.
+
+Vemos que devuelve estos campos JSON.
+
+Con esto la web repele todo.
+
+Y ahora vamos a crear variables como queramos las variables en tiempo de ejecución de los tests.
+
+Bueno pues me voy Altés y vemos que aquí tengo Zhan en Vairo variable y global variable primero vamos
+
+a ver las variables que tenemos para ver que las creamos a partir de lo que vamos a hacer ahora para
+
+ver las variables y es aquí en el ojo este que dicen baile Vincci look.
+
+Si pinchamos nos dicen las variables de entorno que tenemos el entorno curso tenemos estas dos variables
+
+y las variables globales que tenemos que en este caso sólo tenemos esta vale vemos que no hay ninguna
+
+por ejemplo que se llame ni nombre ni ninguna que sea mi edad.
+
+Podemos a crear una variable por ejemplo de entorno que se llame nombre y una variable global que se
+
+llame edad os acordais que la variable de entorno o tenéis que recordar que las de entorno son solo
+
+válidas en este entorno mientras aquí tenga en el entorno cursos y pasó a otro entorno.
+
+Pues esas variables ya no existen.
+
+Vale cuando pincha esas variables no existen las globales y que son persistentes en todos los entornos.
+
+Voy a volverme recurso.
+
+Vale.
+
+Repito no tengo las variables ni nombre ni edad y vamos a ver como generarlas en tiempo de ejecución
+
+para generarlas en tiempo de ejecución.
+
+Lo único que tenemos que poner es por ejemplo si queremos un ave entorno set Environment variable.
+
+Y aquí decimos el nombre de la variable le voy.
+
+Le voy a decir variable nombre y el valor de la variable cómo obtenemos el valor de la variable.
+
+Pues si lo que queremos es coger el campo nombre como lo cogíamos voy a bajar un poquito.
+
+Esto es una línea más para abajo porque una línea más para arriba lo que voy a hacer es coger por ejemplo
+
+que se dice respon Body JSON value check porque realmente todo esto lo único que me interesa es esta
+
+línea la pego arriba con todo y todo lo demás que acabo de crear no me vale para nada esto porque lo
+
+único que quería era coger el JSON que se coge con esta función ahora dentro de JSON data está toda
+
+JSON metido y cómo accedo dentro de JSON data a un campo en concreto pues accedo mediante el JSON data
+
+punto que campo quiero coger pues quiero coger por ejemplo éste el nombre que está dentro de JSON JSON
+
+data untó JSON punto nombre es decir por un lado se pone el nombre que le vamos a poner la variable
+
+le voy a llamar de nombre y le voy a poner el nombre valga la redundancia vale aquí podría haber sido
+
+nombre nombre nombre entorno para que se sepa que no tiene que ser exactamente la misma palabra nombre
+
+entorno vale.
+
+Y por otro lado voy a crear la variable que vez den en vez de ser de tipo Environment va a ser al intro
+
+y fijaros como aquí en los niveles hay uno más que pone set a Global variable en MB es Puppet M.N maromo
+
+en puntos e 3pm punto global punto set y aquí le voy a poner edad global porque va a ser una variable
+
+global global y el dato lo cojo de JSON data punto JSON punto.
+
+Si bien al ejecutar esto por primera vez en ya está ejecutado los tres.
+
+Ninguno.
+
+No hay ningún test porque realmente aquí no estoy haciendo ninguna comprobación pero si vengo aquí para
+
+ver las variables observo cómo me ha generado una variable de entorno y una variable global que ahora
+
+podré seguir usando en el resto de mi programa.
+
+De hecho la puedo usar en cualquier momento incluso la podría usar aquí mismo si quiero ver cómo ya
+
+la uso después de crearla puedo coger la forma de cogerla en vez de ser closet es con los que fijaros
+
+por ejemplo con esto le digo Cajeme la variable de entorno que se llama nombre entorno
+
+y lo que hago es para ver qué es realmente la acogió bien la voy a meter dentro de un consolé apuntó
+
+encierra esto dentro un solo punto lógico para que me lo saque ahora por la consola.
+
+De hecho esto si lo vuelvo ejecutar otra vez me la va a creer.
+
+Las dos variables y ya me las sacara reemplazarã como esta variable y existe me la reemplazará o tal
+
+vez con el mismo valor y como está ahora ya no lo hiciste pues lo mismo Lázara otra vez por el mismo
+
+valor si quiero imprimir también por la consola en la aldea global pues hago Control C Control Lube
+
+esta en vez de Enviromental global globales y M.I.A más en ambos entornos se llama Global.
+
+Voy a ver por un lado que me las crea estas dos líneas y por otro lado que me las coge y me la saca
+
+por pantalla.
+
+Bueno pues voy primero voy a borrar la consola voy a limpiarla para ver paquete todo limpito la voy
+
+a ejecutar en y veremos si por la consola.
+
+Pues aquí está la cojido Fran y 42 las tengo y las puedo utilizar donde las voy a poder utilizar por
+
+ejemplo para meterlas en datos y ahora para cuando empecemos a ver el tema de los recursos cree porque
+
+esto normalmente en asignar variables muchas veces se hace en cosas que escribe o incluso el utilizarla
+
+el consumirlas vale pero bueno ahora ya sabemos como en tiempo de ejecución crear variables y luego
+
+ya le puedo trabajar con ellas quiero decir yo esa variable está disponible para utilizarla aquí como
+
+cualquier parámetro.
+
+Si yo aquí pusiera yo que sé amparamos le pusiera y para 1 ya hemos visto que los de tipo 2 los parámetros
+
+debemos pasarselo idealmente en el body pero yo aquí podría usar como variables ahora aparecen ya nombre
+
+entorno y edad global.
+
+Yo ya podría poner aquí global por ejemplo y es una variable ya a todos los efectos la puedo usar siempre
+
+que quiera y es como si hubiese llamado fijaros a la UE R.L el parámetro 42 vale me ha cogido el parámetro
+
+que ha guardado previamente ya esa variable variables como una variable como si me hubiese venido aquí
+
+y hubiese dado al Edit y hubiese escrito aquí nombre entorno y la palabra Fran.
+
+Lo que pasa es que me lo ha hecho en tiempo de ejecución con unos valores que he cogido con estas dos
+
+funciones.
+
+Vale con esas dos funciones voy a quitar esta parte nueva que he hecho que no me vale y esto pues este
+
+ejemplo lo voy a guardar como es del tipo por lo guardado en la carpeta de topos por ejemplo lo voy
+
+a guardar en vez del servicio aunque el servicio pos le voy a llamar creación reparación variable o
+
+variables en ejecución variables en ejecución porque además tenemos podemos ver como tanto crearlas
+
+como acceder luego a ellas y nada pues ahora podremos usar esto en los recursos script de la misma forma
+
+y ahora veremos que tienen mucha utilidad.
+
+
+ var jsonData = pm.response.json();
+pm.environment.set("nombreEntorno", jsonData.json.nombre);
+pm.globals.set("edadGlobal",jsonData.json.edad);
+
+console.log(pm.environment.get("nombreEntorno"));
+console.log(pm.globals.get("edadGlobal"));
+
+
+
+40. Conocer la opción Pre-request Script
+20 min
+
+
+Bueno en este video vamos a ver el tema de los recursos.
+
+Hasta ahora hemos utilizado solo los 3 y este apartado de recursos no lo hemos utilizado pero primero
+
+tenemos que comentar el orden de ejecución de las diferentes cosas dentro de Postman cuando nosotros
+
+ejecutamos una petición un recuento vale una petición de la parte de arriba.
+
+Esto es una petición el orden de ejecución va a ser el siguiente si nosotros hacemos algo en el recurso
+
+scrip va a ser lo primero que se ejecute antes incluso que la petición.
+
+Posteriormente ejecutaremos la petición más tarde obtendremos una respuesta y finalmente ejecutaremos
+
+los tres y ese es el orden es importante saberlo porque este recurso se ejecuta incluso antes que la
+
+petición.
+
+Es como 1 cuando necesitamos preparar algo de alguna forma para ejecutar la petición.
+
+Es muy importante porque en el script es donde podemos cargar ciertos valores para que luego los ejecute
+
+de manera que siempre podemos por ejemplo poner aquí valores aleatorios a ciertas variables para que
+
+cada vez que llame a la petición llame con valores distintos.
+
+Por ejemplo si estamos haciendo unos test donde queremos hacer inserciones en la base de datos y ponemos
+
+siempre los mismos valores siempre obtendremos los mismos resultados.
+
+Incluso si pusiéramos valores siempre los mismos valores en campos que tienen que tener valores únicos
+
+pues la primera funcionaría pero la segunda nos daría un error y lo que queremos es poner valores aleatorios
+
+pues esos valores aleatorios los deberemos generar antes de la petición y así no tenemos que estar siempre
+
+entrando y poniéndole entrando en el JSON y cambiando los valores manualmente porque en cada ejecución
+
+tengamos que poner números diferentes.
+
+Si queremos números diferentes lo que debemos hacer es recurso scrip poner algo que me genere números
+
+diferentes.
+
+Bueno pues una vez que sabemos eso vamos ahora a hacerlo dentro de dentro de poco minimizo esta ventana
+
+y nos vamos a crear una nueva petición vamos desde cero cerramos esta bueno vamos a usar el mismo que
+
+ya hemos usando últimamente en los últimos ejemplos uno de tipo após ese que llamamos a Leko que le
+
+poníamos voz para pasarle datos.
+
+Hemos visto que para pasar de datos a un campo tipo após en el body y aquí lo hacíamos de tipo JSON.
+
+Vamos a dejar como hemos dejado los anteriores nombre
+
+apellido
+
+y edad
+
+cuando ya tenemos ejecutamos comprobamos que todo ha ido bien con resultados correcto me devuelve lo
+
+que me tiene que devolver.
+
+Mal servicio pero fijaros siempre estoy pasando este nombre ese apellido y esa edad cómo lo hago para
+
+pasar por ejemplo una edad diferente cada vez pues la forma para pasar a una edad diferente cada vez.
+
+Imaginemos que este campo edad JSON lo hiciese por detrás es insertarlos la base de datos y yo quiero
+
+pues meter en valores aleatorios.
+
+Bueno pues para el campo edad me voy a ir a recusos scrip y voy a generar valores aleatorios antes de
+
+lanzar la petición es lo importante antes de que este Bodhi envíe 42.
+
+Antes voy a generar valores aleatorios como por ejemplo declarar una variable con una constante y me
+
+voy a variedad vale edad no global.
+
+Esto no tiene nada que ver con la que genere MG en ejemplos anteriores y aquí puede utilizar funciones
+
+de funciones de JavaScript.
+
+Vale.
+
+Hay una función de JavaScript que es el MAZ junto a random este punto random me genera valores entre
+
+cero y uno.
+
+Si quiero que sea un número entre 0 y 1 claro por ejemplo a lo mejor me genera cero coma cuarenta y
+
+siete como yo lo que quiero es una Eva pues ese número lo voy a multiplicar por 100.
+
+Luego aparte le voy a sumar 1 porque no quiero que me genera cero y quiero que me genera un número entre
+
+1 y 100 sumaré 1.
+
+Así tengo un número entre 1 y 100 pero tengo un número entre 1 y 100 si me ha generado cero coma cuarenta
+
+y siete 16 pues tendré una edad ahora mismo que será 47 con 16 años.
+
+Yo lo que quiero es que me redondearlo al número anterior vale porque si tengo cero coma cuarenta y
+
+siete 16 porque me Dondé por ejemplo a Juan de 7 años eso se hace si además esto se lo ponemos usamos
+
+la función matemáticas Map Flor Map punto flor.
+
+De hecho cuando se ejecuta esto podríamos poner.
+
+De hecho le ponemos el punto y coma y podríamos ponerle el consuelo para ver cómo cada vez que se ejecuta
+
+edad tiene un valor diferente.
+
+Vamos a verlo hecho que esto vaya ejecutando ahora mismo esto el body lo pasará exactamente igual.
+
+Lo único que me interesa es ver la consola que la fórmula que he utilizado es correcta.
+
+Voy a darle a sending.
+
+Veo que no me ha generado el 3 perfecto.
+
+Voy a ejecutarlo otra vez.
+
+Veo que número me ha generado 36 me va generando no me atornillarse ejecuto otra vez en 88 números siempre
+
+entre 0 y 100.
+
+Pues evidentemente entre 1 y 100 en este caso porque es la función que he hecho.
+
+Bueno pues por ahora va bien esto va bien si quieres poner un comentario de daís doble barrita si y
+
+lo comentáis así no se ejecuta el console log.
+
+Ya no lo saca más vale voy a limpiarlo y si queréis que salga pues pues que salga.
+
+Importante como ahora ya me genera números aleatorios.
+
+Lo que voy a hacer es antes de ejecutar este script.
+
+Lo que voy a hacer es guardar la variable.
+
+Entonces voy a crear una variable que sea mi edad en este caso la voy a generar por ejemplo global hemos
+
+visto antes que era con PM punto Globant puntos etc y le voy a llamar pues edad aleatoria por ejemplo
+
+y le doy como valor.
+
+Este era de aquí este ese es el que le doy de manera que cada vez que se ejecute que yo lance la petición
+
+antes que generara una variable llamada edad aleatoria que le emitirã la edad y por qué es importante
+
+que lo haga y lo haya hecho antes.
+
+Por qué ahora en el body en lugar de poner yo la edad yo ya con que lo ejecute aquí una vez de prueba
+
+por ejemplo veré sin yo veo que ahora ya hay una edad una variable que se llama Edad aleatoria que en
+
+este caso fijaros es un 1 pero la siguiente vez que lo ejecute lo hacen edad aleatoria alabarle 82.
+
+Cada vez me genera una edad aleatoria pero la generarme antes yo no la puedo utilizar en el body.
+
+Yo me de poner la edad el 42 le voy a poner aquí edad.
+
+De hecho si empiezo a escribir sin que haya ningún valor de edad lea historia y vamos a ver vamos a
+
+ver si funciona si no funciona.
+
+Si tenemos que cambiar algo aleatorio andamos ASEM
+
+y vemos aquí qué va ha puesto un 49 te vamos a dar quedaron 14 pero vamos a dar ya eran 29 de manera
+
+que estoy llamando cada vez con un número diferente.
+
+Veis por qué porque se escribe lo estoy generando y a la hora de llamar como hemos visto antes lo genero.
+
+Hago la llamada o tengo la respuesta y ahora lo podría comprobar en el script pero cada vez está haciendo
+
+un número diferente.
+
+Aquí lo estoy utilizando para meter valores cada vez diferentes voy a generar incluso otra variable
+
+aleatoria
+
+para ello voy a insertar un campo nuevo que aparte que será otro que por ejemplo imaginemos que estamos
+
+pidiendo una cantidad de un determinado producto cantidad le damos la cantidad.
+
+Os acordáis.
+
+Hay una función que era random
+
+esto genera un valor aleatorio vamos a ver 728
+
+555 cada vez 1 pero ésta no es una variable que tenga que generar anteriormente porque como es una función
+
+que ya tiene integrada Postman no tengo que generar una variable anterior.
+
+Es una función que ejecuta sobre la marcha no la tengo que poner a recurso escrito vale igual que podría
+
+poner en el en el Ocean a la hora de generarlo en el body.
+
+También podría poner un código que fuera código
+
+si os acordáis también había una variable que se llamaba
+
+geoide
+
+estas dos geoide si no recuerdo mal dolar Jehú idem.
+
+Esta como es una cadena tengo que ponerlo entre comillas
+
+a ver si en fijaros me ha generado una cadena aleatoria junto Tauber una cadena diferente una cadena
+
+diferente voy generando valores aleatorios es decir por un lado puedo utilizar las funciones que ya
+
+me integré al sistema esas no me hacen falta ponerlas en el recurso scrip.
+
+Por otro lado puedo que ARVA variables en el recurso scrip y luego usarlas en el body que es en el momento
+
+de la llamada y de hecho os voy a enseñar una función JavaScript.
+
+Tampoco tengo intención de explicar el código para poder usar que es por si queréis generar cadenas
+
+aleatorias para ello aquí siempre estoy poniendo el nombre Fran pero si quiero insertar cada vez nombres
+
+diferentes además nombres que incluyan mayúsculas minúsculas y números.
+
+Por ejemplo quisiera por un campo que fuera el campo password y quiero poner una password cada vez diferente
+
+para ir probando y por ejemplo voy a poner el password de 8 números de 5 números para poner una password
+
+de 5 números me voy aquí al recurso scrip y copiar esta función fijaros lo que hago es un número aleatorio
+
+el 36 es porque me coge letras números y letras mayúsculas minúsculas y números y esto me va a partir
+
+y me lo va a coger de 5 caracteres tampoco si no entendéis mucho de JavaScript.
+
+Creedme que esto cada vez va a darme un valor aleatorio va a pasarlo de matemático de un número matemático
+
+lo va a pasar la letra va a coger solo 5 caracteres vamos a imprimir lo vamos a comprobar como cada
+
+vez que me dan datos diferentes por ejemplo a consola voy a limpiarla osen veo el primer dato de Random
+
+pijamada o esta combinación de Huelva random el segundo valor ha dado esa combinación vuelve a darse
+
+en random nada esta combinación.
+
+Fijaros que siempre me están dando datos aleatorios con lo cual si eso que acabo de coger y que metieron
+
+una variable podía haber puesto con puedo poner LED en JavaScript puedo hacer las dos cosas para declarar
+
+una variable.
+
+Fijaros que si esto mismo que yo acabo de hacer en lugar de pasarlo por consola lo que hago es crear
+
+una basura de autoria global por ejemplo hago esto mismo de aquí abajo pero en vez de edad aleatoria
+
+hago una password aleatoria con el valor de R Este MDG le voy a llamar password por ejemplo y aquí me
+
+pondré Pascual
+
+password y contraseña ese password como se genera antes de hacer la llamada porque se ejecutan el primer
+
+recursos script en el bodhi se lo voy a pasar le voy a llamar ese password como lo llamó Barbora aleatoria
+
+pues password aleatorio ejecutó
+
+a una cadena es una cadena de texto entre comillas ver si es una cadena entre comillas se ejecutó y
+
+aquí está o una password en un caso fijaros que me está dando cada vez una edad diferente un número
+
+de cantida diferente un código diferente y una password diferente dos de ella menos se ejecuta sin necesidad
+
+porque son funciones que tenía el sistema.
+
+No hace falta que Lazaga como recursos pero las otras dos estoy generando antes de lanzar la petición
+
+fijaron.
+
+Voy lanzando así para probarte es cada vez el TES Menorah con números diferentes.
+
+El Fran García es como lo he dejado estático lo deja estático y el resto pues cada vez me está cogiendo
+
+números diferentes imaginaros por ejemplo que queréis hacer unas pruebas contra el sistema y queréis
+
+pasar esos valores siempre diferentes.
+
+Entonces de esta forma conseguimos pasar en cada ejecución de los tres valores diferentes.
+
+Ahora que ya sabemos aciertes.
+
+Por cierto luego podríamos comprobarlo estos valores son accesibles la data aleatoria y la basura aleatoria
+
+podemos acceder a ellos en los propios test porque en este caso hemos hecho el script el body pero podemos
+
+hacer un test podemos coger el JSON de vuelta vamos a ver y vamos a comprobar el valor del campo ya
+
+vale y vamos a ver si es 41 así en la siguiente ejecución no será 41 será fijaros 93 claros pues tenemos
+
+una posibilidad recién de acertar pero bueno vamos a ver cómo vamos a acertar seguro porque vamos a
+
+coger el JSON JSON value CHEC.
+
+Lo que voy a coger es el valor del campo JSON junto a edad estoy accediendo a este campo Jordà son punteada
+
+y voy a ver si acierto y en el próximo pero me sale un 50 seguro que no tengo una idea antes.
+
+De hecho el 3 ha fallado mira por poco ha salido 53 y yo esperaba el 50 pero bueno para comprobar que
+
+seguro que me sale lo que voy a hacer es que JSON punto da es igual a él mismo.
+
+Ya vereis como si no no no a él mismo no lo voy a hacer es mejor JSON punto da es igual a la última
+
+ejecución el valor que tiene arabismo.
+
+Era aleatoriedad aleatorio no era el de edad aleatoria sino que ponía éste.
+
+Esta variable es la que voy a usar aquí.
+
+Pero qué pasa si la pongo así el dato aleatorio pues que ejecuta Altés cero.
+
+Por qué.
+
+Porque me hice edad aleatoria y nos definen y claro yo no puedo coger la variable de esta forma.
+
+Hemos visto antes cómo coger una variable de tipo que generado de tipo global en un test no se ponía
+
+el nombre de la variable directamente cómo se ponía.
+
+Cuando uno quiere coger una variable fijaros para eso lo hemos probado antes.
+
+Tenemos Guetta global variable y aquí le ponemos el nombre de la variable que si era aleatoria
+
+entonces contra Love está la variable que podremos coger y este trozo de aquí controlé X lo pongo aquí.
+
+Y le digo comparamos el valor devuelto por el JSON y que sea igual al valor de la variable global.
+
+En el mes pasado seguro que es porque acaba de generar la guardado y acto seguido lo ha lanzado como
+
+me ha devuelto el mismo el mismo es igual al que me acababa de generar y de esta forma pues hago una
+
+pobrecita más en ésta ya tengo Bodhi tengo para el regreso scrip tengo tres lo voy a guardar como un
+
+ejemplo aquí en la carpeta post como tampoco lo voy a guardar en pos ni le voy a llamar
+
+escrit por si luego lo buscáis.
+
+Este ejemplo lo guardo en pos vale y este si que tiene ya un poco de todo tiene Bodhi tiene poca cosa
+
+escrit y es un género que la metieras automáticamente al decir que de tipo JSON podía haberle incluso
+
+puesto una actualización a unos parámetros.
+
+Bueno ya hemos comprobado todos estos campos.
+
+Para qué valen todas estas opciones.
+
+Para qué valen y espero que con este vídeo os haya quedado claro que el primer curso se ejecuta antes
+
+que la petición y me sirve normalmente para preparar datos con funciones.
+
+Aquí puedo leer código JavaScript tampoco si no sabes JavaScript no preocuparos normalmente.
+
+En el apartado de testing se suele hacer para eso para poner cosas aleatorias a valores para preparar
+
+los script para preparar el lanzamiento cada vez con datos diferentes y os he enseñado una fórmula para
+
+sacar números aleatorios en este caso entre el 1 y el 100 si dicho entre el 1 y el 1000.
+
+Pues aquí me doy un tiempo en insumir y una forma de sacar cadenas de texto cadenas de texto aleatorias.
+
+En este caso de 5 caracteres si queréis más cambiais el 5 por el valor que queráis espero que os haya
+
+gustado y no veamos el siguiente vídeo.
+
+
+
+Conocer la opción Pre-request Script
+
+
+
+const edad =Math.floor(Math.random()*100+1);
+
+console.log(edad);
+
+
+pm.globals.set("edadaleatoria", edad);
+
+
+
+let password= Math.random(),toString(36).substr(2,5);
+//console.log("ransom", r);
+
+pm.globals.set("passwordaleatoria",password);
+
+TEST  con variables
+
+pm.test("edad correcta", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.json.edad).to.eql(pm.variables.get("edadaleatoria"));
+
+});
+
+
+
+
+
+41. Enviar petición dentro de Pre-request Script
+6 min
+
+
+Una característica que tiene avanzada o muy avanzada el tema del recurso scrip es el tema de la posibilidad
+
+y ojo al dato de ejecutar una petición dentro del scrip para que otra petición coja sus datos.
+
+Me explico.
+
+Vamos por ejemplo a la petición esta última que hemos estado haciendo por ejemplo esta scrip con la
+
+que hemos trabajado últimamente.
+
+Si os fijáis os acordáis era que tenían la edad aleatoria el password aleatorio y que en el body escogía
+
+ciertos campos.
+
+Vale vamos ahora también a poner un nuevo campo que le vamos a llamar hype.
+
+Vamos a pasar también la hype que estamos lanzando pero ese hype la vamos a coger a su vez de otro.
+
+Otra petición si os acordáis en inutilidades había o vimos en su momento una actividad que era que no
+
+R.L más barra hype o teníamos hype teníamos esto podríamos obtener esto previo a lanzar nuestra nueva
+
+petición.
+
+Coger este dato y pasárselo en éste.
+
+En esta nueva petición vamos a ver cómo hacerlo.
+
+Fijaros en el Strip aparte de todo lo que hacía que voy a seguir haciendo voy tengo una opción por aquí
+
+abajo que se llama cena Rísquez sen agricolas.
+
+Fijaros que ya me crea una petición a una web en la que yo les diga de hecho fijaros que me pone a Maneco
+
+con lo cual muy bien porque esto ya lo tengo hecho en la barra hype.
+
+De esta forma aquí dentro en respon punto JSON yo ya tengo la respuesta de esta petición como si la
+
+estuviera ejecutando.
+
+Pero ojo como recurso se ejecuta antes que esta petición.
+
+Puedo coger estos datos que me devuelve por Maneco Punto Com va rapé.
+
+Por eso lo tengo como utilidades cogeré el dato guardarlo y luego pasarselo como un campo más.
+
+Igual que hemos hecho aquí arriba es decir a la respuesta del JSON lo que voy a hacer es lo voy a asignar
+
+a una variable igual que yo por aquí arriba en otras ocasiones esta respuesta JSON por ejemplo la vamos
+
+a poner a una variable que se llame bar son Data por ejemplo como hacíamos antes.
+
+Entonces esto me pasa por consola voy a quedarme una variable le voy a llamar bar JSON Data por ejemplo
+
+igual a la respuesta.
+
+Bueno ya tengo la respuesta en una variable era lo que voy a guardar es voy a abordar una variable global
+
+por ejemplo este estilo o copia lo veo aquí que le voy a llamar hype hype global hype.
+
+Vale y que va a coger el campo de JSON data como yo yo sé el formato que es el campo que se llama hype
+
+pues JSON data Puto hype
+
+y eso me lo guardara dentro de la variable llamada PM creará una variable global y me la guardará como
+
+estos ejecutã antes repito que la petición lo guardará y dentro de la petición cuando se ejecute le
+
+voy a decir que me coja la variable hype
+
+vamos a probar
+
+si todo ha ido bien vamos a ver.
+
+P Es una cadena de texto no.
+
+Sí porque tenía puntos entre comillas.
+
+Entonces vamos a probar de nuevo y si todo ha ido bien pues aquí está mi campo.
+
+P Qué me lo ha generado en un escrito previo ejecutándose aquí.
+
+Se ha ejecutado una consulta previa he guardado el dato y luego ya en el cuerpo lo he metido para pasarlo
+
+y en el resultado me viene bien.
+
+He aprendido cómo ejecutar peticiones previas a la petición que estamos ejecutando en este momento.
+
+Por ejemplo si quisiéramos pasar también y así voy recordando un poco algunas de esas utilidades que
+
+por ejemplo la de fecha recuerdo que había una utilidad que me daba la fecha no 5 que era me daba ésta
+
+que me Bauta en Now y me devolvía esto.
+
+Esto como una cadena de texto o por ejemplo haber fecha correcta éste que hacía
+
+cuando éste me devolvía si la fecha una fecha era correcta la válida.
+
+Bueno pues este no está nada.
+
+Por ejemplo
+
+vale este voy a pasarle esta cadena como fecha también podría pasarla podría pasarla o no.
+
+O lo dejo a vosotros como ejercicio para que así recordéis cómo se cogía una cadena de texto.
+
+Tenéis que coger la cadena como texto tenéis que pasarla a una variable y una vez que paseillo una variable
+
+ya la podéis usar o lo dejo como ejercicio porque es un ejercicio que tiene tres o cuatro cosas conceptos
+
+que ya hemos visto en vídeos anteriores.
+
+Bueno espero que os haya gustado esto ya empieza a ser cada vez cosas más avanzadas peticiones dentro
+
+de peticiones pero bueno pues cada vez soy más expertos en el tema.
+
+Un saludo.
+
+
+
+pre-request scrip de ip
+
+
+
+send a request
+
+pm.sendRequest("https://postman-echo.com/ip", function (err, response) {
+    var jsonData=response.json();
+  pm.globals.set("ip",jsonData.ip);
+});
+
+
+
+
+42. Reutilizar los tests más comunes
+11 min
+
+Bueno en este nuevo video lo que vamos a ver es cómo reutilizar los TES cómo hacer uso de JavaScript
+
+y de las variables de entorno para que los tests que normalmente solemos usar.
+
+Pues no tener que escribirlos o el paquete tees que queremos hacer en cada uno de los de los recuerdos
+
+de las peticiones pues no tener que escribirlos cada vez por cada una de las peticiones.
+
+Entonces vamos a ver un ejemplo vamos a que armó una nueva petición por ejemplo con el hueco como hasta
+
+ahora por ejemplo una de tipo Get vale una petición básica para la que vemos que me devuelve lo que
+
+hemos visto ya en el curso muchas veces pero ahora vamos a hacer lo siguiente cuando me veía al primer
+
+Street bueno esta la voy a guardar de hecho voy a quedarme una carpeta por aquí que sea mi estés o estes
+
+me ver una carpeta que debo llamar mis test para este ejemplo no más.
+
+Y ahí es donde iremos guardando este test.
+
+Bueno lo dicho me voy a perder scrip y lo que voy a hacer es usar los test que normalmente solemos nosotros
+
+usar.
+
+Si os fijáis aquí no están los test no están los test para escribirlos de manera que sea fácil hacer
+
+que automáticamente me los gènere entonces aunque lo tenemos que escribir aquí.
+
+Realmente me hubiera creates y voy a hacer lo siguiente.
+
+Voy a escribir los por ejemplo ya que es bastante común que todos las peticiones que uno quiera ver
+
+que devuelve el código 200 y también puede ser bastante común que a lo mejor en todas las peticiones
+
+tú le pongas un tiempo de respuesta que consideras viable para dar el test por bueno.
+
+Por ejemplo voy a añadir el código 200 de código 200 es ok esto recibimos respuesta ok por ejemplo respuesta
+
+ok.
+
+Y luego añado el test que también vimos en su momento de tiempo.
+
+Vamos a poner el tiempo que queramos que consideramos nosotros como correcto para nuestro sistema de
+
+calidad.
+
+Por ejemplo 300 milisegundos y le ponemos tiempo y tiempo o que vale una vez que tenemos los dos.
+
+A esta pestaña me he ido más que nada por la comodidad de venir aquí y que le dé al botón y automáticamente
+
+me salga pero realmente no es aquí donde nos tenemos que escribir ahora los copio los quito de aquí
+
+te espero voy a parar el escribiros pero vale porque vamos a ver cuál es el concepto el concepto es
+
+meter en una variable que luego usemos en todos los TES es decir fijaros lo que debemos hacer es crearlo
+
+dentro de un bloque.
+
+Vale voy a poner aquí los.
+
+De hecho los voy a tabular para que quede mejor
+
+vale más.
+
+Lo meto dentro de unas llaves y esas llaves se lo voy a pasar a un bloque anónimo en JavaScript vale
+
+para pasar a ser un bloque anónimo es abro paréntesis Cierro paréntesis.
+
+Igual vale.
+
+Eso es un bloque anónimo de JavaScript pero el contenido de ese bloque anónimo se lo voy a asignar una
+
+variable vale una variable que le voy a llamar Mistress por ejemplo que es igual a ese bloque anónimo.
+
+De esta forma tenemos una variable todo como es toda esta cadena son Mistress para el siguiente paso
+
+que debemos hacer es esa variable copiarla lo que hemos puesto aquí el ponerla como una variable de
+
+entorno vale set Environment Baraibar entonces predecimos la variable entorno le decimos por ejemplo
+
+que es el nombre de la variable no aquí es perder el nombre de descriptivo Ministers y el nombre de
+
+la variable el número variable es esta que arriba
+
+test
+
+Mistress.
+
+De hecho voy a poner con la s porque son más de uno.
+
+Esto realmente me daría un error porque es una variable que lo que es una cadena anónima con un bloque
+
+anónimo entonces realmente lo que tenemos que hacer es pasarlo a cadena hacemos un string.
+
+Realmente esto es JavaScript.
+
+Vale que ya sabéis que eso es realmente lo que estamos escribiendo.
+
+JavaScript.
+
+Esto es lo que realmente estamos haciendo es como copiarlo todo en una cadena para pasárselo a una variable
+
+que es la variable Mistress para luego poder usarlo en todos los sitios.
+
+Si ahora probamos por ejemplo esto no haría nada porque realmente no tenemos ninguno.
+
+Pero cómo vamos a ejecutar los test.
+
+Pues cómo sabemos que el recurso scrip se ha ejecutado antes de la llamada antes de la llamada.
+
+En los test vamos a poder hacer uso de esta variable Mistress que habremos guardado.
+
+Vamos a ver ahora mis test a los tests y ahora lo que debemos hacer es obtener esa variable que ha generado
+
+la variable podemos coger aquí de coger una variable de entorno vale el nombre de la variable o sea
+
+el nombre que le hayamos puesto aquí se llama Mistress acogerle igual Mister nombre de la variable.
+
+Y aquí viene un poco la magia.
+
+Vale.
+
+La magia es que esto lo tenemos que ejecutar para ejecutar.
+
+Existe la función Cheval vale entonces vamos a poner la función Baul que recibe esto como parámetro
+
+y que lo ejecuta de esta forma.
+
+De esta forma lo que hacemos es ejecutar lo que coja de la variable vale.
+
+Esto lo vamos a poder coger en este TES o en todos vale simplemente en todos los TES poniendo.
+
+Esta función va a ejecutar estos dos desde aquí automáticamente vamos a polvorón éste y vamos a crear
+
+uno nuevo y vamos a poner también este código y veremos cómo lo ejecuta.
+
+Aunque aquí me pone que puede ser porque podría evaluar cualquier cosa y podríamos meter ahí bueno hacer
+
+un desastre vale pero nada si nosotros lo controlamos sabemos realmente lo que estamos metiendo.
+
+No hay ningún problema es un Guarne o no no es un error vale vamos a ejecutarlo.
+
+Bueno de hecho voy a guardarlo.
+
+Voy a dar Cefas y lo voy a guardar como Mistress también dentro de esa carpeta que hemos puesto dentro
+
+de colección uno que se llama misterioso a llamar misterios vale para tenerlo dentro y lo vamos a ejecutar
+
+sin y vemos como ejecutados los dos tes los ha ejecutado sin embargo aquí antes no está escrito pero
+
+los acogió de una variable que sí que los tenía y ahora a partir de ahora con este trozo de código voy
+
+a generar un Mistress 2 o sea un segundo.
+
+Una segunda petición.
+
+Por ejemplo aquí que le voy a llamar Mister perdón aquí voy a amarle voy a utilizar cualquier otra vez.
+
+Luego que el eco esté aquí también va Racket.
+
+Da igual.
+
+Simplemente por probar uno de hecho podríamos poner este para que es un test diferente pero lo importante
+
+es que voy a usar este trozo de código en los test a los tests y pongo.
+
+Ahora ya no tengo que escribir los de ustedes porque como no tengo una variable ejecuto
+
+ya que están los dos tres pasados realmente yo aquí no he tenido que poner los tests y están los dos
+
+tes pasados.
+
+Por qué.
+
+Porque realmente ha cogido la variable la variable que hay de entorno que es esta ha cogido el valor
+
+de esta variable que son los TES y con elevarlos hemos ejecutado.
+
+Entonces la variable está ahora tiene todo el código.
+
+Lo bueno que si yo quiero hacer tes comunes y ejecutarlos para todo lo que hago muchas veces es me pongo
+
+un scrip un script donde en este caso donde el recurso es voy poniendo todos los TES porque a veces
+
+uno hace para determinados paquetes siempre los mismos 3 8 10 3 te los pones todos aquí lo actualizas
+
+una única vez el las cadenas de los TES comunes y una vez que lo tienes lo ejecutas para guardarlo en
+
+una variable y luego en todos los TES pongo siempre esto como primera línea para que ejecute siempre
+
+esos ocho o diez tes comunes y luego si quiero algún dios particular lo podéis escribir de abajo vale
+
+entonces porque tú aquí puedes escribir ahora un test más.
+
+Entonces ejecutar los 2 comunes más semas por ejemplo vamos a ejecutar.
+
+Yo que sé lo normal son los de evalua de JSON sea pero este no va a recibir ningún JSON con lo cual
+
+este tema no lo va a pasar de hecho pasará ahora solamente 2 de 3 porque evidentemente no ha recibido
+
+ningún JSON y es que hay que meditarlo.
+
+Pero para que veáis que podéis escribir un tercer tes debajo y seguir escribiendo entonces escribir
+
+los comunes en la parte de arriba con una única línea y luego pues el resto pues abajo.
+
+Vale pues este era el ejemplo de aquí.
+
+El uso no lo voy a copiar porque total lo tenéis aquí ya tenéis aquí antes la línea que hay que poner
+
+bloque anonimo de javascript
+
+
+
+
+
+
+NO SALIOOO
+
+var mistests = () => { 
+
+  pm.test("Test ok", function () {
+    pm.response.to.have.status(200);
+   });
+
+   pm.test("Tiempo ok ", function () {
+    pm.expect(pm.response.responseTime).to.be.below(1200);
+
+  });
+}
+  pm.enviroment.set("Mistest",mistests.toString());
+
+eval(pm.environment.get("MisTests"))();
+
+
+
+
+2 EJEMPLO
+
+test 
+
+eval(pm.environment.get("MisTests"))();
+////
+
+Pre-request Script
+
+var mistests = () => {
+
+   pm.test("Respuesta OK", function (){ 
+    pm.response.to.have.status(200);
+ });
+
+  pm.test("Tiempo ok", function () {
+    pm.expect(pm.response.responseTime).to.be.below(3000);
+
+});
+
+}
+ pm.enviroment.set("Mistests",mistests.toString());
+
+
+test 
+
+eval(pm.environment.get("MisTests"))();
+
+////
+
+
+
+Tarea 3: Practica los tests.
+
+43. Colección usada en los vídeos.
+1 min
+
+
+
+
+

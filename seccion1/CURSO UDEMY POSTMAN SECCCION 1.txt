@@ -1,0 +1,1046 @@
+
+Udemy 
+
+lorena.seiscomponentes@gmail.com
+testing321
+
+ Postman.Testing de API 
+
+SECCION 1 
+
+2- Que es Postman 
+
+las pruebas de API es un tipo de prueba de software que es lo que implica es probar todas las interfaces de programacion de aplicaciones lo que realmente se conoce como una API entraria dentro de la parte de las pruebas de integracion para ver si estas APIs cumplen con las expetativas de funcionalidad funcionalidad confiabilidad, rendimiento y seguridad que se espera de este tipo de software.
+
+
+Realmente para aquellos que no sepan cómo se crea una API la API son esos servicios normalmente web que nos ofrece alguna empresa o nosotros mismos y que como no tienen una interfaz de usuario como carece de esa interfaz de usuario la única forma de probarla es con algún tipo de herramienta que llame a esas APIs a esos servicios web que nosotros mismos hemos creado para ver si realmente responden a los requerimientos que nosotros necesitamos.
+
+Bueno la interfaz lógica de la aplicación que vamos a usar va a ser Postman es una herramienta de uso
+
+gratuito aunque tiene también versiones de pago ahora veremos la página web es ésta https: 2.03 W.B
+
+postman puntocom.
+
+Si entramos en ella veremos la página oficial de Postman donde ahora pasaremos a descargar el producto.
+
+En qué versiones podemos descargarlo.
+
+Bueno os comento que si tenéis Windows.
+
+Pues a partir de Windows 7 en adelante podéis descargar Pomac Postman si tenéis Mac.
+
+Pues a partir de la versión 10.9 de Mac también os podéis descargar y si sois de Linux a partir de la
+
+versión para Ubuntu a partir de 12 4 12:04 Fedora también a partir de la 21 o incluso en Debian a partir
+
+de la 8 vale con lo cual digamos que es multiplataforma.
+
+Es un software que está hecho en Electron electrones un lenguaje de programación o está pensado para
+
+poder hacer aplicaciones de escritorio pero con tecnología web y es lo principal de conocer en que cualquiera
+
+lo va a poder utilizar para el curso lo voy a hacer lo voy a desarrollar en una plataforma Windows y
+
+pero en principio si tenéis un Mac o Linux no deberíais tener ningún problema para seguirlo porque como
+
+ya digo está hecho por él en electrónica es multiplataforma.
+
+Lo siguiente que vamos a hacer ahora va a ser instalarlo descargar la aplicación instalarla yo ya la
+
+tengo instalada pero bueno os explicaré como descargar la aplicación y os espero en el siguiente vídeo.
+
+
+
+
+
+
+3- INSTALACION Y VISION GENERAL 
+
+
+Una vez en la página de Postsman accederemos a descargar la aplicación como cualquier otra aplicación
+
+mientras se va descargando aquí.
+
+Evidentemente descargaremos Postman en nuestra versión de Windows que necesitamos 32 o 64 bits en mi
+
+caso la de 64 bits lo guardamos donde queramos.
+
+Ahora mismo me estoy descargando la versión 6 7 1 la descarga somos 70 megas.
+
+Comentaros que Postman también se puede descargar como complemento de Crome.
+
+Ahora bien como complemento del programa de Crom hay varias cosas por ejemplo que no tiene la aplicación
+
+nativa la de escritorio por ejemplo te permite trabajar con kuquis directamente.
+
+Por ejemplo la de Crom no puede hacerlo se necesita una extensión aparte.
+
+Luego por ejemplo también la aplicación nativa a la que vamos a instalar ahora viene con un proxy incorporado
+
+para que se puede usar para capturar el tráfico de la red.
+
+La de Kírov no lo tiene.
+
+Tiene unas barras de menús que tiene la aplicación de Clam tampoco tiene puedes buscar actualizaciones
+
+con la de clon no lo tiene.
+
+Tiene ciertas cabeceras restringidas que no lo tiene.
+
+Incluso la opción de Radix redireccionamiento de solicitudes de la serie de 300 mensajes 300 que le
+
+pueden devolver una página web para que se redirigen automáticamente la versión de que no lo tiene y
+
+por último la consola el software que nos vamos a instalar va a tener una consola donde nosotros vamos
+
+a poder ir viendo los resultados y la extensión de que no lo tiene.
+
+Con lo cual si mi consejo si queréis aprovechar Postman en todo lo que ofrece pues instalar la versión
+
+de escritorio ya que la versión de crear hay muchas cosas que no tiene una vez que tengo ya descargada
+
+la aplicación.
+
+Pues aquí veréis la tengo descargada y la puedo ejecutar yo realmente ya tengo la última versión instalada
+
+a las 6 7 1 pero vamos que el proceso de instalación va a ser tan sencillo como darle click al menos
+
+en Windows le vais a dar click a la aplicación y como cualquier instalación normal pues vais a instalar
+
+Postman en la carpeta que deseais.
+
+Vamos a ver la instalación la instalación continúa y finalmente se ejecuta Postman.
+
+Este sería nuestro Postman en la versión 6 7 1.
+
+Yo ya tengo alguna cosilla creada de hecho aquí veréis que vosotros no tenéis curso de Postman la tendréis
+
+en my work Espais ahí yo tengo ya un montón de servicios de mi trabajo profesional creado.
+
+Pero bueno os he dejado una instalación limpia donde no hay nada creado.
+
+Esto es ahora mismo lo que debéis ver vosotros y un paso explicaros un poco el tema de lo que son los
+
+diferentes menús diferentes opciones para luego pasar ya en profundidad y empezar a hacer nuestros primeros
+
+servicios web me gusta esto dejarlo así un poquito más.
+
+Así es como me gusta y paso a explicaros cada uno de los apartados Bueno pues podemos ver esta primera
+
+barrita de arriba.
+
+Esto es lo que se conoce como jé de llevarla a la barra de cabecera con una serie de botones.
+
+Ahora los veremos luego vemos una parte aquí a la izquierda de lo que se conoce como Saïd bar la barra
+
+lateral y luego está toda esta zona central de aquí es lo que conocemos como Builder.
+
+Si vamos a la barra lateral veremos que tenemos dos pestañas la pestaña historial y la pestaña colecciones
+
+la pestaña Historial La parte de la aplicación donde Postman guardarán las solicitudes que envíes.
+
+Aquí vale todas las cosas que vayas haciendo pues todo el historial irá quedando en esta parte.
+
+Por otro lado la pestaña de colecciones donde vamos a crear y administrar todas las colecciones que
+
+vayamos haciendo Postman en sucesivos vídeos veremos el tema de crear una colección.
+
+Después iremos viendo que se irán guardando en esta parte de colecciones.
+
+Si vamos a la barra de arriba para ver la barra del encabezado el bar veremos que tenemos diferentes
+
+botones.
+
+Primero encontramos aquí el botón ni el botón ni swap nos va a permitir.
+
+Como bien dice crear riqueza lo que son solicitudes colecciones un entorno vale el environment y luego
+
+cosas avanzadas como lo que es la documentación de Postman que vamos a poder también crear y también
+
+vamos a poder crear servidores Mogt que son como unos servidores que intentan crear un entorno de pruebas
+
+para que nosotros hagamos ciertas pruebas sin necesidad de tener creado un entorno de producción real
+
+y luego por último también podremos crear monitores estos monitores también lo veremos más adelante
+
+en otro de los vídeos vemos la parte de importar que me va me va a importar la de importar colecciones
+
+de entornos Kull diferentes cosas diferentes tipos de archivos enlaces que Postman me permite me permite
+
+importar directamente la aplicación.
+
+El botón de Rauner abre una ventana veréis que abre la ventana que se llama colección Ranero y es donde
+
+vamos luego a poder ejecutar esa colecciones de peticiones que hayamos hecho poniendo una detrás de
+
+otra que se conecte.
+
+Que se ejecuten como un todo.
+
+Posteriormente también veremos esta opción más adelante vemos el icono de Nueva ventana ésta te abre
+
+una nueva ventana un nuevo tabulador vale.
+
+Bueno aquí es donde tenemos los alias de trabajos y tú por ejemplo vemos que tengo el área de trabajo
+
+de curso Postman y el Maywood que speaks yo puedo a lo mejor pues si tengo diferentes empresas o por
+
+ejemplo trabajo en dos sitios y quiero tener los diferentes entornos con los diferentes servicios web
+
+con los que trabajo o incluso uno para cada una de las empresas que son mis clientes pues puedo tener
+
+aquí un área de trabajo propia para cada una de las empresas también hay que tener los del equipo porque
+
+luego veremos que que con Postman podemos trabajar en un equipo de trabajo y compartir todo en un work
+
+Espais.
+
+Vale pues será aquí donde digamos en cada momento en qué área de trabajo estamos trabajando tenemos
+
+también la opción de invitar a otras personas a un área de trabajo.
+
+Vemos aquí para invitarlo por ejemplo al curso Postman a este área de trabajo que se llama curso Postman.
+
+Tenemos la opción de sincronización aquí dará el estado de sincronización de mi cuenta con Postman más
+
+tarde tenemos el icono de para capturar las peticiones de Postman que se están ejecutando en mi ordenador
+
+esto por ejemplo capturará con un proxy o sea con un perdón por un puerto.
+
+Todas las peticiones que se están haciendo a servicios web podremos capturando las podemos capturarlos
+
+aquí más tarde podemos ver el icono de la configuración aquí es donde se configura todo lo relativo
+
+al Postman también lo veremos un poquito más en profundidad a partir de ahora.
+
+El tema de notificaciones si tenemos alguna notificación de actualización etcétera si tenemos algún
+
+tipo de tweet que queramos poner sobre Postman.
+
+Yo no voy a twittear ahora mismo sobre Postman si queremos poner nuestro icono vale nuestro icono de
+
+usuario ahora veremos como configurar un usuario y también podemos poner nuestro icono y luego si queremos
+
+actualizar somos miembros invitados miembros invitados no miembros gratuitos tenemos la versión gratuita
+
+pero podemos aumentar a una versión profesional con un upgrade.
+
+Vale pues son las diferentes cosas que podremos ir haciendo aquí en nuestro menú del bar
+
+que son las opciones que me permite este menú de arriba.
+
+Vale hemos visto este menú de la izquierda y luego tenemos aquí por la parte de abajo vemos que también
+
+tenemos otro otro tipo de menús.
+
+Vale por ejemplo el botón salvarme oculta esta parte de la izquierda de esta ventana oculta aquí veremos
+
+cómo buscar servicios que hayamos creado.
+
+Es muy útil también cómo arrancar la consola arrancará una consola de Postman por ejemplo.
+
+Esta es una de las cosas que os decía que Postman tiene en su versión de escritorio que no tienes en
+
+la versión de extensión de Google Chrome más para alante.
+
+Tenemos aquí un botón para aprender Postman estamos en el modo construción.
+
+Vale estamos en modo construción de hacer peticiones pero podemos estar en modo navegación.
+
+Aquí podríamos estamo navegación y ver qué es lo que estamos haciendo en cada momento.
+
+Nosotros vamos a estar en modo construcción.
+
+Estamos viendo en formato dos paneles podríamos verlo quitar el formato dos paneles ponerlo en vez de
+
+laterales ponerlos verticales.
+
+Podríamos sacar también los accesos rápidos.
+
+Vale aquí aparecen los accesos rápidos esto también podemos acceder a él mediante las opciones en el
+
+setting Cart pues podemos ver y cambiar cada uno de los accesos.
+
+Y por último tenemos aquí un botón de ayuda que bueno pues para eso estoy aquí para ser vuestra ayuda.
+
+Luego tenemos aquí una serie de botones y el environment que los iremos viendo ahora en los siguientes
+
+también videotutoriales lo siguiente que voy a hacer es crearme una una cuenta nueva yo ya tengo una
+
+cuenta de hecho aquí la veo pero voy a crear una nueva cuenta para que vosotros lo veáis.
+
+Vale como crear una cuenta en Postman.
+
+Esto va a ser muy interesante porque si os creáis una cuenta luego podréis sincronizar todas las cosas
+
+como esta cuenta si estáis en diferentes equipos e incluso colaborar con otras personas de crear un
+
+grupo de trabajo por ejemplo entonces pues voy a crear el proceso de crear una cuenta.
+
+Es muy sencillo.
+
+Vale puedes crear una cuenta o daros de alta aquí si ya tenéis una boda daros de alta también con cualquiera
+
+de vuestras cuentas de Google.
+
+Pues por ejemplo voy a darme de alta con una de Google y acabo más rápido es crearme una cuenta o sea
+
+darme de alta con una de Google
+
+vale la siguiente
+
+y me balido así tendré raver contraseña me confundí.
+
+Vale así tendré una segunda cuenta de Postman.
+
+Bueno daros como habéis visto de alta en una cuenta sincroniza como veis en esta cuenta no tengo creado
+
+ningún servicio web de ningún servicio web aquí tengo el mayor respeto estaré como vosotros.
+
+Vale ahora mi mi programa instalado.
+
+Tengo la opción de estoy con esta cuenta o abrirla con otra cuenta.
+
+Puedo tener varias cuentas con las cuales estar validado en Postman.
+
+Bueno pues crear de hecho ahora mismo por ejemplo podría ponerme en esta cuenta ir a mi perfil y ponerle
+
+diferentes cosas a la cuenta.
+
+Por ejemplo la laimagen etc..
+
+Bueno no tampoco es una opción que tenga mucha historia detrás.
+
+Pero bueno si queréis verla.
+
+Pues esto esto es el perfil aquí aparecen tus colecciones.
+
+Ya más adelante cuando tengamos cosas creadas y podamos sincronizar con el servidor sí que podemos vender
+
+aquí y ver mis colecciones como están sincronizadas en la nube.
+
+Vale si queréis cambiar la imagen por cambiar la imagen y arrastrar aquí una imagen buena yo voy a dejar
+
+esta del cohete y ya está.
+
+En principio la sincronización de la cuenta tampoco tiene por el momento mucho sentido hasta que no
+
+conozcamos todo lo que hace la aplicación.
+
+Con lo cual voy a salir de aquí y volver un poco a la aplicación.
+
+
+
+
+
+4- Mi primera Colleccion y mi primera petición 
+
+
+
+
+Bueno en este video lo que vamos a hacer es una vez que ya hemos instalado Postman ya sabemos un poco
+
+hemos visto el entorno.
+
+Vamos a empezar a trabajar con él para ello.
+
+Ya os he comentado que sirve para probar a pies o sea para probar servicios web.
+
+Tendríamos que tener algunos servicios web que probar la propia página de Postman nos probé unos servicios
+
+web de ejemplo que nos van a venir muy bien para durante el curso esos servicios web de ejemplo los
+
+podemos encontrar en esta web R.L https//docs.postman-echo.com
+
+Realmente si ponéis post Maneco puntocom directamente lo redirige redirige a esta página y os abre o
+
+se explica unos servicios web y cómo hacerlo.
+
+Lo bueno que tiene pues que vamos a poder probarlos porque ya hay un servidor con servicios web hechos
+
+que nos van a responder No tenemos que hacerlo nosotros ahora servicios web para poder probarlos.
+
+Lo aquí además tenéis el lenguaje.
+
+Si queréis ver en los que podéis bajaros dónde están los servicios web en Google jQuery y Ruby Python
+
+PHP o GOG por ejemplo.
+
+Pues por ejemplo en PHP si queréis ver cualquiera de los servicios web como está creado y qué os va
+
+a devolver vale.
+
+Esto es lo de menos porque todos los servicios web lo vamos a dar por hecho que están hechos y simplemente
+
+vamos a aprender cómo se prueban esos servicios web y cómo se testea.
+
+Otra de las cosas muy buenas que tiene esta página de post Maneco es que aquí tiene cada uno de esas
+
+peticiones de servicios web de tipos de servicios web que vamos a ir probando durante el curso pues
+
+cómo se hacen servicios web de tipo qué tipo por Deloitte cómo meter cabeceras como metadatos autenticación
+
+utilidades de tiempo montones de cosas que iremos viendo durante el curso y que ya hay ejemplos hechos
+
+y esos ejemplos se pueden automáticamente incorporar en Postman si veis aquí hay un botón que pone en
+
+run in Postman si lo pulsas os dirá si lo queréis abrir con el Postman para com vale o no.
+
+Además dice que está de Catt o con el Postman para Windows y pulsamos en el porno para Windows dirá
+
+si queréis añadir esta colección crear una primera colección y abrir todos estos servicios web en la
+
+propia aplicación de Postman.
+
+Yo le voy a decir que sí y ahora pues dentro de la aplicación de Postman en sí tardará unos segundos
+
+pero me dirá esto me creará una le he dado un par de veces me creará una colección con 37 servicios
+
+web hechos de prueba o sea peticiones o servicios web.
+
+Esto es lo mismo que hay en la página pero ya está hecho ya.
+
+Maravilloso porque me va a enseñar a mí a hacerlo.
+
+Esto que os estoy explicando en el curso pues vosotros lo vais a tener hecho ya desde el segundo uno.
+
+No obstante nosotros iremos haciéndolo desde cero.
+
+Vale pero están aquí ya están hechos y yo alguno pues alguno los haré desde cero y otros cuando ya vea
+
+que tenéis más soltura o que con el curso ya habéis cogido una base pues podremos venir y probarlo directamente
+
+porque al final es simplemente escribir una cadena de conexión y poner unos parámetros que iremos viendo
+
+durante el curso.
+
+Bueno pues lo dicho tengo aquí dos colecciones voy a borrar una por ejemplo con el botón derecho de
+
+Play.
+
+Pues voy a borrar una de las dos colecciones porque me he quedado sin querer y vamos a empezar a ver
+
+nuestro primer servicio web.
+
+Nuestra primera prueba a servicio.
+
+Bueno lo dicho vamos a utilizar post Maneco como pagina que probar como Happy que probar porque hemos
+
+probado la API de la NASA en algún ejemplo a lo mejor buscaré otras APIs que hay que Postman probé luego
+
+veremos en la pagina de Postman que ellos mismos te aconsejan algunas APIs para que realizas tus pruebas
+
+pero estas para empezar está muy bien para al menos coger la base de que es una petición y crear una
+
+colección etc. Entonces no voy a entretener mucho más.
+
+Voy a cerrarla voy a tenerlo totalmente vacío y voy a empezar a crearme mi primera colección y mi primer
+
+servicio.
+
+Bueno si veis aquí estoy en la pestaña colecciones aquí tengo otras y tengo un botón de Más este botón
+
+de más me va a permitir crear una primera colección en esta primera colección por la colección 1 por
+
+ejemplo.
+
+Colección 1 no le voy a voy a poner los acentos aunque sabéis que en informática es mejor no ponerlo
+
+aquí.
+
+Pues voy a poner que ésta es la colección de pruebas para el curso Malen.
+
+Luego la compartiré puedo compartir la colección y así todas las cosas que vayamos haciendo pues podéis
+
+luego vosotros poder consultarlas tengo detalles de autorización Scripps y todo eso que más adelante
+
+iré utilizando.
+
+Esto me crea como veis aquí colección 1 y tiene cero peticiones.
+
+Voy a crear también la primera petición.
+
+Vale la primera petición se crea la expedición se quedan aquí la parte de la derecha lo que es el menú
+
+este de móvil de construcción.
+
+Como veis tengo aquí una pestaña que puedo expandir y que pone que os put@ diferentes tipos de peticiones
+
+web.
+
+Voy a ir explicando de la más básica de todo es una petición de tipo Get las de tipo son las solicitudes
+
+HTTP más comunes están destinadas a recuperar datos de un servidor vale los datos o sea se identifican
+
+mediante una web N.L única.
+
+Vale y nosotros podemos pasar parámetros a la hora de hacer una petición vale en la propia cadena de
+
+conexión.
+
+Es la propia cadena la que pasa datos como Postman me ha dado S Postman y la ayuda me explica cómo recuperar
+
+los datos.
+
+Os voy a explicar un poco basándome en esa.
+
+Bueno pues voy a crear una de tipo Web.
+
+Como hemos dicho tú tienes que probar la URI o la R.L donde quieres probar la petición pues en este
+
+caso es HTTP HTTPS dos puntos.
+
+Aquí me la pone ya me da opciones.
+
+Se nota que tengo añadido el post Maneco la colección porque ya me va a dar una ayuda de lo que él quiere
+
+que voy a poder poner.
+
+De hecho voy a escribir de hecho está apunto guettos.
+
+Esta es la que espero voy a escribirla por el momento sin parãmetros.
+
+Vale esto sería para probar una petición llamada un servicio web.
+
+De hecho es un servicio web que está dentro de esta página web y en la página web Postman bionico puntocom
+
+y se llamaría.
+
+Yo lo llamaría de esta forma yo llamando a esta web que me va a devolver la API me va a devolver un
+
+resultado voy a ver el zen a ver que me devuelve para pedir hacer la petición hacer esa prueba simplemente
+
+tengo que pulsar el botón zen le doy.
+
+Veo que aquí pone loading y esto es lo que me devuelve esto sería nuestra primera prueba de llamada
+
+un servicio web vale.
+
+No le pasa ningún argumento veo que él automáticamente aquí cuando me ha hecho una devolución pone una
+
+serie de cosas cuquis Gers estátus 200 o que este estatus 200 o que es muy importante porque estoy comprobando
+
+voy a devuelvo vuelvo aquí al body esto es todo lo que me ha devuelto yo he hecho una llamada al Happy
+
+a un servicio web que se llama ket vale igual que este nombre pero no tenía por llamarse que esto podría
+
+haberse llamado obtener alumnos por o tener alumnos me devuelve todo esto me devuelve una cabecera.
+
+Bueno en principio esto lo devuelve el servidor y me devuelve estos datos todo lo que se llama un JSON
+
+un JSON es un formato de devolución de datos en el cual se basa en lo que es los pares clave valor variables.
+
+Por ejemplo la variable Hartz viene me devuelve esto la variable o N.L me devuelve esto repito que ésta
+
+API es una API creada por ellos de prueba donde ellos lo que quieren devolver es precisamente lo mismo
+
+que yo envío para crecer pausadamente lo que estoy enviando ha devuelto tres valores el valor que se
+
+llama Harz con un vacío u otro valor que se llama R.L donde él devuelve el mismo la misma llamada que
+
+yo he hecho y luego ha devuelto en una red dos GDP con diferentes valores cada uno pues con los valores
+
+de la cabecera más cosas a tener en cuenta importante.
+
+Bueno voy a ir enseñando como se puede pasear esto para verlo mejor el JSON lo podría ver en diferentes
+
+formatos.
+
+Lo estoy viendo al formato JSON que es el más bonito además estar en modo Pretty porque si quisiera
+
+no podría haber de este formato o este formato por si quiero copiar y pegar para mi aplicación cualquier
+
+cosa los resultados formado y también lo puedo copiar y pegar pero a lo mejor muchas veces en modo texto
+
+me viene mejor.
+
+Bueno también puedo verlo en otros tipo de formato lo que pasa es que lo que me devuelve este servicio
+
+web es un JSON si lo hubiera un formato XML realmente no es un XML lo que me está devolviendo es un
+
+JSON lo puedo ver en formato texto y sería un texto plano realmente o sea voy a dejarlo como estaba
+
+JSON y cosas importantes una.
+
+Esto este estatus €200 significa que realmente el servicio web existe porque me ha devuelto un 200 200
+
+el código de estado como bien dice okey es decir el servicio existe y ha devuelto el resultado.
+
+Imagínate que yo aquí pusiera en vez de que llamar a un servicio web que se llamara 1 1 1.
+
+Este servicio web probablemente no exista.
+
+Si lo hacen veré que el Estado no es €200 es un estado 404 not found.
+
+Es decir estoy llamando a un servicio web que no existe en el servidor.
+
+Vale el servicio web G.T sí que existe y devuelve datos y además en cada petición fijaros como aquí
+
+alrededor mes al lado del 200 me ha dicho que me lo ha devuelto en 139 milisegundos.
+
+Esto es muy importante también porque me va a servir para ver si realmente mi servicio web está dando
+
+unos tiempos de respuesta buenos.
+
+Además me dice el tamaño 572 bits pues también es importante saberlo.
+
+Vale lo que ocupa el bodhi y la cabecera.
+
+Realmente si el tamaño de datos que me está devolviendo va a ocasionar que a la aplicación por si es
+
+un tamaño datos muy elevado sabréis que la aplicación va a tener va a consumir el uso de datos va a
+
+ser también muy elevado.
+
+Entonces me ayuda un poco ya solo esta información me ayuda para ver si el servicio web primero o si
+
+está bien.
+
+Tiempo de respuesta y tamaño.
+
+Como hemos visto ha sido mi primer servicio web y ha sido muy sencillo.
+
+Ha sido uno de tipo jet.
+
+Veo también otras cosas que me ha devuelto las cuquis.
+
+Veo que me ha devuelto una kuki.
+
+Veremos más adelante que es esto una Kuki pero vemos que es una Kuki que se llama Sails punto esa idea
+
+que la han llamado Yo soy el punto y seguiré con este valor.
+
+Vale y esa Kuki se podrá guardar de hecho está ya guardada.
+
+Y luego también la cabecera pues me ha dicho que tipo de petición se ha hecho mal en ningún sitio me
+
+dice por ejemplo que está encriptada vale luego no en Kitano perdón que le hemos pasado algún tipo de
+
+utilización de usuario contraseña.
+
+No lo hemos hecho y como tal pues no lo pone.
+
+Vemos de hecho incluso el servidor que tienen ellos ejecutando que es un Jinx que lo tienen ejecutando
+
+para estas pruebas que hemos hecho.
+
+Bueno este servicio web que acabo de crear ya lo puedo guardar en mi colección si le doy al botón derecho
+
+bueno o realmente incluso aunque lo cerrará o le dirá aquí al Ceibe vale yo lo puedo guardar ya en una
+
+colección.
+
+Vale aquí me dice Oye cómo lo quieres llamar.
+
+Pues quiero llamarlo prueba Aguer por ejemplo y aquí más para abajo me dice a qué colección quieres
+
+añadirlo yo quiero añadir a la colección 1 Vale sé tu colección 1 y ya lo tengo aquí guardado.
+
+Ya este servicio web que he hecho sobre mi API que en este caso no es mi API es una API de ellos pero
+
+podría haber sido una mía estar probando su servicio web sobre una API de prueba que estamos probando
+
+la parte del Bakken.
+
+Pues ya lo tengo aquí guardado y aunque lo cierre en cualquier momento lo podría abrir y volver a probar.
+
+De hecho al quedar guardado pues voy a ir guardando una serie de llamadas de peticiones y luego las
+
+podré probar una una o incluso como podéis imaginar la parte de testing podré hacer una prueba de toda
+
+la colección entera o parte de una colección.
+
+Vale eso es algo muy importante.
+
+Bueno sobre este mismo yo podría ahora si os fijáis ese Becket puedo duplicarlo por qué lo voy a duplicar.
+
+Porque no le he pasado ningún parámetro y voy a hacer este mismo pero con un parámetro voy a duplicarlo
+
+vale.
+
+A este Baquet Copy de aquí ahora lo voy a renombrar.
+
+Vale lo voy a poner prueba copy Baquet pero con parámetros parámetros vale y ese probare con parámetros
+
+le voy a añadir una serie de parámetros en la llamada.
+
+Si os fijáis aquí en la parte antes de darle Arsen cuando uno ejecuta una prueba le podemos estar en
+
+modo de ejecución o en modo construcción ahora mismo estoy en modo construcción es decir no lo ejecuta
+
+todavía no le da al botón.
+
+Puedo poner aquí unos parámetros.
+
+Puedo poner por ejemplo el primer parámetro.
+
+Le voy a llamar Fran y el valor que va a tener va a ser Hola Mundo
+
+Hola mundo.
+
+Vale veis ahí de hecho aquí podría poner una descripción pero no lo voy a poner y podría poner un segundo
+
+parámetro que se llamara curso.
+
+Y otra prueba.
+
+Bueno si veis realmente lo que está haciendo es añadirlo aquí en la cadena.
+
+Cuando tú añades parámetros puedes hacerlo de esta forma te vienes aquí amparamos y lo añades o directamente
+
+bueno y aquí en cualquier momento puedes deshabilitar un parámetro para que no lo borras simplemente
+
+lo deshabilita lo deshabilita solo habilitamos.
+
+Vale también lo pueden borrar y también voy a borrar estos dos parámetros puedo hacerlo yo manualmente
+
+si conozco la cadena aquí por ejemplo puedo escribir para uno igual a Hola y veis como el automãticamente
+
+me lo ha puesto aquí.
+
+Si queréis añadir más parametros es con el AMD Persian
+
+Sarandos igual a Dios vale y él me está generando pues los parámetros aquí en la parte de abajo o los
+
+generales aquí se copian aquí en la parte de arriba o los generales en la cadena y aparecen en la parte
+
+de abajo lo mismo y esto es como esto es el equivalente a cuando queréis una piba.
+
+He visto muchas veces que las Prov en las llamadas aparece despuésdel de lo que es la llamada propiamente
+
+al servicio web una serie de parámetros no tan fácil como éstos generarlos así vamos a ver hacen y veremos
+
+que ahora él lo ha reconocido y ve que ha recibido una serie de parámetros me los devuelven me lo devuelve
+
+los mismos parámetros que he recibido es para que comprobemos que lo estamos haciendo bien y vemos que
+
+ahora pues recibimos el paraun 1 hola y el 2 Adiós.
+
+Vale resaltar lo mismo sea más o menos lo mismo que hemos visto antes pero ya sabemos que es un servicio
+
+web básico de tipo ket con y sin parámetros que para empezar y los hemos guardado dentro de una colección
+
+ya sabemos que nuestra colección ir guardando servicios.
+
+Una vez veáis este puntito naranja que aparece aquí la parte de arriba eso significa que todavía no
+
+ha sido guardado.
+
+Pero una vez que le al 6 pues ya se quita y el servicio sigue guardado con lo cual ya lo puedo borrar
+
+y aquí está puedo abrir uno hoy puedo abrir el segundo o puedo añadirlo Malé podré abrir el que quiera
+
+cualquiera los dos ahora veremos como añadir que aparezca más de una pestaña decidir por ejemplo si
+
+tengo este Baquet habrá una nueva pestaña y en esta nueva pestaña pongo el otro y no aparece la primera
+
+pestaña la veremos.
+
+Bueno pues con este primer primera prueba de crear una colección ahora veremos arrastrándolo por ejemplo
+
+si podemos crear nuevos parámetros ahora crearé alguno con cabeceras pero bueno eso lo voy a hacer ya
+
+en el siguiente vídeo que con éste ha quedado ya demasiado denso.
+
+Voy a pasar a uno nuevo.
+
+
+
+
+5 -Avanzando mas en el entorno de Postman
+
+Bueno antes de pasar a continuar viendo peticiones voy a ver alguno de los botones que tenemos por aquí
+
+por la parte de arriba para acabar de ver un poco el entorno de Postman el primero que me gustaría ver
+
+es este de la sincronización de las APIs con este botón siempre sincronice como acabo de hacer lo que
+
+tendrías disponible en la web.
+
+Una sincronización de todas las cosas que yo tengo en mis colecciones.
+
+Las peticiones dentro de las colecciones el historial los parámetros que he pasado todo absolutamente
+
+todo se guarda dentro de Postman lo puedo comprobar por ejemplo aquí tengo entrado en mi Postman vía
+
+web y veo que tengo la colección en la colección Curso de Postman.
+
+En ella puedo ver tengo esa colección 1 y aquí puedo ver todo lo que he ido haciendo la actividad por
+
+ejemplo lo que he hecho dentro de esta colección puedo probar cada uno de las peticiones que estoy testeando
+
+pues estas dos son las que he hecho de manera que si abro ahora mi cuenta en cualquier otro ordenador
+
+y sincronizó pues me traeré en el orden en el segundo ordenador donde lo hiciera me haré todo lo que
+
+he hecho en el ordenador original de manera que siempre estoy de esta forma siempre estoy sincronizado
+
+entre mis diferentes dispositivos.
+
+Es una muy muy muy muy buena ventaja de tener Postman.
+
+Luego cuando usemos aparte de lo que son uso personal Tim podremos compartirlo con el resto de mi equipo
+
+o sea que puedo estar sincronizado entre mis ordenadores o sincronizados en mi equipo ahora mismo no
+
+tengo colaboración con ningún equipo pero posteriormente puedo tenerla.
+
+Bueno vamos a ver también ahora alguna herramienta más.
+
+Por ejemplo los settings.
+
+Las opciones se abren las opciones pues veré las diferentes opciones que tengo desde la opción General
+
+vale donde por ejemplo tengo las teclas de ajuste y los valores de del cuerpo las solicitudes.
+
+Si estamos utilizando los modos de datos en un formulario o codificados para uno u R.L por ejemplo pues
+
+para enviar.
+
+Esto servirá para enviar datos al servidor y al activar esta opción podremos recortar los parámetros.
+
+Normalmente las Rojano en la certificación SSL vale esto sólo por ejemplo tienes las aplicaciones.
+
+La aplicación nativa e impide que la aplicación compruebe la validez del certificado y se suele realizar
+
+una solicitud.
+
+También podemos tener por ejemplo la detección del lenguaje que establecerá la representación del JSON
+
+dependiendo del lenguaje.
+
+Esto normalmente también lo tengo en automático.
+
+Realmente el tema de las peticiones lo suelo lo suelo tener así bastante como me lo pone en automático
+
+pero bueno no es importante.
+
+Eso es bastante importante conocerlo por si queremos por ejemplo mejorar aspectos de velocidad por ejemplo
+
+ser no catchers ver lo que te haces que no te envía o no te guarda en caché.
+
+Los USA no te guarda la caché de la respuesta del servidor.
+
+Eso hace que vaya más lento un poquito pero hace que siempre esté actualizado con la versión más nueva
+
+el servidor.
+
+Muchas veces nosotros ponemos una API y si tenemos algo en caché pues no no comprobamos los cambios
+
+no las pruebas pensamos que sigue la API estando mal lo que estamos probando y es simplemente porque
+
+está cacheado.
+
+De esta forma siempre pedimos los datos nuevamente nunca cachean nada siempre.
+
+Esto es muy importante que lo tengáis en la red direcciones automáticas que esto para las peticiones
+
+de tipo €300 evita que evita que las solicitudes que devuelve una respuesta como la serie 300 se redirigen
+
+automáticamente.
+
+También es importante por el tema de los errores.
+
+Lo suyo es tener Orón como mucho cambio el enviar datos anónimos a Postman si no queréis nada de vuestra
+
+intimidad compartirlo con Postman Pues podéis aquí ponerlo en off.
+
+Bueno yo por el tema de que es gratis tampoco tengo problemas para que mejoren el producto pues lo puedo
+
+Ganón.
+
+Luego el tema de tema por si queréis el blanco o negro hay mucha gente que prefiere el negro por cuestiones
+
+de vista los atajos rápidos vale la exportación importación de datos.
+
+Nosotros lo probaremos en otro.
+
+En otro vídeo el tema de los addons aquí está Newman que es una herramienta digamos un Postman en línea
+
+de comandos como nosotros estamos utilizando la herramienta pues vamos a no instalaremos ni Uman la
+
+sincronización ya hemos visto cosas relacionadas con la sincronización.
+
+La certificación de datos de clientes si queremos añadir para ciertos clientes sus certificados pues
+
+este es el sitio donde deberíamos añadir si queremos usar un proxy por la configuración del proxy para
+
+salir con Postman las actualizaciones.
+
+Si en algún momento queremos actualizar Postman aunque bueno normalmente nos avisará y podremos actualizar
+
+y la versión que tenemos ahora mismo tenemos las 6 7 1.
+
+Pues bueno continuaremos con ella muchas veces.
+
+Aquí podríamos tuitear cosas relacionadas con Postman.
+
+Evidentemente no lo voy a hacer y aquí en las notificaciones muchas veces me avisa de las actualizaciones
+
+automáticamente yo si quiero ya actualizaría vamos a ver ahora por ejemplo el botón New el botón negro
+
+podemos desplegar de dos formas si pulsamos en esta parte de la izquierda el botón aparecerá la ventana
+
+que muchas veces habeis visto al arrancar Postman.
+
+Si en lugar de pinchar ahí pinchas en el desplegable aparece la misma seis opciones pero bueno aquí
+
+más recogido crear una petición nueva.
+
+Bueno pues si vamos a crear una petición me va a hacer me salvará la petición que tenemos ahora mismo
+
+y me pondrá una petición como si le hubiese dado botón derecho dentro de una colección.
+
+Una petición nueva petición 3 ahora la borramos por ejemplo petición 3 soy tu colección aquí la tenemos
+
+y tenemos la petición preparada para trabajar con ella.
+
+Voy a borrarla.
+
+También podemos crear una colección es el equivalente a pulsar sobre este botón.
+
+Creamos una colección.
+
+También podemos crear un entorno que es un entorno de trabajo.
+
+Muchas veces los entornos nos van a ayudar a tener variables para un ámbito nosotros puede ser que mientras
+
+estemos trabajando con una API necesitemos diferentes configuraciones y lo veremos en vídeos en profundidad.
+
+Pero es probable que necesitemos por ejemplo tener una variable llamada R.L y depende del entorno que
+
+esa variable llamada R.L tenga un valor u otro.
+
+Para eso están los entornos.
+
+Si yo me creo entorno ahora mismo por ejemplo estoy en el environment.
+
+No estoy en un entorno aquí me podría crear uno voy a crear un entorno en torno a curso por ejemplo
+
+ya tengo el entorno aquí globales e impor para importar variables aquí podría importar variables ahora
+
+tengo el entorno curso luego trabajaremos más adelante con este entorno.
+
+Bueno tengo aquí documentación sí creo.
+
+Si quiero generar documentación de este entorno en concreto ahora mismo documentación no voy a generar
+
+Balet tampoco es una cosa si la quisiéramos tener la documentación que aparece cuando hemos abierto
+
+la página web pues que generamos la documentación del API iríamos configurando las diferentes documentación
+
+pero no es una cosa que vaya a hacer ahora mismo.
+
+También puedo configurar los monitores los monitores por ejemplo es una cosa que a veces sí que está
+
+muy bien hacerla porque me va a permitir ejecutar una colección periódicamente para verificar su rendimiento
+
+y su respuesta.
+
+Imaginemos que quiero ir ejecutando una colección sistemáticamente con una frecuencia de cada cinco
+
+minutos pues iría generaría mi mi monitor Balay para que lo hiciera automáticamente cuando luego tengamos
+
+una colección un poco más avanzada pues generamos un monitor.
+
+Luego tenemos el tema de crear los servidores simulados los Mock Server son que simula digamos colecciones
+
+o el punto final de una colección es decir como si estuviéramos realizando una solicitud de una respuesta
+
+de Postman que es eso para simular como lo que tenemos estamos utilizando ahora.
+
+Envíos de peticiones y respuestas por parte del servidor SAP que Postman en sí para que sirve para comprobar
+
+que en una API tú llamas y las respuestas de las peticiones responden pero muchas veces tenemos que
+
+tener esas esos servicios web hechos que haga las respuestas por nosotros podríamos simular una respuesta
+
+sin necesidad de hacer el servicio web ni que el servidor esté montado muchas veces lo que se hace es
+
+en lugar de montar primero un servidor hacer todos los servicios web y luego probarlo con el Postman
+
+pues puedes montar ya las pruebas de Postman para la parte de testing para separar lo que es la gente
+
+que hace el testeo de los servicios web de la gente que hace el desarrollo de los servicios web.
+
+Entonces lo que hacemos es simular como que los servicios web ya están desarrollados.
+
+Entonces contaríamos un Mock server.
+
+Bueno tampoco es una cuestión de que ahora vayamos a hacer porque es una cosa bastante bastante avanzada
+
+en el mundo del testeo muchas veces también queremos lo que se llama personalizar nuestras peticiones
+
+fijaros que las peticiones por defecto son de los diferentes tipos que hay normales del API pero si
+
+tú te pones encima de la petición y yo por ejemplo quisiera personalizar porque estoy en un grupo de
+
+trabajo y quiero dividir las peticiones que hago yo de las que hace mi compañero de trabajo.
+
+Pues fijaros yo puedo escribir cran y queda como que es una petición de tipo Fram vale.
+
+Luego ya una vez que se vea adentro pues se verá el tipo de petición que es.
+
+Pero bueno yo la tengo personalizada y ahora aparece como una opción más vale.
+
+Las peticiones de tipo Fram de manera que puedo distinguir y puedo saber en cada momento qué peticiones
+
+ha hecho cada uno de los miembros del grupo de trabajo.
+
+Bueno la puedo pasar Daguet incluso estas de tipo Fram.
+
+Pues evidentemente ahora mismo pues ha desaparecido vale y puedo borrar no puedo borrar cualquiera de
+
+los tipos de peticiones.
+
+Voy a dejar los que hay por defecto pero podría personalizar mis peticiones y también otra herramienta
+
+que es interesante conocer este tema de buscar por ejemplo aquí la lupa.
+
+Si tú le das a buscar pues yo por ejemplo para buscar un dato de tipo jet y podría incluso reemplazar
+
+G.T por la palabra que yo quisiera yo puedo a por Fran de hecho lo que voy a hacer primero es buscar
+
+aquellas que sean de tipo Get Fine y tengo que ignoré mayúsculas y minúsculas me dice aquellos aquellos
+
+de las pestañas abiertas.
+
+Me he encontrado todos los Goeth de las colecciones que yo tengo todos los que me han encontrado e incluso
+
+podía como digo reemplazarlo aquí por Fram gemelo cambiaría no es una cosa que van a hacer pero bueno
+
+de una forma fácil pues encuentro todos todos mis servicios web relacionados con una palabra y como
+
+comentaba antes pues por ver alguna cosilla más.
+
+Antes de acabar y pasar ya lo que son las peticiones propiamente dicha por las dos las dos barras laterales
+
+por sí quiero quitarme el menú de la izquierda que a veces quiero darle más tamaño a la parte de la
+
+derecha.
+
+Bueno pues aquí lo pongo me lo pongo.
+
+Y una cosa que iremos practicando mucho es el tema de la consola podemos abrir la consola y ver que
+
+aquí quedarán guardados todos los resultados que nosotros hagamos sobre el sobre las peticiones.
+
+Por ejemplo ahora si ejecuto se lo doy a un cent. aquí y me devuelve unos datos veo la consola veré
+
+que me ha devuelto.
+
+Tengo aquí cuando ejecuté la petición y todo lo que me devolvió los 135 segundos una respuesta de tipo
+
+€200 decir que encontré el servicio web y tengo en consola guardados y vuelvo hacia el capitación pues
+
+tendré la otra ejecución también aquí en la consola.
+
+Bueno y voy pues tengo guardado diferentes ejecuciones una herramienta que es súper súper super útil
+
+y bueno ahora ya básica vamos a pasar al tema de las peticiones propiamente dicho.
+
+
+
+
+
+

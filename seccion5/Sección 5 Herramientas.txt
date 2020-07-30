@@ -1,0 +1,1059 @@
+Sección 5 Herramientas
+Interesantes
+
+
+23. Llamadas desde Java, JavaScript,
+C#, Swift...
+4 min
+
+
+Bueno abroga abre con este video un bloque de utilidades interesantes que podemos encontrar en el post
+
+Malamute como paso previo al tema del scripting de los TES de la programación del testing a lo que va
+
+realmente enfocado este curso.
+
+Pero antes de comenzar con eso pues hay una serie de actividades que son muy muy muy importantes y que
+
+es la primera de ellas tiene que ver con el tema de la formación.
+
+Si veis por ejemplo que cojo si cojo cualquiera de mí de mí recuerde mis peticiones hechas por ejemplo
+
+éste lo abro veréis que aquí hay un campo que todavía no he tocado a parte del campo coment que puedo
+
+hacer un comentario aquí sobre una petición en concreto aquí podría para luego para que la documentación
+
+esté todo mucho mejor explicado o una petición pues por ejemplo el este servicio es básico aparte de
+
+hacer comentarios para mí o para mi equipo de trabajo.
+
+Esto ya lo hemos visto en algo hasta ahora.
+
+Este botón no lo habíamos visto este Decode es súper importante porque una vez para qué es Postman Postman
+
+al final es una herramienta que me sirve normalmente para depurar el Bakken para ir depurando estos
+
+servicios web para que luego si estoy programando desde un lenguaje de programación pueda llamar a estos
+
+servicios web.
+
+Bueno pues la maravilla que tiene Postman es que automáticamente si ya una vez que ya tengo el servicio
+
+web comprobado que funciona todo va bien.
+
+Doy por hecho que el Bakken la parte del servicio web funciona bien.
+
+Bueno pues ahora tengo que llamarlo desde una aplicación que estará escrita en un lenguaje y aquí viene
+
+la maravilla sido de aquí a Colet veré que me da el código fuente para que yo ahora desde cualquier
+
+lenguaje llámese servicio web yo solamente copiaría esto y lo pegaré en mi lenguaje de programación
+
+en este caso Escaba para llamar a ese servicio web y obtener la respuesta del servicio web en un campo
+
+de tipo respondés me da para Java pero me da para montones de lenguajes de hecho Java tiene varias opciones
+
+están Java o HTV pero sí bajo aquí un poquito más abajo.
+
+Java también tiene el Jave el jabón y Red que es otra forma de llamar a un servicio web con la librería
+
+http: respondes voy a volver al Java o key HTTP pero si por ejemplo estoy programando en JavaScript
+
+pues en JavaScript veo los diferentes de Javascript con GI y por ejemplo en Chicuelo y para llamar al
+
+servicio web se envía de esta forma y me da el código ya hecho.
+
+Como digo está para montones de lenguajes desde COBOL.
+
+Cesar con rezar Objet dices y estoy por ejemplo y quiero utilizar el servicio web en una máquina y os
+
+he aquí el código fuente bastante más largo.
+
+Vale puedo tener Sweep el nuevo lenguaje de los sistemas Mac.
+
+Aquí tengo para llamarlo.
+
+Bueno todos todos los sistemas o al menos un montón de librerías me da cómo llamar a mi servicio web
+
+para que yo únicamente estoy usando Java pues únicamente tenga que seleccionar además cuál de los dos
+
+formatos de Java copiarlo y pegarlo en mi programa con lo cual si no sé exactamente cómo se usa la librería
+
+o qué.
+
+Http: Kleiman.
+
+Pues me da una explicación y un ejemplo de con este servicio web exactamente como tengo que llamarlo.
+
+Para los programadores es una herramienta fundamental.
+
+Bajo mi punto de vista yo yo lo utilizo muchísimo.
+
+Espero que os haya gustado porque de verdad el trabajo lo facilita muchísimo.
+
+24. Utilidad Examples
+4 min
+
+
+Bueno en este video lo que vamos a ver es el uso de los samples vale para eso voy a coger por ejemplo
+
+del de los servicios que tengo que se llama probare con parámetros voy a abrirlo y voy a explicar lo
+
+que quiero contar.
+
+Existe esta opción de aquí que pone example cero cero os voy a decir muchas veces uno tiene un servicio
+
+web por ejemplo este en el cual por ejemplo lo estoy pasando unos parámetros de paso como parámetro
+
+hola y adiós de hecho cuando lo ejecuto me devuelve me dice que ha ejecutado para 1 hora y el 2 Adiós
+
+vale pero imaginaros que yo lo que quiero es guardar el mismo servicio web con diferentes parámetros.
+
+Pero lo que no quiero es tener que crearme un servicio web para cada combinación de parámetros para
+
+eso están los samples vale os voy a explicar cómo funciona una vez que yo tengo el servicio web y lo
+
+tengo así es como yo lo quiero tener pues digo bueno voy a coger esto lo voy a guardar como un ejemplo.
+
+Entonces por venir aquí sampleos le digo al example y me genera aquí un nombre para el ejemplo imaginaros
+
+que el parámetro es hola adiós pues yo le voy a llamar ejemplo 1 por ejemplo no hola adiós hola y adiós
+
+vale.
+
+Le he puesto ese nombre le doy aquí al example y tengo guardado el ejemplo con hola y adiós de hecho
+
+veis el ejemplo aquí la parte de arriba pone el eje de ejemplo.
+
+Vale vale lo diferencia del jet del padre que es el servicio sí vale y es un lo marca como que es un
+
+ejemplo ahora lo cierro y aquí tengo examples 1.
+
+Pero si digo que quiero añadir otro ejemplo ahora quiero cambiarle el orden de los parámetros para que
+
+sea Dios y el 2 que sea Hola pues hay algún ejemplo más por ejemplo y a este le voy a llamar el ejemplo.
+
+Hola y adiós hola y adiós adiós y hola y el primer parametro le pongo a Dios
+
+el acento y el primero Hola.
+
+Bueno de hecho de manera que guardo el ejemplo sampler hecho en cualquier momento tengo aquí disponible
+
+los dos ejemplos que puedo ejecutar digo quiero ejecutar éste lo pongo vale y aquí está ese hola y adiós
+
+quiero ejecutar el otro ejecuto y no lo tengo seleccionado ahora mismo y no no no no no es que lo ejecute.
+
+Es que yo puedo configurar el ejemplo que es mejor tengo a Dios y Hola yo puedo configurar la salida
+
+de audio si Hola lo que debe producir por aquí yo puedo decirle adiós y Hola tiene que producir.
+
+Adiós hola y de hecho puedo decirle hasta lo único que tengo que cambiar.
+
+De hecho Seifer el exemple entonces tengo aquí ejemplos de qué debe producir de salida cada uno de los
+
+ejemplos por ejemplo el hola y adiós me tiene que producir de salida un hola y adiós.
+
+Lo tengo aquí y el adiós y Hola pues me debería producir de salida un adiós.
+
+Hola.
+
+Vale entonces me configuro yo los ejemplos y al final lo que tengo es voy a cerrar los ejemplos tengo
+
+el padre que el padre pone los parámetros conforme se vaya poniendo pero yo tengo aquí ejemplos para
+
+ver las salidas lo que debería producir valen poco.
+
+Bueno pues si os interesa pues que sepáis que en el mismo servicio podéis tener diversos ejemplos y
+
+hasta aquí el uso de esta sencilla propiedad que tan bueno tampoco tiene más para guardarte o por ejemplos
+
+más que nada para saber posibles usos.
+
+Espero ver vídeos osadia resulta interesante.
+
+
+
+25. Utilidades Comunes
+
+
+Bueno vamos a seguir viendo una serie de utilidades que tenemos en la API de post Maneco y para ello
+
+lo primero que voy a hacer es quedarme en una carpeta que me voy a llamar utilidades para guardar todas
+
+estas utilidades.
+
+Bueno voy a llamar carpeta de utilidades para la documentación carpeta de utilidades la creo y la primera
+
+utilidad que vamos a hacer es hay un servicio web.
+
+Bueno vamos a poner la variable que para eso la tenemos que es la de rebeco y hay una utilidad que es
+
+la que se llama Status Estatus.
+
+No es un servicio web que nos provee post Maneco para que hagamos nosotros nuestras pruebas para comprobar
+
+cómo manejaría nuestra aplicación en los diferentes estados de respuesta que puede devolver un un servicio
+
+web por ejemplo el estado correcto es el estado 200 vale si dejamos aquí a osen pues veremos que nos
+
+devuelve un estatus €200 vale pero si queremos ver cómo se comporta nuestra aplicación por ejemplo ante
+
+un 404 que es un estado erróneo vale una FOM que no encuentra el servicio pues nosotros simplemente
+
+poniendo aquí el código que queremos que devuelva va a devolver ese mismo Estado y nosotros podremos
+
+en nuestra aplicación de testing pues ver cómo responder ante una llamada que no esperamos.
+
+Por ejemplo 404 la mejor forma de simularlo.
+
+De hecho si aquí por ejemplo pusiéramos un número que no existe en la lista de estados por ejemplo 40
+
+mil 400 000 ese número no existe pues pondría un 400 Barré.
+
+Nosotros también podemos simular un 400 evidentemente podemos simular un 401 y podremos ir los diferent
+
+un no autorizado si queremos podemos ver la lista de estados en la lista de códigos que aquí tenemos
+
+abierto la lista de códigos estos son los diferentes códigos los 200 son los correctos los 300 o las
+
+realizaciones los 400 los errores de cliente y los 500 los errores de servidor.
+
+Aquí podemos ver todos los códigos de estados.
+
+Lo podéis ver en la página.
+
+Esto lo dejaré anexado al curso para que podáis comprobar y con eso podemos queremos probar por ejemplo
+
+un 405.
+
+Pues simplemente poniendo aquí el 405 nos devolverá automáticamente un 405.
+
+Como método no permitido vale.
+
+Y así pues tenemos una utilidad muy buena que nos permite una devolución de Estado para luego tratar
+
+con ella y poder aciertes o poder hacer comprobaciones.
+
+Qué pasa si devuelve un servicio web por un 405 si lo tenemos controlado para que nosotros podamos hacer
+
+las pruebas.
+
+Dependiendo del código que nos devuelve el servicio web este sería el primero de las utilidades.
+
+La primera de las utilidades voy a guardarla por ejemplo extremo llámale status y lo voy a guardar en
+
+la colección 1.
+
+Las utilidades hay dentro y esta es la primera de las utilidades.
+
+Ya no puedo cerrar y pasamos a la siguiente las utilidades lo siguiente las utilidades que vamos a ver
+
+es la de el string no sé si lo que queremos es partir la respuesta en varios trozos.
+
+Eso nos puede abrir muchas veces el bien para por ejemplo si queremos ver cómo responde nuestra aplicación
+
+o hacer una simulación sobre una respuesta que no venga en una única cadena sino por ejemplo en cinco
+
+cadenas.
+
+Para eso cinco o en el número de cadenas que sean para eso os Maneco vamos a acceder
+
+a la web Relay tiene un servicio que se llama Extrem al cual le podemos pasar como parámetro el número
+
+de fragmentos que queremos que nos devuelva.
+
+Por ejemplo si decimos 5 y damos Aschen pues veremos cómo nos lo vamos a poner que lo vean JSON que
+
+se vea más bonito cómo nos va a devolver cinco veces el mismo resultado.
+
+Vale cómo comprobar Zim para luego por ejemplo nosotros en nuestra aplicación recorrer cada uno de los
+
+resultados y acceder a un valor y hacer una aplicación que sea capaz de acceder a múltiples resultados.
+
+Sería una demo vale pues por ejemplo fijaros aparece una vez dos 3 4 y 5 aparece 5 veces 5 veces el
+
+mismo el mismo fragmento si queremos que aparezca por ejemplo 2 le ponemos un 2.
+
+Le damos un sen y aparece 2 veces vale una y dos veces y esto es otra utilidad muy buena.
+
+Vale que es lo que es una una respuesta en trozos vale vamos a salvarlo lo llaman string
+
+sólo autoridades y vamos a ver otra utilidad vamos a seguir viendo utilidades y la siguiente las utilidades
+
+que vamos a ver va a ser la del retraso.
+
+Muchas veces nos conviene saber cómo nuestra aplicación va a responder ante una ante un servicio web
+
+que tarda mucho tiempo en responder post Maneco da una utilidad que se llama vamos a abrirla.
+
+Se llama un servicio web que es Delight del Aile podemos pasar el número de segundos que queremos que
+
+tarda en responder nuestro servicio web antes de hacer la respuesta propiamente dicho.
+
+Por ejemplo si ponemos todos los datos y un poco lo que tardan en responder por ejemplo si le ponemos
+
+4 segundos hasta un máximo de 10.
+
+Vale si le ponemos cuatro pues va a tardar en responder cuatro segundos y un poco.
+
+Así comprobaremos en nuestra aplicación que sucede la aplicación si está 4 segundos y pico sin responder
+
+el servicio web o si lo probamos vamos a probarlo 1 2 3 4 y a los cuatro segundos y algunas milésimas
+
+responde con un retraso de cuatro segundos pues es un servicio que nos vienen muchísimas veces muy bien
+
+porque siempre se supone que la aplicación cuando hayamos servicio va a responder de inmediato.
+
+Pero eso en la vida real no es así y la única forma de simularlo es con un servicio que lo simule.
+
+Y este servicio web es una gran utilidad que no lo simula por nosotros.
+
+Voy a guardarlo como Dilthey dentro de nuestras utilidades ley nos salvamos y lo borramos y vamos a
+
+ver la siguiente siguiente ejemplo entonces y la siguiente utilidad va a ser cómo obtener un resultado
+
+en un F8 un F8 es un tipo de lenguaje que permite que el cuerpo de la respuesta esté codificado en diferentes
+
+idiomas como puede ser el griego y latín el asiático y que se pueda ser interpretado por los navegadores
+
+perfectamente.
+
+Será interesante si estamos usando una aplicación pues comprobar cómo responde nuestra aplicación ante
+
+posibles caracteres extraños que no sean los típicos del inglés como podría ser por ejemplo una ñ si
+
+nuestra aplicación ante un carácter extraño la lee bien y la interpreta bien.
+
+Para eso debemos proporcionarle caracteres extraños una respuesta y esta utilidad nos da esa opción
+
+no lo hace por nosotros y nos ponen todos los tipos de caracteres así si hacemos una aplicación multilenguaje
+
+sabremos si la aplicación se comporta correctamente ante todos los lenguajes.
+
+Para ello el servicio que nos proporciona os Maneco es el de encoding UTEP F8 vale éste sigamos Hausen
+
+veremos que el resultado nos da una codificación con caracteres de muchos lenguajes.
+
+De hecho aparecen símbolos aparece luego letras en griego aparece letras
+
+Demóstenes esto parece letras en cirílico vale y aparecen en el casino a la vez.
+
+Todo tipo de letras.
+
+Estas son cirílicos para que comprobemos cómo nuestra aplicación se responde ante todo responde ante
+
+todo tipo de caracteres y es capaz de incluso Praeli si es capaz de leerlas e interpretarlas correctamente.
+
+Bueno pues es una utilidad muy buena.
+
+También vamos a guardar como F8 o F8 y una utilidad más que tenemos la siguiente utilidad que vamos
+
+a ver es una que lo que nos va a devolver es la AIPE De aquella máquina que está enviando la solicitud.
+
+Por ejemplo la web real es ésta si hacemos un Senn veremos cómo nos devuelve la AIPE De la máquina desde
+
+la cual estamos haciendo nosotros nuestra petición.
+
+Es una utilidad muchas veces muy válida para ver exactamente qué queremos hacer con la AIPE De vuelta
+
+con un aire de vuelta de una máquina y queremos hacer una hiperreal y formateada para poder trabajar
+
+con ella.
+
+Bueno pues en este caso nos devuelve la AIPE de nuestra máquina a la guardaremos como por ejemplo dentro
+
+de nuestras utilidades vale y ya tenemos otra en la lista.
+
+Bueno ahora vamos a pasar a otro tipo de utilidades con lo cual vamos a trabajar mejor.
+
+Voy a guardar esta carpeta.
+
+La voy a dejar así y porque ahora vamos a pasar las utilidades de fecha y hora y otras colecciones que
+
+lo vamos a hacer en un video separado.
+
+Este apartado utilidades ha quedado bastante bien.
+
+Hay alguna más.
+
+Cuando entremos en el tema de los test pues veremos alguna utilidad más que ha dejado para más adelante.
+
+
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+{{urlecho}}/status/200
+
+{{urlecho}}/delay/4
+
+{{urlecho}}/encoding/utf8
+
+{{urlecho}}/Ip
+
+26. Parámetros en una llamada a un
+servicio
+
+
+Bueno voy a aprovechar este video que tengo de ahora que ya sabemos utilizar esta R.L la del estatus
+
+la cual no simulaba un estado de respuesta.
+
+Vale lo que vamos a hacer es esta de status la voy a duplicar para enseñaros cómo poner parámetros en
+
+la propia cadena.
+
+Vamos a ver lo que significa esto voy a explicar esto de status le voy a llamar estátus con parámetros
+
+vale le voy a la voy a renombrar estátus con parámetros parámetros.
+
+Vale una vez que la tengo lo que voy a hacer es lo siguiente Cuando uno quiere que la propia cadena
+
+como hemos visto estamos utilizando una variable hemos declarado que esta era una variable de Bare de
+
+curso estaban aquí que la podíamos ver aquí pero estaban las variables de entorno las variables globales
+
+pero hay otra forma de poner y luego hemos estado usando parámetros y os acordáis cuando yo ponía que
+
+un parámetro de por ejemplo para uno decía valor Fram vale eso lo único que hace es poner parámetros
+
+pero puedo poner parámetros que no sean parámetros de después del servicio web que recibe el servicio
+
+web como Goeth como son como es en este caso de hecho este servicio no recibe ningún parámetro sino
+
+que éste esta variable estátus pueda recibir pueda ir cambiando depende del valor que yo le vaya poniendo
+
+como un parámetro si la forma de hacerlo es con dos puntos fijaros que al poner dos puntos Yakin la
+
+parte de abajo aparece como una división vale porque va a dividir entre parámetros de lo que es la cadena
+
+lo que va a recibir y los parámetros de lo que es la propia llamada a la al servicio web.
+
+Si ponemos aquí estátus fijaros que aquí le puedo poner S 200 y S 2.El 200 va a ser un parámetro de
+
+lo que es la llamada al servicio web.
+
+De hecho esto es el equivalente de aquí.
+
+Si aquí pusiera un 200 ejecutivos pues veréis que el Estado es 200 porque pasan 200 es diferente a los
+
+parámetros que van después de la interrogación que son parámetros de tipo aquí ponemos para 1.
+
+Por ejemplo Fran
+
+a ver Fran y cuando ejecutamos vemos el estado diciendo Bueno realmente este servicio puedes poner los
+
+parámetros que queráis porque realmente lo único que va a coger es el estado de Estado 200 o deEstado
+
+400 por ejemplo que devuelve un 400 era de status.
+
+Entonces cuando ponemos con 2 puntos lo que estamos diciendo son es un parámetro que va a cambiar dependiendo
+
+de la cadena de conexión muchas veces por ejemplo nosotros para acceder a un determinado identificador
+
+muchas veces por ejemplo es muy fácil encontrarse algo del estilo así que ponga Hide nos conectamos
+
+a una página pone Hide Marra 1 y eso es lo que te da es los datos del artículo con código 1.
+
+Muchas veces lo que hacemos es constuir de forma que sea así.
+
+Y nosotros le ponemos el valor de ideé se lo pasamos como parámetro de manera que guardamos la llamada
+
+a la consulta y luego nosotros le vamos poniendo ese parámetro el valor que queramos y luego por código
+
+más adelante cuando veamos código veremos cómo poder acceder a él y modificar ese valor.
+
+De manera que no vamos a dejar el ejemplo que teníamos que es el de status.
+
+Nosotros vamos a cambiar el status y ahora pues vamos a tener la opción de pasarle ese valor de status
+
+con dos puntos.
+
+Aquí le ponemos el valor que queramos 200 por ejemplo y hemos visto otra forma de insertar parámetros
+
+en lo que es la llamada al servicio web.
+
+
+{{urlecho}}/status:status
+
+
+
+27. Utilidades de Fecha y Hora
+17 min
+
+Bueno en este video vamos a seguir con las utilidades pero en este caso vamos a empezar con los que
+
+son las utilidades de fecha vale de fecha y hora realmente vamos a crear una nueva carpeta.
+
+Le voy a llamar utilidades utilidades de fecha creó una carpeta y en esta carpeta no guardando las diferentes
+
+utilidades que vamos a ir creando.
+
+La primera de ellas es una que muchas veces necesitamos para nuestro para nuestros programas que es
+
+que nos devuelvan la fecha y hora.
+
+Bueno pues hay una utilidad que es time now y nos va a devolver los datos de la fecha hora pues lo que
+
+hay ahora mismo no es tanto el día año como fecha y hora.
+
+Es una actividad muy interesante porque eso podemos obtener en cada momento.
+
+La hora del servidor donde estamos ejecutando.
+
+Bueno le damos a Soib vamos a guardar la utilidad Now por ejemplo y en lugar de guardar utilidades pues
+
+la voy a guardar en la carpeta de utilidades de fecha aquí vale.
+
+Si ya la podemos cerrar ya la tenemos y vamos a la siguiente utilidad.
+
+La siguiente utilidad que vamos a probar es la utilidad que nos va a decir si una fecha pasada es una
+
+fecha correcta.
+
+Esta utilidad pues tiene está en el servicio web que se llama Taine valid y le pasamos como parámetro
+
+un taína Stam.
+
+Realmente la variable el valor de la variable que queremos comprobar si es una fecha correcta por ejemplo
+
+2019 con 0 1 con 22 y vemos si esto realmente para el sistema es una fecha correcta o tiene alguna estructura
+
+mal formada si pulsamos veremos como valid igual a tú pero qué pasaría si pasáramos en vez del día 22
+
+el día 32.
+
+Esto es una fecha correcta pues false esto no puede haber un día 32.
+
+Esto me devolvería realmente yo podría probar cualquier tipo de fecha me volvería siempre si estuvo
+
+fouls para aplicarlo en mis programa o en mis Test Cuál es una utilidad que me devuelve a la fecha correcta.
+
+Si no lo vamos a guardar le voy a poner fecha correcta
+
+y salvo noticia de fecha y vamos a siguiente la siguiente utilidad que vamos a ver voy a escribir la
+
+tengo copiada.
+
+Es una utilidad que me devuelve el día de la semana de una fecha que nosotros le pasemos por ejemplo
+
+si pasamos el 22 de enero de 2019 que es martes y decimos dime la unidad del día.
+
+Nosotros le enviamos Sen y me devolverá que es el día 2 de la semana es un martes.
+
+Vale si hubiésemos puesto el día evidentemente el 21 tendría que devolver uno.
+
+Me imagino ahí está el 1 si le ponemos por ejemplo el 28 que son 7 días después del 21 pues también
+
+le vaya a devolver un 1.
+
+Si ponemos el 29 devolverá un 2 y así sucesivamente.
+
+Es una utilidad muy buena por si queremos saber en cada momento una fecha que pasa que pasamos el día
+
+en que la semana que es para saber si el fin de semana se usa mucho en las aplicaciones vamos a guardarla
+
+y vamos a llamarle de día semana.
+
+Es una actividad muy importante vale y la paramos vamos a la siguiente utilidad.
+
+La siguiente utilidad va a ser vamos a ir escribiéndola va a ser una utilidad que yo también utilizo
+
+mucho que es de la clase Time y que es la que le añades tiempo a una fecha que pasas por parametro.
+
+Por ejemplo si le pasamos como en esta fecha por ejemplo el día de hoy en 2019 pero uno 22 y le queremos
+
+sumar por ejemplo dos años se pueden sumar realmente años que se pone year Year por ejemplo 20 años
+
+le queremos sumar a esa fecha pues nos devolverá la fecha de 2039 de ese día el 22 de enero.
+
+2039 sí le podemos sumar Gears le podemos sumar Monks se escribe así meses te quieres sumar 20 meses
+
+puesto devolverá la fecha de dentro de 20 meses le podemos sumar días sería déis nos devolverá dentro
+
+de 20 días que día va a ser le podemos sumar horas.
+
+Por ejemplo vamos a sumarle horas se ours en inglés claro.
+
+Vamos a poner por ejemplo dentro de 2000 horas o 20000 horas pues dentro de 20 mil horas será esta hora
+
+las 8 de la mañana del día 4 de mayo de 2021.
+
+También le podemos sumar minutes o seconds o las otras dos opciones a la hora minutes o seconds en inglés
+
+la palabra inglesa es una actividad que le voy a llamar sumar tiempo
+
+por si queremos por ejemplo imaginaros estamos en una aplicación y algo nos caduca dentro de una semana
+
+pues pasamos la fecha actual y le sumamos una semana siete días vale tuvo su fecha y tenemos la de sumar
+
+tiempo vamos a la siguiente utilidad que sería exactamente la misma de antes.
+
+De hecho voy a copiarla voy a copiar la de sumar tiempo de hecho voy a duplicarla duplique y sumar tiempo
+
+la voy a renombrar la voy a editar frenarme y le voy a decir restar tiempo y escriba que a ver
+
+restã y así ya la tengo aquí.
+
+Esta nueva y esta de restar tiempo lo que voy a hacer es embebe a Bebé es con el comando su sucks track
+
+o sustraer tiempo.
+
+Si queremos ustedes 20 000 horas veremos la fecha que era hace 20 mil horas.
+
+Shimada algún error algo tendré la sintaxis que es que me sobra esta es su traqueto vale voy a probar
+
+de nuevo y aquí está.
+
+Esto era la hora que era hace 20 mil horas vale.
+
+Los parámetros son los mismos.
+
+Horas minutos años segundos días meses se puede utilizar igual.
+
+Esto de restar tiempo voy a darle al Ceibe y bueno pues tenemos una utilidad más la siguiente utilidad
+
+es bastante útil muchas veces porque uno necesita saber por ejemplo cuándo fue por ejemplo el primer
+
+día un año o coger siempre la primera unidad cuando la unidad que se le llama Postman de inicio cuando
+
+comenzó lo que yo a la fecha que yo le pase lo que yo le diga es decir por ejemplo vamos ahí en un ejemplo
+
+se va a ver más claro si ponemos tine cuando comenzó a poner por ejemplo este que fue mi cumpleaños
+
+mi fecha nacimiento 27 del 7 del 76 y yo le digo vale en años ese año quería empezó.
+
+Evidentemente me va a devolver a ver está mal escrito primero es el mes mes de los siete y luego es
+
+el día 6 el formato inglés que y me va a devolver que ese año empezó el 1 de enero de 1976 a las cero
+
+horas según el GMT el meridiano de Greenwich.
+
+Si por ejemplo le digo Ya pero en vez del año en dime el primer día de ese mes le doy y el primer día
+
+de ese mes fue el 1 de julio.
+
+Evidentemente si fue en julio pues fue el 1 de julio y si le digo ya el primer día de dime el día en
+
+déis qué me devolverá pues me devolverá las cero horas de ese día.
+
+Vale siempre que yo le pase un Tanea Stam tipo fecha o fecha ahora él me va a devolver el primero de
+
+los días de los meses o los años correspondientes a esa fecha muchas veces pues me conviene sacar desde
+
+comienzo de año el número de días que han pasado etcétera.
+
+Esta utilidad la vamos a llamar con estar
+
+esa fecha y la vamos a guardar y vamos a utilizar para la siguiente utilidad.
+
+Voy a seguir con los daños pero esta vez le voy a añadir fechas horas minutos segundos que no lo he
+
+hecho los ejemplos anteriores pero para que sepáis que uno puede poner también aparte de la fecha podría
+
+haber puesto las horas los minutos en el ejemplo anterior me da cuenta que hubiese sido bastante interesante
+
+haber puesto también horas si quieres poner horas por ejemplo y aprovecho para la siguiente utilidad
+
+en esta utilidad lo que va a hacer es partirme la fecha que yo le pase y me lo va a devolver por campos
+
+de espantará que os podéis imaginar lo sencillo que es llamar a un servicio web que yo le paso toda
+
+una fecha y me lo devuelve en cada uno en un campito que yo puedo trabajar sin que tenga que partir
+
+la fecha fijaros que como es esto seguro que aquellos que habéis programado lo habéis hecho miles de
+
+veces llamo y él es una de tipo Taine Objet yo me he pasado esta fecha por ejemplo en donde le paso
+
+en 2019 0 1 22 vale y luego a las 20:14 20 horas 14 minutos 17 segundos osen y él automáticamente me
+
+va a volver el año 2019.
+
+El Mesias el Zero es el Zero porque me devuelve el primer mes de una lista del 0 al 11.
+
+Vale ya 22 horas 20 14 17 segundos y 0 milisegundos me ha partido.
+
+A ver voy a comprobar si le paso dos correctos y le digo febrero me dice mes uno porque él lo transforma
+
+desde el mes 0 al mes 11 eso hay que tenerlo en cuenta a la hora de utilizarlo en nuestro programa por
+
+si queremos trabajarlo sumar uno al mes y me devuelve todo partido en diferentes variables es una actividad
+
+que pues le voy a decir como se llama Objet no le voy a llamar
+
+partir fecha y hora y pasamos a la siguiente utilidad
+
+y la siguiente utilidad va a ser una utilidad que le voy a poder pasar dos fechas me voy a pasar dos
+
+fechas y él me va a devolver tuvo foll.
+
+Si una fecha es anterior a la otra por eso estoy mejor que la anterior y evidentemente tengo que pasar
+
+dos fechas pues por ejemplo el primer día en Stam le digo pues es anterior el 2019 del mes 1 día 21
+
+ah y evidentemente otra fecha siguiente es un target el objetivo la fecha objetivo es anterior al 2000
+
+19 0 1 y 2 día ésta es anterior a ésta le damos a osen tu correcto y es anterior al 20 llegamos al fouls
+
+porque no es anterior.
+
+Esto es bueno tontería no sé si es anterior o no ya pero muchas veces esto son valores que los mete
+
+el usuario en dos cuadros de texto.
+
+Entonces nosotros simplemente construiremos toda la web N.L y no sabemos que valores Mamede al usuario.
+
+Nosotros solamente queremos saber si es tu sello anterior o Fool's sin tener que hacer una función que
+
+haga eso ya directamente tenemos un servicio web que nos devuelve tuvo foll si es anterior.
+
+Bueno pues éste lo vamos a guardar le vamos a llamar anterior y ahora vamos a tener uno que hace justo
+
+lo contrario de hecho por eso este lo voy a duplicar.
+
+Le voy a Duplo voy a duplicar le voy a poner lo voy a renombrar y lo voy a amar posterior porque lo
+
+único que cambia en este posterior es que aquí en vez de poner CIFOR vale como teníamos en el otro le
+
+vamos a poner un altero
+
+aquí vamos a poner el Adapter y entonces era justo lo contrario es posterior el 21 al 20 evidentemente
+
+sí y es posterior el 21 al 22
+
+evidentemente no vale.
+
+Bueno vamos a hablar seis y ya tenemos dos servicios web que me devuelve el anterior o el posterior
+
+un tubo foll dadas dos fechas que yo le pase voy a aprovecharme de éste.
+
+Posterior voy a duplicarlo porque el siguiente es muy parecido vamos a duplicarlo vamos a renombrando
+
+y le vamos a llamar entre es un servicio web que es lo que me devuelve es en vez de latter.
+
+Va a ser la palabra inglesa my Twin y lo que me dice así Una fecha está comprendida entre una fecha
+
+de inicio start
+
+y una fecha de fin UNAM y la fecha de fin y por ejemplo decimos 2019 y 0 3 de marzo y el 28 de marzo
+
+por ejemplo valen aquí las podemos poner y decimos está esto el 21 de enero de 2019 entre el 21 de enero
+
+y el 28 de marzo.
+
+Evidentemente no no está entre Fool's pero si en vez de pasar el 21 de enero le pasamos el 21 de febrero
+
+pues sí evidentemente sí que está entre las dos fechas entre la de inicio y la define bueno es un servicio
+
+web que hasta tres fechas maiceros y la primera está entre la segunda y la tercera también algo que
+
+me viene muy bien muchísimas veces para comprobar si una fecha pasada por el usuario entra en una promoción
+
+por ejemplo está entre dos fechas.
+
+Bueno como ya tenemos el entre el demos al 6 y pasamos al siguiente servicio y con este servicio vamos
+
+a acabarlos de fecha y es un servicio que me devuelve lo que me dice si un año es bisiesto si la fecha
+
+que yo le paso pertenece a un año bisiesto vale.
+
+Vamos a ver vamos a pasar una fecha le ponemos Tyne y se llama LEP vale para comprobar si un año es
+
+bisiesto le pasamos una fecha pues como hemos visto hasta ahora un Stam y le decimos por ejemplo el
+
+año de hoy 2019 que no es bisiesto 2019 le ponemos un día cualquiera de este año 1 22 pertenece al año
+
+bisiesto
+
+2019 no pertenece al año bisiesto y si fuera el 22 de enero de 2020
+
+si el 2020 es bisiesto y nos devuelve un todo vale.
+
+Muchas veces nos conviene saber si una fecha pertenece a un año bisiesto para el cálculo de días.
+
+Tener en cuenta el 29 de febrero Bueno pues tenemos un servicio web que me lo ofrece.
+
+Entonces vamos a guardarlo para llamar bisiesto y con esto acabo las utilidades de fecha y hora los
+
+tengo guardado y sé que puedo utilizarlos en cualquier momento en mis aplicaciones.
+
+
+{{urlecho}}/time/now
+
+{{urlecho}}/time/valid
+
+{{urlecho}}/time/valid
+
+{{urlecho}}/time/unit?timetamp=2019-01-22&unit=day
+
+SUMAR TIEMPO 
+
+{{urlecho}}/time/add?timestamp=2019-01-22&year=20
+
+
+{{urlecho}}/time/add?timestamp=2019-01-22&months=20
+
+
+{{urlecho}}/time/add?timestamp=2019-01-22&days=20
+
+{{urlecho}}/time/add?timestamp=2019-01-22&hours=20000
+
+{{urlecho}}/time/add?timestamp=2019-01-22&minutes=20000
+
+
+{{urlecho}}/time/add?timestamp=2019-01-22&secons=20000
+
+RESTAR TIEMPO 
+
+
+{{urlecho}}/time/subtract?timestamp=2019-01-22&hours=20000
+
+
+Cunsulta que dia fue START
+
+{{urlecho}}/time/start?timestamp=1996-07-27&unit=year
+
+
+{{urlecho}}/time/start?timestamp=1996-07-27&unit=months
+
+
+PARATIR FECHA Y HORA  object
+
+
+{{urlecho}}/time/object?timestamp=2019-01-22 20:14:17
+
+
+FECHA Anterior  BEFORE
+
+{{urlecho}}/time/before?timestamp=2019-01-21&target=2019-01-22
+
+
+
+FECHA POSTERIOR AFTER
+
+{{urlecho}}/time/before?timestamp=2019-01-21&target=2019-01-22
+
+ENTRE fechas
+
+{{urlecho}}/time/between?timestamp=2019-01-21&start=2019-01-22&end=2019-03-28
+
+
+Ver si es año Bisiesto 
+
+{{urlecho}}/time/leap?timestamp=2019-01-21
+
+
+
+
+28. Utilidad de transformación de
+versiones
+3 min
+
+Una utilidad unos suciedades mas que tiene Postman sobre todo si trabajamos en un grupo de trabajo que
+
+pueda estar trabajando con diferentes versiones de Postman es la de transformar las colecciones de Postman
+
+de la versión 1 a la versión 2 Cuando nosotros creamos una nueva colección.
+
+Realmente ahora ya Postman no las crea toda la versión 2.
+
+De hecho no nos da aquí una opción para crear la versión 2 de Postman.
+
+Sin embargo si alguien estuviera trabajando o tuviera una colección antigua sería la versión 1.
+
+Cómo podemos transformar esa colección de la versión 1 a la versión 2.
+
+Pues sencillo simplemente vamos a utilizar un servicio web que se llama queestaban Maneco igual y que
+
+es de tipo trasformó Transform al cual nosotros le pasaríamos aquí le pasaríamos el nombre de la colección.
+
+Vale yo aquí pondría colección nombre de la colección y le diría ante parãmetros from desde donde quiero
+
+pasar por ejemplo desde la versión 1 sólo hay dos opciones desde la versión 1 a la versión 2.
+
+Esta sería una de las opciones a tu 2 y lo ejecutaría no lo voy a hacer valer.
+
+Las transformaciones más que nada porque tengo ya una colección en la versión 2 y no la quiero si no
+
+la quiero perder por si acaso.
+
+Pero si tuviéramos colecciones antiguas pues pasaremos de la versión 2 la versión 1 si por ejemplo trabajamos
+
+con alguien que siga trabajando con versiones 1 existe la otra alternativa que es pasar de las 2 a la
+
+una sólo hay dos opciones que hay en la transformación.
+
+Lo voy a poner lo normal suele ser que tengamos colecciones antiguas o alguien nos pase una colección
+
+y cuando la vamos a leer no la leemos porque ponemos el nombre de la colección y la transformamos.
+
+Eso sí de pasar a Postman y no devolverá transformada.
+
+Voy a poner de todas formas una nueva carpeta que iba a Hamar for export que va a tener solamente este
+
+servicio.
+
+Realmente son dos de uno o dos o de La 2 o la 1.
+
+Pero bueno pues voy a guardarlo en esa carpeta abismante Ashford for
+
+a la carpeta Transform 6.
+
+Y aquí está.
+
+Tampoco tiene mucho mucha utilidad y sobre todo si empezamos ahora a trabajar con la versión 2.
+
+Pero bueno que sepáis que os encontráis algo con la versión 1 no está todo perdido lo podéis transformar
+
+con esta simple utilidad a la versión 2.
+
+Tranform/ Pasar colecciones de Version 
+
+
+{{urlecho}}/transform/collection?from=1&to=2
+
+
+{{urlecho}}/transform/collection?from=2&to=1
+
+
+
+29. Trabajar con Cookies
+6 min
+
+Bueno en este video vamos a ver cómo trabajar con las cuquis las cuquis.
+
+Bueno para aquellos profesionales de las web sirven para guardar algunos estados de las webs que visitamos
+
+de los dominios si no soleis trabajar con cuquis.
+
+Pues bueno esta fracturaron la puede saltar pero si quereis probar a montar Q15 en vuestras peticiones
+
+web.
+
+El problema lo podemos hacer de varias formas una es directamente accediendo al apartado de cuquis Malé
+
+y por ejemplo puedes crear o directamente al dominio que tenemos de Postman añadirle una nueva Kuki
+
+o añadirle una nueva kuki.
+
+Como veis coge Kuki valor 1 paz y el dominio Vale y ahora tengo 2 cuquis valor añadido La Kuki 1 vale
+
+que me ha acogido estos valores de aqui se refieren a los estándares de administración de los estados
+
+de cuquis de HTTP.
+
+Os pondré el enlace para que veáis las cosas que se pueden guardar en una kuki.
+
+Por ejemplo aquí nosotros le damos O6 y ya tenemos pues una Kuki más guardada que podremos utilizar.
+
+Bueno esa es una forma mala.
+
+De hecho aquí podría guardar para otro dominio que el dominio Naza punto o RG.
+
+No sé si ahora o como sea o no pues añado ahora mismo tiene cero cuquis pero lo añado autodominio una
+
+kuki.
+
+Fijaros pues ahora para el dominio Naza pues me guardaré una Kuki cuando las puedo crear aquí le doy
+
+al SOIB vale puedo borrar el dominio.
+
+Bueno añado el dominio puedo borrar una Kuki vale.
+
+Es una de las formas de trabajar con las cuquis.
+
+Bueno otra de las formas.
+
+Tenemos unos servicios que nos proporciona Maneco que también nos va a servir son muy interesantes a
+
+la hora de trabajar con cuquis.
+
+El primero de estos servicios lo podemos obtener en la página de Maneco barra cuquis y es el servicio
+
+de crear una Kuki se hace con el comando set y nosotros podemos poner los valores que queremos que tenga
+
+esa Kuki vale.
+
+Por ejemplo el parámetro 1 para 1 le vamos a poner el valor serán 1 y el 2 lo voy a poner valores a
+
+la Kuki para 2.
+
+Estos son tanto el nombre parametro como el valor del parámetro podéis poner lo que vosotros queráis
+
+rangos y ejecutar sin enviaré y crearé unas cuquis.
+
+De hecho aquí me dice que hay unas cuquis creadas éste es para crear las cuquis pero como recojo yo
+
+esas cuquis.
+
+De hecho aquí voy a salvar al primero ya que que una carpeta que le voy a llamar cuquis fólder
+
+cuquis lo voy a guardar dentro de cuquis
+
+vas a llamar crear cuquis si quiero consultar esas cuquis que acabo de crear mediatas for no voy a guardar
+
+dentro de cuquis vale si quiero crearlo en lugar de poner el comando set que ha sido para hotel para
+
+crear esas cuquis.
+
+Si no le pongo ningún parámetro manejã de mi esto bueno este servicio ya lo puedo borrar.
+
+Voy a crear uno nuevo mejor
+
+y le pongo cuquis solamente fijaros cuando hay alguien y me devuelve las cuquis que se han almacenado
+
+en el equipo.
+
+Vale tengo esas cuquis almacenadas en el equipo.
+
+De hecho fijaros se separan 1 y 2 me lo ha hecho automáticamente el servicio que antes he llamado vale
+
+tengo estas 2 cuquis almacenadas creadas por mi.
+
+De hecho este servicio le voy a llamar obtener cuquis
+
+lo guardo cierro y hay uno más que es el de eliminar cuquis que voy a poder eliminar la Kuki que yo
+
+quiera puedo eliminar una o varias al mismo tiempo por ejemplo si quiero eliminar las dos que he creado
+
+pues llamo al servicio a cuquis pero ahora le añado el modificador delete y elimino la Kuki que quiero
+
+eliminar pues quiero eliminar para 1 por ejemplo y 2
+
+y 2 Arsen.
+
+Si bien me dirá que ya no hay cuquis Guardo Guardo este de borrar as borrar cuquis
+
+y de hecho para comprobar que las ha borrado puedo volver a abrir el de dentro de cuquis obtener cuquis
+
+y veremos como ahora ya no me las obtienen.
+
+De hecho separamos 1 y 2 ya no está y bueno esa es la forma de trabajar con las cuquis de poder crear
+
+una Kuki de poder borrarla y poder modificarla.
+
+Si queréis podéis obtener más información sobre toda la información sobre las cuquis en la página oficial
+
+donde se dice la estructura que tiene que tener una Kuki los campos los diferentes campos etc o lo dejo
+
+en la documentación del curso y si queréis aprender más al respecto pues tenéis la documentación disponible.
+
+
+https://tools.ietf.org/html/rfc6265#section-4.1
+
+Crear Cookies
+
+{{urlecho}}/cookies/set
+
+
+Consultar/Obtener Cookies
+
+{{urlecho}}/cookies
+
+
+Eliminar Cookies
+
+{{urlecho}}/cookies/delete?param1&param2
+
+30. Colección usada en los vídeos.
+1 min
+
+

@@ -1,0 +1,43 @@
+<? php 
+// Por qué tipo de método se esta enviando la información
+$ método = $ _SERVER [ 'SOLICITUD_MÉTODO' ];
+
+// Solo si se manda por correo
+if ( $ method == 'POST' ) {
+  	// Jalamos todo el contenido
+	$ contenido = file_get_contents ( 'php: // input' );
+  	// Decodificamos via json
+	$ json = json_decode ( $ contenido );
+  	// Guardamos el resultado en la variable text
+	$ texto = $ json -> queryResult -> parámetros -> echoText ;
+	// Por cada entrada diferente contestamos una cosa diferente
+	interruptor ( $ texto ) {
+		caso  'hola' :
+			$ discurso = "Hola, gracias por estar aquí" ;
+			romper ;
+
+		caso  'adios' :
+			$ speech = "Te vas tan pronto !! a penas nos empezabamosa conocer" ;
+			romper ;
+
+		caso  'lo que sea' :
+			$ speech = "Wow que gran conversacion". ;
+			romper ;
+		
+		por defecto :
+			$ speech = "Ese silencio incomodo, di algo no muerdo (muy fuerte)". ;
+			romper ;
+	}
+
+	$ respuesta = nuevo \ stdClass ();
+	$ respuesta -> discurso = $ discurso ;
+	$ respuesta -> displayText = $ discurso ;
+	$ respuesta -> fuente = "webhook" ;
+	echo  json_encode ( $ respuesta );
+}
+más
+{
+	echo  "No, no, no El metodo" . $ método . "no es permitido (por ahi no)" ;
+}
+
+?>

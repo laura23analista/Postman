@@ -1,0 +1,123 @@
+SECCION 2 - 6 Que es una API Rest ?
+
+
+Transferencia de Estado Representacional
+Ir a la navegaciónIr a la búsqueda
+La transferencia de estado representacional (en inglés representational state transfer) o REST es un estilo de arquitectura software para sistemas hipermedia distribuidos como la World Wide Web. El término se originó en el año 2000, en una tesis doctoral sobre la web escrita por Roy Fielding, uno de los principales autores de la especificación del protocolo HTTP y ha pasado a ser ampliamente utilizado por la comunidad de desarrollo.
+
+
+Índice
+1	Descripción
+2	Recursos
+3	REST frente a RPC
+4	Implementaciones públicas
+5	Véase también
+Descripción
+
+Roy Fielding charlando durante OSCON 2008
+Si bien el término REST se refería originalmente a un conjunto de principios de arquitectura —descritos más abajo—, en la actualidad se usa en el sentido más amplio para describir cualquier interfaz entre sistemas que utilice directamente HTTP para obtener datos o indicar la ejecución de operaciones sobre los datos, en cualquier formato (XML, JSON, etc) sin las abstracciones adicionales de los protocolos basados en patrones de intercambio de mensajes, como por ejemplo SOAP. Es posible diseñar sistemas de servicios web de acuerdo con el estilo arquitectural REST de Fielding y también es posible diseñar interfaces XMLHTTP de acuerdo con el estilo de llamada a procedimiento remoto (RPC), pero sin usar SOAP. Estos dos usos diferentes del término REST causan cierta confusión en las discusiones técnicas, aunque RPC no es un ejemplo de REST.
+
+REST afirma que la web ha disfrutado de escalabilidad como resultado de una serie de diseños fundamentales clave:
+
+Un protocolo cliente/servidor sin estado: cada mensaje HTTP contiene toda la información necesaria para comprender la petición. Como resultado, ni el cliente ni el servidor necesitan recordar ningún estado de las comunicaciones entre mensajes. Sin embargo, en la práctica, muchas aplicaciones basadas en HTTP utilizan cookies y otros mecanismos para mantener el estado de la sesión (algunas de estas prácticas, como la reescritura de URLs, no son permitidas por REST)
+Un conjunto de operaciones bien definidas que se aplican a todos los recursos de información: HTTP en sí define un conjunto pequeño de operaciones, las más importantes son POST, GET, PUT y DELETE. Con frecuencia estas operaciones se equiparan a las operaciones CRUD en bases de datos (CLAB en castellano: crear,leer,actualizar,borrar) que se requieren para la persistencia de datos, aunque POST no encaja exactamente en este esquema.
+Una sintaxis universal para identificar los recursos. En un sistema REST, cada recurso es direccionable únicamente a través de su URI.
+El uso de hipermedios, tanto para la información de la aplicación como para las transiciones de estado de la aplicación: la representación de este estado en un sistema REST son típicamente HTML o XML. Como resultado de esto, es posible navegar de un recurso REST a muchos otros, simplemente siguiendo enlaces sin requerir el uso de registros u otra infraestructura adicional.
+Recursos
+Un concepto importante en REST es la existencia de recursos (elementos de información), que pueden ser accedidos utilizando un identificador global (un Identificador Uniforme de Recurso). Para manipular estos recursos, los componentes de la red (clientes y servidores) se comunican a través de una interfaz estándar (HTTP) e intercambian representaciones de estos recursos (los ficheros que se descargan y se envían) - es cuestión de debate, no obstante, si la distinción entre recursos y sus representaciones es demasiado platónica para su uso práctico en la red, aunque es popular en la comunidad RDF.
+
+La petición puede ser transmitida por cualquier número de conectores (por ejemplo clientes, servidores, cachés, túneles, etc.) pero cada uno lo hace sin "ver más allá" de su propia petición (lo que se conoce como stateless (sin estado), otra restricción de REST, que es un principio común con muchas otras partes de la arquitectura de redes y de la información). Así, una aplicación puede interactuar con un recurso conociendo el identificador del recurso y la acción requerida, no necesitando conocer si existen cachés, proxys, cortafuegos, túneles o cualquier otra cosa entre ella y el servidor que guarda la información. La aplicación, sin embargo, debe comprender el formato de la información devuelta (la representación), que es por lo general un documento HTML o XML, aunque también puede ser una imagen o cualquier otro contenido.
+
+REST frente a RPC
+Una aplicación web REST requiere un enfoque de diseño diferente a una aplicación basada en RPC (llamada de procedimiento remoto). En RPC, se pone el énfasis en la diversidad de operaciones del protocolo, o verbos; por ejemplo una aplicación RPC podría definir operaciones como:
+
+
+getUser()
+addUser()
+removeUser()
+updateUser()
+getLocation()
+addLocation()
+removeLocation()
+updateLocation()
+listUsers()
+listLocations()
+findLocation()
+findUser()
+
+En REST, al contrario, el énfasis se pone en los recursos, o sustantivos; especialmente en los nombres que se le asigna a cada tipo de recurso. Por ejemplo, una aplicación REST podría definir algunos tipos de recursos asignándoles estos nombres:
+
+
+Usuario {}
+Localización {}
+
+Cada recurso tendría su propio identificador, como http://www.example.org/locations/us/ny/new_york_city. Los clientes trabajarían con estos recursos a través de las operaciones estándar de HTTP, como GET para descargar una copia del recurso. Obsérvese cómo cada objeto tiene su propia URL y puede ser fácilmente cacheado, copiado y guardado como marcador. POST se utiliza por lo general para acciones con efectos laterales, como enviar una orden de compra o añadir ciertos datos a una colección.
+
+Por ejemplo, el registro para un usuario podría tener el siguiente aspecto:
+
+<usuario>
+ <nombre>Maximiliano Alejandro</nombre>
+ <sexo>hombre</sexo>
+ <localización href="http://www.example.org/locations/us/ny/new_york_city">Nueva York, NY, US</localización>
+</usuario>
+Para actualizar la localización del usuario, un cliente REST podría primero descargar el registro XML anterior usando GET. El cliente después modificaría el fichero para cambiar la localización y lo subiría al servidor utilizando HTTP PUT.
+
+Nótese, sin embargo, que los verbos HTTP (POST, GET, PUT, DELETE) no proporcionan ningún mecanismo estándar para descubrir recursos -- no hay ninguna operación LIST o FIND en HTTP, que se corresponderían con las operaciones list*() y find*() en el ejemplo RPC. En su lugar, las aplicaciones basadas en datos REST resuelven el problema tratando una colección de resultados de búsqueda como otro tipo de recurso, lo que requiere que los diseñadores de la aplicación conozcan URLs adicionales para mostrar o buscar cada tipo de recurso.
+
+Por ejemplo, una petición GET HTTP sobre la URL http://www.example.org/locations/us/ny/ podría devolver un enlace a una lista de ficheros en XML con todas las localizaciones posibles en Nueva York, mientras que una petición GET a la URL http://www.example.org/users?surname=Michaels podría devolver una lista de enlaces a todos los usuarios con el apellido "Michaels".
+
+REST proporciona algunas indicaciones sobre cómo realizar este tipo de acciones como parte de su restricción "hipermedia como el medio de estado de la aplicación", lo que sugiere el uso de un lenguaje de formularios (tales como un formulario HTML) para especificar consultas parametrizadas.
+
+La iniciativa OpenSearch de A9.com intenta estandarizar las búsquedas usando REST estableciendo especificaciones para descubrir recursos y un formato genérico para utilizar con sistemas basados en REST, incluyendo el RDF, XTM, Atom, RSS (en sus varias formas) y XML con XLink para gestionar los enlaces.
+
+https://es.wikipedia.org/wiki/OpenSearch
+
+https://es.wikipedia.org/wiki/A9.com
+
+https://es.wikipedia.org/wiki/XLink
+
+https://es.wikipedia.org/wiki/Extensible_Markup_Language
+
+https://es.wikipedia.org/wiki/RSS
+
+https://es.wikipedia.org/wiki/Atom_(formato_de_redifusi%C3%B3n)
+
+https://es.wikipedia.org/w/index.php?title=Topic_Map&action=edit&redlink=1
+
+https://es.wikipedia.org/wiki/Resource_Description_Framework
+
+///OpenSearch es un conjunto de tecnologías que permiten publicar los resultados de una búsqueda en un formato adecuado para la sindicación y agregación. Es una forma para que las páginas web y los motores de búsqueda publiquen sus resultados de forma accesible. OpenSearch 1.0 fue publicado en marzo de 2005. Los borradores de la versión 1.1 se publicaron entre septiembre y diciembre de 2005.//
+
+
+
+( a9.com es un motor de búsqueda de Internet lanzado el 14 de abril de 2004 por la empresa Amazon.com. Sus resultados derivan desde Bing y son complementados con los obtenidos por Alexa, junto con otros buscadores específicos por cada área, como juegos de ajedrez, licencias de contenido, libros, DVD, etc.
+
+A9 posee muchas funciones que poseen varios de los buscadores de Internet más populares. Además de la búsqueda genérica por término, posee la habilidad de buscar resultados en libros desde la base de datos de Amazon.com que se puede incluir con la opción "Search Inside the Book" (en español, "Buscar al interior del libro"), pero esta opción requiere que el usuario se encuentre registrado en el sitio de amazon. Su interfaz permite combinar los resultados de búsquedas anteriores y actuales, lo que permite generar una comparación resultado a resultado.)
+
+[ XLink o Lenguaje de vínculos XML es una recomendación del World Wide Web Consortium (W3C) que permite crear elementos de XML que describen relaciones cruzadas entre documentos, imágenes y archivos de Internet u otras redes. De esta forma, XLink permite:
+
+Crear una relación de vínculos entre varios documentos.
+Agregar a un vínculo información acerca del mismo (metadatos).
+Crear y describir vínculos a documentos en multitud de ubicaciones. ]
+
+Implementaciones públicas
+Dado que la definición de REST es muy amplia, es posible afirmar que existe un enorme número de aplicaciones REST en la red (prácticamente cualquier cosa accesible mediante una petición HTTP GET). De forma más restrictiva, en contraposición a los servicios web y el RPC, REST se puede encontrar en diferentes áreas de la web:
+
+La blogosfera -el universo de los blogs- está, en su mayor parte, basado en REST, dado que implica descargar ficheros XML (en formato RSS o Atom) que contienen listas de enlaces a otros recursos.
+Amazon.com ofrece su interfaz para desarrolladores tanto en formato REST como en formato SOAP (siendo la versión REST la que recibe mayor tráfico).
+eBay ofreció hasta 2008 una interfaz REST para desarrolladores.
+El Proyecto "Seniors Canada On-line" del Gobierno de Canadá ofrece una interfaz REST descrito aquí.
+Bloglines ofrece una API basada en REST para desarrolladores.
+Yahoo! ofrece una API en REST para desarrolladores.
+El mecanismo de enrutamiento de Ruby on Rails soporta aplicaciones REST utilizando el patrón de diseño MVC.
+Microsoft tiene su implementación en ADO.NET Data Services Framework (anteriormente conocido como “Astoria”) [1].
+El mismo mecanismo en Catalyst también soporta aplicaciones REST mediante MVC.
+El publicador de objetos de Zope.
+Implementación REST para Java: RestLet.
+Facebook ofrece una API basada en REST.
+Twitter ofrece una API basada en REST.
+MEGA ofrece una API basada en REST.
+MercadoLibre ofrece una API basada en REST para desarrolladores.
+Probablemente existan muchas otras implementaciones similares.
+
+En cualquier caso debe tenerse en cuenta que muchas de las implementaciones descritas arriba, no son totalmente RESTful, esto es, no respetan todas las restricciones que impone la arquitectura REST. Sin embargo todas están inspiradas en REST y respetan los aspectos más significativos y restrictivos de su arquitectura, en particular la restricción de "interfaz uniforme". Estos servicios han sido denominados "Accidentalmente RESTful".

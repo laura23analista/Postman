@@ -1,0 +1,381 @@
+Sección 4: Colecciones
+
+20 - Operaciones básicas sobre una
+colección, duplicar, compartir, comentar 
+
+
+Bueno ahora ya vamos a empezar a trabajar un poco con las colecciones al menos ver qué es esto de las
+
+colecciones.
+
+Hasta ahora ya hemos empezado ya hemos estado trabajando con las colecciones.
+
+Vemos este colectivo colección 1 que está trabajando con él.
+
+Vale para qué es una colección y para qué sirve.
+
+Sería lo primero que deberíamos preguntar en una colección al final sirve para agrupar solicitudes individuales
+
+vale para que organicemos esas solicitudes os Henriques en forma de carpetas.
+
+Como he hecho yo por ejemplo aquí creándola tener un poco más organizado pero sirve para más cosas.
+
+Realmente una colección una colección aparte de su innegable funcionalidad para organización también
+
+sirve para documentar sobretodo la versión de Postman pero que se pueden crear una documentación bastante
+
+buena de la API gracias a las colecciones documentando las colecciones y documentando cada una de las
+
+peticiones.
+
+También van a servir para posteriormente crear Swett de prueba cuando luego ves en otros vídeos ya hagamos
+
+la parte del testing pues nosotros podremos por ejemplo ejecutar todas las peticiones seguidas de una
+
+determinada colección incluso con flujos de trabajo que se ejecuten las peticiones en el orden que nosotros
+
+les digamos sobre las operaciones básicas que tiene una colección.
+
+Podemos observar por ejemplo renombrar una colección antes colección 1
+
+nombramos la podemos poner como favorita.
+
+Así siempre estarán en la parte de arriba vemos que tenemos el ser colección vamos a compartir una conexión.
+
+Colección vemos que para compartir una colección hay diversas formas.
+
+Una de las formas más sencilla es con el link vale si nosotros por ejemplo tenemos un link le damos
+
+por ejemplo delin para que nos lo actualice y nos dará el link de nuestra conexión con este link.
+
+Cualquier usuario con este Link podrá importar toda nuestra colección.
+
+Por ejemplo voy a copiarlo voy a copiar el link y lo que voy a hacer es salir y entrar en otro de mis
+
+usuarios.
+
+Por ejemplo voy a entrar con este usuario ahora entraremos
+
+y cuando entremos en la con este usuario pues vemos que no tengo esa colección ahí no tengo estoy en
+
+mi web Espais.
+
+No tengo nada es otro usuario.
+
+De hecho voy a colecciones Yo tengo aquí la opción de una nueva colección.
+
+Si pincho en una nueva colección veré que me crea una nueva conexión.
+
+Una nueva colección de la nada.
+
+Aquí no me importa pero veo que tengo la opción Import si lo doy aquí a la opción Import.
+
+Una de las opciones me va a decir impor fail pero fijaros que no tenemos la función importemos Link
+
+100 importaran Lim.
+
+Cualquier usuario pegará ese link que nosotros hemos creado antes y le damos al impor.
+
+Veremos cómo la colección la acabamos de importarla de la forma más sencilla de pasar colecciones entre
+
+personas.
+
+Es por un link Nosotros creamos el link y se lo pasamos a la persona que queremos que tenga nuestra
+
+colección y simplemente de esta forma importando el link pues ya tiene todos nuestros servicios.
+
+Bueno voy a borrar la colección de esta manera porque la voy a importar también de otra forma.
+
+Le voy a borrar la colección de Leith voy a irme de nuevo a mi usuario a mi otro usuario que tiene las
+
+las colecciones creadas.
+
+Que entra de nuevo
+
+vale ya estoy aquí.
+
+Voy a irme al del curso Postman que es donde tengo las colecciones con las que estoy trabajando en los
+
+entornos.
+
+Otra de las formas posibles de compartirla con la
+
+pues exportarla.
+
+Me vengo aquí a los tres puntitos veré aquí un eSport le digo la versión 2.1 que la que me recomienda
+
+es Porta.
+
+Eso me generará un fichero Manen vamos a generarlo aquí por opción colección una Postman guardar vale
+
+y ahora me voy al otro usuario lo abro de nuevo y ahora en lugar de por un link pues voy a importar
+
+por un fichero
+
+cierro esta ventana me vengo le doy al impor busco el fichero lo selecciono y de nuevo tengo aquí mi
+
+colección.
+
+Ya son las dos formas relativamente más sencillas de importar y exportar una colección ya sea por el
+
+import export o por el link.
+
+Voy a volver otra vez a mi usuario con el cual estamos realizando el curso
+
+ya estoy dentro de él.
+
+Qué más cosas podemos hacer básicas con las colecciones por lo que hemos dicho duplicar una colección
+
+aquí podría duplicar una colección por ejemplo y borrarla sabemos exportar sabemos duplicar sabemos
+
+lograr colecciones.
+
+Bueno ahora que ya la tenemos copiada en otro usuarios si la perdiese pues siempre podría volver a ella
+
+más cosas que podemos hacer con las conexión colecciones evidentemente añadirle peticiones como hemos
+
+estado haciendo hasta ahora y carpetas.
+
+Vale otra de las cosas interesantes por ejemplo que podemos hacer de una colección fijaros puedo verla
+
+en la web.
+
+Vamos a ver como queda como va quedando si pulso en ver en la web veré exactamente como está quedando
+
+mi colección esta es la colección que estamos haciendo incluso fijaros que tengo la opción de ir comentando
+
+sobre la colección yo puedo añadir aquí un comentario de la colección
+
+está quedando genial.
+
+Vale añadir comentarios puedo añadir comentarios y pondrãa personas porque si esta colección la ponemos
+
+en un grupo de trabajo cada uno podrá ir haciendo comentarios y añadiendo sus lo que quiera decir sobre
+
+la colección y sobre cada uno de los servicios.
+
+Fijaros de paso cómo queda ya la documentación cómo está llevando mi documentación de mi papi conforme
+
+la ha ido creando en cada uno de estos servicios que ha ido comentando y puedo decir que este servicio
+
+os es fundamental.
+
+Añado el comentario y voy leyendo comentarios me va quedando exactamente cada uno de mis la documentación
+
+que hace cada uno de mis servicios.
+
+Y un ejemplo con lo cual documentar una Pierres con el Postman conforme estoy haciendo las pruebas se
+
+hace una tarea muy muy muy sencilla la documentación prácticamente me viene de serie.
+
+Veo como en la versión web en el momento que me conecto a la web me va dando la opción todo lo relacionado
+
+con esa colección.
+
+Lo que pasa es que evidentemente por la actividad que ha tenido esta colección la documentación y lo
+
+de los monitores pues todavía como no he hecho nada sobre los monitores pues todavía no me dice que
+
+tenga nada.
+
+De hecho puedo invitar a la gente a la colección para que trabaje con ella pero ya hemos visto otras
+
+formas de compartir.
+
+Bueno vamos a volver a otra vez de nuevo a la colección.
+
+Ya hemos visto lo que es ver la web.
+
+Luego veremos el tema de gran este que es lo que hace en un primer vídeo para saber que hacen las colecciones
+
+que está bien.
+
+Vamos a dejarlo aquí y en los siguientes pues ya vemos cosas más avanzadas sobre las colecciones.
+
+
+
+
+LAS COLLECCIONES SIRVEN PARA DOCUMENTAR Y CREAR SUIT DE PRUEBAS 
+
+
+21 Control de verciones de las Colecciones 
+
+
+Bueno en este video vamos a aprender una opción que tiene bastante interesante Postman que es el tema
+
+de poder crear hijos de una colección poder hacer cómo hacemos por ejemplo en Guija con todo el tema
+
+de versionados Y si vosotros habéis trabajado a la hora de programar con versionados pues ya sabéis
+
+más o menos de qué estoy hablando y si no pues vamos a ver algunos ejemplos y espero que con eso Aprenderéis
+
+un poco a trabajar el tema de los hijos de una colección muchas veces resulta que nosotros estamos trabajando
+
+sobre todo si todavía no hemos entrado en el tema de trabajar en un equipo simplemente estamos trabajando
+
+a nivel personal pero queremos trabajar con otros compañeros o incluso con otros usuarios y queremos
+
+hacer un hijo de una colección que es hacer un hijo es similar a hacer una copia parecida hacer una
+
+copia pero con unas diferencias vamos a ver.
+
+Fijaros si yo a esta colección le quiero un hijo y la pongo yo voy a amar por ejemplo al hijo de esta
+
+colección le voy a llamar hijo a ver para que veamos y la voy a guardar.
+
+Lo lógico aquí sería guardarlo no en la misma en el mismo espacio sino si voy a hacerlo lo mejor lo
+
+guardaría en otro Workspace de otra empresa imaginaros que tengo las mismas peticiones para dos empresas
+
+la empresa que se llama Hakusho Postman y la empresa que se llama Mi workspace.
+
+Bueno en este caso por cuestión de comodidad para ir cambiando por lo haré en el mismo sitio para que
+
+veamos todos los cambios inmediatamente lo voy a dejar en curso Postman y voy a crear un hijo vale veremos
+
+que aquí tengo una colección 1 hijo de la colección padre la voy a renombrar porque así me va a ser
+
+más cómodo a la hora de distinguirlas entre una y otra.
+
+Vale voy a renombrar y voy a llamar la colección 1 hijo así seguro no sé cual es cada una.
+
+Bueno si os fijáis la colección 1 hijo tiene 15 peticiones igual que el padre y a priori parecía parecería
+
+que es un duplicar pero no es duplicar están enlazadas y eso es muy importante.
+
+Por qué.
+
+Porque si yo por ejemplo ahora en la colección 1 tiene una nueva petición por ejemplo esta petición
+
+voy a crear una de similar a las que tenía antes por ejemplo esta y la guardo el nombre me da igual
+
+pues por ejemplo prueba para hijo Pere que al guardarla no la voy a salvar en la colección 1 a guardar
+
+aquí en la colección 1 y veo que ahora esta tiene 16 peticiones tienen esta nueva y esta pues no lo
+
+tiene evidentemente la he creado y guardada aquí pues no lo tiene pero yo podría ser que en algún momento
+
+todas las cosas que yo voy haciendo en el padre sea automáticamente se copia en el hijo digamos que
+
+cogiera todos los cambios del padre si para eso tengo en las colecciones la opción Merge.
+
+Si yo Pirincho en este merge Chain me abrirá la web donde me permitirá hacer esa mezcla de las de las
+
+diferentes colecciones.
+
+Cuando pincho me abre la página web donde me permite donde va a acceder a las colecciones y me va a
+
+decir que hay en la colección hijo en el Hay algo que tiene que coger de la colección 1 origen vale.
+
+De hecho que ha sido modificado y ha habido un cambio aquí podría haber el cambio y me da la opción
+
+de merge Old Cheung.
+
+Eso es mezclar Cajeme un.
+
+Todos los cambios que ha habido en el hijo si le pincho me va a dar varias opciones me va a decir primero
+
+merge dice.
+
+El destino será actualizado con los cambios merge Chain Hanun del show.
+
+Eso significa que si yo en el hijo también he realizado cambios el padre cogería también los cambios
+
+del hijo ya mezclaría y en cada uno podríamos estar trabajando en dos personas por separado con la misma
+
+población que para lo que un hacer y cada uno cogería lo que ha hecho el otro.
+
+Este suele ser lo más habitual un grupo de trabajo con varias personas con la misma colección y que
+
+luego hacen un merge Cheung y actualizan la otra colección.
+
+En este caso el hijo no ha hecho nada diferente con lo cual sólo va a hacer digamos una mezcla en un
+
+único sentido.
+
+Pero ahora probaremos otro ejemplo merge y me dice que el merge ha sido correcto.
+
+Si me bajo ahora a la colección veré que en el momento que le doy al F5 para actualizar sin darle al
+
+F5 ya me ha aparecido en el hijo.
+
+Pero supongamos que en el padre hago repito esto serían dos personas trabajando al mismo tiempo cada
+
+uno en una colección o no en el padre y en el hijo.
+
+Ahora voy a hacer una un nuevo cambio colección en el hijo a ver
+
+bueno me ha llamado colección 1 hijo porque he hecho un merge para que todos los cambios estaba fijándome
+
+se actualiza es decir que hasta el nombre pues se ha actualizado en el padre también.
+
+Bueno eso es lo de menos ahora tengo dos colecciones hijos exactamente igual.
+
+Bueno ahora voy en esta colección hijo voy a la primera que ahora le puede llamar padre por ejemplo.
+
+No voy a dejar así voy a crear un nuevo uno nuevo porque voy a llamar si da igual esta misma la pongo
+
+así lo guardo es para que veamos dónde lo guardamos lo guardamos en colección hijo pero el que ha hecho
+
+de padre le llamamos
+
+petición en padre esta aquí arriba el hijo no la tiene y ahora cierra ésta y crea una nueva
+
+selecciono la que queráis es una de las que tenemos hecha por aquí esta misma la guardo y ésta la voy
+
+a guardar en el hijo y ésta le voy a llamar petición en el hijo y lo voy a guardar en el otro en vez
+
+de en el padre que era éste lo voy a guardar en éste que es el hijo vale de manera clara Tengo 17 peticiones
+
+pero tengo esta nueva que he hecho en el padre y ésta que he hecho en el hijo y ésta era la que mezclo
+
+antes que pasó del Padre al Hijo.
+
+Bueno ahora el objetivo mío sería que las dos quedasen con todas es decir ésta que es generado yo aquí
+
+se la pasa al hijo y ésta que generan el hijo se la pase al padre.
+
+Eso sería si dos personas están trabajando cada uno está haciendo una cosa.
+
+Oye tú dame lo tuyo que yo te doy lo mío.
+
+Bueno pues si le volvemos a dar al hijo al merge veremos
+
+me aparece me aparece la ventana la voy a arrastrar tengo aquí y lo primero que me dice dice la Origi
+
+la colección original ha sido modificada desde tu última actualización al hijo te recomendamos que primero
+
+guardes tus cambios.
+
+Primero guardo mis cambios hago un pull de mis cambios y una vez que he hecho el pull de mis cambios
+
+lo siguiente hago el pulso de todos los cambios y ahora me volverá a decir que está el pull correctamente
+
+actualizado.
+
+Vale ya están las dos partes actualizando de hecho aquí me hice las peticiones que han cambiado la que
+
+a petición el hijo le doy a merge old gen y hará lo mismo que quiero que se actualicen las dos pues
+
+ambas fuente y destinos se han actualizado.
+
+Me conviene esta opción Merge me dice que correcto todo se minimizo.
+
+Ahora veré que en el padre tengo la petición del padre y la petición del Hijo y el hijo también tengo
+
+la petición del padre y la petición del hijo de forma que puedo estar trabajando en paralelo varias
+
+personas y cada uno.
+
+Todas las peticiones que vaya haciendo seguirá pasando en ir haciendo merge al resto de compañeros esa
+
+es una muy buena herramienta para trabajar en grupo.
+
+
+
+
+22 coleccion usada en el video 
+
+THIS COLLECTION IS NOT A FORK
+
+

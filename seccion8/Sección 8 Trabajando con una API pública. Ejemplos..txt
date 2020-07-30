@@ -1,0 +1,318 @@
+Sección 8 Trabajando con una API pública. Ejemplos.
+
+48. Conociendo y probando APIs públicas. Ejemplo API de fútbol.
+15 min
+
+Bueno en este video lo que vamos a ver es cómo usar Postman para testear probar utilizar APIs creadas
+
+por terceros.
+
+Vale os he puesto esta web relegue lo dejaré en los recursos de este video cual es una regla que a mi
+
+me gusta bastante porque fue una recopilación que hizo el autor de esta página sobre la lista una lista
+
+de APIs públicas que el año 2010 detectó y que todavía a día de uso bastante para los ejemplos y para
+
+uso personal porque ahí algunas de las APIs que son realmente interesantes.
+
+De hecho si vais viendo APIs públicas de todo tipo acceso a datos animales ánime bebidas calendario
+
+ciencia.
+
+Os animo a que cada uno busque aquellas APIs que le gusta porque veréis la cantidad de información que
+
+vais a poder obtener de ellas.
+
+Yo como soy un amante del fútbol pues voy a hacer uso de la de la página de fútbol data Punto G Vale
+
+datos de fútbol donde si voy a la página veré que es una página de donde vamos a poder obtener un montón
+
+de datos de fútbol de todas las ligas.
+
+De hecho si veo un poco hago una visita un poco para la Paz por la página veré que de manera gratuita
+
+te da la cuenta gratis que luego tiene unas cuentas de pago que cuestan 49 99 249 al mes pero por la
+
+gratuita por cero euros al mes te da todos los datos de 12 competiciones con los goleadores de las competiciones
+
+en la planificación de los partidos las ligas etc. y puedes hacer hasta 10 llamadas por minuto.
+
+Vale si tenemos este plan 10 llamadas por minuto.
+
+Bueno pues para probar y para hacer todas nuestras cosas está muy bien.
+
+Entonces además si luego vemos las ligas que con las que contamos hoy me mi cuenta primero para hacer
+
+todos los pasos porque había me reconoce y mi cuenta gratuita pero para que veáis todos los pasos dados
+
+de alta en esta cuenta y de momento salir.
+
+Vale ya estoy fuera.
+
+Como os comentaba el tema del precio eso es gratuito vale.
+
+Si veis aquí a que te estarte al final lo que tendréis que poner es un nombre y un email.
+
+Aceptar las condiciones que le dais a crear cuenta y os va a llegar un correo electrónico con algo similar
+
+a lo siguiente tendréis algo así.
+
+Dónde dice que os han enviado un correo y donde pondré empotra que gracias los registrados en su con
+
+su API y que las instrucciones que ahora os voy a detallar de cosas que podéis hacer aquí evidentemente
+
+he borrado mi mi API o sea mi API token y de hecho pulsa aquí puesto en la copia de la imagen pero dice
+
+que pulses dice que para activar la cuenta que haga un clic en un botón que dice Please E-Verify email
+
+address canjea.
+
+Pues clique ahí para verificar vuestro correo y con eso ya estáis verificados.
+
+Vale con eso ya tenéis un estaís en la cuenta verificado yo ya voy a volver a entrar a la cuenta para
+
+pues tener darme darme de alta.
+
+Voy a hacer el proceso pues ya entrado dentro en mi cuenta si pincha aquí en mi cuenta o saldrá la cuenta
+
+QE3 que al final son vuestros datos o dirá que la cuenta es libre y os dará las temporadas a las cuales
+
+podéis hacer gratis pero bueno si pinchas en esta página la de fútbol en la página en este enlace os
+
+pone realmente las ligas que tenéis gratis gratis tenéis todas las ligas de la gran mayoría de ligas
+
+europeas la Champions League podéis tener gratis la Liga española.
+
+Vale que el año consultó sobre todo la Liga española y la Champion League y eso las da gratis.
+
+Ya estas son las 12 ligas que da gratis con lo cual ahora lo único que hay que saber es cómo llamar
+
+a la API.
+
+Pero vamos a irnos a la documentación hay que estar de la documentación de la API y veremos aquí explica
+
+la API las llamadas como se ejecutan a través de la API barra competición de todas formas aquí abajo
+
+nos pone varios ejemplos nos dice cómo tenemos que llamar a la API pero fijaros que incluso hay un run
+
+Bosman maravilloso aquí que lo que va a hacer es que toda esta.
+
+Estos ejemplos directamente pulsando en el botón no lo va a llevar a Postman de hecho voy a pulsar el
+
+botón y en un minuto tendré aproximadamente en Postman yo voy a adelantar el vídeo para acceder a ya
+
+Postman y ver lo que me ha traído vengo a Postman y veo cómo me ha traído estas 15 peticiones de ejemplo
+
+para que yo las vea.
+
+Vale de hecho podéis abrir cualquiera de las peticiones por ejemplo competición libre shouts ejecutar
+
+Senn y además de hecho fijaros aquí la parte de abajo me pone un ejecutã por ejemplo de las competiciones
+
+y aquí estaban todas las competiciones.
+
+Vale tendré listas de partidos.
+
+Puedo buscar todas las listas de partidos pero hay muchas de Match resolubles.
+
+Este es un ejemplo de una lista de partidos de hecho en los filtros que ahora veremos en la página podemos
+
+hacer filtro por ligas podemos hacer filtro por jugadores por equipos por todo vale.
+
+Muchas de las las peticiones para que él sepa que es un usuario furry de hecho voy a probar esta por
+
+ejemplo el a ver también datos una que no me dedatos si no tengo un GDR.
+
+Vamos a ver pues seguramente competir con recursos de competición a ver está en esta decía todas las
+
+competiciones o este boicot.
+
+Vamos a ver las competiciones 2021 competición le está quiero que nos dé algún tipo de fallo para el
+
+tema de la API.
+
+No sé si todas estas 15 que me ha dado son las que por ejemplo a hacer el resto para que veáis el tema
+
+de la API.
+
+Cómo lo gestiona.
+
+Si os fijáis tengo abierta hasta que una competición Resort Boycott vale y me dice que me saco un mensaje
+
+de error al ejecutarlo diciendo que el recurso es al cual estoy intentando acceder está restringido.
+
+Vale porque necesito una API válida en este.
+
+En esta imagen que os he sacado antes de la API aquí había un código vale ese código para que funcione.
+
+Lo tenéis que meter aquí en Jerez tenéis que meter este código.
+
+Lo que yo suelo hacer para esto es crear una variable de entorno.
+
+Me voy a crear una variable global por ejemplo que le llamo para las páginas o por ejemplo el suelo.
+
+A esto le podría llamar fácilmente token fútbol y aquí le voy a pegar el código lo demás que le voy
+
+a pegar el código.
+
+Le voy a dar el 6 y voy a cerrar la ventana vosotros no lo vais a ver.
+
+Vale cuando ahora vuelva a estar activo el video directamente la ventana estaba cerrada.
+
+Lo único que voy a hacer es copiar aquí el código dice que me han pasado por correo y darle a Saif pues
+
+nada.
+
+Ya tengo el código ya tengo una variable que si pincha aquí vería mi código.
+
+No voy a pinchar no se va a ver el código y no quiero que mi código mi API mi código de API porque tengo
+
+10 10 peticiones al minuto y si no me lo bloquean es bueno y aquí yo la puedo llamar como toca en fútbol.
+
+Estará por aquí en fútbol.
+
+Creo que se ha visto un momento bueno toque en fútbol y en este toque en fútbol
+
+podremos darle al alien vale.
+
+Y ahora donde antes no me daban los datos ahora ya me da Bale en el me va dando todos los datos de los
+
+partidos etcétera tengo aquí vale tengo todo toda la información de todos los partidos.
+
+Si me vuelvo a la API veréis la de cosas que tiene.
+
+Pues tú puedes pedir partidos competición aparecen toda la lista de todas las competiciones disponibles
+
+lista de una competición particular y aquí va a ir poniendo lista de todos los equipos de una competición
+
+Valoy vosotros pasáis el líder de la competición y los saca todos los equipos.
+
+Vale si queréis investigar sobre el API aquí está la API Reference Valent está ahora en su versión 2
+
+donde os hablará de todos los ejemplos de cómo tenéis que usar la API.
+
+Yo ya me la conozco y realmente pues tampoco es el objetivo.
+
+Ver la API de fútbol en sí sino más o menos ver como se usa con Postman de hecho él mismo lo dice aquí
+
+que la mejora del JSON output dice o mejor si usas Postman vale Postman es la herramienta preferida
+
+de prácticamente todos los probadores de APIs de desarrolladores de testing de baqueanos.
+
+él mismo te aconseja Postman y a quien más me voy a volver otra vez a él.
+
+Vais incluso que si lo habéis puesto el toquen el tema que nos ha traído incluso.
+
+O sea tiene 3 creado en la que asistes de respuesta.
+
+No esperéis que tenga la misma sintaxis que nosotros ponemos normalmente porque los ha hecho él y los
+
+ha hecho a su manera pero incluso él pone ya una serie de test para comprobar comprobar que todo ha
+
+ido correctamente cuando lo ejecutemos que ha ejecutado los tiempos de respuesta etcétera.
+
+Y bueno pues podemos ver que vamos a probar player Resources vamos a ver el Player el 44 a ver de qué
+
+va y qué test tiene.
+
+Los test son los mismos ejecutarlo ejecuto a ver recursos del jugador de a ver quién me habla a lo mismo
+
+me dice que no que la API tengo que meter el Geer pues copio aquí el toque en fútbol voy para abajo
+
+Tincho envío a 44.
+
+Cristiano Ronaldo saca todos los datos de Cristiano Ronaldo.
+
+Mira aquí podemos ir cambiando el 44 por el 43.
+
+Me va a servir esto para enseñar a Luka Modric.
+
+Todos los datos de Luka Modric podría ir cambiando aquí los jugadores tendrá que ser todos los jugadores
+
+me imagino el mundo voy a coger jugador número mil pues Julianna Gianni y como esto podemos ir cogiendo
+
+Miral en ésta podríamos ir sacando los datos de todos los jugadores de todos los países.
+
+Los jugadores por país las competiciones por equipo lo dicho en casi todos si lo ejecutan y sale este
+
+mensaje pues ya os acordáis que me quejé del de poner esa API de toque o sea la variable de toque en
+
+fútbol y ejecutar ya nos dará error Balea y ya os da.
+
+Pues estos son todos los partidos que hubo en el 2001 todos los equipos que había en el 2001 en las
+
+competiciones por la UEFA y aquí empieza las competiciones.
+
+Y bueno pues irán poniendo el joven el joven del Borussia Dortmund.
+
+Todos los equipos realmente y con esto pues estoy viendo de probar una API de un tercero vale en este
+
+caso una API de futbol además ese tercero me ha propuesto una serie de ejemplos que automáticamente
+
+el Postman importa y además una serie de test que también los ejecuta automáticos vale lo podemos probar
+
+y para que veáis la potencia que tienen una vez que sepa que sepáis manejar Postman podéis probar todas
+
+estas APIs.
+
+Porque si recordáis vimos a la de fútbol pero realmente teníamos una lista de a pie podríamos ir a la
+
+NASA tiene por aquí por ejemplo su API lo mismo entrar a su página web y darnos de alta crearnos una
+
+a una key por aquí nos lo dirá también siempre siempre.
+
+El sistema suele ser el mismo para el uso es coge tu API key verifica tu autenticación no te llega un
+
+correo para que realmente verifique que eres tú y a partir de ese momento pues ya usas la key usará
+
+la API con ese valor de la que normalmente suele haber ejemplos de API listing explicará por más o menos
+
+los List La lista de APIs cómo se ejecuta.
+
+Un ejemplo sería este por ejemplo lanza cambiando evidentemente esto por tu API y te saldría pues estos
+
+datos valen normalmente hay y hay todo tipo de APIs aquí.
+
+Lo dicho sólo tenéis que buscar aquella que os guste más y probar con ella.
+
+Normalmente con una key vale pero si sois amantes de los juegos o del cómic y queréis cosas de Marvel
+
+pulse aquí las tenéis si tienes el API Destin.
+
+Por ejemplo si queréis cosas de Geo con deificación música que sea desde las listas de Spotify podéis
+
+coger la API para obtener todos los datos de Spotify y bueno pues tenéis todo lo que queráis.
+
+Y nada.
+
+Con esto aprendemos a manejar una API de terceros aquellos que les gusta el fútbol y ahora ya ya tienen
+
+la respuesta esa que suelen hacer los programas de televisión de televisión o de radio de preguntas
+
+sobre fútbol complejas.
+
+Pues que aprendan a manejar la API y responderla muy muy muy a tiempo.
+
+Ser los primeros en saber todas las respuestas porque alguien se encarga de meter los datos por nosotros
+
+y eso es lo bueno que tiene saber el manejo de una API que tú te puedes aprovechar de los datos que
+
+obtuvo ha metido y que ha dado unas librerías públicas para que tú las consultes y si sabes consultarlas
+
+pues en una manera muy rápida puedes obtener los datos.
+
+Vale pues os dejo como deberes investigar sobre otra API mas o unas cuantas Sapir y bueno espero que
+
+os haya gustado.
+
+http://www.enrique7mc.com/2016/05/lista-apis-publicas/
+https://www.football-data.org/
+token 
+
+801b18a4853a4079a00d6f308874defa
+
+801b18a4853a4079a00d6f308874defa
+
+
+no toma el API Token enviado 
+Tarea 5: Probar otra API

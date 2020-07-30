@@ -1,0 +1,213 @@
+
+Sección 3:Autenticación y Autorización
+3 / 5|8 min
+
+
+16. Autenticación Básica
+Bueno ahora vamos a empezar el bloque donde veremos los diferentes sistemas de autenticación que Postman
+
+nos provee.
+
+Vemos que la página de post Maneco ya nos nos dice que la propia API la Pierres que nos da Postman tiene
+
+ya diferentes sistemas de autenticación diferentes servicios para que nosotros proveemos cómo se hacen
+
+llamadas mediante autenticación.
+
+La primera que vamos a probar es el sistema de autenticación básica.
+
+Vemos que la web releve llamada al servicio es ésta.
+
+Entonces vamos a copiarla copiamos la web a ver copiamos la web R.L abrimos Postman ponemos la L.
+
+Ya hemos visto que podríamos sustituir esta parte por cualquiera de las variables.
+
+Por ejemplo si nos encontramos en el curso por la variable de curso que tenemos que es una R.L si dejamos
+
+un espacio enseguida no la reconoce.
+
+Entonces ahora quitamos el espacio y tenemos la web.
+
+Qué pasa si le diéramos ahora a enviar.
+
+Pues vamos a darle y lo vemos.
+
+Como no tenemos ningún tipo de autorización fijarlos que la autorización está que no hay ningún tipo
+
+seleccionado.
+
+Cuando leemos Arsen vemos que el resultado nos dice que estamos no autorizados y el resultado es el
+
+Estado es un 401 no autorizado.
+
+Es decir hemos llamado al servicio pero el servicio no nos ha devuelto lo que nos tiene que devolver.
+
+Si queremos este servicio de autenticación básica probarlo la llamada el tipo de autenticación le vamos
+
+a decir que es de tipo BASIC el usuario y la contraseña es Postman y la contraseña password além puede
+
+haberla aquí.
+
+Password vamos a llamar ahora y veremos como hará el servicio ya si que me devuelve lo que me tiene
+
+que devolver y me devuelve esto.
+
+El Authentication igual a tu vale realmente se lo devuelve.
+
+Esto podría devolver muchas más cosas pero en este caso lo único que me indica es que realmente obtenido
+
+un código 200 y la autenticación ha sido correcta.
+
+Vale con lo cual todo ha sido perfecto de hecho la autorización que él ha puesto en la encriptado es
+
+autorizacion sí.
+
+Como veis aquí vale la encriptado de tipo básica y bueno pues funciona correctamente.
+
+Si volviésemos a poner si autenticación básica pues nos volvería a fallar.
+
+
+
+17. Autenticación Bearer mediante Token
+
+
+
+Bueno para el nuevo sistema de autenticación os voy a enseñar una nueva página que se llama HTTP Vim
+
+punto o herraje esta página http vino punto de Regev es una página similar a la página de post Maneco
+
+también tiene unos servicios que unos servicios que más o menos lo que hacen es devolver un eco a lo
+
+que vosotros les envías.
+
+Tampoco tienen un gran contenido detrás pero es para poder probar todos los tipos de autenticación y
+
+hayuna que Postman tiene y que me gusta mucho porque se usa mucho a nivel profesional que es la autenticación
+
+mediante Wider lo que es mediante un token.
+
+Vale entonces si queremos probar la autenticación por token vale vamos a probar en esta R.L lo que va
+
+a ser en H3 de Bevin punto de Regev va Ravinet y vamos a ver cómo funciona la autenticación con tocar
+
+con token.
+
+Bueno pues vamos allá.
+
+Entonces me voy a ir al Postman y en este caso esta es la de BASIC AWD de antes la voy a guardar y le
+
+voy a decir que es autenticación básica autenticación básica la voy a poner en vez de en Guetap lo voy
+
+a poner aquí en la colección y luego las organizarle todas en una carpeta.
+
+Bueno lo dicho esta ya la cierro y ahora voy a probar una nueva que es esta lo que pasa que bueno pues
+
+mira si queréis aprovechar también que una variable local de entorno en este curso que sea esta web
+
+R.L y así pues volvemos a practicar el tipo de las variables el cómo se hacen las variables de entorno
+
+si recordáis vamos aquí por ejemplo vemos las variables Balea aquí tenemos el curso no podemos editar
+
+y podemos añadir una nueva variable por ejemplo a esto a llamar R.L HTTP Bing por ejemplo y esta página
+
+vale la guardo actualizo y ya puedo utilizar esto como una variable así cuando pongo la primera llave
+
+llama parcelaciones como si hubiese puesto la web y a partir de ahora es la autenticación mediante autenticación
+
+mediante video Bearers escrito.
+
+Si ejecutamos con video veremos lo mismo.
+
+Aquí no va a aparecer ningún resultado.
+
+De hecho me dice 401 no autorizado porque no le hemos pasado el token de sesión que debemos pasarle
+
+cómo es la autenticación por token.
+
+Bueno pues en autorizacion ponemos mediante Viguer Miler token y podemos poner el token que queramos
+
+porque realmente el servicio web no está comprobando en cualquier otro caso en una aplicación profesional
+
+comprobaría que el token que le pasamos es el token que espera que al final una cadena normalmente suele
+
+ser una cadena bastante larga con números en hexadecimal.
+
+Bueno puede ser con los caracteres que vosotros creéis realmente y comprobaría y si no lo enviamos el
+
+token es alto pues el servicio devolverlo.
+
+Aquí podéis enviarle el token que quiera yo le voy a enviar por ejemplo el token Fran y cuando le demos
+
+hacen pues ahora veremos que la respuesta ya es un 200 o que.
+
+Y además me da Authentication tú y el token que le pasó hace un eco también vemos emerger el verde de
+
+lo que hemos enviado que estamos enviando el.
+
+Este Fram vale o sea que ahora ya pues me devuelve correctamente la autenticación mediante token y así
+
+funciona una autenticación por token.
+
+http://httpbin.org
+
+
+18. Autenticación OAuth
+
+
+
+Bueno otro sistema de autenticación que es bastante usado es el sistema de autenticación llamado Oud
+
+bastante en la versión 1.0 nos da Postman nos ofrece Maneco nos ofrece un servicio web para que podamos
+
+probarlo.
+
+Está aquí ya en Postman lo que he hecho ha sido copiarlo.
+
+Copiar el servicio copiar la huelga en el servicio.
+
+Aprovecho para comentaros que he creado la carpeta autenticación para ir guardando estos servicios y
+
+lo que hay que hacer es en autorización poner que es de tipo o a punto 1.0 y el Consumer Key y el Consumer
+
+Secret por lo que he hecho ha sido poner el Consumer Consumer Secret que me da Oxman que debo poner
+
+vale una autenticación bastante más robusta e incluso que las anteriores.
+
+Y si ahora pruebo en Postman pues veremos que me voy a ir en lugar de la pestaña actualización.
+
+Voy a ponerme en Parham para que veais que simplemente poniendo esto él me está generando una serie
+
+de parámetros que al mandar van cambiando en cada ejecución.
+
+Si veis a quien abajo el resultado es paz autorizacion pasada correctamente y si fueramos ejecutando
+
+en cada ejecución hacer una marca el tiempo y veremos que envia algo diferente con lo cual es muy dificil
+
+de capturar este tipo de usuario y contraseña.
+
+Si ponemos cualquier si cambiamos cualquier letra veremos por ejemplo el último 7 por un 8 y vamos a
+
+Parham veremos que la generación lo que nos va a producir es un fail vale de la autenticación con lo
+
+cual el sistema que nos provee Postman de autorizaciones no va a cambiar y volver a dejarlo donde estaba
+
+basado en marcas de tiempo y en una serie de valores y el servicio que utilizais usado 1.0 pues esta
+
+la forma de llamar con las claves.
+
+RKCGzna7bv9YDS7c
+
+D+EdQ-gs$-%6@2Nu7
+
+
+
+Autenticacion  Hawk Auth
+
+https://postman-echo.com/auth/hawk
+
+
+{
+    "message": "Hawk Authentication Successful"
+}
+
+
